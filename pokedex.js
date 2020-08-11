@@ -96,6 +96,8 @@ class Pokemon {
 			if (data['STATE'] == 'LUCKY') p.lucky = true;
 			if (data['STATE'] == 'TRASH') p.trash = true;
 			if (data['STATE'] == 'VALUABLE') p.valuable = true;
+			if (data['STATE'] == '@SPECIAL') p.valuable = true;
+			if (data['STATE'] == 'RESERVED') p.valuable = true;
 			//console.log(POKEMON_ID, data['STATE']);
 		}
 		
