@@ -159,7 +159,7 @@ this.onload = function() {
 	});
 	pokedex.addEmpties();
 	
-	return;
+	//return;
 	
 	
 	
@@ -197,8 +197,61 @@ this.onload = function() {
 	
 	
 	
+	var arr = lucky.map( p => Pokemon.auto2(p) );
+	arr = arr.filter( p => p && p.ID != "" );
+	arr = arr.sort( (a,b) => {
+		return (a.generationID - b.generationID) || (a.pokedexID - b.pokedexID) || (b.cp - a.cp);
+	});
+	/*arr = arr.sort( (a,b) => {
+		if (a.pokedexID == b.pokedexID) {
+			return (b.cp - a.cp);
+		} else {
+			return -1 * (b.pokedexID - a.pokedexID);
+		}
+	});*/
 	var currentGen = null;
-	pokemonList.forEach( pokemonID => {
+	arr.forEach( pokemon => {
+	
+		if (pokemon.trash) return;
+	
+		if (pokemon.generationID !== currentGen) {
+		
+			if (currentGen) {
+				pokedex.addEmpties(16);
+			}
+			
+			switch (pokemon.generationID) {
+				case 1: pokedex.addHeader('kanto', "Kanto (Gen #1)", 'kanto', 'kanto'); break;
+				case 2: pokedex.addHeader('johto', "Johto (Gen #2)", 'johto', 'johto'); break;
+				case 3: pokedex.addHeader('hoenn', "Hoenn (Gen #3)", 'hoenn', 'hoenn'); break;
+				case 4: pokedex.addHeader('sinnoh', "Sinnoh (Gen #4)", 'sinnoh', 'sinnoh'); break;
+				case 5: pokedex.addHeader('unova', "Unova (Gen #5)", 'unova', 'unova'); break;
+				case 6: pokedex.addHeader('kalos', "Kalos (Gen #6)", 'kalos', 'kalos'); break;
+				case 7: pokedex.addHeader('alola', "Alola (Gen #7)", 'alola', 'alola'); break;
+				case 8: pokedex.addHeader('galar', "Galar (Gen #8)", 'galar', 'galar'); break;
+				default:  pokedex.addHeader('unknown', "Unknown Generation"); console.log(pokemon.generationID); break;
+			}
+			currentGen = pokemon.generationID;
+		}
+	
+	
+		pokemon.lvl = "";
+	
+		
+		pokedex.addPokemon( pokemon );
+		
+	});
+	
+	if (currentGen) {
+		pokedex.addEmpties(16);
+	}
+	
+	
+	
+	return;
+	
+	var currentGen = null;
+	arr.forEach( pokemonID => {
 		
 		//console.log(pokemonID);
 		var pokemon = Pokemon.auto( pokemonID );

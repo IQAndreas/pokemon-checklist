@@ -1,36 +1,25 @@
 
-class Type {
-	static BUG = "BUG";
-	static DARK = "DARK";
-	static DRAGON = "DRAGON";
-	static ELECTRIC = "ELECTRIC";
-	static FAIRY = "FAIRY";
-	static FIGHTING = "FIGHTING";
-	static FIRE = "FIRE";
-	static FLYING = "FLYING";
-	static GHOST = "GHOST";
-	static GRASS = "GRASS";
-	static GROUND = "GROUND";
-	static ICE = "ICE";
-	static NORMAL = "NORMAL";
-	static POISON = "POISON";
-	static PSYCHIC = "PSYCHIC";
-	static ROCK = "ROCK";
-	static STEEL = "STEEL";
-	static WATER = "WATER";
-}
+class Type {}
+Type.BUG = "BUG";
+Type.DARK = "DARK";
+Type.DRAGON = "DRAGON";
+Type.ELECTRIC = "ELECTRIC";
+Type.FAIRY = "FAIRY";
+Type.FIGHTING = "FIGHTING";
+Type.FIRE = "FIRE";
+Type.FLYING = "FLYING";
+Type.GHOST = "GHOST";
+Type.GRASS = "GRASS";
+Type.GROUND = "GROUND";
+Type.ICE = "ICE";
+Type.NORMAL = "NORMAL";
+Type.POISON = "POISON";
+Type.PSYCHIC = "PSYCHIC";
+Type.ROCK = "ROCK";
+Type.STEEL = "STEEL";
+Type.WATER = "WATER";
 
 class Generation {
-
-	static KANTO = new Generation(1, "Kanto", 'kanto');
-	static JOHTO = new Generation(2, "Johto", 'johto');
-	static HOENN = new Generation(3, "Hoenn", 'hoenn');
-	static SINNOH = new Generation(4, "Sinnoh", 'sinnoh');
-	static UNOVA = new Generation(5, "Unova", 'unova');
-	static KALOS = new Generation(6, "Kalos", 'kalos');
-	static ALOLA = new Generation(7, "Alola", 'alola');
-	static GALAR = new Generation(8, "Galar", 'galar');
-	static UNKNOWN = new Generation(undefined, "Unknown Generation", 'unknown');	
 
 	static fromID(value) {
 	
@@ -40,15 +29,15 @@ class Generation {
 		
 		switch (parseInt(value), 10) {
 		
-			case 1: return KANTO;
-			case 2: return JOHTO;
-			case 3: return HOENN;
-			case 4: return SINNOH;
-			case 5: return UNOVA;
-			case 6: return KALOS;
-			case 7: return ALOLA;
-			case 8: return GALAR;
-			default: return UNKNOWN;
+			case 1: return Generation.KANTO;
+			case 2: return Generation.JOHTO;
+			case 3: return Generation.HOENN;
+			case 4: return Generation.SINNOH;
+			case 5: return Generation.UNOVA;
+			case 6: return Generation.KALOS;
+			case 7: return Generation.ALOLA;
+			case 8: return Generation.GALAR;
+			default: return Generation.UNKNOWN;
 		}
 	}
 	
@@ -66,6 +55,15 @@ class Generation {
 		}
 	}
 }
+Generation.KANTO = new Generation(1, "Kanto", 'kanto');
+Generation.JOHTO = new Generation(2, "Johto", 'johto');
+Generation.HOENN = new Generation(3, "Hoenn", 'hoenn');
+Generation.SINNOH = new Generation(4, "Sinnoh", 'sinnoh');
+Generation.UNOVA = new Generation(5, "Unova", 'unova');
+Generation.KALOS = new Generation(6, "Kalos", 'kalos');
+Generation.ALOLA = new Generation(7, "Alola", 'alola');
+Generation.GALAR = new Generation(8, "Galar", 'galar');
+Generation.UNKNOWN = new Generation(undefined, "Unknown Generation", 'unknown');
 
 class Pokemon {
 	
