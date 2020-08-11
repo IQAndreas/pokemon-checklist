@@ -53,15 +53,33 @@ body .pokemon-container {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-	
-	padding-top: 80px;
-	padding-bottom: 80px;
-	padding-left: 80px;
-	padding-right: 80px;
-	
-	/*width: 100%;*/
-	/*height: 100%;*/
 }
+
+@media (max-width: 600px) { 
+	
+	.pokemon-container {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+		
+		/*width: 100%;*/
+		/*height: 100%;*/
+	}
+}
+@media (min-width: 600px) { 
+	
+	.pokemon-container {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+		
+		/*width: 100%;*/
+		/*height: 100%;*/
+	}
+}
+
 .pokemon {
 	width: 128px;
 	height: 128px;
