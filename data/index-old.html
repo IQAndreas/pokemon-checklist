@@ -1,0 +1,1166 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+	<style type="text/css">
+	
+		body {
+			background-color: black;
+			padding: 30px;
+			
+			/*transform: scale(1.25);
+			transform-origin: 0% 0% 0px;*/
+		}
+		
+		body .pokemon-container {
+			/*width: 75%;*/
+		}
+		
+		.header, .header2 {
+		
+			padding-top: 60px;
+		
+			display: block;
+			width: 100vw;
+			color: gold;
+			text-shadow: 1px 1px 2px #ddd;
+			/*text-shadow: 0px 0px 4px #000, 0px 0px 1px #000;*/
+			text-transform: uppercase;
+			/*font-size: x-large;*/
+			padding-left: 20px;
+			
+		}
+		.header *, .header2 * {
+			vertical-align: middle;
+			/*border: 1px solid black;*/
+		}
+		.header img, .header2 img {
+			height: 30px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		
+		.header2 {
+			text-align: center;
+		}
+		
+		.text {
+			display: block;
+			color: white;
+			text-align: center;
+			padding-bottom: 12px;
+			width: 500px;
+			/*padding-left: 200px;
+			padding-right: 200px;*/
+		}
+		
+		.pokemon-container {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			
+			padding-top: 80px;
+			padding-bottom: 80px;
+			padding-left: 80px;
+			padding-right: 80px;
+			
+			/*width: 100%;*/
+			/*height: 100%;*/
+		}
+		.pokemon {
+			width: 128px;
+			height: 128px;
+			position: relative;
+			text-align: center;
+			padding: 5px;
+			margin: 5px;
+			
+			
+			/*transform: scale(1.25);
+			transform-origin: 0% 0% 0px;*/
+		}
+		
+		
+		.pokemon {
+			background-size: cover;
+			background-image: url('backgrounds/default.png');
+			border-color: #9DC1B7;
+			color: #68A090;
+			
+			border: 8px solid #9DC1B7;
+			border-radius: 20px;
+		}
+		
+		.bug {
+			background-image: url('backgrounds/bug.png');
+			background-color: #C6D16E;
+			border-color: #A8B820;
+			color: #000;
+		}
+		
+		.bug {
+			background-image: url('backgrounds/bug.png');
+			background-color: #C6D16E;
+			border-color: #A8B820;
+			color: #000;
+		}
+		.dark {
+			background-image: url('backgrounds/dark.png');
+			background-color: #A29288;
+			border-color: #705848;
+			color: #000;
+		}
+		.dragon {
+			background-image: url('backgrounds/dragon.png');
+			background-color: #A27DFA;
+			border-color: #7038F8;
+			color: #000;
+		}
+		.electric {
+			background-image: url('backgrounds/electric.png');
+			background-color: #FAE078;
+			border-color: #F8D030;
+			color: #000;
+		}
+		.fairy {
+			background-image: url('backgrounds/fairy.png');
+			background-color: #F4BDC9;
+			border-color: #EE99AC;
+			color: #000;
+		}
+		.fighting {
+			background-image: url('backgrounds/fighting.png');
+			background-color: #D67873;
+			border-color: #C03028;
+			color: #000;
+		}
+		.fire {
+			background-image: url('backgrounds/fire.png');
+			background-color: #F5AC78;
+			border-color: #F08030;
+			color: #000;
+		}
+		.flying {
+			background-image: url('backgrounds/flying.png');
+			background-color: #C6B7F5;
+			border-color: #A890F0;
+			color: #000;
+		}
+		.ghost {
+			background-image: url('backgrounds/ghost.png');
+			background-color: #A292BC;
+			border-color: #705898;
+			color: #000;
+		}
+		.grass {
+			background-image: url('backgrounds/grass.png');
+			background-color: #A7DB8D;
+			border-color: #78C850;
+			color: #000;
+		}
+		.ground {
+			background-image: url('backgrounds/ground.png');
+			background-color: #EBD69D;
+			border-color: #E0C068;
+			color: #000;
+		}
+		.ice {
+			background-image: url('backgrounds/ice.png');
+			background-color: #BCE6E6;
+			border-color: #98D8D8;
+			color: #000;
+		}
+		.normal {
+			background-image: url('backgrounds/normal.png');
+			background-color: #C6C6A7;
+			border-color: #A8A878;
+			color: #000;
+		}
+		.poison {
+			background-image: url('backgrounds/poison.png');
+			background-color: #C183C1;
+			border-color: #A040A0;
+			color: #000;
+		}
+		.psychic {
+			background-image: url('backgrounds/psychic.png');
+			background-color: #FA92B2;
+			border-color: #F85888;
+			color: #000;
+		}
+		.rock {
+			background-image: url('backgrounds/rock.png');
+			background-color: #D1C17D;
+			border-color: #B8A038;
+			color: #000;
+		}
+		.steel {
+			background-image: url('backgrounds/steel.png');
+			background-color: #D1D1E0;
+			border-color: #B8B8D0;
+			color: #000;
+		}
+		.water {
+			background-image: url('backgrounds/water.png');
+			background-color: #9DB7F5;
+			border-color: #6890F0;
+			color: #000;
+		}
+		
+		.pokemon-purified {
+			background-image: url('backgrounds/purified.png');
+			border-radius: 20px;
+			background-color: #DDDDDD;
+			border-color: #FFFFFF;
+			color: #000;
+		}
+		.pokemon-purified .pokemon-image {
+			/*filter: drop-shadow(0px 0px 5px #FFF);*/
+		}
+		
+		.pokemon-shadow {
+			background-image: url('backgrounds/shadow.png');
+			background-color: #C183C1;
+			border-color: #A040A0;
+			color: #000;
+		}
+		.pokemon-shadow .pokemon-image {
+			/*filter: drop-shadow(0px 0px 5px #FFF);*/
+		}
+		
+		.unreleased {
+			border-color: #333333;
+			filter: brightness(50%);
+		}
+		
+		.lucky {
+			background-image: url('backgrounds/lucky.png');
+			background-color: #FFED00;
+			border-color: #FFD700;
+			color: #000;
+		}
+		.lucky.pokemon-purified {
+			background-image: url('backgrounds/lucky.png');
+			background-color: #DDDDDD;
+			border-color: #FFFFFF;
+			color: #000;
+		}
+		.lucky.pokemon-shadow {
+			background-image: url('backgrounds/lucky.png');
+			background-color: #C183C1;
+			border-color: #A040A0;
+			color: #000;
+		}
+		
+		
+		.padding {
+			height: 0px;
+			/*border: none;*/
+			background: none;
+			
+			border-radius: 20px;
+			background-color: #000000;
+			border-color: #000000;
+		}
+		
+		.family {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: flex-start;
+		}
+		
+		.family :not(:last-child), .pokemon.ev1-3, .pokemon.ev2-3, .pokemon.ev1-2 {
+			border-right-style: unset;
+			border-right-width: 0px;
+			border-top-right-radius: 0px;
+			border-bottom-right-radius: 0px;
+			margin-right: -1px;
+		}
+		.family :not(:first-child), .pokemon.ev2-3, .pokemon.ev3-3, .pokemon.ev2-2 {
+			border-left-style: unset;
+			border-left-width: 0px;
+			border-top-left-radius: 0px;
+			border-bottom-left-radius: 0px;
+			margin-left: -1px;
+		}
+		
+
+		
+		.pokemon-image {
+			width: 100%;
+			height: 100%;
+			
+			filter: drop-shadow(7px 5px 3px rgba(0, 0, 0, 0.5));
+		}
+		
+		.mystery .pokemon-image, .unreleased .pokemon-image {
+			/*filter: brightness(0%);*/
+			filter: brightness(0%) drop-shadow(0px 0px 3px rgba(157, 193, 183, 0.5));
+		}
+		
+		.pokemon.mystery .pokemon-image, .unreleased .pokemon-image		{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(157, 193, 183, 1.00)); }
+		.bug.mystery .pokemon-image, .unreleased .pokemon-image			{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(168, 184, 32, 1.00)); }
+		.dark.mystery .pokemon-image, .unreleased .pokemon-image		{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(112, 88, 72, 1.00)); }
+		.dragon.mystery .pokemon-image, .unreleased .pokemon-image		{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(112, 56, 248, 1.00)); }
+		.electric.mystery .pokemon-image, .unreleased .pokemon-image	{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(248, 208, 48, 1.00)); }
+		.fairy.mystery .pokemon-image, .unreleased .pokemon-image		{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(238, 153, 172, 1.00)); }
+		.fighting.mystery .pokemon-image, .unreleased .pokemon-image	{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(192, 48, 40, 1.00)); }
+		.fire.mystery .pokemon-image, .unreleased .pokemon-image		{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(240, 128, 48, 1.00)); }
+		.flying.mystery .pokemon-image, .unreleased .pokemon-image		{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(168, 144, 240, 1.00)); }
+		.ghost.mystery .pokemon-image, .unreleased .pokemon-image		{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(112, 88, 152, 1.00)); }
+		.grass.mystery .pokemon-image, .unreleased .pokemon-image		{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(120, 200, 80, 1.00)); }
+		.ground.mystery .pokemon-image, .unreleased .pokemon-image		{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(224, 192, 104, 1.00)); }
+		.ice.mystery .pokemon-image, .unreleased .pokemon-image			{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(152, 216, 216, 1.00)); }
+		.normal.mystery .pokemon-image, .unreleased .pokemon-image		{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(168, 168, 120, 1.00)); }
+		.poison.mystery .pokemon-image, .unreleased .pokemon-image		{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(160, 64, 160, 1.00)); }
+		.psychic.mystery .pokemon-image, .unreleased .pokemon-image		{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(248, 88, 136, 1.00)); }
+		.rock.mystery .pokemon-image, .unreleased .pokemon-image		{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(184, 160, 56, 1.00)); }
+		.steel.mystery .pokemon-image, .unreleased .pokemon-image		{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(184, 184, 208, 1.00)); }
+		.water.mystery .pokemon-image, .unreleased .pokemon-image		{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(104, 144, 240, 1.00)); }
+		.pokemon-purified.mystery .pokemon-image, .unreleased .pokemon-image	{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(255, 255, 255, 1.00)); }
+		.pokemon-shadow.mystery .pokemon-image, .unreleased .pokemon-image 		{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(255, 255, 255, 1.00)); }
+		
+		.cp, .name, .shiny, .purified, .shadow {
+			position: absolute;
+			
+			left: 0px;
+			right: 0px;
+			width: 100%;
+			
+			font-family: 'Ubuntu', sans-serif;
+			color: #000;
+		}
+		
+		.complete, .missing, .save {
+			position: absolute;
+			left: 0px;
+			right: 0px;
+			width: 100%;
+			top: 0px;
+			bottom: 0px;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			/*border: 1px solid red;*/
+		}
+		.complete img, .missing img, .save img {
+			position: relative;
+			/*border: 1px solid lime;*/
+			margin: auto auto;
+		}
+		.complete img {
+			width: 70%;
+			height: 70%;	
+			opacity: 0.75;
+		}
+		.missing img {
+			width: 70%;
+			height: 70%;	
+			opacity: 0.75;
+		}
+		.save img {
+			width: 90%;
+			height: 90%;	
+			opacity: 0;
+		}
+		
+		.cp {
+			top: 0px;
+			margin-top: 5px;
+			font-size: large;
+			font-weight: bold;
+			color: #CCC;
+			-webkit-text-stroke: 0.5px #000;
+    		-webkit-text-fill-color: #CCC;
+		}
+		.cp-value {
+			font-size: xx-large;
+			font-weight: bold;
+			color: #FFF;
+			/*text-shadow: 1px 1px 2px #BBB;*/
+			-webkit-text-stroke: 1px #000;
+    		-webkit-text-fill-color: #DDD;
+		}
+		
+		.shiny, .purified, .shadow {
+			top: 30px;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			/*border: 1px solid black;*/
+		}
+		.shiny *, .purified *, .shadow * {
+			vertical-align: middle;
+			/*border: 1px solid black;*/
+		}
+		.shiny span, .purified span, .shadow span {
+			padding-left: 5px;
+			padding-right: 5px;
+			font-size: large;
+			font-weight: bold;
+			color: #FFF;
+			text-shadow: 0px 0px 4px #000, 0px 0px 1px #000;
+			/*border: 1px solid black;*/
+		}
+		
+		.purified span, .shadow span {
+			/*font-size: smaller;*/
+		}
+		.purified img, .shadow img {
+			height: 20px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+		.shiny img {
+			height: 30px;
+		}
+		
+		.name {
+			/*display: block;*/
+			bottom: 0px;
+			margin-bottom: 5px;
+			font-size: large;
+			color: #FFF;
+			text-shadow: 0px 0px 4px #000, 0px 0px 1px #000;
+			/*-webkit-text-stroke: 0.5px #000;
+    		-webkit-text-fill-color: #DDD;*/
+		}
+	</style>
+	
+	
+	<script type="text/javascript" src="data/pokemonstats.js"> </script>
+	<script type="text/javascript" src="data/pokemonlist.js"> </script>
+	<script type="text/javascript" src="index.js"> </script>
+
+</head>
+	<!--♂♀-->
+<body>
+
+
+
+
+<div class='pokemon-container auto'>
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class='pokemon-container'>
+
+	<h2 class='header2'><img src='headers/sinnoh.png'><span>Rotom</span><img src='headers/sinnoh.png'></h2>
+	
+	<div class='text'>The sprites for all <b>Rotom</b> forms were re-rendered, and the sprite for the <b>Normal</b> form, although existing previously, wasn't named to match the references in the game code. <i>This bug still affects <b>Arceus&nbsp(Normal)</b>, but wasn't fixed at the same time.</i></div>
+
+
+<div class='family'>
+	<div class='pokemon ghost electric'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_479_11.png' /><span class='name'>Rotom<br/>(Normal)</span></div>
+	<div class='pokemon ghost electric'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_479_11_shiny.png' /><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Rotom<br/>(Normal)</span></div>
+</div>
+
+
+
+	<h2 class='header2'><img src='headers/unova.png'><span>Victini</span><img src='headers/unova.png'></h2>
+	
+	<div class='text'>The sprites for <b>Victini</b> were added to the game.</div>
+
+<div class='family'>
+	<div class='pokemon fire psychic'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_494_00.png' /><span class='name'>Victini</span></div>
+	<div class='pokemon fire psychic'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_494_00_shiny.png' /><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Victini</span></div>
+</div>
+
+
+	<h2 class='header2'><img src='headers/unova.png'><span>Frillish and Jellicent</span><img src='headers/unova.png'></h2>
+	
+	<div class='text'>The sprites for <b>Frillish</b> and <b>Jellicent</b> were re-rendered, and the sprites for the <b>Female</b> forms of both were added.</div>
+
+<div class='family'>
+	<div class='pokemon ghost water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_592_00.png' /><span class='name'>Frillish<br/>(Normal)</span></div>
+	<div class='pokemon ghost water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_592_00_shiny.png' /><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Frillish<br/>(Normal)</span></div>
+</div>
+
+<div class='family'>
+	<div class='pokemon ghost water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_593_00.png' /><span class='name'>Jellicent<br/>(Normal)</span></div>
+	<div class='pokemon ghost water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_593_00_shiny.png' /><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Jellicent<br/>(Normal)</span></div>
+</div>
+
+<div class='family'>
+	<div class='pokemon ghost water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_592_01.png' /><span class='name'>Frillish<br/>(Female)</span></div>
+	<div class='pokemon ghost water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_592_01_shiny.png' /><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Frillish<br/>(Female)</span></div>
+</div>
+
+
+<div class='family'>
+	<div class='pokemon ghost water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_593_01.png' /><span class='name'>Jellicent<br/>(Female)</span></div>
+	<div class='pokemon ghost water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_593_01_shiny.png' /><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Jellicent<br/>(Female)</span></div>
+</div>
+
+
+
+
+	<h2 class='header2'><img src='headers/pikachu.png'><span>Pikachu</span><img src='headers/pikachu.png'></h2>
+	
+	<div class='text'>A new, unannounced hat for <b>Pikachu</b> was added. No similar sprites were added for <b>Raichu</b> or <b>Pichu</b>.<br><i>I'm not a haberdasher, so if anyone recognizes the type of hat and wants to give it an unofficial name, be by guest.</i></div>
+
+<div class='family'>
+	<div class='pokemon  electric'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_025_00_13.png' /><span class='name'>Pikachu♂</span></div>
+	<div class='pokemon  electric'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_025_00_13_shiny.png' /><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Pikachu♂</span></div>
+</div>
+
+
+<div class='family'>
+	<div class='pokemon  electric'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_025_01_13.png' /><span class='name'>Pikachu♀</span></div>
+	<div class='pokemon  electric'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_025_01_13_shiny.png' /><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Pikachu♀</span></div>
+</div>
+
+
+
+
+
+
+<h2 class='header'></h2>
+
+<h2 class='header'></h2>
+
+<h2 class='header'></h2>
+
+<h2 class='header'></h2>
+
+<h2 class='header'></h2>
+
+<h2 class='header'></h2>
+
+<h2 class='header'></h2>
+
+<h2 class='header'></h2>
+
+
+
+
+
+	<h2 class='header'><img src='headers/strong.png'><span>Strong Fighters</span></h2>
+
+<div class='pokemon   psychic'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_063_00.png' /><span class='cp'>CP<span class='cp-value'>1,101</span></span><span class='name'>Abra</span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_113_00.png' /><span class='cp'>CP<span class='cp-value'>1,018</span></span><span class='name'>Chansey</span></div>
+<div class='pokemon   grass'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_114_00.png' /><span class='cp'>CP<span class='cp-value'>1,858</span></span><span class='name'>Tangela</span></div>
+<div class='pokemon flying bug'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_123_00.png' /><span class='cp'>CP<span class='cp-value'>2,253</span></span><span class='name'>Scyther</span></div>
+<div class='pokemon   electric'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_125_00.png' /><span class='cp'>CP<span class='cp-value'>1,939</span></span><span class='name'>Electabuzz</span></div>
+<div class='pokemon   fire'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_126_00.png' /><span class='cp'>CP<span class='cp-value'>1,989</span></span><span class='name'>Magmar</span></div>
+<div class='pokemon flying rock'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_142_00.png' /><span class='cp'>CP<span class='cp-value'>2,318</span></span><span class='name'>Aerodactyl</span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_143_00.png' /><span class='cp'>CP<span class='cp-value'>2,690</span></span><span class='name'>Snorlax</span></div>
+
+<div class='pokemon flying fairy'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_176_00.png' /><span class='cp'>CP<span class='cp-value'>1,411</span></span><span class='name'>Togetic</span></div>
+<div class='pokemon   psychic'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_202_00.png' /><span class='cp'>CP<span class='cp-value'>831</span></span><span class='name'>Wobbuffet</span></div>
+<div class='pokemon flying ground'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_207_00.png' /><span class='cp'>CP<span class='cp-value'>1,536</span></span><span class='name'>Gligar</span></div>
+<div class='pokemon rock bug'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_213_00.png' /><span class='cp'>CP<span class='cp-value'>308</span></span><span class='name'>Shuckle</span></div>
+<div class='pokemon flying steel'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_227_00.png' /><span class='cp'>CP<span class='cp-value'>1,748</span></span><span class='name'>Skarmory</span></div>
+<div class='pokemon ground rock'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_246_00.png' /><span class='cp'>CP<span class='cp-value'>850</span></span><span class='name'>Larvitar</span></div>
+
+<div class='pokemon   water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_349_00.png' /><span class='cp'>CP<span class='cp-value'>212</span></span><span class='name'>Feebas</span></div>
+<div class='pokemon psychic steel'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_374_00.png' /><span class='cp'>CP<span class='cp-value'>797</span></span><span class='name'>Beldum</span></div>
+
+<div class='pokemon   electric'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_403_00.png' /><span class='cp'>CP<span class='cp-value'>712</span></span><span class='name'>Shinx</span></div>
+<div class='pokemon   rock'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_408_00.png' /><span class='cp'>CP<span class='cp-value'>1,500</span></span><span class='name'>Cranidos</span></div>
+<div class='pokemon steel rock'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_410_00.png' /><span class='cp'>CP<span class='cp-value'>723</span></span><span class='name'>Shieldon</span></div>
+<div class='pokemon ground dragon'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_443_00.png' /><span class='cp'>CP<span class='cp-value'>910</span></span><span class='name'>Gible</span></div>
+
+<div class='pokemon   grass'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_495_00.png' /><span class='cp'>CP<span class='cp-value'>691</span></span><span class='name'>Snivy</span></div>
+<div class='pokemon   fire'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_513_00.png' /><span class='cp'>CP<span class='cp-value'>780</span></span><span class='name'>Pansear</span></div>
+<div class='pokemon   rock'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_524_00.png' /><span class='cp'>CP<span class='cp-value'>988</span></span><span class='name'>Roggenrola</span></div>
+<div class='pokemon   psychic'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_574_00.png' /><span class='cp'>CP<span class='cp-value'>646</span></span><span class='name'>Gothita</span></div>
+<div class='pokemon   psychic'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_577_00.png' /><span class='cp'>CP<span class='cp-value'>936</span></span><span class='name'>Solosis</span></div>
+<div class='pokemon   steel'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_599_00.png' /><span class='cp'>CP<span class='cp-value'>650</span></span><span class='name'>Klink</span></div>
+<div class='pokemon fire ghost'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_607_00.png' /><span class='cp'>CP<span class='cp-value'>685</span></span><span class='name'>Litwick</span></div>
+<div class='pokemon   dragon'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_610_00.png' /><span class='cp'>CP<span class='cp-value'>938</span></span><span class='name'>Axew</span></div>
+<div class='pokemon dragon dark'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_633_00.png' /><span class='cp'>CP<span class='cp-value'>723</span></span><span class='name'>Deino</span></div>
+
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+
+
+
+
+<h2 class='header'><img src='headers/great-league.png'><span>Great League</span></h2>
+<h2 class='header'><img src='headers/master-league.png'><span>Master League</span></h2>
+<h2 class='header'><img src='headers/ultra-league.png'><span>Ultra League</span></h2>
+
+
+<h2 class='header'><img src='headers/evolve.png'><span>Trade Evolved Pokemon</span></h2>
+
+<div class='family'>
+	<div class='pokemon ev1-3  psychic'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_063_00.png' /><span class='cp'>CP<span class='cp-value'>917</span></span><span class='name'>Abra</span></div>
+	<div class='pokemon ev2-3  psychic'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_064_00.png' /><span class='cp'>CP<span class='cp-value'>1,420</span></span><span class='name'>Kadabra</span></div>
+	<div class='pokemon ev3-3  psychic'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_065_00.png' /><span class='cp'>CP<span class='cp-value'>2,123</span></span><span class='name'>Alakazam</span></div>
+</div>
+
+<div class='family'>
+	<div class='pokemon ev1-3  fighting'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_066_00.png' /><span class='cp'>CP<span class='cp-value'>874</span></span><span class='name'>Machop</span></div>
+	<div class='pokemon ev2-3  fighting'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_067_00.png' /><span class='cp'>CP<span class='cp-value'>1,402</span></span><span class='name'>Machoke</span></div>
+	<div class='pokemon ev3-3  fighting'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_068_00.png' /><span class='cp'>CP<span class='cp-value'>2,123</span></span><span class='name'>Machamp</span></div>
+</div>
+
+<div class='family'>
+	<div class='pokemon ground rock'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_074_00.png' /><span class='cp'>CP<span class='cp-value'>885</span></span><span class='name'>Geodude</span></div>
+	<div class='pokemon ground rock'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_075_00.png' /><span class='cp'>CP<span class='cp-value'>1,309</span></span><span class='name'>Graveler</span></div>
+	<div class='pokemon ground rock'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_076_00.png' /><span class='cp'>CP<span class='cp-value'>2,049</span></span><span class='name'>Golem</span></div>
+</div>
+
+<div class='family'>
+	<div class='pokemon electric rock'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_074_61.png' /><span class='cp'>CP<span class='cp-value'>885</span></span><span class='name'>Alolan Geodude</span></div>
+	<div class='pokemon electric rock'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_075_61.png' /><span class='cp'>CP<span class='cp-value'>1,309</span></span><span class='name'>Alolan Graveler</span></div>
+	<div class='pokemon electric rock'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_076_61.png' /><span class='cp'>CP<span class='cp-value'>2,049</span></span><span class='name'>Alolan Golem</span></div>
+</div>
+
+<div class='family'>
+	<div class='pokemon poison ghost'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_092_00.png' /><span class='cp'>CP<span class='cp-value'>838</span></span><span class='name'>Gastly</span></div>
+	<div class='pokemon poison ghost'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_093_00.png' /><span class='cp'>CP<span class='cp-value'>1,353</span></span><span class='name'>Haunter</span></div>
+	<div class='pokemon poison ghost'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_094_00.png' /><span class='cp'>CP<span class='cp-value'>1,997</span></span><span class='name'>Gengar</span></div>
+</div>
+
+<div class='family'>
+	<div class='pokemon   rock'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_524_00.png' /><span class='cp'>CP<span class='cp-value'>823</span></span><span class='name'>Roggenrola</span></div>
+	<div class='pokemon   rock'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_525_00.png' /><span class='cp'>CP<span class='cp-value'>1,401</span></span><span class='name'>Boldore</span></div>
+	<div class='pokemon   rock'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_526_00.png' /><span class='cp'>CP<span class='cp-value'>2,245</span></span><span class='name'>Gigalith</span></div>
+</div>
+
+<div class='family'>
+	<div class='pokemon   fighting'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_532_00.png' /><span class='cp'>CP<span class='cp-value'>900</span></span><span class='name'>Timburr</span></div>
+	<div class='pokemon   fighting'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_533_00.png' /><span class='cp'>CP<span class='cp-value'>1,499</span></span><span class='name'>Gurdurr</span></div>
+	<div class='pokemon   fighting'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_534_00.png' /><span class='cp'>CP<span class='cp-value'>2,321</span></span><span class='name'>Conkeldurr</span></div>
+</div>
+
+<div class='family'>
+	<div class='pokemon   bug'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_588_00.png' /><span class='cp'>CP<span class='cp-value'>807</span></span><span class='name'>Karrablast</span></div>
+	<div class='pokemon steel bug'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_589_00.png' /><span class='cp'>CP<span class='cp-value'>2,006</span></span><span class='name'>Escavalier</span></div>
+</div>
+
+<div class='family'>
+	<div class='pokemon   bug'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_616_00.png' /><span class='cp'>CP<span class='cp-value'>563</span></span><span class='name'>Shelmet</span></div>
+	<div class='pokemon   bug'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_617_00.png' /><span class='cp'>CP<span class='cp-value'>1,690</span></span><span class='name'>Accelgor</span></div>
+</div>
+
+
+<h2 class='header'><img src='headers/pokedex.png'><span>Missing from Pokedex</span></h2>
+	
+<div class='pokemon   psychic'><img class='pokemon-image mystery' src='pokemon_icons/pokemon_icon_201_00.png' /><span class='cp'>CP<span class='cp-value'>647</span></span><span class='name'>Unown</span></div>
+<div class='pokemon   bug'><img class='pokemon-image mystery' src='pokemon_icons/pokemon_icon_204_00.png' /><span class='cp'>CP<span class='cp-value'>605</span></span><span class='name'>Pineco</span></div>
+<div class='pokemon ground bug'><img class='pokemon-image mystery' src='pokemon_icons/pokemon_icon_290_00.png' /><span class='cp'>CP<span class='cp-value'>415</span></span><span class='name'>Nincada</span></div>
+<div class='pokemon flying bug'><img class='pokemon-image mystery' src='pokemon_icons/pokemon_icon_291_00.png' /><span class='cp'>CP<span class='cp-value'>1,086</span></span><span class='name'>Ninjask</span></div>
+<div class='pokemon ghost bug'><img class='pokemon-image mystery' src='pokemon_icons/pokemon_icon_292_00.png' /><span class='cp'>CP<span class='cp-value'>195</span></span><span class='name'>Shedinja</span></div>
+<div class='pokemon   fighting'><img class='pokemon-image mystery' src='pokemon_icons/pokemon_icon_447_00.png' /><span class='cp'>CP<span class='cp-value'>540</span></span><span class='name'>Riolu</span></div>
+<div class='pokemon steel fighting'><img class='pokemon-image mystery' src='pokemon_icons/pokemon_icon_448_00.png' /><span class='cp'>CP<span class='cp-value'>1,499</span></span><span class='name'>Lucario</span></div>
+<div class='pokemon   fire'><img class='pokemon-image mystery' src='pokemon_icons/pokemon_icon_554_00.png' /><span class='cp'>CP<span class='cp-value'>790</span></span><span class='name'>Darumaka</span></div>
+<div class='pokemon fighting dark'><img class='pokemon-image mystery' src='pokemon_icons/pokemon_icon_559_00.png' /><span class='cp'>CP<span class='cp-value'>752</span></span><span class='name'>Scraggy</span></div>
+<div class='pokemon rock water'><img class='pokemon-image mystery' src='pokemon_icons/pokemon_icon_564_00.png' /><span class='cp'>CP<span class='cp-value'>818</span></span><span class='name'>Tirtouga</span></div>
+<div class='pokemon flying rock'><img class='pokemon-image mystery' src='pokemon_icons/pokemon_icon_566_00.png' /><span class='cp'>CP<span class='cp-value'>1,014</span></span><span class='name'>Archen</span></div>
+<div class='pokemon   poison'><img class='pokemon-image mystery' src='pokemon_icons/pokemon_icon_568_00.png' /><span class='cp'>CP<span class='cp-value'>817</span></span><span class='name'>Trubbish</span></div>
+<div class='pokemon electric bug'><img class='pokemon-image mystery' src='pokemon_icons/pokemon_icon_595_00.png' /><span class='cp'>CP<span class='cp-value'>836</span></span><span class='name'>Joltik</span></div>
+<div class='pokemon steel grass'><img class='pokemon-image mystery' src='pokemon_icons/pokemon_icon_597_00.png' /><span class='cp'>CP<span class='cp-value'>511</span></span><span class='name'>Ferroseed</span></div>
+<div class='pokemon ghost ground'><img class='pokemon-image mystery' src='pokemon_icons/pokemon_icon_622_00.png' /><span class='cp'>CP<span class='cp-value'>649</span></span><span class='name'>Golett</span></div>
+
+
+
+<h2 class='header'><img src='headers/pokedex.png'><span>Missing from Pokedex</span></h2>
+	
+<div class='pokemon   psychic'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_201_00.png' /><span class='cp'>CP<span class='cp-value'>647</span></span><span class='name'>Unown</span></div>
+<div class='pokemon   bug'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_204_00.png' /><span class='cp'>CP<span class='cp-value'>605</span></span><span class='name'>Pineco</span></div>
+<div class='pokemon ground bug'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_290_00.png' /><span class='cp'>CP<span class='cp-value'>415</span></span><span class='name'>Nincada</span></div>
+<div class='pokemon flying bug'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_291_00.png' /><span class='cp'>CP<span class='cp-value'>1,086</span></span><span class='name'>Ninjask</span></div>
+<div class='pokemon ghost bug'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_292_00.png' /><span class='cp'>CP<span class='cp-value'>195</span></span><span class='name'>Shedinja</span></div>
+<div class='pokemon   fighting'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_447_00.png' /><span class='cp'>CP<span class='cp-value'>540</span></span><span class='name'>Riolu</span></div>
+<div class='pokemon steel fighting'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_448_00.png' /><span class='cp'>CP<span class='cp-value'>1,499</span></span><span class='name'>Lucario</span></div>
+<div class='pokemon   fire'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_554_00.png' /><span class='cp'>CP<span class='cp-value'>790</span></span><span class='name'>Darumaka</span></div>
+<div class='pokemon fighting dark'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_559_00.png' /><span class='cp'>CP<span class='cp-value'>752</span></span><span class='name'>Scraggy</span></div>
+<div class='pokemon rock water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_564_00.png' /><span class='cp'>CP<span class='cp-value'>818</span></span><span class='name'>Tirtouga</span></div>
+<div class='pokemon flying rock'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_566_00.png' /><span class='cp'>CP<span class='cp-value'>1,014</span></span><span class='name'>Archen</span></div>
+<div class='pokemon   poison'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_568_00.png' /><span class='cp'>CP<span class='cp-value'>817</span></span><span class='name'>Trubbish</span></div>
+<div class='pokemon electric bug'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_595_00.png' /><span class='cp'>CP<span class='cp-value'>836</span></span><span class='name'>Joltik</span></div>
+<div class='pokemon steel grass'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_597_00.png' /><span class='cp'>CP<span class='cp-value'>511</span></span><span class='name'>Ferroseed</span></div>
+<div class='pokemon ghost ground'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_622_00.png' /><span class='cp'>CP<span class='cp-value'>649</span></span><span class='name'>Golett</span></div>
+
+
+
+
+	<h2 class='header'><img src='headers/regional.png'><span>Lucky Regional (Sweden)</span></h2>
+
+<div class='pokemon fairy psychic'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_122_00.png' /><span class='cp'>CP<span class='cp-value'>2,002</span></span><span class='name'>Mr. Mime</span><span class='complete'><img src='assets/complete.png' /></span></div>
+<div class='pokemon   bug'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_313_00.png' /><span class='cp'>CP<span class='cp-value'>1,586</span></span><span class='name'>Volbeat</span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_335_00.png' /><span class='cp'>CP<span class='cp-value'>2,175</span></span><span class='name'>Zangoose</span></div>
+<div class='pokemon psychic rock'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_337_00.png' /><span class='cp'>CP<span class='cp-value'>2,094</span></span><span class='name'>Lunatone</span></div>
+<div class='pokemon   water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_422_12.png' /><span class='cp'>CP<span class='cp-value'>1,007</span></span><span class='name'>Shellos<br>(East Sea)</span><span class='complete'><img src='assets/complete.png' /></span></div>
+<div class='pokemon   fighting'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_539_00.png' /><span class='cp'>CP<span class='cp-value'>2,321</span></span><span class='name'>Sawk</span></div>
+<div class='pokemon   fire'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_513_00.png' /><span class='cp'>CP<span class='cp-value'>780</span></span><span class='name'>Pansear</span></div>
+<div class='pokemon   water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_550_11.png' /><span class='cp'>CP<span class='cp-value'>1,733</span></span><span class='name'>Basculin<br>(Red-Striped)</span></div>
+<div class='pokemon steel bug'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_632_00.png' /><span class='cp'>CP<span class='cp-value'>2,213</span></span><span class='name'>Durant</span></div>
+
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+
+
+	<h2 class='header'><img src='headers/regional.png'><span>Lucky Regional (USA)</span></h2>
+
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_128_00.png' /><span class='cp'>CP<span class='cp-value'>2,362</span></span><span class='name'>Tauros</span><span class='complete'><img src='assets/complete.png' /></span></div>
+<div class='pokemon   bug'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_314_00.png' /><span class='cp'>CP<span class='cp-value'>1,464</span></span><span class='name'>Illumise</span></div>
+<div class='pokemon   poison'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_336_00.png' /><span class='cp'>CP<span class='cp-value'>1,745</span></span><span class='name'>Seviper</span></div>
+<div class='pokemon psychic rock'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_338_00.png' /><span class='cp'>CP<span class='cp-value'>1,933</span></span><span class='name'>Solrock</span></div>
+<div class='pokemon   water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_422_11.png' /><span class='cp'>CP<span class='cp-value'>929</span></span><span class='name'>Shellos<br>(West Sea)</span></div>
+<div class='pokemon   fighting'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_538_00.png' /><span class='cp'>CP<span class='cp-value'>2,130</span></span><span class='name'>Throh</span></div>
+<div class='pokemon   water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_515_00.png' /><span class='cp'>CP<span class='cp-value'>780</span></span><span class='name'>Panpour</span></div>
+<div class='pokemon   water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_550_12.png' /><span class='cp'>CP<span class='cp-value'>1,733</span></span><span class='name'>Basculin<br>(Blue-Striped)</span></div>
+<div class='pokemon   fire'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_631_00.png' /><span class='cp'>CP<span class='cp-value'>1,989</span></span><span class='name'>Heatmor</span></div>
+
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+
+
+
+	<h2 class='header'><img src='headers/regional.png'><span>Regional</span></h2>
+
+<div class='pokemon flying normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_083_00.png' /><span class='cp'>CP<span class='cp-value'>676</span></span><span class='name'>Farfetch'D</span><span class='complete'><img src='assets/complete.png' /></span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_115_00.png' /><span class='cp'>CP<span class='cp-value'>1,434</span></span><span class='name'>Kangaskhan</span><span class='complete'><img src='assets/complete.png' /></span></div>
+<div class='pokemon fighting bug'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_214_00.png' /><span class='cp'>CP<span class='cp-value'>1,724</span></span><span class='name'>Heracross</span></div>
+<div class='pokemon rock water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_222_00.png' /><span class='cp'>CP<span class='cp-value'>755</span></span><span class='name'>Corsola</span></div>
+<div class='pokemon   fire'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_324_00.png' /><span class='cp'>CP<span class='cp-value'>1,157</span></span><span class='name'>Torkoal</span></div>
+<div class='pokemon flying grass'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_357_00.png' /><span class='cp'>CP<span class='cp-value'>1,071</span></span><span class='name'>Tropius</span></div>
+<div class='pokemon rock water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_369_00.png' /><span class='cp'>CP<span class='cp-value'>1,401</span></span><span class='name'>Relicanth</span></div>
+<div class='pokemon   electric'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_417_00.png' /><span class='cp'>CP<span class='cp-value'>663</span></span><span class='name'>Pachirisu</span></div>
+<div class='pokemon flying normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_441_00.png' /><span class='cp'>CP<span class='cp-value'>986</span></span><span class='name'>Chatot</span></div>
+<div class='pokemon   grass'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_455_00.png' /><span class='cp'>CP<span class='cp-value'>1,194</span></span><span class='name'>Carnivine</span></div>
+<div class='pokemon   grass'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_511_00.png' /><span class='cp'>CP<span class='cp-value'>520</span></span><span class='name'>Pansage</span></div>
+<div class='pokemon   grass'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_556_00.png' /><span class='cp'>CP<span class='cp-value'>1,258</span></span><span class='name'>Maractus</span></div>
+<div class='pokemon flying psychic'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_561_00.png' /><span class='cp'>CP<span class='cp-value'>1,414</span></span><span class='name'>Sigilyph</span></div>
+
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+
+
+	<h2 class='header'><img src='assets/shiny.png'><span>SHINY</span></h2>
+	
+<div class='pokemon rock bug'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_213_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>205</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Shuckle</span></div>
+
+<div class='pokemon   psychic'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_150_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>2,331</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Mewtwo</span></div>
+<div class='pokemon   water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_245_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>1,657</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Suicune</span></div>
+<div class='pokemon steel fire'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_485_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>2,093</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Heatran</span></div>
+<div class='pokemon dragon ghost'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_487_11_shiny.png' /><span class='cp'>CP<span class='cp-value'>1,881</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Giratina<br>(Altered)</span></div>
+<div class='pokemon fighting steel'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_638_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>1,680</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Cobalion</span></div>
+
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+
+
+	<h2 class='header'><img src='headers/legendary.png'><span>Legendary</span></h2>
+<div class='pokemon   electric'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_243_00.png' /><span class='cp'>CP<span class='cp-value'>1,922</span></span><span class='name'>Raikou</span></div>
+<div class='pokemon psychic steel'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_385_00.png' /><span class='cp'>CP<span class='cp-value'>1,817</span></span><span class='name'>Jirachi</span></div>
+<div class='pokemon   psychic'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_386_11.png' /><span class='cp'>CP<span class='cp-value'>1,752</span></span><span class='name'>Deoxys<br>(Normal Forme)</span></div>
+<div class='pokemon   psychic'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_386_12.png' /><span class='cp'>CP<span class='cp-value'>1,413</span></span><span class='name'>Deoxys<br>(Attack Forme)</span></div>
+<div class='pokemon   psychic'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_480_00.png' /><span class='cp'>CP<span class='cp-value'>1,398</span></span><span class='name'>Uxie</span></div>
+<div class='pokemon   psychic'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_481_00.png' /><span class='cp'>CP<span class='cp-value'>1,700</span></span><span class='name'>Mesprit</span></div>
+<div class='pokemon   psychic'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_482_00.png' /><span class='cp'>CP<span class='cp-value'>1,785</span></span><span class='name'>Azelf</span></div>
+<div class='pokemon dragon steel'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_483_00.png' /><span class='cp'>CP<span class='cp-value'>2,253</span></span><span class='name'>Dialga</span></div>
+<div class='pokemon dragon water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_484_00.png' /><span class='cp'>CP<span class='cp-value'>2,225</span></span><span class='name'>Palkia</span></div>
+<div class='pokemon dragon ghost'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_487_12.png' /><span class='cp'>CP<span class='cp-value'>2,052</span></span><span class='name'>Giratina<br>(Origin)</span></div>
+
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+
+
+
+
+
+
+
+	<h2 class='header'><img src='headers/strong.png'><span>Strong Fighters</span></h2>
+<div class='pokemon   psychic'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_063_00.png' /><span class='cp'>CP<span class='cp-value'>1,101</span></span><span class='name'>Abra</span></div>
+<div class='pokemon   grass'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_114_00.png' /><span class='cp'>CP<span class='cp-value'>1,858</span></span><span class='name'>Tangela</span></div>
+<div class='pokemon   electric'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_125_00.png' /><span class='cp'>CP<span class='cp-value'>1,939</span></span><span class='name'>Electabuzz</span></div>
+<div class='pokemon ground dragon'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_443_00.png' /><span class='cp'>CP<span class='cp-value'>910</span></span><span class='name'>Gible</span></div>
+<div class='pokemon   fighting'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_447_00.png' /><span class='cp'>CP<span class='cp-value'>540</span></span><span class='name'>Riolu</span></div>
+<div class='pokemon steel fighting'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_448_00.png' /><span class='cp'>CP<span class='cp-value'>1,499</span></span><span class='name'>Lucario</span></div>
+<div class='pokemon   grass'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_495_00.png' /><span class='cp'>CP<span class='cp-value'>691</span></span><span class='name'>Snivy</span></div>
+<div class='pokemon   rock'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_524_00.png' /><span class='cp'>CP<span class='cp-value'>988</span></span><span class='name'>Roggenrola</span></div>
+<div class='pokemon fire ghost'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_607_00.png' /><span class='cp'>CP<span class='cp-value'>685</span></span><span class='name'>Litwick</span></div>
+<div class='pokemon   dragon'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_610_00.png' /><span class='cp'>CP<span class='cp-value'>938</span></span><span class='name'>Axew</span></div>
+<div class='pokemon dragon dark'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_633_00.png' /><span class='cp'>CP<span class='cp-value'>723</span></span><span class='name'>Deino</span></div>
+
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+
+
+	<h2 class='header'><img src='headers/regional.png'><span>Regional</span></h2>
+
+<div class='pokemon flying normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_083_00.png' /><span class='cp'>CP<span class='cp-value'>676</span></span><span class='name'>Farfetch'D</span><span class='complete'><img src='assets/complete.png' /></span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_115_00.png' /><span class='cp'>CP<span class='cp-value'>1,434</span></span><span class='name'>Kangaskhan</span><span class='complete'><img src='assets/complete.png' /></span></div>
+<div class='pokemon fighting bug'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_214_00.png' /><span class='cp'>CP<span class='cp-value'>1,724</span></span><span class='name'>Heracross</span></div>
+<div class='pokemon rock water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_222_00.png' /><span class='cp'>CP<span class='cp-value'>755</span></span><span class='name'>Corsola</span></div>
+<div class='pokemon   fire'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_324_00.png' /><span class='cp'>CP<span class='cp-value'>1,157</span></span><span class='name'>Torkoal</span></div>
+<div class='pokemon flying grass'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_357_00.png' /><span class='cp'>CP<span class='cp-value'>1,071</span></span><span class='name'>Tropius</span></div>
+<div class='pokemon rock water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_369_00.png' /><span class='cp'>CP<span class='cp-value'>1,401</span></span><span class='name'>Relicanth</span></div>
+<div class='pokemon   electric'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_417_00.png' /><span class='cp'>CP<span class='cp-value'>663</span></span><span class='name'>Pachirisu</span></div>
+<div class='pokemon flying normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_441_00.png' /><span class='cp'>CP<span class='cp-value'>986</span></span><span class='name'>Chatot</span></div>
+<div class='pokemon   grass'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_455_00.png' /><span class='cp'>CP<span class='cp-value'>1,194</span></span><span class='name'>Carnivine</span></div>
+<div class='pokemon   grass'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_511_00.png' /><span class='cp'>CP<span class='cp-value'>520</span></span><span class='name'>Pansage</span></div>
+<div class='pokemon   grass'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_556_00.png' /><span class='cp'>CP<span class='cp-value'>1,258</span></span><span class='name'>Maractus</span></div>
+<div class='pokemon flying psychic'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_561_00.png' /><span class='cp'>CP<span class='cp-value'>1,414</span></span><span class='name'>Sigilyph</span></div>
+
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+
+
+
+
+
+
+
+
+
+<!--
+
+	<h2 class='header'><span>TEST</span></h2>
+
+	<div class="pokemon grass">
+		<img class="pokemon-image" src='pokemon_icons/pokemon_icon_001_00_11.png' />
+		<span class="cp">CP<span class="cp-value">213</span></span>
+		<span class="shiny"><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span>
+		<span class="name">Bulbasaur<br>(Party Hat)</span>
+	</div>
+	<div class="pokemon fire">
+		<img class="pokemon-image" src='pokemon_icons/pokemon_icon_004_00_11.png' />
+		<span class="cp">CP<span class="cp-value">234</span></span>
+		<span class="purified"><img src='assets/purified.png'><span>PURIFIED</span><img src='assets/purified.png'></span>
+		<span class="name">Charmander<br>(Party Hat)</span>
+	</div>
+	<div class="pokemon water">
+		<img class="pokemon-image" src='pokemon_icons/pokemon_icon_007_00_11.png' />
+		<span class="cp">CP<span class="cp-value">345</span></span>
+		<span class="name">Squirtle<br>(Party Hat)</span>
+		<span class="complete"><img src='assets/complete.png' /></span>
+	</div>
+
+-->
+
+
+	<h2 class='header'><img src='headers/regional.png'><span>Regionals (Sweden) for Trade<img src='headers/trade.png'></span></h2>
+
+<div class='pokemon fairy psychic'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_122_00.png' /><span class='cp'>CP<span class='cp-value'>2,002</span></span><span class='name'>Mr. Mime</span></div>
+<div class='pokemon   bug'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_313_00.png' /><span class='cp'>CP<span class='cp-value'>1,464</span></span><span class='name'>Volbeat</span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_335_00.png' /><span class='cp'>CP<span class='cp-value'>2,175</span></span><span class='name'>Zangoose</span></div>
+<div class='pokemon psychic rock'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_337_00.png' /><span class='cp'>CP<span class='cp-value'>2,094</span></span><span class='name'>Lunatone</span></div>
+<div class='pokemon   water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_422_12.png' /><span class='cp'>CP<span class='cp-value'>898</span></span><span class='name'>Shellos<br>(East Sea)</span></div>
+<div class='pokemon ground water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_423_12.png' /><span class='cp'>CP<span class='cp-value'>1,865</span></span><span class='name'>Gastrodon<br>(East Sea)</span></div>
+<div class='pokemon   fighting'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_539_00.png' /><span class='cp'>CP<span class='cp-value'>1,547</span></span><span class='name'>Sawk</span></div>
+<div class='pokemon   fire'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_513_00.png' /><span class='cp'>CP<span class='cp-value'>780</span></span><span class='name'>Pansear</span></div>
+<div class='pokemon   fire'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_514_00.png' /><span class='name'>Simisear</span><span class='missing'><img src='assets/missing.png' /></span></div>
+<div class='pokemon   water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_550_11.png' /><span class='cp'>CP<span class='cp-value'>1,155</span></span><span class='name'>Basculin<br>(Red-Striped)</span></div>
+<div class='pokemon steel bug'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_632_00.png' /><span class='cp'>CP<span class='cp-value'>1,918</span></span><span class='name'>Durant</span></div>
+
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+
+
+
+	<h2 class='header'><img src='headers/regional.png'><span>Regionals (USA) for Trade<img src='headers/trade.png'></span></h2>
+	
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_128_00.png' /><span class='cp'>CP<span class='cp-value'>2,326</span></span><span class='name'>Tauros</span></div>
+<div class='pokemon   bug'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_314_00.png' /><span class='cp'>CP<span class='cp-value'>1,122</span></span><span class='name'>Illumise</span></div>
+<div class='pokemon   poison'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_336_00.png' /><span class='cp'>CP<span class='cp-value'>1,687</span></span><span class='name'>Seviper</span></div>
+<div class='pokemon psychic rock'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_338_00.png' /><span class='name'>Solrock</span><span class='missing'><img src='assets/missing.png' /></span></div>
+<div class='pokemon   water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_422_11.png' /><span class='cp'>CP<span class='cp-value'>526</span></span><span class='name'>Shellos<br>(West Sea)</span></div>
+<div class='pokemon ground water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_423_11.png' /><span class='cp'>CP<span class='cp-value'>1,093</span></span><span class='name'>Gastrodon<br>(West Sea)</span></div>
+<div class='pokemon   fighting'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_538_00.png' /><span class='name'>Throh</span><span class='missing'><img src='assets/missing.png' /></span></div>
+<div class='pokemon   water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_515_00.png' /><span class='name'>Panpour</span><span class='missing'><img src='assets/missing.png' /></span></div>
+<div class='pokemon   water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_516_00.png' /><span class='name'>Simipour</span><span class='missing'><img src='assets/missing.png' /></span></div>
+<div class='pokemon   water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_550_12.png' /><span class='name'>Basculin<br>(Blue-Striped)</span><span class='missing'><img src='assets/missing.png' /></span></div>
+<div class='pokemon   fire'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_631_00.png' /><span class='name'>Heatmor</span><span class='missing'><img src='assets/missing.png' /></span></div>
+
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+
+	<h2 class='header'><img src='headers/regional.png'><span>Regionals for Trade<img src='headers/trade.png'></span></h2>
+	
+<div class='pokemon flying normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_083_00.png' /><span class='cp'>CP<span class='cp-value'>676</span></span><span class='name'>Farfetch'D</span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_115_00.png' /><span class='name'>Kangaskhan</span><span class='missing'><img src='assets/missing.png' /></span></div>
+<div class='pokemon fighting bug'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_214_00.png' /><span class='name'>Heracross</span><span class='missing'><img src='assets/missing.png' /></span></div>
+<div class='pokemon rock water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_222_00.png' /><span class='name'>Corsola</span><span class='missing'><img src='assets/missing.png' /></span></div>
+<div class='pokemon   fire'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_324_00.png' /><span class='name'>Torkoal</span><span class='missing'><img src='assets/missing.png' /></span></div>
+<div class='pokemon flying grass'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_357_00.png' /><span class='name'>Tropius</span><span class='missing'><img src='assets/missing.png' /></span></div>
+<div class='pokemon rock water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_369_00.png' /><span class='name'>Relicanth</span><span class='missing'><img src='assets/missing.png' /></span></div>
+<div class='pokemon   electric'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_417_00.png' /><span class='name'>Pachirisu</span><span class='missing'><img src='assets/missing.png' /></span></div>
+<div class='pokemon flying normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_441_00.png' /><span class='name'>Chatot</span><span class='missing'><img src='assets/missing.png' /></span></div>
+<div class='pokemon   grass'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_455_00.png' /><span class='name'>Carnivine</span><span class='missing'><img src='assets/missing.png' /></span></div>
+<div class='pokemon   grass'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_511_00.png' /><span class='name'>Pansage</span><span class='missing'><img src='assets/missing.png' /></span></div>
+<div class='pokemon   grass'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_556_00.png' /><span class='name'>Maractus</span><span class='missing'><img src='assets/missing.png' /></span></div>
+<div class='pokemon flying psychic'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_561_00.png' /><span class='name'>Sigilyph</span><span class='missing'><img src='assets/missing.png' /></span></div>
+
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+
+
+
+
+	<h2 class='header'><img src='headers/regional.png'><span>Regionals for Trade<img src='headers/trade.png'></span></h2>
+
+<!--<div class='pokemon flying normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_083_00.png' /><span class='cp'>CP<span class='cp-value'>676</span></span><span class='name'>Farfetch'D</span></div>
+<div class='pokemon flying normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_083_00.png' /><span class='cp'>CP<span class='cp-value'>676</span></span><span class='name'>Farfetch'D</span></div>
+<div class='pokemon flying normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_083_00.png' /><span class='cp'>CP<span class='cp-value'>676</span></span><span class='name'>Farfetch'D</span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_128_00.png' /><span class='cp'>CP<span class='cp-value'>2,326</span></span><span class='name'>Tauros</span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_128_00.png' /><span class='cp'>CP<span class='cp-value'>2,326</span></span><span class='name'>Tauros</span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_128_00.png' /><span class='cp'>CP<span class='cp-value'>2,181</span></span><span class='name'>Tauros</span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_128_00.png' /><span class='cp'>CP<span class='cp-value'>2,108</span></span><span class='name'>Tauros</span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_128_00.png' /><span class='cp'>CP<span class='cp-value'>1,962</span></span><span class='name'>Tauros</span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_128_00.png' /><span class='cp'>CP<span class='cp-value'>1,672</span></span><span class='name'>Tauros</span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_128_00.png' /><span class='cp'>CP<span class='cp-value'>1,526</span></span><span class='name'>Tauros</span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_128_00.png' /><span class='cp'>CP<span class='cp-value'>1,453</span></span><span class='name'>Tauros</span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_128_00.png' /><span class='cp'>CP<span class='cp-value'>1,381</span></span><span class='name'>Tauros</span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_128_00.png' /><span class='cp'>CP<span class='cp-value'>1,235</span></span><span class='name'>Tauros</span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_128_00.png' /><span class='cp'>CP<span class='cp-value'>1,235</span></span><span class='name'>Tauros</span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_128_00.png' /><span class='cp'>CP<span class='cp-value'>1,163</span></span><span class='name'>Tauros</span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_128_00.png' /><span class='cp'>CP<span class='cp-value'>1,090</span></span><span class='name'>Tauros</span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_128_00.png' /><span class='cp'>CP<span class='cp-value'>496</span></span><span class='name'>Tauros</span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_128_00.png' /><span class='cp'>CP<span class='cp-value'>343</span></span><span class='name'>Tauros</span></div>
+<div class='pokemon   bug'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_314_00.png' /><span class='cp'>CP<span class='cp-value'>1,073</span></span><span class='name'>Illumise</span></div>
+<div class='pokemon   bug'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_314_00.png' /><span class='cp'>CP<span class='cp-value'>1,122</span></span><span class='name'>Illumise</span></div>
+<div class='pokemon   poison'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_336_00.png' /><span class='cp'>CP<span class='cp-value'>1,687</span></span><span class='name'>Seviper</span></div>
+<div class='pokemon   water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_422_11.png' /><span class='cp'>CP<span class='cp-value'>526</span></span><span class='name'>Shellos<br>(West Sea)</span></div>
+<div class='pokemon ground water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_423_11.png' /><span class='cp'>CP<span class='cp-value'>1,093</span></span><span class='name'>Gastrodon<br>(West Sea)</span></div>
+-->
+
+
+
+
+
+<div class='pokemon flying normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_083_00.png' /><span class='cp'>CP<span class='cp-value'>676</span></span><span class='name'>Farfetch'D</span></div>
+<div class='pokemon flying normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_083_00.png' /><span class='cp'>CP<span class='cp-value'>676</span></span><span class='name'>Farfetch'D</span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_128_00.png' /><span class='cp'>CP<span class='cp-value'>2,326</span></span><span class='name'>Tauros</span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_128_00.png' /><span class='cp'>CP<span class='cp-value'>1,090</span></span><span class='name'>Tauros</span></div>
+<div class='pokemon   bug'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_314_00.png' /><span class='cp'>CP<span class='cp-value'>1,073</span></span><span class='name'>Illumise</span></div>
+<div class='pokemon   bug'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_314_00.png' /><span class='cp'>CP<span class='cp-value'>1,122</span></span><span class='name'>Illumise</span></div>
+<div class='pokemon   poison'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_336_00.png' /><span class='cp'>CP<span class='cp-value'>1,687</span></span><span class='name'>Seviper</span></div>
+<div class='pokemon   water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_422_11.png' /><span class='cp'>CP<span class='cp-value'>526</span></span><span class='name'>Shellos<br>(West Sea)</span></div>
+<div class='pokemon ground water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_423_11.png' /><span class='cp'>CP<span class='cp-value'>1,093</span></span><span class='name'>Gastrodon<br>(West Sea)</span></div>
+
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+
+
+
+
+
+	<h2 class='header'><img src='headers/shiny.png'><span>Shiny for Trade<img src='headers/trade.png'></span></h2>
+
+<div class='pokemon   water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_009_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>1,435</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Blastoise</span><span class='save'><img src='assets/save.png' /></span></div>
+<div class='pokemon poison grass'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_043_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>437</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Oddish</span></div>
+<div class='pokemon   fire'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_058_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>782</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Growlithe</span><span class='save'><img src='assets/save.png' /></span></div>
+<div class='pokemon   water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_090_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>884</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Shellder</span></div>
+<div class='pokemon poison ghost'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_094_00_11_shiny.png' /><span class='cp'>CP<span class='cp-value'>1,997</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Gengar<br>(Red Party Hat)</span></div>
+<div class='pokemon ground rock'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_095_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>173</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Onix</span></div>
+<div class='pokemon dragon grass'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_103_61_shiny.png' /><span class='cp'>CP<span class='cp-value'>2,177</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Alolan Exeggutor</span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_108_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>773</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Lickitung</span><span class='save'><img src='assets/save.png' /></span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_108_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>580</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Lickitung</span></div>
+<div class='pokemon rock ground'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_111_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>70</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Rhyhorn</span></div>
+<div class='pokemon fairy psychic'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_122_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>1,879</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Mr. Mime</span></div>
+<div class='pokemon   water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_129_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>198</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Magikarp</span><span class='save'><img src='assets/save.png' /></span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_133_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>438</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Eevee</span><span class='save'><img src='assets/save.png' /></span></div>
+<div class='pokemon flying psychic'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_177_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>421</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Natu</span></div>
+<div class='pokemon ice dark'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_215_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>1,020</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Sneasel</span></div>
+<div class='pokemon ice dark'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_215_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>447</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Sneasel</span></div>
+<div class='pokemon ground ice'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_220_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>419</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Swinub</span></div>
+<div class='pokemon   water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_245_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>1,657</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Suicune</span></div>
+<div class='pokemon flying fire'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_250_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>2,154</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Ho-Oh</span></div>
+<div class='pokemon flying fire'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_250_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>1,616</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Ho-Oh</span></div>
+<div class='pokemon   fire'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_255_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>266</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Torchic</span></div>
+<div class='pokemon   water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_258_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>1,001</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Mudkip</span><span class='save'><img src='assets/save.png' /></span></div>
+<div class='pokemon   water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_258_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>924</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Mudkip</span></div>
+<div class='pokemon   water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_258_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>80</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Mudkip</span></div>
+<div class='pokemon flying normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_276_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>310</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Taillow</span></div>
+<div class='pokemon fairy psychic'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_280_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>454</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Ralts♀</span><span class='save'><img src='assets/save.png' /></span></div>
+<div class='pokemon fairy psychic'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_280_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>403</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Ralts♂</span><span class='save'><img src='assets/save.png' /></span></div>
+<div class='pokemon fairy psychic'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_280_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>331</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Ralts♂</span></div>
+<div class='pokemon fairy psychic'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_280_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>331</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Ralts♂</span></div>
+<div class='pokemon fairy psychic'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_280_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>68</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Ralts♂</span></div>
+<div class='pokemon fairy psychic'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_280_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>52</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Ralts♀</span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_287_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>818</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Slakoth</span><span class='save'><img src='assets/save.png' /></span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_287_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>736</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Slakoth</span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_287_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>709</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Slakoth</span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_287_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>627</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Slakoth</span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_287_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>572</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Slakoth</span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_287_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>545</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Slakoth</span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_287_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>518</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Slakoth</span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_289_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>4,144</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Slaking</span><span class='missing'><img src='assets/missing.png' /></span></div>
+<div class='pokemon   ground'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_328_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>1,045</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Trapinch</span><span class='save'><img src='assets/save.png' /></span></div>
+<div class='pokemon   ground'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_328_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>127</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Trapinch</span></div>
+<div class='pokemon   dragon'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_371_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>473</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Bagon</span></div>
+<div class='pokemon   grass'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_387_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>681</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Turtwig</span></div>
+<div class='pokemon   grass'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_387_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>584</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Turtwig</span></div>
+<div class='pokemon   grass'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_387_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>389</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Turtwig</span></div>
+<div class='pokemon   grass'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_387_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>50</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Turtwig</span></div>
+<div class='pokemon   grass'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_387_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>16</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Turtwig</span></div>
+<div class='pokemon   water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_393_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>557</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Piplup</span></div>
+<div class='pokemon   water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_393_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>498</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Piplup</span></div>
+<div class='pokemon   water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_393_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>45</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Piplup</span></div>
+<div class='pokemon   water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_393_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>14</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Piplup</span></div>
+<div class='pokemon ice dark'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_461_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>1,586</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Weavile</span><span class='save'><img src='assets/save.png' /></span></div>
+<div class='pokemon rock ground'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_464_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>2,809</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Rhyperior</span><span class='save'><img src='assets/save.png' /></span></div>
+<div class='pokemon steel fire'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_485_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>2,093</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Heatran</span><span class='save'><img src='assets/save.png' /></span></div>
+<div class='pokemon dragon ghost'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_487_11_shiny.png' /><span class='cp'>CP<span class='cp-value'>1,881</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Giratina<br>(Altered)</span></div>
+<div class='pokemon   dark'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_491_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>2,396</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Darkrai</span><span class='missing'><img src='assets/missing.png' /></span></span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_504_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>33</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Patrat</span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_506_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>117</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Lillipup</span></div>
+
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+
+
+
+	<h2 class='header'><img src='headers/legendary.png'><span>Legendary for Trade<img src='headers/trade.png'></span></h2>
+
+<div class='pokemon flying ice'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_144_00.png' /><span class='cp'>CP<span class='cp-value'>1,272</span></span><span class='name'>Articuno</span></div>
+<div class='pokemon flying electric'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_145_00.png' /><span class='cp'>CP<span class='cp-value'>1,473</span></span><span class='name'>Zapdos</span></div>
+<div class='pokemon flying fire pokemon-purified'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_146_00.png' /><span class='cp'>CP<span class='cp-value'>2,412</span></span><span class='purified'><img src='assets/purified.png'><span>PURIFIED</span><img src='assets/purified.png'></span><span class='name'>Moltres</span></div>
+<div class='pokemon   psychic'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_150_00.png' /><span class='cp'>CP<span class='cp-value'>2,331</span></span><span class='name'>Mewtwo</span></div>
+<div class='pokemon   psychic'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_pm0150_00_pgo_a.png' /><span class='cp'>CP<span class='cp-value'>1,772</span></span><span class='name'>Mewtwo (Armored)</span></div>
+<div class='pokemon   fire'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_244_00.png' /><span class='cp'>CP<span class='cp-value'>1,933</span></span><span class='name'>Entei</span></div>
+<div class='pokemon   water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_245_00.png' /><span class='cp'>CP<span class='cp-value'>1,657</span></span><span class='name'>Suicune</span></div>
+<div class='pokemon   water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_245_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>1,657</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Suicune</span></div>
+<div class='pokemon flying psychic'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_249_00.png' /><span class='cp'>CP<span class='cp-value'>1,547</span></span><span class='name'>Lugia</span></div>
+<div class='pokemon flying fire'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_250_00.png' /><span class='cp'>CP<span class='cp-value'>2,154</span></span><span class='name'>Ho-Oh</span></div>
+<div class='pokemon flying fire'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_250_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>1,616</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Ho-Oh</span></div>
+<div class='pokemon   rock'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_377_00.png' /><span class='cp'>CP<span class='cp-value'>2,169</span></span><span class='name'>Regirock</span></div>
+<div class='pokemon   ice'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_378_00.png' /><span class='cp'>CP<span class='cp-value'>1,735</span></span><span class='name'>Regice</span></div>
+<div class='pokemon   steel'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_379_00.png' /><span class='cp'>CP<span class='cp-value'>1,354</span></span><span class='name'>Registeel</span></div>
+<div class='pokemon psychic dragon'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_380_00.png' /><span class='cp'>CP<span class='cp-value'>1,955</span></span><span class='name'>Latias</span></div>
+<div class='pokemon psychic dragon'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_381_00.png' /><span class='cp'>CP<span class='cp-value'>2,125</span></span><span class='name'>Latios</span></div>
+<div class='pokemon   water'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_382_00.png' /><span class='cp'>CP<span class='cp-value'>1,722</span></span><span class='name'>Kyogre</span></div>
+<div class='pokemon   ground'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_383_00.png' /><span class='cp'>CP<span class='cp-value'>2,296</span></span><span class='name'>Groudon</span></div>
+<div class='pokemon flying dragon'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_384_00.png' /><span class='cp'>CP<span class='cp-value'>2,137</span></span><span class='name'>Rayquaza</span></div>
+<div class='pokemon steel fire'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_485_00.png' /><span class='cp'>CP<span class='cp-value'>2,616</span></span><span class='name'>Heatran</span></div>
+<div class='pokemon steel fire'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_485_00_shiny.png' /><span class='cp'>CP<span class='cp-value'>2,093</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Heatran</span></div>
+<div class='pokemon   normal'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_486_00.png' /><span class='cp'>CP<span class='cp-value'>2,426</span></span><span class='name'>Regigigas</span></div>
+<div class='pokemon dragon ghost'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_487_11.png' /><span class='cp'>CP<span class='cp-value'>1,881</span></span><span class='name'>Giratina (Altered)</span></div>
+<div class='pokemon dragon ghost'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_487_11_shiny.png' /><span class='cp'>CP<span class='cp-value'>1,881</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Giratina (Altered)</span></div>
+<div class='pokemon   psychic'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_488_00.png' /><span class='cp'>CP<span class='cp-value'>1,586</span></span><span class='name'>Cresselia</span></div>
+<div class='pokemon fighting steel'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_638_00.png' /><span class='cp'>CP<span class='cp-value'>2,100</span></span><span class='name'>Cobalion</span></div>
+<div class='pokemon fighting rock'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_639_00.png' /><span class='cp'>CP<span class='cp-value'>2,576</span></span><span class='name'>Terrakion</span></div>
+<div class='pokemon fighting grass'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_640_00.png' /><span class='cp'>CP<span class='cp-value'>2,100</span></span><span class='name'>Virizion</span></div>
+<div class='pokemon   flying'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_641_11.png' /><span class='cp'>CP<span class='cp-value'>1,861</span></span><span class='name'>Tornadus (Incarnate)</span></div>
+<div class='pokemon flying electric'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_642_11.png' /><span class='cp'>CP<span class='cp-value'>1,861</span></span><span class='name'>Thundurus (Incarnate)</span></div>
+<div class='pokemon flying ground'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_645_11.png' /><span class='name'>Landorus (Incarnate)</span><span class='missing'><img src='assets/missing.png' /></span></div>
+
+
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+<div class='pokemon padding'></div>
+
+
+</div>
+
+
+
+</body>
+
+</html>
