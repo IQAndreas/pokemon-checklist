@@ -81,6 +81,93 @@ this.onload = function() {
 	});
 	pokedex.addEmpties();
 	
+	
+	
+	
+	
+	
+	
+	pokedex.addHeader('regional', "Regional Pokemon For Trade", 'regional', 'trade');
+	//var arr = all.filter( p => p.STATE == 'MISSING' );
+	all.forEach( p => {
+		if (p.ID == "") return;
+		var pokemon = Pokemon.auto2(p);
+		console.log(p.ID, p.STATE, pokemon);
+		
+		if (pokemon.unreleased) return;
+		if (!pokemon.regional) return;
+		
+		if (pokemon.regional) {
+			console.log(pokemon.ID, pokemon.regions);
+			if ( !pokemon.regions.includes('EUROPE') && !pokemon.regions.includes('EAST') && !pokemon.regions.includes('NORTH') ) {
+				// keep
+			} else {
+				return;
+			}
+		}
+		
+		if (p && p.STATE == 'MISSING') {
+			//console.log("MISSING:", pokemonID);
+			//pokemon.mystery = true;
+			return;
+		}
+		
+		// TRADED
+		if (pokemon.ID == 'KANGASKHAN') {
+			return;
+		}
+		
+		pokemon.lvl = "";
+		
+		//if (pokemon.unreleased) return;
+		
+		pokedex.addPokemon( pokemon );
+	});
+	pokedex.addEmpties();
+	
+	
+	pokedex.addHeader('regional', "Regional Pokemon For Trade (Sweden)", 'regional', 'trade');
+	//var arr = all.filter( p => p.STATE == 'MISSING' );
+	all.forEach( p => {
+		if (p.ID == "") return;
+		var pokemon = Pokemon.auto2(p);
+		console.log(p.ID, p.STATE, pokemon);
+		
+		if (pokemon.unreleased) return;
+		if (!pokemon.regional) return;
+		
+		if (pokemon.regional) {
+			console.log(pokemon.ID, pokemon.regions);
+			if ( !pokemon.regions.includes('EUROPE') && !pokemon.regions.includes('EAST') && !pokemon.regions.includes('NORTH') ) {
+				return;
+			} else {
+				// keep
+			}
+		}
+		
+		if (p && p.STATE == 'MISSING') {
+			//console.log("MISSING:", pokemonID);
+			pokemon.mystery = true;
+			//return;
+		}
+		
+		pokemon.lvl = "";
+		
+		//if (pokemon.unreleased) return;
+		
+		pokedex.addPokemon( pokemon );
+	});
+	pokedex.addEmpties();
+	
+	return;
+	
+	
+	
+	
+	
+	
+	
+	
 	var arr = shiny.map( p => Pokemon.auto2(p) );
 	arr = arr.sort( (a,b) => {
 		if (a.pokedexID == b.pokedexID) {
@@ -200,6 +287,19 @@ this.onload = function() {
 		pokedex.addEmpties(16);
 	}
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	return;
 	
 	var pokedexRegional = new Pokedex(container);
 	
