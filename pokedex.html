@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>Pokedex</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="index.css" />
+	<style type="text/css">
+		
+	</style>
+	
+	
+	<script type="text/javascript" src="data/pokemonstats.js"> </script>
+	<script type="text/javascript" src="data/pokemonlist.js"> </script>
+	
+	<script type="text/javascript" src="data/IQAndreas/all.js"> </script>
+	<script type="text/javascript" src="data/IQAndreas/lucky.js"> </script>
+	<script type="text/javascript" src="data/IQAndreas/purified.js"> </script>
+	<script type="text/javascript" src="data/IQAndreas/shiny.js"> </script>
+	
+	<script type="text/javascript" src="pokedex.js"> </script>
+
+	<script>
+		
+
+this.onload = function() {
+
+	var container = document.querySelector('.pokemon-container.auto');
+	var pokedex = new Pokedex(container);
+	
+	var currentGen = null;
+	pokemonList.forEach( pokemonID => {
+		
+		//console.log(pokemonID);
+		var pokemon = Pokemon.auto( pokemonID );
+		if (!pokemon) {
+			console.log("Could not find pokemon with ID:", pokemonID);
+			return;
+		}
+		
+		//if (!pokemon.isType(Type.NORMAL)) {
+		/*if (!pokemon.isType(Type.FLYING)) {
+			return;
+		}*/
+		
+		//console.log(pokemon);
+		
+		if (pokemon.generationID !== currentGen) {
+		
+			if (currentGen) {
+				pokedex.addEmpties(16);
+			}
+			
+			switch (pokemon.generationID) {
+				case 1: pokedex.addHeader('kanto', "Kanto (Gen #1)", 'kanto', 'kanto'); break;
+				case 2: pokedex.addHeader('johto', "Johto (Gen #2)", 'johto', 'johto'); break;
+				case 3: pokedex.addHeader('hoenn', "Hoenn (Gen #3)", 'hoenn', 'hoenn'); break;
+				case 4: pokedex.addHeader('sinnoh', "Sinnoh (Gen #4)", 'sinnoh', 'sinnoh'); break;
+				case 5: pokedex.addHeader('unova', "Unova (Gen #5)", 'unova', 'unova'); break;
+				case 6: pokedex.addHeader('kalos', "Kalos (Gen #6)", 'kalos', 'kalos'); break;
+				case 7: pokedex.addHeader('alola', "Alola (Gen #7)", 'alola', 'alola'); break;
+				case 8: pokedex.addHeader('galar', "Galar (Gen #8)", 'galar', 'galar'); break;
+				default:  pokedex.addHeader('unknown', "Unknown Generation"); console.log(pokemon.generationID); break;
+			}
+			currentGen = pokemon.generationID;
+		}
+		
+		/*pokemon.lucky = Math.random() > 0.90;
+		pokemon.shiny = Math.random() > 0.95;
+		pokemon.purified = Math.random() > 0.95;
+		
+		pokemon.lvl = Math.floor(Math.random() * 40);
+		pokemon.cp = Math.floor(Math.random() * 4000);
+		*/
+		
+		var a = all.find( p => p.ID == pokemonID );
+		
+		//console.log(pokemonID, a, l);
+		
+		// DEBUGGING
+		//pokemon.lucky = true;
+		//pokemon.purified = true;
+		//pokemon.shadow = true;
+		//pokemon.shiny = true;
+		
+		pokedex.addPokemon( pokemon );
+		
+	});
+	
+	if (currentGen) {
+		pokedex.addEmpties(16);
+	}
+	
+}
+		
+		
+	</script>
+
+</head>
+<body>
+	
+	<div class='pokemon-container auto'></div>
+
+</body>
+
+</html>
