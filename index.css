@@ -341,6 +341,15 @@ body .pokemon-container {
 .pokemon-purified.mystery .pokemon-image, .unreleased .pokemon-image	{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(255, 255, 255, 1.00)); }
 .pokemon-shadow.mystery .pokemon-image, .unreleased .pokemon-image 		{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(255, 255, 255, 1.00)); }
 
+.league {
+	position: absolute;
+	display: block;
+	
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}
+
 .overlay-top, .overlay-bottom {
 	position: absolute;
 	display: block;

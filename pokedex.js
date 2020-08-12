@@ -2,7 +2,7 @@
 class Type {
 	static getIconURL( ID ) {
 		// Lazy method
-		return ASSETS + 'types/' + ID.toLowerCase() + '.png'; 
+		return TYPES + ID.toLowerCase() + '.png'; 
 	}
 }
 
@@ -24,6 +24,56 @@ Type.PSYCHIC = "PSYCHIC";
 Type.ROCK = "ROCK";
 Type.STEEL = "STEEL";
 Type.WATER = "WATER";
+
+
+class League {
+
+	constructor( arg1, arg2 ) {
+		const MIN = 0;
+		const MAX = 9999;
+		
+		// new League()
+		if (arg1 === undefined && arg2 === undefined) {
+			this.minCP = MIN;
+			this.maxCP = MAX;
+		}
+		
+		// new League(1500)
+		else if (arg2 === undefined) {
+			this.minCP = MIN;
+			this.maxCP = arg1;
+		}
+		
+		// But whyyyyyyyyyyy
+		// new League(undefined, 1500)
+		else if (arg1 === undefined) {
+			this.minCP = MIN;
+			this.maxCP = arg2;
+		}
+		
+		// new League(1300, 1500)
+		else {
+			this.minCP = arg1;
+			this.maxCP = arg2;
+		}
+		
+	}
+	
+	qualifies( pokemon ) {
+		if (pokemon.cp === undefined) {
+			return false;
+		}
+		
+		return (pokemon.cp >= this.minCP && pokemon.cp <= this.maxCP);
+	}
+
+}
+
+// Technically there is no min requirement for these leagues, but it makes it easier
+League.GREAT  = new League(1300, 1500);
+League.MASTER = new League(2300, 2500);
+League.ULTRA  = new League(2501, 9999);
+
 
 class Generation {
 
@@ -61,14 +111,14 @@ class Generation {
 		}
 	}
 }
-Generation.KANTO = new Generation(1, "Kanto", 'kanto');
-Generation.JOHTO = new Generation(2, "Johto", 'johto');
-Generation.HOENN = new Generation(3, "Hoenn", 'hoenn');
-Generation.SINNOH = new Generation(4, "Sinnoh", 'sinnoh');
-Generation.UNOVA = new Generation(5, "Unova", 'unova');
-Generation.KALOS = new Generation(6, "Kalos", 'kalos');
-Generation.ALOLA = new Generation(7, "Alola", 'alola');
-Generation.GALAR = new Generation(8, "Galar", 'galar');
+Generation.KANTO =   new Generation(1, "Kanto",  'kanto');
+Generation.JOHTO =   new Generation(2, "Johto",  'johto');
+Generation.HOENN =   new Generation(3, "Hoenn",  'hoenn');
+Generation.SINNOH =  new Generation(4, "Sinnoh", 'sinnoh');
+Generation.UNOVA =   new Generation(5, "Unova",  'unova');
+Generation.KALOS =   new Generation(6, "Kalos",  'kalos');
+Generation.ALOLA =   new Generation(7, "Alola",  'alola');
+Generation.GALAR =   new Generation(8, "Galar",  'galar');
 Generation.UNKNOWN = new Generation(undefined, "Unknown Generation", 'unknown');
 
 
@@ -278,7 +328,8 @@ class Pokemon {
 const POKEMON_IMAGE_DIR = 'pokemon_icons/';
 const HEADERS = 'headers/';
 const ASSETS = 'assets/';
-const TYPES = 'assets/moves/';
+const TYPES = 'assets/type/';
+const LEAGUES = 'assets/league/';
 
 class PokemonAuto extends Pokemon {
 
@@ -451,14 +502,43 @@ class Pokedex {
 		pokemon.lucky && classes.push('lucky');
 		element.className = classes.join(' ');
 		
-		//console.log(pokemon.image);
 		
+		
+		
+		
+		// Calculate great/ultra/master league
+		var league = null;
+		if (League.GREAT.qualifies(pokemon)) {
+			league = 'great';
+		} else if (League.MASTER.qualifies(pokemon)) {
+			league = 'master';
+		} else if (League.ULTRA.qualifies(pokemon)) {
+			league = 'ultra';
+		}
+		
+		if (league) {
+			var img = document.createElement('img');
+			img.className = 'league';
+			img.src = LEAGUES + league + '.png';
+			element.appendChild(img);
+		}
+		
+		
+		
+		
+		
+		//console.log(pokemon.image);
 		if (pokemon.image) {
 			var img = document.createElement('img');
 			img.className = 'pokemon-image';
 			img.src = pokemon.image;
 			element.appendChild(img);
 		}
+		
+		
+		
+		
+		
 		
 		var overlayTop = document.createElement('div');
 		overlayTop.className = 'overlay-top';
@@ -502,11 +582,12 @@ class Pokedex {
 			if (nameMatch) {
 				nameValue = nameMatch[1];
 				nameSub = nameMatch[2];
-				//console.log(nameValue, nameSub);
+				console.log(nameValue, nameSub);
 			}
 			
 			var name = this.makeSpan(overlayBottom, nameValue, 'name')
-			if (nameSub) {
+			// We're already displaying Purified/Shadow status. No need to do it again.
+			if (nameSub && nameSub != "Purified" && nameSub != "Shadow") {
 				var subTitle = this.makeSpan(name, `(${nameSub})`, 'subtitle');
 			}
 		}
