@@ -1,5 +1,11 @@
 
-class Type {}
+class Type {
+	static getIconURL( ID ) {
+		// Lazy method
+		return ASSETS + 'types/' + ID.toLowerCase() + '.png'; 
+	}
+}
+
 Type.BUG = "BUG";
 Type.DARK = "DARK";
 Type.DRAGON = "DRAGON";
@@ -65,17 +71,58 @@ Generation.ALOLA = new Generation(7, "Alola", 'alola');
 Generation.GALAR = new Generation(8, "Galar", 'galar');
 Generation.UNKNOWN = new Generation(undefined, "Unknown Generation", 'unknown');
 
+
+class Move {
+
+	static fromID(ID) {
+		var template = moves.find( m => m.ID == ID );
+		if (!template) {
+			console.log("Could not find move with ID:", ID);
+			return null;
+		}
+		
+		return new Move(template.ID, template.DISPLAY, template.MOVE_TYPE, template.POKEMON_TYPE);
+	}
+
+	static fromName(NAME) {
+		var template = moves.find( m => m.DISPLAY == NAME );
+		if (!template) {
+			console.log("Could not find move with name:", NAME);
+			return null;
+		}
+		
+		return new Move(template.ID, template.DISPLAY, template.MOVE_TYPE, template.POKEMON_TYPE);
+	}
+	
+	constructor(id, name, moveType, pokemonType) {
+		this.id = id;
+		this.name = name;
+		this.moveType = moveType;
+		this.pokemonType = pokemonType;
+	}
+	
+	// Alias, just in case
+	get type() { return this.pokemonType; }
+	
+	isCharged() { return (this.moveType == Move.CHARGED); }
+	isFast()    { return (this.moveType == Move.FAST); }
+
+}
+Move.CHARGED = 'CHARGED';
+Move.FAST = 'FAST';
+
+
 class Pokemon {
 	
 	static auto(POKEMON_ID) {
 		
-		var pokemonTemplate = pokemonstats.find( p => p.POGO_ID_FULL == POKEMON_ID );
-		if (!pokemonTemplate) {
+		var template = pokemonstats.find( p => p.POGO_ID_FULL == POKEMON_ID );
+		if (!template) {
 			console.log("Could not find pokemon with ID:", POKEMON_ID);
 			return null;
 		}
 		
-		return new PokemonAuto(pokemonTemplate);
+		return new PokemonAuto(template);
 	}
 	
 	static auto2(data) {
@@ -112,6 +159,109 @@ class Pokemon {
 		return p;
 	}
 	
+	
+	matches( require ) {
+	
+		if (require.hasOwnProperty('ID_FULL') && (this.ID_FULL != require.ID_FULL)) return false;
+		if (require.hasOwnProperty('ID')      && (this.ID      != require.ID))      return false;
+		if (require.hasOwnProperty('FORM')    && (this.FORM    != require.FORM))    return false;
+		if (require.hasOwnProperty('GENDER')  && (this.GENDER  != require.GENDER))  return false;
+		if (require.hasOwnProperty('FORM_ID') && (this.FORM_ID != require.FORM_ID)) return false;
+		
+		if (require.hasOwnProperty('type') && !this.isType(require.type))  return false;
+		if (require.hasOwnProperty('move') && !this.hasMove(require.move)) return false;
+		
+		// More later
+		
+		// All passed
+		return true;
+	}
+	
+	
+	get moves() {
+		var m = [];
+		if (this.move1) { m.push(this.move1); }
+		if (this.move2) { m.push(this.move2); }
+		if (this.move3) { m.push(this.move3); }
+		return m;
+	}
+	
+	getSpecialMoves() {
+	
+		var moves = [];
+	
+		// Shadow/Purified Pokemon
+		if (this.hasMove('Return')) {
+			moves.push('Return');
+		}
+		
+		if (this.hasMove('Frustration')) {
+			moves.push('Frustration');
+		}
+	
+		// TODO: Dynamic
+		var COMMUNITY_DAY = [
+			{ID:"PIKACHU", move:"Surf"},
+			{ID:"DRAGONITE", move:"Draco Meteor"},
+			{ID:"VENUSAUR", move:"Frenzy Plant"},
+			{ID:"AMPHAROS", move:"Dragon Pulse"},
+			{ID:"CHARIZARD", move:"Blast Burn"},
+			{ID:"TYRANITAR", move:"Smack Down"},
+			{ID:"BLASTOISE", move:"Hydro Cannon"},
+			{ID:"EEVEE", move:"Last Resort"},
+			{ID:"VAPOREON", move:"Last Resort"},
+			{ID:"JOLTEON", move:"Last Resort"},
+			{ID:"FLAREON", move:"Last Resort"},
+			{ID:"ESPEON", move:"Last Resort"},
+			{ID:"UMBREON", move:"Last Resort"},
+			{ID:"LEAFEON", move:"Last Resort"},
+			{ID:"GLACEON", move:"Last Resort"},
+			{ID:"MEGANIUM", move:"Frenzy Plant"},
+			{ID:"METAGROSS", move:"Meteor Mash"},
+			{ID:"TYPHLOSION", move:"Blast Burn"},
+			{ID:"FERALIGATR", move:"Hydro Cannon"},
+			{ID:"MAMOSWINE", move:"Ancient Power"},
+			{ID:"SCEPTILE", move:"Frenzy Plant"},
+			{ID:"SALAMENCE", move:"Outrage"},
+			{ID:"BLAZIKEN", move:"Blast Burn"},
+			{ID:"SLAKING", move:"Body Slam"},
+			{ID:"SWAMPERT", move:"Hydro Cannon"},
+			{ID:"GARDEVOIR", move:"Synchronoise"},
+			{ID:"GALLADE", move:"Synchronoise"},
+			{ID:"TORTERRA", move:"Frenzy Plant"},
+			{ID:"FLYGON", move:"Earth Power"},
+			{ID:"INFERNAPE", move:"Blast Burn"},
+			{ID:"EMPOLEON", move:"Hydro Cannon"},
+			{ID:"RHYPERIOR", move:"Rock Wrecker"},
+			{ID:"ALAKAZAM", move:"Counter"},
+			{ID:"SHIFTRY", move:"Bullet Seed"},
+			{ID:"BEEDRILL", move:"Drill Run"},
+			{ID:"GENGAR", move:"Shadow Punch"},
+			{ID:"GYARADOS", move:"Aqua Tail"},
+		]
+		COMMUNITY_DAY.forEach( m => {
+			if (this.matches(m)) {
+				moves.push(m.move);
+			}
+		});
+		
+		var SPECIAL = [
+			{ID:"GENGAR", move:"Lick"},
+			{ID:"GENGAR", move:"Psychic"},
+			{ID:"COBALION", move:"Sacred Sword"},
+			{ID:"LICKITUNG", move:"Body Slam"},
+			{ID:"MEWTWO", move:"Psystrike"},
+		]
+		SPECIAL.forEach( m => {
+			if (this.matches(m)) {
+				moves.push(m.move);
+			}
+		});
+		
+		return moves;
+			
+	}
+	
 	hasMove(moveName) {
 		return (this.move1 == moveName) || (this.move2 == moveName) || (this.move3 == moveName);
 	}
@@ -128,6 +278,7 @@ class Pokemon {
 const POKEMON_IMAGE_DIR = 'pokemon_icons/';
 const HEADERS = 'headers/';
 const ASSETS = 'assets/';
+const TYPES = 'assets/moves/';
 
 class PokemonAuto extends Pokemon {
 
@@ -210,13 +361,13 @@ class Pokedex {
 	makeOverlay(container, text, className, imgL, imgR) {
 		
 		var element = document.createElement('span');
-		if (className)   element.className = className;
+		if (className)   element.className = `overlay ${className}`;
 		//if (textContent) element.textContent = textContent
 		
 		if (imgL) {
 			var img = document.createElement('img');
 			img.src = ASSETS + imgL + '.png';
-			img.alt = imgL;
+			//img.alt = imgL;
 			element.appendChild(img);
 		}
 		
@@ -229,7 +380,7 @@ class Pokedex {
 		if (imgR) {
 			var img = document.createElement('img');
 			img.src = ASSETS + imgR + '.png';
-			img.alt = imgR;
+			//img.alt = imgR;
 			element.appendChild(img);
 		}
 		
@@ -358,6 +509,76 @@ class Pokedex {
 			if (nameSub) {
 				var subTitle = this.makeSpan(name, `(${nameSub})`, 'subtitle');
 			}
+		}
+		
+		if (pokemon.move1 || pokemon.move2 || pokemon.move3) {
+			//var moves = this.makeSpan(overlayBottom, '', 'moves');
+			
+			/*var img = document.createElement('img');
+			img.className = 'move-icon';
+			img.src = 'assets/moves/psychic.png';
+			element.appendChild(img);
+			
+			var img = document.createElement('img');
+			img.className = 'move-icon';
+			img.src = 'assets/male.png';
+			element.appendChild(img);
+			
+			var img = document.createElement('img');
+			img.className = 'move-icon';
+			img.src = 'assets/female.png';
+			element.appendChild(img);
+			
+			var moveName = this.makeSpan(moves, pokemon.move1, 'move-name');*/
+			
+			function makeMoveIcon(element, MOVE_TYPE) {
+				var img = document.createElement('img');
+				img.className = 'type-icon';
+				img.src = Type.getIconURL(MOVE_TYPE);
+				//img.alt = MOVE_TYPE;
+				element.appendChild(img);
+			}
+			
+			var specialMoves = pokemon.getSpecialMoves();
+			if (specialMoves.length > 0) {
+				var moveList = this.makeSpan(overlayBottom, '', 'move-list');
+				specialMoves.forEach( moveName => {
+					
+					var move = Move.fromName( moveName );
+					if (!move) return;
+					
+					var element = document.createElement('span');
+					element.className = 'move';
+					//element.textContent = textContent
+					
+					var img = document.createElement('img');
+					img.src = Type.getIconURL(move.pokemonType);
+					//img.alt = move.pokemonType;
+					element.appendChild(img);
+					
+					var span = document.createElement('span');
+					span.innerText = move.name;
+					element.appendChild(span);
+					
+					moveList.appendChild(element);
+				});
+			
+			} else {
+				// Make little icons of every move
+				var moves = this.makeSpan(overlayBottom, '', 'move-icons');
+				pokemon.moves.forEach( moveName => {
+					var move = Move.fromName( moveName );
+					if (!move) return;
+					
+					var icon = makeMoveIcon(moves, move.pokemonType);
+				});
+			}
+			
+			
+			
+			
+			//
+			
 		}
 		
 		return element;
