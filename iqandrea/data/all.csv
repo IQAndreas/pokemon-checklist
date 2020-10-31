@@ -1,0 +1,747 @@
+ID|POKEMON|CP|LVL|STATE|SHINY|MOVE1|MOVE2|MOVE3
+||||||||
+|Kanto (Gen 1)|||HEADER||||
+BULBASAUR|Bulbasaur|951|32|||||
+IVYSAUR|Ivysaur|1433|31|||||
+VENUSAUR|Venusaur|2407|33|||||
+CHARMANDER|Charmander|786|29|||||
+CHARMELEON|Charmeleon|797|17|||||
+CHARIZARD|Charizard|||||||
+SQUIRTLE|Squirtle|730|28|||||
+WARTORTLE|Wartortle|||MISSING||||
+BLASTOISE|Blastoise|1375|20|||||
+CATERPIE|Caterpie|340|29|||||
+METAPOD|Metapod|322|27|||||
+BUTTERFREE|Butterfree|||||||
+WEEDLE|Weedle|396|35|||||
+KAKUNA|Kakuna|140|12|||||
+BEEDRILL|Beedrill|1676|35|||||
+PIDGEY|Pidgey|566|31|||||
+PIDGEOTTO|Pidgeotto|||||||
+PIDGEOT|Pidgeot|||||||
+RATTATA|Rattata|602|30|||||
+RATICATE|Raticate|||||||
+SPEAROW|Spearow|608|28|||||
+FEAROW|Fearow|1680|30|||||
+EKANS|Ekans|795|33|||||
+ARBOK|Arbok|1519|28|||||
+PIKACHU|Pikachu|682|26|||||
+RAICHU|Raichu|906|15|||||
+SANDSHREW|Sandshrew|1012|29|||||
+SANDSLASH|Sandslash|1001|15|||||
+NIDORAN_FEMALE|Nidoran♀|672|30|||||
+NIDORINA|Nidorina|||||||
+NIDOQUEEN|Nidoqueen|2238|34|||||
+NIDORAN_MALE|Nidoran♂|739|33|||||
+NIDORINO|Nidorino|||||||
+NIDOKING|Nidoking|2197|31|||||
+CLEFAIRY|Clefairy|977|31|||||
+CLEFABLE|Clefable|1481|21|||||
+VULPIX|Vulpix|704|29|||||
+NINETALES|Ninetales|1925|31|||||
+JIGGLYPUFF|Jigglypuff|612|33|||||
+WIGGLYTUFF|Wigglytuff|1741|35|||||
+ZUBAT|Zubat|586|35|||||
+GOLBAT|Golbat|1292|23|||||
+ODDISH|Oddish|1107|35|||||
+GLOOM|Gloom|1478|33|||||
+VILEPLUME|Vileplume|||||||
+PARAS|Paras|819|29|||||
+PARASECT|Parasect|1633|33|||||
+VENONAT|Venonat|857|32|||||
+VENOMOTH|Venomoth|||||||
+DIGLETT|Diglett|462|25|||||
+DUGTRIO|Dugtrio|1472|38|||||
+MEOWTH|Meowth|658|35|||||
+PERSIAN|Persian|1412|30|||||
+PSYDUCK|Psyduck|969|34|||||
+GOLDUCK|Golduck|||||||
+MANKEY|Mankey|944|29|||||
+PRIMEAPE|Primeape|1842|29|||||
+GROWLITHE|Growlithe|1010|29|||||
+ARCANINE|Arcanine|1242|14|||||
+POLIWAG|Poliwag|588|26|||||
+POLIWHIRL|Poliwhirl|||||||
+POLIWRATH|Poliwrath|||MISSING||||
+ABRA|Abra|1081|29|||||
+KADABRA|Kadabra|||||||
+ALAKAZAM|Alakazam|1265|14|||||
+MACHOP|Machop|1070|31|||||
+MACHOKE|Machoke|||||||
+MACHAMP|Machamp|1691|19|||||
+BELLSPROUT|Bellsprout|909|34|||||
+WEEPINBELL|Weepinbell|1340|30|||||
+VICTREEBEL|Victreebel|||||||
+TENTACOOL|Tentacool|865|31|||||
+TENTACRUEL|Tentacruel|2159|34|||||
+GEODUDE|Geodude|1085|31|||||
+GRAVELER|Graveler|||||||
+GOLEM|Golem|1650|20|||||
+PONYTA|Ponyta|1338|28|||||
+RAPIDASH|Rapidash|2068|30|||||
+SLOWPOKE|Slowpoke|1065|33|||||
+SLOWBRO|Slowbro|1794|25|||||
+MAGNEMITE|Magnemite|1178|33|||||
+MAGNETON|Magneton|||||||
+FARFETCHD|Farfetch'D|688|20|||||
+DODUO|Doduo|782|23|||||
+DODRIO|Dodrio|1000|15|||||
+SEEL|Seel|827|32|||||
+DEWGONG|Dewgong|822|15|||||
+GRIMER|Grimer|1037|27|||||
+MUK|Muk|||||||
+SHELLDER|Shellder|905|31|||||
+CLOYSTER|Cloyster|2147|30|||||
+GASTLY|Gastly|1016|30|||||
+HAUNTER|Haunter|1477|27|||||
+GENGAR|Gengar|2509|32|||||
+ONIX|Onix|954|33|||||
+DROWZEE|Drowzee|797|28|||||
+HYPNO|Hypno|||||||
+KRABBY|Krabby|1205|28|||||
+KINGLER|Kingler|2385|30|||||
+VOLTORB|Voltorb|863|32|||||
+ELECTRODE|Electrode|||||||
+EXEGGCUTE|Exeggcute|949|29|||||
+EXEGGUTOR|Exeggutor|2365|28|||||
+CUBONE|Cubone|568|20|||||
+MAROWAK|Marowak|||||||
+HITMONLEE|Hitmonlee|1082|15|||||
+HITMONCHAN|Hitmonchan|1068|16|||||
+LICKITUNG|Lickitung|936|24|||||
+KOFFING|Koffing|1013|31|||||
+WEEZING|Weezing|2083|35|||||
+RHYHORN|Rhyhorn|1419|32|||||
+RHYDON|Rhydon|||||||
+CHANSEY|Chansey|803|23|||||
+TANGELA|Tangela|1836|29|||||
+KANGASKHAN|Kangaskhan|||MISSING||||
+HORSEA|Horsea|784|27|||||
+SEADRA|Seadra|||||||
+GOLDEEN|Goldeen|||||||
+SEAKING|Seaking|||MISSING||||
+STARYU|Staryu|325|10|||||
+STARMIE|Starmie|1096|15|||||
+MR_MIME|Mr. Mime|1954|33|||||
+SCYTHER|Scyther|2371|33|||||
+JYNX|Jynx|2031|28|||||
+ELECTABUZZ|Electabuzz|1804|27|||||
+MAGMAR|Magmar|2001|30|||||
+PINSIR|Pinsir|2651|34|||||
+TAUROS|Tauros|2213|30|||||
+MAGIKARP|Magikarp|216|31|||||
+GYARADOS|Gyarados|2900|31|||||
+LAPRAS|Lapras|1886|25|||||
+DITTO|Ditto|531|23|||||
+EEVEE|Eevee|976|36|||||
+VAPOREON|Vaporeon|1750|20|||||
+JOLTEON|Jolteon|||||||
+FLAREON|Flareon|2403|28|||||
+PORYGON|Porygon|1194|25|||||
+OMANYTE|Omanyte|1254|29|||||
+OMASTAR|Omastar|1938|25|||||
+KABUTO|Kabuto|1154|31|||||
+KABUTOPS|Kabutops|||||||
+AERODACTYL|Aerodactyl|1541|19|||||
+SNORLAX|Snorlax|2572|28|||||
+ARTICUNO|Articuno|1476|17|||||
+ZAPDOS|Zapdos|||MISSING||||
+MOLTRES|Moltres|1462|15|||||
+DRATINI|Dratini|745|27|||||
+DRAGONAIR|Dragonair|1219|24|||||
+DRAGONITE|Dragonite|||||||
+MEWTWO|Mewtwo|2495|21|||||
+MEWTWO_A|Mewtwo (Armored)|1782|20|||||
+MEW|Mew|1378|15|||||
+||||||||
+|Johto (Gen 2)|||HEADER||||
+CHIKORITA|Chikorita|790|32|||||
+BAYLEEF|Bayleef|||||||
+MEGANIUM|Meganium|||||||
+CYNDAQUIL|Cyndaquil|876|35|||||
+QUILAVA|Quilava|688|15|||||
+TYPHLOSION|Typhlosion|||MISSING||||
+TOTODILE|Totodile|920|29|||||
+CROCONAW|Croconaw|||MISSING||||
+FERALIGATR|Feraligatr|||MISSING||||
+SENTRET|Sentret|491|29|||||
+FURRET|Furret|1298|26|||||
+HOOTHOOT|Hoothoot|583|34|||||
+NOCTOWL|Noctowl|||||||
+LEDYBA|Ledyba|640|35|||||
+LEDIAN|Ledian|1034|28|||||
+SPINARAK|Spinarak|640|28|||||
+ARIADOS|Ariados|1505|31|||||
+CROBAT|Crobat|||||||
+CHINCHOU|Chinchou|858|28|||||
+LANTURN|Lanturn|||||||
+PICHU|Pichu|||||||
+CLEFFA|Cleffa|363|20|||||
+IGGLYBUFF|Igglybuff|299|21|||||
+TOGEPI|Togepi|||||||
+TOGETIC|Togetic|1193|25|||||
+NATU|Natu|927|31|||||
+XATU|Xatu|914|15|||||
+MAREEP|Mareep|638|23|||||
+FLAAFFY|Flaaffy|1074|25|||||
+AMPHAROS|Ampharos|2230|28|||||
+BELLOSSOM|Bellossom|2006|33|||||
+MARILL|Marill|313|25|||||
+AZUMARILL|Azumarill|889|20|||||
+SUDOWOODO|Sudowoodo|1952|35|||||
+POLITOED|Politoed|||||||
+HOPPIP|Hoppip|484|30|||||
+SKIPLOOM|Skiploom|||||||
+JUMPLUFF|Jumpluff|||||||
+AIPOM|Aipom|1164|33|||||
+SUNKERN|Sunkern|312|29|||||
+SUNFLORA|Sunflora|1793|30|||||
+YANMA|Yanma|1290|33|||||
+WOOPER|Wooper|489|28|||||
+QUAGSIRE|Quagsire|||MISSING||||
+ESPEON|Espeon|||||||
+UMBREON|Umbreon|1736|29|||||
+MURKROW|Murkrow|1405|35|||||
+SLOWKING|Slowking|||||||
+MISDREAVUS|Misdreavus|1452|27|||||
+UNOWN|Unown|||||||
+WOBBUFFET|Wobbuffet|863|32|||||
+GIRAFARIG|Girafarig|1517|26|||||
+PINECO|Pineco|613|20|||||
+FORRETRESS|Forretress|1278|20|||||
+DUNSPARCE|Dunsparce|1446|32|||||
+GLIGAR|Gligar|1521|29|||||
+STEELIX|Steelix|1709|25|||||
+SNUBBULL|Snubbull|1073|33|||||
+GRANBULL|Granbull|2190|31|||||
+QWILFISH|Qwilfish|1405|24|||||
+SCIZOR|Scizor|||||||
+SHUCKLE|Shuckle|298|29|||||
+HERACROSS|Heracross|||MISSING||||
+SNEASEL|Sneasel|1674|29|||||
+TEDDIURSA|Teddiursa|1134|32|||||
+URSARING|Ursaring|2543|32|||||
+SLUGMA|Slugma|679|28|||||
+MAGCARGO|Magcargo|||||||
+SWINUB|Swinub|591|29|||||
+PILOSWINE|Piloswine|966|14|||||
+CORSOLA|Corsola|||MISSING||||
+REMORAID|Remoraid|727|29|||||
+OCTILLERY|Octillery|165|2|||||
+DELIBIRD|Delibird|824|27|||||
+MANTINE|Mantine|1633|28|||||
+SKARMORY|Skarmory|1760|30|||||
+HOUNDOUR|Houndour|1036|31|||||
+HOUNDOOM|Houndoom|2374|34|||||
+KINGDRA|Kingdra|2369|34|||||
+PHANPY|Phanpy|929|28|||||
+DONPHAN|Donphan|2486|29|||||
+PORYGON2|Porygon2|||||||
+STANTLER|Stantler|1792|29|||||
+SMEARGLE|Smeargle|255|22|||||
+TYROGUE|Tyrogue|||MISSING||||
+HITMONTOP|Hitmontop|917|15|||||
+SMOOCHUM|Smoochum|723|20|||||
+ELEKID|Elekid|||MISSING||||
+MAGBY|Magby|||MISSING||||
+MILTANK|Miltank|1221|18|||||
+BLISSEY|Blissey|||||||
+RAIKOU|Raikou|||MISSING||||
+ENTEI|Entei|1949|20|||||
+SUICUNE|Suicune|1692|20|||||
+LARVITAR|Larvitar|833|29|||||
+PUPITAR|Pupitar|||||||
+TYRANITAR|Tyranitar|2708|25|||||
+LUGIA|Lugia|||MISSING||||
+HO_OH|Ho-Oh|2138|19|||||
+CELEBI|Celebi|1482|16|||||
+||||||||
+|Hoenn (Gen 3)|||HEADER||||
+TREECKO|Treecko|841|29|||||
+GROVYLE|Grovyle|1386|30|||||
+SCEPTILE|Sceptile|2340|31|||||
+TORCHIC|Torchic|941|33|||||
+COMBUSKEN|Combusken|683|15|||||
+BLAZIKEN|Blaziken|||||||
+MUDKIP|Mudkip|956|32|||||
+MARSHTOMP|Marshtomp|732|14|||||
+SWAMPERT|Swampert|||||||
+POOCHYENA|Poochyena|480|26|||||
+MIGHTYENA|Mightyena|||||||
+ZIGZAGOON|Zigzagoon|431|33|||||
+LINOONE|Linoone|||||||
+WURMPLE|Wurmple|419|27|||||
+SILCOON|Silcoon|||||||
+BEAUTIFLY|Beautifly|1227|25|||||
+CASCOON|Cascoon|||||||
+DUSTOX|Dustox|||MISSING||||
+LOTAD|Lotad|503|32|||||
+LOMBRE|Lombre|1002|31|||||
+LUDICOLO|Ludicolo|||||||
+SEEDOT|Seedot|513|34|||||
+NUZLEAF|Nuzleaf|1005|30|||||
+SHIFTRY|Shiftry|2036|33|||||
+TAILLOW|Taillow|671|35|||||
+SWELLOW|Swellow|1538|29|||||
+WINGULL|Wingull|||||||
+PELIPPER|Pelipper|||MISSING||||
+RALTS_FEMALE|Ralts♀|435|30|||||
+RALTS_MALE|Ralts♂|444|31|||||
+KIRLIA_FEMALE|Kirlia♀|||||||
+KIRLIA_FEMALE|Kirlia♀|||||||
+GARDEVOIR_FEMALE|Gardevoir♀|||||||
+SURSKIT|Surskit|675|33|||||
+MASQUERAIN|Masquerain|||||||
+SHROOMISH|Shroomish|674|31|||||
+BRELOOM|Breloom|1497|20|||||
+SLAKOTH|Slakoth|837|31|||||
+VIGOROTH|Vigoroth|||||||
+SLAKING|Slaking|||MISSING||||
+NINCADA|Nincada|538|25|||||
+NINJASK|Ninjask|||MISSING||||
+SHEDINJA|Shedinja|151|15|||||
+WHISMUR|Whismur|522|29|||||
+LOUDRED|Loudred|1102|30|||||
+EXPLOUD|Exploud|||||||
+MAKUHITA|Makuhita|671|30|||||
+HARIYAMA|Hariyama|2247|28|||||
+AZURILL|Azurill|193|20|||||
+NOSEPASS|Nosepass|860|33|||||
+SKITTY|Skitty|573|28|||||
+DELCATTY|Delcatty|||||||
+SABLEYE|Sableye|930|22|||||
+MAWILE|Mawile|1118|24|||||
+ARON|Aron|1116|32|||||
+LAIRON|Lairon|1505|26|||||
+AGGRON|Aggron|2602|32|||||
+MEDITITE|Meditite|565|30|||||
+MEDICHAM|Medicham|781|19|||||
+ELECTRIKE|Electrike|815|32|||||
+MANECTRIC|Manectric|1337|20|||||
+PLUSLE|Plusle|1436|29|||||
+MINUN|Minun|1380|29|||||
+VOLBEAT|Volbeat|1562|34|||||
+ILLUMISE|Illumise|1408|28|||||
+ROSELIA|Roselia|1666|34|||||
+GULPIN|Gulpin|684|29|||||
+SWALOT|Swalot|1698|32|||||
+CARVANHA|Carvanha|812|29|||||
+SHARPEDO|Sharpedo|||MISSING||||
+WAILMER|Wailmer|1281|33|||||
+WAILORD|Wailord|||MISSING||||
+NUMEL|Numel|749|26|||||
+CAMERUPT|Camerupt|||||||
+TORKOAL|Torkoal|||MISSING||||
+SPOINK|Spoink|994|27|||||
+GRUMPIG|Grumpig|||||||
+SPINDA|Spinda|503|15|||||
+TRAPINCH|Trapinch|1039|29|||||
+VIBRAVA|Vibrava|||||||
+FLYGON|Flygon|1774|24|||||
+CACNEA|Cacnea|1077|33|||||
+CACTURNE|Cacturne|||||||
+SWABLU|Swablu|708|33|||||
+ALTARIA|Altaria|||||||
+ZANGOOSE|Zangoose|2158|34|||||
+SEVIPER|Seviper|143|2|||||
+LUNATONE|Lunatone|1991|31|||||
+SOLROCK|Solrock|2108|35|||||
+BARBOACH|Barboach|682|31|||||
+WHISCASH|Whiscash|1857|34|||||
+CORPHISH|Corphish|959|28|||||
+CRAWDAUNT|Crawdaunt|||MISSING||||
+BALTOY|Baltoy|691|35|||||
+CLAYDOL|Claydol|1456|26|||||
+LILEEP|Lileep|864|24|||||
+CRADILY|Cradily|||||||
+ANORITH|Anorith|1219|29|||||
+ARMALDO|Armaldo|||||||
+FEEBAS|Feebas|164|23|||||
+MILOTIC|Milotic|1460|17|||||
+CASTFORM_NORMAL|Castform (Normal)|1364|30|||||
+CASTFORM_RAINY|Castform (Rainy)|1432|33|||||
+CASTFORM_SNOWY|Castform (Snowy)|||||||
+CASTFORM_SUNNY|Castform (Sunny)|1482|36|||||
+KECLEON|Kecleon|||UNRELEASED||||
+SHUPPET|Shuppet|732|26|||||
+BANETTE|Banette|||||||
+DUSKULL|Duskull|530|27|||||
+DUSCLOPS|Dusclops|||||||
+TROPIUS|Tropius|||||||
+CHIMECHO|Chimecho|||||||
+ABSOL|Absol|1405|20|||||
+WYNAUT|Wynaut|280|19|||||
+SNORUNT_FEMALE|Snorunt♀|663|27|||||
+SNORUNT_MALE|Snorunt♂|707|29|||||
+GLALIE_MALE|Glalie♂|894|15|||||
+SPHEAL|Spheal|768|29|||||
+SEALEO|Sealeo|725|15|||||
+WALREIN|Walrein|||||||
+CLAMPERL|Clamperl|1037|29|||||
+HUNTAIL|Huntail|1879|29|||||
+GOREBYSS|Gorebyss|||||||
+RELICANTH|Relicanth|||MISSING||||
+LUVDISC|Luvdisc|674|29|||||
+BAGON|Bagon|887|28|||||
+SHELGON|Shelgon|1706|30|||||
+SALAMENCE|Salamence|||MISSING||||
+BELDUM|Beldum|632|23|||||
+METANG|Metang|1019|21|||||
+METAGROSS|Metagross|2134|20|||||
+REGIROCK|Regirock|2183|25|||||
+REGICE|Regice|1752|20|||||
+REGISTEEL|Registeel|||MISSING||||
+LATIAS|Latias|1976|20|||||
+LATIOS|Latios|2147|20|||||
+KYOGRE|Kyogre|1740|15|||||
+GROUDON|Groudon|2321|20|||||
+RAYQUAZA|Rayquaza|2169|20|||||
+JIRACHI|Jirachi|||MISSING||||
+DEOXYS_ATTACK|Deoxys (Attack Forme)|||MISSING||||
+DEOXYS_DEFENSE|Deoxys (Defense Forme)|1596|25|||||
+DEOXYS_NORMAL|Deoxys (Normal Forme)|1789|20|||||
+DEOXYS_SPEED|Deoxys (Speed Forme)|1579|19|||||
+||||||||
+|Sinnoh (Gen 4)|||HEADER||||
+TURTWIG|Turtwig|941|29|||||
+GROTLE|Grotle|1596|31|||||
+TORTERRA|Torterra|2557|32|||||
+CHIMCHAR|Chimchar|769|29|||||
+MONFERNO|Monferno|||||||
+INFERNAPE|Infernape|1495|20|||||
+PIPLUP|Piplup|892|30|||||
+PRINPLUP|Prinplup|1314|28|||||
+EMPOLEON|Empoleon|||||||
+STARLY|Starly|550|28|||||
+STARAVIA|Staravia|||||||
+STARAPTOR|Staraptor|||||||
+BIDOOF|Bidoof|599|31|||||
+BIBAREL|Bibarel|1553|31|||||
+KRICKETOT|Kricketot|323|31|||||
+KRICKETUNE|Kricketune|||||||
+SHINX|Shinx|591|24|||||
+LUXIO|Luxio|839|20|||||
+LUXRAY|Luxray|||MISSING||||
+BUDEW|Budew|479|20|||||
+ROSERADE|Roserade|2642|34|||||
+CRANIDOS|Cranidos|1543|31|||||
+RAMPARDOS|Rampardos|1843|20|||||
+SHIELDON|Shieldon|||||||
+BASTIODON|Bastiodon|1248|29|||||
+BURMY_MALE|Burmy♂|315|24|||||
+BURMY_FEMALE_PLANT|Burmy♀ (Plant)|384|29|||||
+BURMY_FEMALE_SANDY|Burmy♀ (Sandy)|335|25|||||
+BURMY_FEMALE_TRASH|Burmy♀ (Trash)|318|24|||||
+WORMADAM_FEMALE_PLANT|Wormadam♀ (Plant)|||||||
+WORMADAM_FEMALE_SANDY|Wormadam♀ (Sandy)|||MISSING||||
+WORMADAM_FEMALE_TRASH|Wormadam♀ (Trash)|||||||
+MOTHIM_MALE|Mothim♂|||||||
+COMBEE_MALE|Combee♂|427|34|||||
+COMBEE_FEMALE|Combee♀|331|25|||||
+VESPIQUEN_FEMALE|Vespiquen♀|||||||
+PACHIRISU|Pachirisu|||MISSING||||
+BUIZEL|Buizel|933|35|||||
+FLOATZEL|Floatzel|2063|31|||||
+CHERUBI|Cherubi|||||||
+CHERRIM_OVERCAST|Cherrim (Overcast)|1156|20|||||
+CHERRIM_SUNNY|Cherrim (Sunny)|1768|32|||||
+SHELLOS_EAST_SEA|Shellos (East Sea)|841|27|||||
+SHELLOS_WEST_SEA|Shellos (West Sea)|||||||
+GASTRODON_EAST_SEA|Gastrodon (East Sea)|||||||
+GASTRODON_WEST_SEA|Gastrodon (West Sea)|||MISSING||||
+AMBIPOM|Ambipom|||||||
+DRIFLOON|Drifloon|1053|34|||||
+DRIFBLIM|Drifblim|||||||
+BUNEARY|Buneary|1085|33|||||
+LOPUNNY|Lopunny|1810|33|||||
+MISMAGIUS|Mismagius|1403|19|||||
+HONCHKROW|Honchkrow|||||||
+GLAMEOW|Glameow|806|33|||||
+PURUGLY|Purugly|1278|23|||||
+CHINGLING|Chingling|||||||
+STUNKY|Stunky|804|25|||||
+SKUNTANK|Skuntank|2047|32|||||
+BRONZOR|Bronzor|445|27|||||
+BRONZONG|Bronzong|||||||
+BONSLY|Bonsly|722|20|||||
+MIME_JR|Mime Jr.|606|20|||||
+HAPPINY|Happiny|||MISSING||||
+CHATOT|Chatot|||MISSING||||
+SPIRITOMB|Spiritomb|1056|18|||||
+GIBLE|Gible|758|25|||||
+GABITE|Gabite|||||||
+GARCHOMP|Garchomp|||MISSING||||
+MUNCHLAX|Munchlax|1049|20|||||
+RIOLU|Riolu|534|19|||||
+LUCARIO|Lucario|||MISSING||||
+HIPPOPOTAS|Hippopotas|1120|30|||||
+HIPPOWDON|Hippowdon|2588|30|||||
+SKORUPI|Skorupi|737|26|||||
+DRAPION|Drapion|||MISSING||||
+CROAGUNK|Croagunk|762|29|||||
+TOXICROAK|Toxicroak|||||||
+CARNIVINE|Carnivine|||MISSING||||
+FINNEON|Finneon|805|30|||||
+LUMINEON|Lumineon|1016|20|||||
+MANTYKE|Mantyke|||MISSING||||
+SNOVER|Snover|990|32|||||
+ABOMASNOW|Abomasnow|1007|15|||||
+WEAVILE|Weavile|2425|29|||||
+MAGNEZONE|Magnezone|2702|30|||||
+LICKILICKY|Lickilicky|||||||
+RHYPERIOR|Rhyperior|3160|30|||||
+TANGROWTH|Tangrowth|2419|28|||||
+ELECTIVIRE|Electivire|||||||
+MAGMORTAR|Magmortar|||||||
+TOGEKISS|Togekiss|||MISSING||||
+YANMEGA|Yanmega|||||||
+LEAFEON|Leafeon|2650|34|||||
+GLACEON|Glaceon|2702|32|||||
+GLISCOR|Gliscor|||||||
+MAMOSWINE|Mamoswine|||||||
+PORYGON_Z|Porygon-Z|||MISSING||||
+GALLADE|Gallade|||MISSING||||
+PROBOPASS|Probopass|1602|27|||||
+DUSKNOIR|Dusknoir|||||||
+FROSLASS|Froslass|||||||
+ROTOM_FAN|Rotom (Fan)|||UNRELEASED||||
+ROTOM_FROST|Rotom (Frost)|||UNRELEASED||||
+ROTOM_HEAT|Rotom (Heat)|||UNRELEASED||||
+ROTOM_MOW|Rotom (Mow)|||UNRELEASED||||
+ROTOM_NORMAL|Rotom (Normal)|||UNRELEASED||||
+ROTOM_WASH|Rotom (Wash)|||MISSING||||
+UXIE|Uxie|||MISSING||||
+MESPRIT|Mesprit|||MISSING||||
+AZELF|Azelf|||MISSING||||
+DIALGA|Dialga|||MISSING||||
+PALKIA|Palkia|||MISSING||||
+HEATRAN|Heatran|2642|25|||||
+REGIGIGAS|Regigigas|2459|20|||||
+GIRATINA_ALTERED|Giratina (Altered)|1917|20|||||
+GIRATINA_ORIGIN|Giratina (Origin)|2044|19|||||
+CRESSELIA|Cresselia|1218|15|||||
+PHIONE|Phione|||UNRELEASED||||
+MANAPHY|Manaphy|||UNRELEASED||||
+DARKRAI|Darkrai|2484|23|||||
+SHAYMIN_LAND|Shaymin (Land)|||UNRELEASED||||
+SHAYMIN_SKY|Shaymin (Sky)|||UNRELEASED||||
+ARCEUS|Arceus|||UNRELEASED||||
+||||||||
+|Unova (Gen 5)|||HEADER||||
+VICTINI|Victini|||MISSING||||
+SNIVY|Snivy|630|27|||||
+SERVINE|Servine|||||||
+SERPERIOR|Serperior|||||||
+TEPIG|Tepig|972|35|||||
+PIGNITE|Pignite|1683|33|||||
+EMBOAR|Emboar|||||||
+OSHAWOTT|Oshawott|848|29|||||
+DEWOTT|Dewott|||||||
+SAMUROTT|Samurott|||MISSING||||
+PATRAT|Patrat|697|35|||||
+WATCHOG|Watchog|1366|27|||||
+LILLIPUP|Lillipup|774|32|||||
+HERDIER|Herdier|1248|28|||||
+STOUTLAND|Stoutland|2525|34|||||
+PURRLOIN|Purrloin|441|21|||||
+LIEPARD|Liepard|||||||
+PANSAGE|Pansage|||MISSING||||
+SIMISAGE|Simisage|||MISSING||||
+PANSEAR|Pansear|669|25|||||
+SIMISEAR|Simisear|||MISSING||||
+PANPOUR|Panpour|||MISSING||||
+SIMIPOUR|Simipour|||MISSING||||
+MUNNA|Munna|||UNRELEASED||||
+MUSHARNA|Musharna|||UNRELEASED||||
+PIDOVE|Pidove|651|28|||||
+TRANQUILL|Tranquill|||||||
+UNFEZANT|Unfezant|2270|29|||||
+BLITZLE|Blitzle|538|22|||||
+ZEBSTRIKA|Zebstrika|||MISSING||||
+ROGGENROLA|Roggenrola|831|25|||||
+BOLDORE|Boldore|||||||
+GIGALITH|Gigalith|||||||
+WOOBAT|Woobat|724|26|||||
+SWOOBAT|Swoobat|729|15|||||
+DRILBUR|Drilbur|1138|30|||||
+EXCADRILL|Excadrill|||||||
+AUDINO|Audino|||||||
+TIMBURR|Timburr|923|25|||||
+GURDURR|Gurdurr|||||||
+CONKELDURR|Conkeldurr|||||||
+TYMPOLE|Tympole|686|30|||||
+PALPITOAD|Palpitoad|||MISSING||||
+SEISMITOAD|Seismitoad|||MISSING||||
+THROH|Throh|||MISSING||||
+SAWK|Sawk|2464|33|||||
+SEWADDLE|Sewaddle|||UNRELEASED||||
+SWADLOON|Swadloon|||UNRELEASED||||
+LEAVANNY|Leavanny|||UNRELEASED||||
+VENIPEDE|Venipede|612|34|||||
+WHIRLIPEDE|Whirlipede|||||||
+SCOLIPEDE|Scolipede|||||||
+COTTONEE|Cottonee|||UNRELEASED||||
+WHIMSICOTT|Whimsicott|||UNRELEASED||||
+PETILIL|Petilil|407|14|||||
+LILLIGANT|Lilligant|||MISSING||||
+BASCULIN_BLUE_STRIPED|Basculin (Blue-Striped)|||MISSING||||
+BASCULIN_RED_STRIPED|Basculin (Red-Striped)|1246|21|||||
+SANDILE|Sandile|||UNRELEASED||||
+KROKOROK|Krokorok|||UNRELEASED||||
+KROOKODILE|Krookodile|||UNRELEASED||||
+DARUMAKA|Darumaka|1059|26|||||
+DARMANITAN_STANDARD|Darmanitan (Standard)|||MISSING||||
+DARMANITAN_ZEN|Darmanitan (Zen)|||UNRELEASED||||
+MARACTUS|Maractus|||MISSING||||
+DWEBBLE|Dwebble|1031|31|||||
+CRUSTLE|Crustle|2141|30|||||
+SCRAGGY|Scraggy|776|20|||||
+SCRAFTY|Scrafty|||MISSING||||
+SIGILYPH|Sigilyph|||MISSING||||
+YAMASK|Yamask|739|27|||||
+COFAGRIGUS|Cofagrigus|1541|24|||||
+TIRTOUGA|Tirtouga|||MISSING||||
+CARRACOSTA|Carracosta|||MISSING||||
+ARCHEN|Archen|1038|20|||||
+ARCHEOPS|Archeops|||MISSING||||
+TRUBBISH|Trubbish|720|26|||||
+GARBODOR|Garbodor|||||||
+ZORUA|Zorua|||UNRELEASED||||
+ZOROARK|Zoroark|||UNRELEASED||||
+MINCCINO|Minccino|757|34|||||
+CINCCINO|Cinccino|||||||
+GOTHITA|Gothita|506|19|||||
+GOTHORITA|Gothorita|||||||
+GOTHITELLE|Gothitelle|||MISSING||||
+SOLOSIS|Solosis|1009|26|||||
+DUOSION|Duosion|||||||
+REUNICLUS|Reuniclus|||MISSING||||
+DUCKLETT|Ducklett|660|28|||||
+SWANNA|Swanna|||MISSING||||
+VANILLITE|Vanillite|||UNRELEASED||||
+VANILLISH|Vanillish|||UNRELEASED||||
+VANILLUXE|Vanilluxe|||UNRELEASED||||
+DEERLING_AUTUMN|Deerling (Autumn)|||UNRELEASED||||
+DEERLING_SPRING|Deerling (Spring)|||UNRELEASED||||
+DEERLING_SUMMER|Deerling (Summer)|||UNRELEASED||||
+DEERLING_WINTER|Deerling (Winter)|||UNRELEASED||||
+SAWSBUCK_AUTUMN|Sawsbuck (Autumn)|||UNRELEASED||||
+SAWSBUCK_SPRING|Sawsbuck (Spring)|||UNRELEASED||||
+SAWSBUCK_SUMMER|Sawsbuck (Summer)|||UNRELEASED||||
+SAWSBUCK_WINTER|Sawsbuck (Winter)|||UNRELEASED||||
+EMOLGA|Emolga|||UNRELEASED||||
+KARRABLAST|Karrablast|740|22|||||
+ESCAVALIER|Escavalier|||||||
+FOONGUS|Foongus|879|36|||||
+AMOONGUSS|Amoonguss|1796|30|||||
+FRILLISH_FEMALE|Frillish (Female)|||UNRELEASED||||
+FRILLISH_NORMAL|Frillish (Normal)|||UNRELEASED||||
+JELLICENT_FEMALE|Jellicent (Female)|||UNRELEASED||||
+JELLICENT_NORMAL|Jellicent (Normal)|||UNRELEASED||||
+ALOMOMOLA|Alomomola|1332|22|||||
+JOLTIK|Joltik|830|29|||||
+GALVANTULA|Galvantula|||MISSING||||
+FERROSEED|Ferroseed|578|22|||||
+FERROTHORN|Ferrothorn|||MISSING||||
+KLINK|Klink|532|20|||||
+KLANG|Klang|||||||
+KLINKLANG|Klinklang|||MISSING||||
+TYNAMO|Tynamo|||UNRELEASED||||
+EELEKTRIK|Eelektrik|||UNRELEASED||||
+EELEKTROSS|Eelektross|||UNRELEASED||||
+ELGYEM|Elgyem|887|23|||||
+BEHEEYEM|Beheeyem|||MISSING||||
+LITWICK|Litwick|689|25|||||
+LAMPENT|Lampent|||||||
+CHANDELURE|Chandelure|||MISSING||||
+AXEW|Axew|||MISSING||||
+FRAXURE|Fraxure|||MISSING||||
+HAXORUS|Haxorus|||MISSING||||
+CUBCHOO|Cubchoo|750|25|||||
+BEARTIC|Beartic|1471|17|||||
+CRYOGONAL|Cryogonal|2109|27|||||
+SHELMET|Shelmet|621|27|||||
+ACCELGOR|Accelgor|||||||
+STUNFISK|Stunfisk|1672|27|||||
+MIENFOO|Mienfoo|||UNRELEASED||||
+MIENSHAO|Mienshao|||UNRELEASED||||
+DRUDDIGON|Druddigon|||UNRELEASED||||
+GOLETT|Golett|486|14|||||
+GOLURK|Golurk|||MISSING||||
+PAWNIARD|Pawniard|||UNRELEASED||||
+BISHARP|Bisharp|||UNRELEASED||||
+BOUFFALANT|Bouffalant|||UNRELEASED||||
+RUFFLET|Rufflet|||MISSING||||
+BRAVIARY|Braviary|||MISSING||||
+VULLABY|Vullaby|||UNRELEASED||||
+MANDIBUZZ|Mandibuzz|||UNRELEASED||||
+HEATMOR|Heatmor|||||||
+DURANT|Durant|1818|24|||||
+DEINO|Deino|430|14|||||
+ZWEILOUS|Zweilous|||||||
+HYDREIGON|Hydreigon|||MISSING||||
+LARVESTA|Larvesta|||UNRELEASED||||
+VOLCARONA|Volcarona|||UNRELEASED||||
+COBALION|Cobalion|2114|25|||||
+TERRAKION|Terrakion|2619|25|||||
+VIRIZION|Virizion|2145|25|||||
+TORNADUS_INCARNATE|Tornadus (Incarnate Forme)|2332|25|||||
+TORNADUS_THERIAN|Tornadus (Therian Forme)|||UNRELEASED||||
+THUNDURUS_INCARNATE|Thundurus (Incarnate Forme)|1895|20|||||
+THUNDURUS_THERIAN|Thundurus (Therian Forme)|||UNRELEASED||||
+RESHIRAM|Reshiram|3450|31|||||
+ZEKROM|Zekrom|2778|24|||||
+LANDORUS_INCARNATE|Landorus (Incarnate Forme)|2539|25|||||
+LANDORUS_THERIAN|Landorus (Therian Forme)|||UNRELEASED||||
+KYUREM_BLACK|Kyurem (Black Kyurem)|||UNRELEASED||||
+KYUREM_NORMAL|Kyurem (Regular Kyurem)|2023|20|||||
+KYUREM_WHITE|Kyurem (White Kyurem)|||UNRELEASED||||
+KELDEO_ORDINARY|Keldeo (Original Form)|||UNRELEASED||||
+KELDEO_RESOLUTE|Keldeo (Resolute Form)|||UNRELEASED||||
+MELOETTA_ARIA|Meloetta (Aria Forme)|||UNRELEASED||||
+MELOETTA_PIROUETTE|Meloetta (Pirouette Forme)|||UNRELEASED||||
+GENESECT|Genesect|||MISSING||||
+||||||||
+|Kalos (Gen 6)|||HEADER||||
+||||||||
+||||||||
+||||||||
+||||||||
+|Alola (Gen 7)|||HEADER||||
+RATTATA_ALOLA|Alolan Rattata|581|29|||||
+RATICATE_ALOLA|Alolan Raticate|||||||
+RAICHU_ALOLA|Alolan Raichu|1300|20|||||
+SANDSHREW_ALOLA|Alolan Sandshrew|701|19|||||
+SANDSLASH_ALOLA|Alolan Sandslash|||||||
+VULPIX_ALOLA|Alolan Vulpix|483|20|||||
+NINETALES_ALOLA|Alolan Ninetales|||||||
+DIGLETT_ALOLA|Alolan Diglett|573|32|||||
+DUGTRIO_ALOLA|Alolan Dugtrio|1472|28|||||
+MEOWTH_ALOLA|Alolan Meowth|||||||
+PERSIAN_ALOLA|Alolan Persian|||||||
+GEODUDE_ALOLA|Alolan Geodude|1099|32|||||
+GRAVELER_ALOLA|Alolan Graveler|||||||
+GOLEM_ALOLA|Alolan Golem|||||||
+GRIMER_ALOLA|Alolan Grimer|1132|30|||||
+MUK_ALOLA|Alolan Muk|1571|20|||||
+EXEGGUTOR_ALOLA|Alolan Exeggutor|1668|19|||||
+MAROWAK_ALOLA|Alolan Marowak|1282|25|||||
+||||||||
+|Galar (Gen 8)|||HEADER||||
+MEOWTH_GALARIAN|Galarian Meowth|||||||
+FARFETCHD_GALARIAN|Galarian Farfetch'D|1119|24|||||
+WEEZING_GALARIAN|Galarian Weezing|1615|25|||||
+ZIGZAGOON_GALARIAN|Galarian Zigzagoon|||MISSING||||
+LINOONE_GALARIAN|Galarian Linoone|||MISSING||||
+DARUMAKA_GALARIAN|Galarian Darumaka|||MISSING||||
+DARMANITAN_GALARIAN_STANDARD|Galarian Darmanitan (Standard)|||MISSING||||
+DARMANITAN_GALARIAN_ZEN|Galarian Darmanitan (Zen)|||UNRELEASED||||
+STUNFISK_GALARIAN|Galarian Stunfisk|1413|23|||||
+OBSTAGOON|Obstagoon|||MISSING||||
+PERRSERKER|Perrserker|1499|22|||||
+CURSOLA|Cursola|||UNRELEASED||||
+SIRFETCHD|Sirfetch'd|||UNRELEASED||||
+||||||||
+|Unknown|||HEADER||||
+MELTAN|Meltan|444|15|||||
+MELMETAL|Melmetal|||MISSING||||

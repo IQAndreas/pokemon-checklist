@@ -15,29 +15,29 @@
 	
 	<script type="text/javascript" src="data/pokemonstats.js"> </script>
 	<script type="text/javascript" src="data/pokemonlist.js"> </script>
+	<script type="text/javascript" src="data/moves.js"> </script>
 	
 	<script type="text/javascript" src="data/IQAndreas/all.js"> </script>
 	<script type="text/javascript" src="data/IQAndreas/lucky.js"> </script>
 	<script type="text/javascript" src="data/IQAndreas/purified.js"> </script>
 	<script type="text/javascript" src="data/IQAndreas/shiny.js"> </script>
 	
+	<script type="text/javascript" src="pokemon.js"> </script>
 	<script type="text/javascript" src="pokedex.js"> </script>
 
 	<script>
-		
 
-this.onload = function() {
-
-	var container = document.querySelector('.pokemon-container.auto');
+function listAllPokemon(container) {
+	
 	var pokedex = new Pokedex(container);
 	
 	var currentGen = null;
-	pokemonList.forEach( pokemonID => {
+	pokemonFilter.all.forEach( pokemonMatch => {
 		
 		//console.log(pokemonID);
-		var pokemon = Pokemon.auto( pokemonID );
+		var pokemon = Pokemon.querySelector( pokemonMatch );
 		if (!pokemon) {
-			console.log("Could not find pokemon with ID:", pokemonID);
+			console.log("Could not find pokemon with that matches:", pokemonMatch);
 			return;
 		}
 		
@@ -76,10 +76,6 @@ this.onload = function() {
 		pokemon.cp = Math.floor(Math.random() * 4000);
 		*/
 		
-		var a = all.find( p => p.ID == pokemonID );
-		
-		//console.log(pokemonID, a, l);
-		
 		// DEBUGGING
 		//pokemon.lucky = true;
 		//pokemon.purified = true;
@@ -91,8 +87,55 @@ this.onload = function() {
 	});
 	
 	if (currentGen) {
-		pokedex.addEmpties(16);
+		pokedex.addEmpties();
 	}
+	
+}	
+
+function listBabies(container) {
+	
+	var pokedex = new Pokedex(container);
+	
+	var currentGen = null;
+	pokemonFilter.all.forEach( pokemonMatch => {
+		
+		//console.log(pokemonID);
+		var pokemon = Pokemon.querySelector( pokemonMatch );
+		if (!pokemon) {
+			console.log("Could not find pokemon with that matches:", pokemonMatch);
+			return;
+		}
+		
+		if (!pokemon.baby) return;
+		
+		pokedex.addPokemon( pokemon );
+		
+	});
+	
+	if (currentGen) {
+		pokedex.addEmpties();
+	}
+	
+}	
+
+this.onload = function() {
+
+	var container = document.querySelector('.pokemon-container.auto');
+	
+	
+	//var pokedex = new Pokedex(container);
+	//var pokemon = Pokemon.searchByID('PIKACHU');
+	//var pokemon = Pokemon.querySelector({ID:'PIKACHU'});
+	//var pokemon = Pokemon.querySelector({ID:'PIKACHU', gender:'FEMALE'});
+	//pokedex.addPokemon(pokemon);
+	
+	/*var arr = Pokemon.querySelectorAll( {ID:'RAICHU', gender:''} );
+	arr.forEach( pokemon => pokedex.addPokemon(pokemon) );
+	pokedex.addEmpties();
+	*/
+	
+	//listAllPokemon(container);
+	listBabies(container);
 	
 }
 		

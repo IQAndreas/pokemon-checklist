@@ -7,29 +7,39 @@
 	<title>Pokedex</title>
 	
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="index.css" />
+	<link rel="stylesheet" type="text/css" href="../index.css" />
 	<style type="text/css">
 		
 	</style>
 	
 	
-	<script type="text/javascript" src="data/pokemonstats.js"> </script>
-	<script type="text/javascript" src="data/moves.js"> </script>
-	<script type="text/javascript" src="data/pokemonlist.js"> </script>
+	<script type="text/javascript" src="../data/pokemonstats.js"> </script>
+	<script type="text/javascript" src="../data/moves.js"> </script>
+	<script type="text/javascript" src="../data/pokemonlist.js"> </script>
 	
-	<script type="text/javascript" src="data/IQAndrea/all.js"> </script>
-	<script type="text/javascript" src="data/IQAndrea/lucky.js"> </script>
-	<script type="text/javascript" src="data/IQAndrea/purified.js"> </script>
-	<script type="text/javascript" src="data/IQAndrea/shiny.js"> </script>
+	<script type="text/javascript" src="data/all.js"> </script>
+	<script type="text/javascript" src="data/lucky.js"> </script>
+	<script type="text/javascript" src="data/purified.js"> </script>
+	<script type="text/javascript" src="data/shiny.js"> </script>
 	
-	<script type="text/javascript" src="pokedex.js"> </script>
+	<script type="text/javascript" src="../pokemon.js"> </script>
+	<script type="text/javascript" src="../pokedex.js"> </script>
 
 	<script>
+		
 
+this.onload = function() {
 
-function listMissingPokemon(container) {
+	var container = document.querySelector('.pokemon-container.auto');
+	
+	/*lucky.forEach( p => {
+		if (p.PURIFIED == 'PURIFIED') {
+			console.log(p.ID);
+		}
+	});*/
+	
 	var pokedex = new Pokedex(container);
-
+	
 	pokedex.addHeader('missing', "Missing from Pokedex", 'pokedex', 'pokedex');
 	var arr = all.filter( p => p.STATE == 'MISSING' );
 	arr.forEach( p => {
@@ -73,11 +83,93 @@ function listMissingPokemon(container) {
 	});
 	pokedex.addEmpties();
 	
-}
-
-function listShinyPokemon(container) {
-	var pokedex = new Pokedex(container);
-
+	
+	
+	
+	
+	
+	
+	pokedex.addHeader('regional', "Regional Pokemon For Trade", 'regional', 'trade');
+	//var arr = all.filter( p => p.STATE == 'MISSING' );
+	all.forEach( p => {
+		if (p.ID == "") return;
+		var pokemon = Pokemon.auto2(p);
+		console.log(p.ID, p.STATE, pokemon);
+		
+		if (pokemon.unreleased) return;
+		if (!pokemon.regional) return;
+		
+		if (pokemon.regional) {
+			console.log(pokemon.ID, pokemon.regions);
+			if ( !pokemon.regions.includes('EUROPE') && !pokemon.regions.includes('EAST') && !pokemon.regions.includes('NORTH') ) {
+				// keep
+			} else {
+				return;
+			}
+		}
+		
+		if (p && p.STATE == 'MISSING') {
+			//console.log("MISSING:", pokemonID);
+			//pokemon.mystery = true;
+			return;
+		}
+		
+		// TRADED
+		if (pokemon.ID == 'KANGASKHAN') {
+			return;
+		}
+		
+		pokemon.lvl = "";
+		
+		//if (pokemon.unreleased) return;
+		
+		pokedex.addPokemon( pokemon );
+	});
+	pokedex.addEmpties();
+	
+	
+	pokedex.addHeader('regional', "Regional Pokemon For Trade (Sweden)", 'regional', 'trade');
+	//var arr = all.filter( p => p.STATE == 'MISSING' );
+	all.forEach( p => {
+		if (p.ID == "") return;
+		var pokemon = Pokemon.auto2(p);
+		console.log(p.ID, p.STATE, pokemon);
+		
+		if (pokemon.unreleased) return;
+		if (!pokemon.regional) return;
+		
+		if (pokemon.regional) {
+			console.log(pokemon.ID, pokemon.regions);
+			if ( !pokemon.regions.includes('EUROPE') && !pokemon.regions.includes('EAST') && !pokemon.regions.includes('NORTH') ) {
+				return;
+			} else {
+				// keep
+			}
+		}
+		
+		if (p && p.STATE == 'MISSING') {
+			//console.log("MISSING:", pokemonID);
+			pokemon.mystery = true;
+			//return;
+		}
+		
+		pokemon.lvl = "";
+		
+		//if (pokemon.unreleased) return;
+		
+		pokedex.addPokemon( pokemon );
+	});
+	pokedex.addEmpties();
+	
+	//return;
+	
+	
+	
+	
+	
+	
+	
+	
 	var arr = shiny.map( p => Pokemon.auto2(p) );
 	arr = arr.sort( (a,b) => {
 		if (a.pokedexID == b.pokedexID) {
@@ -104,12 +196,64 @@ function listShinyPokemon(container) {
 		pokedex.addPokemon( pokemon );
 	});
 	pokedex.addEmpties();
-}
-
-function listPokedex() {
+	
+	
+	
+	var arr = lucky.map( p => Pokemon.auto2(p) );
+	arr = arr.filter( p => p && p.ID != "" );
+	arr = arr.sort( (a,b) => {
+		return (a.generationID - b.generationID) || (a.pokedexID - b.pokedexID) || (b.cp - a.cp);
+	});
+	/*arr = arr.sort( (a,b) => {
+		if (a.pokedexID == b.pokedexID) {
+			return (b.cp - a.cp);
+		} else {
+			return -1 * (b.pokedexID - a.pokedexID);
+		}
+	});*/
+	var currentGen = null;
+	arr.forEach( pokemon => {
+	
+		if (pokemon.trash) return;
+	
+		if (pokemon.generationID !== currentGen) {
+		
+			if (currentGen) {
+				pokedex.addEmpties(16);
+			}
+			
+			switch (pokemon.generationID) {
+				case 1: pokedex.addHeader('kanto', "Kanto (Gen #1)", 'kanto', 'kanto'); break;
+				case 2: pokedex.addHeader('johto', "Johto (Gen #2)", 'johto', 'johto'); break;
+				case 3: pokedex.addHeader('hoenn', "Hoenn (Gen #3)", 'hoenn', 'hoenn'); break;
+				case 4: pokedex.addHeader('sinnoh', "Sinnoh (Gen #4)", 'sinnoh', 'sinnoh'); break;
+				case 5: pokedex.addHeader('unova', "Unova (Gen #5)", 'unova', 'unova'); break;
+				case 6: pokedex.addHeader('kalos', "Kalos (Gen #6)", 'kalos', 'kalos'); break;
+				case 7: pokedex.addHeader('alola', "Alola (Gen #7)", 'alola', 'alola'); break;
+				case 8: pokedex.addHeader('galar', "Galar (Gen #8)", 'galar', 'galar'); break;
+				default:  pokedex.addHeader('unknown', "Unknown Generation"); console.log(pokemon.generationID); break;
+			}
+			currentGen = pokemon.generationID;
+		}
+	
+	
+		pokemon.lvl = "";
+	
+		
+		pokedex.addPokemon( pokemon );
+		
+	});
+	
+	if (currentGen) {
+		pokedex.addEmpties(16);
+	}
+	
+	
+	
+	return;
 	
 	var currentGen = null;
-	pokemonList.forEach( pokemonID => {
+	arr.forEach( pokemonID => {
 		
 		//console.log(pokemonID);
 		var pokemon = Pokemon.auto( pokemonID );
@@ -197,24 +341,17 @@ function listPokedex() {
 	if (currentGen) {
 		pokedex.addEmpties(16);
 	}
-
-
-
-}
-
-
-
-this.onload = function() {
-
-	var container = document.querySelector('.pokemon-container.auto');
 	
-	/*lucky.forEach( p => {
-		if (p.PURIFIED == 'PURIFIED') {
-			console.log(p.ID);
-		}
-	});*/
 	
-	listShinyPokemon(container);
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	return;
@@ -239,72 +376,6 @@ this.onload = function() {
 	
 	pokedexRegional.addHeader( 'reginals-sweden', "Regionals (Other) for Trade", 'regional', 'trade' );
 	listPokemon(regional.other, pokedexRegional);
-	
-	
-	
-	
-	
-	
-	
-	
-	var arr = lucky.map( p => Pokemon.auto2(p) );
-	arr = arr.filter( p => p && p.ID != "" );
-	arr = arr.sort( (a,b) => {
-		return (a.generationID - b.generationID) || (a.pokedexID - b.pokedexID) || (b.cp - a.cp);
-	});
-	
-	console.log(lucky.length, arr.length)
-	
-	/*arr = arr.sort( (a,b) => {
-		if (a.pokedexID == b.pokedexID) {
-			return (b.cp - a.cp);
-		} else {
-			return -1 * (b.pokedexID - a.pokedexID);
-		}
-	});*/
-	var currentGen = null;
-	arr.forEach( pokemon => {
-	
-		if (pokemon.trash) return;
-	
-		if (pokemon.generationID !== currentGen) {
-		
-			if (currentGen) {
-				pokedex.addEmpties(16);
-			}
-			
-			switch (pokemon.generationID) {
-				case 1: pokedex.addHeader('kanto', "Kanto (Gen #1)", 'kanto', 'kanto'); break;
-				case 2: pokedex.addHeader('johto', "Johto (Gen #2)", 'johto', 'johto'); break;
-				case 3: pokedex.addHeader('hoenn', "Hoenn (Gen #3)", 'hoenn', 'hoenn'); break;
-				case 4: pokedex.addHeader('sinnoh', "Sinnoh (Gen #4)", 'sinnoh', 'sinnoh'); break;
-				case 5: pokedex.addHeader('unova', "Unova (Gen #5)", 'unova', 'unova'); break;
-				case 6: pokedex.addHeader('kalos', "Kalos (Gen #6)", 'kalos', 'kalos'); break;
-				case 7: pokedex.addHeader('alola', "Alola (Gen #7)", 'alola', 'alola'); break;
-				case 8: pokedex.addHeader('galar', "Galar (Gen #8)", 'galar', 'galar'); break;
-				default:  pokedex.addHeader('unknown', "Unknown Generation"); console.log(pokemon.generationID); break;
-			}
-			currentGen = pokemon.generationID;
-		}
-	
-	
-		pokemon.lvl = "";
-	
-		
-		pokedex.addPokemon( pokemon );
-		
-	});
-	
-	if (currentGen) {
-		pokedex.addEmpties(16);
-	}
-	
-	
-	
-	
-	
-	
-	
 	
 	//pokedexRegional.addHeader( 'reginals-sweden', "Regionals (Other) for Trade", 'regional', 'trade' );
 	//pokedexRegional.addPokemon( Pokemon.auto('ELGYEM') );

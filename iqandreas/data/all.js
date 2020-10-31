@@ -644,7 +644,7 @@ var all = [
 	{ "ID":"EELEKTRIK", "NAME":"Eelektrik", "CP":"", "LVL":"", "STATE":"UNRELEASED", "SHINY":"", "MOVE1":"", "MOVE2":"", },
 	{ "ID":"EELEKTROSS", "NAME":"Eelektross", "CP":"", "LVL":"", "STATE":"UNRELEASED", "SHINY":"", "MOVE1":"", "MOVE2":"", },
 	{ "ID":"ELGYEM", "NAME":"Elgyem", "CP":"", "LVL":"", "STATE":"UNRELEASED", "SHINY":"", "MOVE1":"", "MOVE2":"", },
-	{ "ID":"BEHEEYEM", "NAME":"Beheeyem", "CP":"", "LVL":"", "STATE":"MISSING", "SHINY":"", "MOVE1":"", "MOVE2":"", },
+	{ "ID":"BEHEEYEM", "NAME":"Beheeyem", "CP":"", "LVL":"", "STATE":"UNRELEASED", "SHINY":"", "MOVE1":"", "MOVE2":"", },
 	{ "ID":"LITWICK", "NAME":"Litwick", "CP":"716", "LVL":"26", "STATE":"", "SHINY":"", "MOVE1":"", "MOVE2":"", },
 	{ "ID":"LAMPENT", "NAME":"Lampent", "CP":"", "LVL":"", "STATE":"", "SHINY":"", "MOVE1":"", "MOVE2":"", },
 	{ "ID":"CHANDELURE", "NAME":"Chandelure", "CP":"", "LVL":"", "STATE":"", "SHINY":"", "MOVE1":"", "MOVE2":"", },
