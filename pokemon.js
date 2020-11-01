@@ -1,5 +1,5 @@
 
-const ROOT = '/'
+const ROOT = '../';
 
 const POKEMON_IMAGE_DIR = ROOT + 'pokemon_icons/';
 const HEADERS = ROOT + 'headers/';
