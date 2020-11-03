@@ -1019,7 +1019,7 @@ pokemonFilter.family = [
 	{"family":"FAMILY_SHIELDON"},
 	{"family":"FAMILY_PACHIRISU"},
 	{"family":"FAMILY_BUIZEL"},
-	{"family":"FAMILY_CHERUBI"},
+	{"family":"FAMILY_CHERUBI","ID":"CHERRIM"},
 	{"family":"FAMILY_CHERUBI","FORM":"OVERCAST"},
 	{"family":"FAMILY_CHERUBI","FORM":"SUNNY"},
 	{"family":"FAMILY_SHELLOS","FORM":"EAST_SEA"},
