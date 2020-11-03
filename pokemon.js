@@ -406,10 +406,18 @@ class Pokemon {
 		
 		p.data = data;
 		
+		function parseIntString(value) {
+			// Remove thousands separators
+			// https://stackoverflow.com/questions/11665884/how-can-i-parse-a-string-with-a-comma-thousand-separator-to-a-number/43448891#comment15461327_11665915
+			// This regex is so smooth and clever... I love it.
+			value = value.replace(/(\d+),(?=\d{3}(\D|$))/g, "$1");
+			return parseInt(value, 10);
+		}
+		
 		// DISABLED TEMPORARILY DUE TO BUG...
 		//if (data.hasOwnProperty('NAME')) p.name = String(data['NAME']);
-		if (data.hasOwnProperty('LVL'))  p.lvl  = parseInt(data['LVL'],10);
-		if (data.hasOwnProperty('CP'))   p.cp   = parseInt(data['CP'],10);
+		if (data.hasOwnProperty('LVL'))  p.lvl  = parseIntString(data['LVL']);
+		if (data.hasOwnProperty('CP'))   p.cp   = parseIntString(data['CP']);
 		
 		if (data.hasOwnProperty('STATE')) {
 			if (data['STATE'] == 'LUCKY') p.lucky = true;
