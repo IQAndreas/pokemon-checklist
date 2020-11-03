@@ -278,9 +278,9 @@ body .pokemon-container {
 	height: 0px;
 	position: relative;
 	text-align: center;
-	padding: 0px 0px;
-	margin: 0px 5px;
-	/*border: none;*/
+	padding: 0px calc(5px + 8px);
+	margin: 0px calc(5px);
+	border: none;
 	background: none;
 	
 	border-radius: 20px;
