@@ -170,13 +170,6 @@ class Pokedex {
 		overlayTop.className = 'overlay-top';
 		element.appendChild(overlayTop);
 		
-		console.log(pokemon, this.displayLVL, pokemon.lvl);
-		
-		if (this.displayLVL && pokemon.lvl) {
-			var cpSpan = this.makeSpan(overlayTop, "LVL", 'lvl', this.displayLVL);
-			var cpValue = this.makeSpan(cpSpan, pokemon.lvl, 'lvl-value');
-		}
-		
 		
 		// <div class='pokemon flying fire pokemon-purified'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_146_00.png' /><span class='cp'>CP<span class='cp-value'>2,412</span></span><span class='purified'><img src='assets/purified.png'><span>PURIFIED</span><img src='assets/purified.png'></span><span class='name'>Moltres</span></div>
 		if (this.displayPurified && pokemon.purified) {
@@ -193,9 +186,16 @@ class Pokedex {
 			var shiny = this.makeOverlay(overlayTop, "Shiny", 'shiny-overlay', 'shiny', 'shiny')
 		}
 		
+		//console.log(pokemon, this.displayCP, pokemon.cp);
 		if (this.displayCP && pokemon.cp) {
 			var cpSpan = this.makeSpan(overlayTop, "CP", 'cp', this.displayCP);
 			var cpValue = this.makeSpan(cpSpan, pokemon.cp, 'cp-value');
+		}
+		
+		//console.log(pokemon, this.displayLVL, pokemon.lvl);
+		if (this.displayLVL && pokemon.lvl) {
+			var cpSpan = this.makeSpan(overlayTop, "LVL", 'lvl', this.displayLVL);
+			var cpValue = this.makeSpan(cpSpan, pokemon.lvl, 'lvl-value');
 		}
 		
 		

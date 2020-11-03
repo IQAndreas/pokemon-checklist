@@ -1,0 +1,154 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>Pokedex - Shiny</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../index.css" />
+	<style type="text/css">
+		
+	</style>
+	
+	
+	<script type="text/javascript" src="../data/pokemonstats.js"> </script>
+	<script type="text/javascript" src="../data/moves.js"> </script>
+	<script type="text/javascript" src="../data/pokemonlist.js"> </script>
+	
+	<script type="text/javascript" src="data/all.js"> </script>
+	<script type="text/javascript" src="data/lucky.js"> </script>
+	<script type="text/javascript" src="data/purified.js"> </script>
+	<script type="text/javascript" src="data/shiny.js"> </script>
+	
+	<script type="text/javascript" src="../pokemon.js"> </script>
+	<script type="text/javascript" src="../pokedex.js"> </script>
+
+	<script>
+
+const SORT_ASC = +1;
+const SORT_DESC = -1;
+//function sortBy(...args) {
+function sortBy(sortValues) {
+
+	if (typeof sortValues === 'string') {
+		var str = sortValues;
+		sortValues = {};
+		sortValues[str] = 'asc';
+	}
+	
+	var keys = Object.keys(sortValues);
+
+	return function(a,b) {
+		for (var i = 0; i < keys.length; i++) {
+			//console.log(c, typeof a[c], a[c], b[c], ((a[c] > b[c]) ? +1 : -1));
+			var property = keys[i];
+			var options = sortValues[property];
+			if (a[property] != b[property]) {
+				return ((a[property] > b[property]) ? +1 : -1) * (options == 'asc' ? SORT_ASC : SORT_DESC);
+			}
+		};
+		
+		return 0;
+	}
+}
+
+
+function sortByCP(a, b) {
+	//var arr = lucky.map( p => Pokemon.auto2(p) );
+	return (b.cp - a.cp);
+}	
+
+function defaultMap(pokemonMatch) {
+	var pokemon = Pokemon.querySelector( pokemonMatch );
+	if (!pokemon) {
+		console.log("Could not find pokemon with that matches:", pokemonMatch);
+		return;
+	}
+}
+
+
+this.onload = function() {
+	
+	var pokemon_shiny = shiny.map( p => {
+		return Pokemon.auto2( p );
+	});
+	pokemon_shiny = pokemon_shiny.filter( p => (p != null) );
+	
+	//const SORT_BY = 'cp';
+	//const SORT_BY = 'pokedexID';
+	//const SORT_BY = 'lvl';
+	//const SORT_BY = 'name';
+	const SORT_BY = { pokedexID:'asc', cp:'desc' };
+	
+	//console.log(pokemon_shiny[0]);
+	//console.log(pokemon_shiny.sort(sortByCP)[0]);
+	//console.log(pokemon_shiny.sort(sortBy(SORT_BY))[0]);
+	//console.log(pokemon_shiny.sort(sortBy('pokedexID', 'cp'))[0]);
+	
+	//console.log("BEFORE:", pokemon_shiny[0].name);
+	//pokemon_shiny = pokemon_shiny.sort(sortBy(SORT_BY)); //pokedexID
+	pokemon_shiny = pokemon_shiny.sort(sortBy(SORT_BY)); //pokedexID
+	//console.log("AFTER:", pokemon_shiny[0].name);
+	
+	/*var pokedex = new Pokedex(container);
+	pokedex.displayCP = true;
+	pokedex.displayLVL = false;*/
+	
+	var container = document.querySelector('#shiny');
+	var pokedex = new Pokedex(container);
+	var tall = false;
+	if (tall) {
+		container.className += " tall";
+		pokedex.displayLVL = 'hover-show';
+		pokedex.displayCP = true;
+	} else {
+		pokedex.displayCP = 'hover-hide';
+		pokedex.displayLVL = 'hover-show';
+	}
+	
+	pokedex.addHeader('shiny', "Shiny Pokemon");
+	pokemon_shiny.forEach( pokemon => {
+		console.log(pokemon.name, SORT_BY, pokemon[SORT_BY]);
+		if (pokemon.lucky) return;
+		if (pokemon.valuable) return;
+		pokedex.addPokemon( pokemon );
+	});
+	pokedex.addEmpties();
+	
+	
+	var container = document.querySelector('#shiny-valuable');
+	var pokedex = new Pokedex(container);
+	var tall = true;
+	if (tall) {
+		container.className += " tall";
+		pokedex.displayLVL = 'hover-show';
+		pokedex.displayCP = true;
+	} else {
+		pokedex.displayCP = 'hover-hide';
+		pokedex.displayLVL = 'hover-show';
+	}
+	
+	pokedex.addHeader('shiny', "Valuable Shiny Pokemon");
+	pokemon_shiny.forEach( pokemon => {
+		if (pokemon.lucky) return;
+		if (!pokemon.valuable) return;
+		pokedex.addPokemon( pokemon );
+	});
+	pokedex.addEmpties();
+	
+}
+		
+		
+	</script>
+
+</head>
+<body>
+	
+	<div id="shiny" class='pokemon-container auto'></div>
+	<div id="shiny-valuable" class='pokemon-container auto'></div>
+
+</body>
+
+</html>
