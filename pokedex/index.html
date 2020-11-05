@@ -4,7 +4,7 @@
 <head>
 	
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<title>Pokedex - IQAndreas (Lucky)</title>
+	<title>Pokedex</title>
 	
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../index.css" />
@@ -14,25 +14,15 @@
 	
 	
 	<script type="text/javascript" src="../data/pokemonstats.js"> </script>
-	<script type="text/javascript" src="../data/moves.js"> </script>
 	<script type="text/javascript" src="../data/pokemonlist.js"> </script>
-	
-	<script type="text/javascript" src="data/all.js"> </script>
-	<script type="text/javascript" src="data/lucky.js"> </script>
-	<script type="text/javascript" src="data/purified.js"> </script>
-	<script type="text/javascript" src="data/shiny.js"> </script>
+	<script type="text/javascript" src="../data/moves.js"> </script>
 	
 	<script type="text/javascript" src="../pokemon.js"> </script>
 	<script type="text/javascript" src="../pokedex.js"> </script>
 
 	<script>
-
-
-function sortByCP(a, b) {
-	//var arr = lucky.map( p => Pokemon.auto2(p) );
-	return (b.cp - a.cp);
-}	
 	
+
 function defaultMap(pokemonMatch) {
 	var pokemon = Pokemon.querySelector( pokemonMatch );
 	if (!pokemon) {
@@ -79,41 +69,42 @@ function makeFullPokedex(pokedex, filter, map) {
 	
 }
 
-
+function listBabies(container) {
+	
+	var pokedex = new Pokedex(container);
+	
+	var pokemon_all = pokemonFilter.all.map( p => {
+		return Pokemon.auto2( p );
+	});
+	
+	var currentGen = null;
+	pokemon_all.forEach( pokemonMatch => {
+		
+		//console.log(pokemonID);
+		var pokemon = Pokemon.querySelector( pokemonMatch );
+		if (!pokemon) {
+			console.log("Could not find pokemon with that matches:", pokemonMatch);
+			return;
+		}
+		
+		if (!pokemon.baby) return;
+		
+		pokedex.addPokemon( pokemon );
+		
+	});
+	
+	if (currentGen) {
+		pokedex.addEmpties();
+	}
+	
+}	
 
 this.onload = function() {
 
 	var container = document.querySelector('.pokemon-container.auto');
-	
-	var pokemon_all = all.map( p => {
-		return Pokemon.auto2( p );
-	});
-	pokemon_all = pokemon_all.filter( p => (p != null) );
-	pokemon_all = pokemon_all.sort(sortByCP);
-	
-	var pokemon_lucky = lucky.map( p => {
-		return Pokemon.auto2( p );
-	});
-	pokemon_lucky = pokemon_lucky.filter( p => (p != null) && (!p.trash) );
-	pokemon_lucky = pokemon_lucky.sort(sortByCP);
-	
-	/*var pokedex = new Pokedex(container);
-	pokedex.displayCP = true;
-	pokedex.displayLVL = false;*/
-	
 	var pokedex = new Pokedex(container);
-	const tall = true;
-	if (tall) {
-		container.className += " tall";
-		pokedex.displayLVL = true;
-		pokedex.displayCP = 'hover-show';
-	} else {
-		pokedex.displayCP = 'hover-show';
-		pokedex.displayLVL = 'hover-hide';
-	}
-	
-	
-	function findBestPokemonSingle(pokemonMatch) {
+	var filter = pokemonFilter.all;
+	/*makeFullPokedex(pokedex, filter, pokemonMatch => {
 	
 		var pokemon = null;
 		//var allLucky = pokemon_lucky.filter( p => p.costume == "" && p.matches( pokemonMatch ) );
@@ -122,20 +113,15 @@ this.onload = function() {
 		var allLucky = pokemon_lucky.filter( p => p.matches( pokemonMatch ) );
 		var bestLucky = pokemon_lucky.find( p => p.matches( pokemonMatch ) );
 		var bestPokemon = pokemon_all.find( p => p.matches( pokemonMatch ) );
-		var defaultPokemon = defaultMap(pokemonMatch);
 		
-		// Display only first result
-		//if (allLucky.length > 1) {
-		//	return allLucky;
-		//}
+		if (allLucky.length > 1) {
+			return allLucky;
+		}
 		
 		if (bestLucky) {
 			pokemon = bestLucky;
 		} else if (bestPokemon) {
 			pokemon = bestPokemon;
-		} else if (defaultPokemon) {
-			pokemon = defaultPokemon;
-			pokemon.mystery = true;
 		} else {
 			console.log("Cannot find", pokemonMatch);
 			return null;
@@ -147,15 +133,26 @@ this.onload = function() {
 		
 		return pokemon;
 	
-	}
+	});*/
 	
-	makeFullPokedex(pokedex, pokemonFilter.family, findBestPokemonSingle);
-	makeFullPokedex(pokedex, pokemonFilter.baby, findBestPokemonSingle);
-	makeFullPokedex(pokedex, pokemonFilter.costumes, findBestPokemonSingle);
+	makeFullPokedex(pokedex, filter);
 	
 	return;
 	
 	
+	
+	//var pokemon = Pokemon.searchByID('PIKACHU');
+	//var pokemon = Pokemon.querySelector({ID:'PIKACHU'});
+	//var pokemon = Pokemon.querySelector({ID:'PIKACHU', gender:'FEMALE'});
+	//pokedex.addPokemon(pokemon);
+	
+	/*var arr = Pokemon.querySelectorAll( {ID:'RAICHU', gender:''} );
+	arr.forEach( pokemon => pokedex.addPokemon(pokemon) );
+	pokedex.addEmpties();
+	*/
+	
+	//listAllPokemon(container);
+	//listBabies(container);
 	
 }
 		

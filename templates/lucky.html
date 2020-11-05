@@ -39,16 +39,17 @@ function defaultMap(pokemonMatch) {
 		console.log("Could not find pokemon with that matches:", pokemonMatch);
 		return;
 	}
+	return pokemon;
 }
 
-function makeFullPokedex(pokedex, map) {
+function makeFullPokedex(pokedex, filter, map) {
 	
 	if (map == null) {
 		map = defaultMap;
 	}
 	
 	var header = null;
-	pokemonFilter.family.forEach( pokemonMatch => {
+	filter.forEach( pokemonMatch => {
 		
 		if ( pokemonMatch["TYPE"] == 'HEADER' ) {
 			if (header) pokedex.addEmpties();
@@ -111,7 +112,7 @@ this.onload = function() {
 		pokedex.displayLVL = 'hover-hide';
 	}
 	
-	makeFullPokedex(pokedex, pokemonMatch => {
+	makeFullPokedex(pokedex, pokemonFilter.family, pokemonMatch => {
 	
 		var pokemon = null;
 		//var allLucky = pokemon_lucky.filter( p => p.costume == "" && p.matches( pokemonMatch ) );

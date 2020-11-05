@@ -423,6 +423,7 @@ class Pokemon {
 			if (data['STATE'] == 'LUCKY') p.lucky = true;
 			if (data['STATE'] == 'TRASH') p.trash = true;
 			if (data['STATE'] == 'MISSING') p.missing = true;
+			if (data['STATE'] == 'UNRELEASED') p.missing = true;
 			if (data['STATE'] == 'VALUABLE') p.valuable = true;
 			if (data['STATE'] == '@SPECIAL') p.valuable = true;
 			if (data['STATE'] == 'RESERVED') p.valuable = true;
@@ -445,19 +446,27 @@ class Pokemon {
 	
 	matches( require ) {
 	
-		if (require.hasOwnProperty('ID')) {
-			if (Array.isArray(require.ID)) {
+	
+		function checkProperty(require, requireID, target, targetID) {
+					
+			if (require.hasOwnProperty(requireID)) {
+				var requireArray = Array.isArray(require[requireID]) ? require[requireID] : [require[requireID]];
 				var anyMatch = false;
-				require.ID.forEach( value => {
-					if (this.ID == value) anyMatch = true;
+				requireArray.forEach( value => {
+					if (target[targetID] == value) anyMatch = true;
 				} );
-				if (!anyMatch) return false;		
-			} else {
-				// String match
-				if (this.ID != require.ID) return false;
+				
+				return anyMatch;
 			}
+			
+			return true;
 		}
 		
+		if (!checkProperty(require, 'ID',      this, 'ID'))   return false;
+		//if (!checkProperty(require, 'FORM',    this, 'POGO_FORM')) return false;
+		if (!checkProperty(require, 'COSTUME', this, 'costume'))   return false;
+			
+			
 		if (require.hasOwnProperty('ID_FULL') && (this.ID_FULL != require.ID_FULL)) return false;
 		//if (require.hasOwnProperty('ID')      && (this.ID      != require.ID))      return false;
 		//if (require.hasOwnProperty('FORM')    && (this.FORM    != require.FORM))    return false;
@@ -585,6 +594,8 @@ class Pokemon {
 			{ID:"GYARADOS", move:"Aqua Tail"},
 			{ID:"PORYGON_Z", move:"Tri Attack"},
 			{ID:"CHARIZARD", move:"Dragon Breath"},
+			{ID:"ELEKTRIKE", move:"Flamethrower"},
+			{ID:"MAGMAR", move:"Thunderbolt"},
 		]
 		COMMUNITY_DAY.forEach( m => {
 			if (this.matches(m)) {
@@ -599,6 +610,10 @@ class Pokemon {
 			{ID:"LICKITUNG", move:"Body Slam"},
 			{ID:"MEWTWO", form:"",  move:"Psystrike"},
 			{ID:"MEWTWO", form:"A", move:"Psystrike"},
+			{ID:"ARTICUNO",	move:"Hurricane"},
+			{ID:"ZAPDOS",	move:"Thunder Shock"},
+			{ID:"MOLTRES",	move:"Sky Attack"},
+			
 		]
 		SPECIAL.forEach( m => {
 			if (this.matches(m)) {
@@ -648,22 +663,29 @@ class PokemonStats extends Pokemon {
 				return true;
 			}
 			
-			if (require.hasOwnProperty('ID')) {
-				if (Array.isArray(require.ID)) {
+			function checkProperty(require, requireID, target, targetID) {
+				
+				if (require.hasOwnProperty(requireID)) {
+					var requireArray = Array.isArray(require[requireID]) ? require[requireID] : [require[requireID]];
 					var anyMatch = false;
-					require.ID.forEach( value => {
-						if (p.POGO_ID == value) anyMatch = true;
+					requireArray.forEach( value => {
+						if (target[targetID] == value) anyMatch = true;
 					} );
-					if (!anyMatch) return false;		
-				} else {
-					// String match
-					if (this.ID != require.ID) return false;
+					
+					return anyMatch;
 				}
+				
+				return true;
 			}
+			
+			if (!checkProperty(require, 'ID',      p, 'POGO_ID'))   return false;
+			if (!checkProperty(require, 'FORM',    p, 'POGO_FORM')) return false;
+			if (!checkProperty(require, 'COSTUME', p, 'COSTUME'))   return false;
+			
 			
 			if (require.hasOwnProperty('ID_FULL') && (p.POGO_ID_FULL != require.ID_FULL)) return false;
 			//if (require.hasOwnProperty('ID')      && (p.POGO_ID      != require.ID))      return false;
-			if (require.hasOwnProperty('FORM')    && (p.POGO_FORM    != require.FORM))    return false;
+			//if (require.hasOwnProperty('FORM')    && (p.POGO_FORM    != require.FORM))    return false;
 			if (require.hasOwnProperty('FORM_ID') && (p.POGO_FORM_ID != require.FORM_ID)) return false;
 			
 			if (require.hasOwnProperty('pokedexID')) {
