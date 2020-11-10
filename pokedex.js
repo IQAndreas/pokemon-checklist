@@ -1,4 +1,80 @@
 
+// ------------------------------------------------------------
+
+function sortByCP(a, b) {
+	//var arr = lucky.map( p => Pokemon.auto2(p) );
+	return (b.cp - a.cp);
+}	
+	
+function defaultMap(pokemonMatch) {
+	var pokemon = Pokemon.querySelector( pokemonMatch );
+	if (!pokemon) {
+		console.log("Could not find pokemon with that matches:", pokemonMatch);
+		return;
+	}
+	return pokemon;
+}
+
+function makeFullPokedex(pokedex, filter, map) {
+	
+	if (map == null) {
+		map = defaultMap;
+	}
+	
+	var header = null;
+	filter.forEach( pokemonMatch => {
+		
+		if ( pokemonMatch["TYPE"] == 'HEADER' ) {
+			if (header) pokedex.addEmpties();
+			header = pokemonMatch;
+			pokedex.addHeader(header["ID"], header["TEXT"], header["IMG1"], header["IMG2"]);
+			return;
+			
+		} else if (Array.isArray(pokemonMatch)) {
+			
+			var pokemonArray = [];
+			pokemonMatch.forEach(require => {
+				var pokemon = map(require);
+				//console.log(pokemon);
+				if (!pokemon) {
+					return;
+				} else if (Array.isArray(pokemon)) {
+					pokemonArray.concat(pokemon);
+				} else {
+					pokemonArray.push(pokemon);
+				}
+			});
+			
+			var family = pokedex.addFamily();
+			pokemonArray.forEach( p => {
+				pokedex.addPokemon(p,family);
+			});
+			return;
+			
+		} else {
+			
+			var pokemon = map(pokemonMatch);
+			//console.log(pokemon);
+			
+			if (!pokemon) {
+				return;
+			} else if (Array.isArray(pokemon)) {
+				var family = pokedex.addFamily();
+				pokemon.forEach( p => {
+					pokedex.addPokemon(p,family);
+				});
+			} else {
+				pokedex.addPokemon(pokemon);
+			}
+		}
+	});
+	
+	if (header) pokedex.addEmpties();
+	
+}
+
+// ------------------------------------------------------------
+
 class Pokedex {
 
 	constructor(container, style) {

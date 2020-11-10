@@ -1,6 +1,6 @@
 body {
 	background-color: black;
-	padding: 20px;
+	padding: 20px 20px;
 	
 	/*transform: scale(1.25);
 	transform-origin: 0% 0% 0px;*/
@@ -55,29 +55,14 @@ body .pokemon-container {
 	justify-content: center;
 }
 
-@media (max-width: 600px) { 
+.pokemon-container {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 	
-	.pokemon-container {
-		padding-top: 10px;
-		padding-bottom: 10px;
-		padding-left: 10px;
-		padding-right: 10px;
-		
-		/*width: 100%;*/
-		/*height: 100%;*/
-	}
-}
-@media (min-width: 600px) { 
-	
-	.pokemon-container {
-		padding-top: 10px;
-		padding-bottom: 10px;
-		padding-left: 10px;
-		padding-right: 10px;
-		
-		/*width: 100%;*/
-		/*height: 100%;*/
-	}
+	/*width: 100%;*/
+	/*height: 100%;*/
 }
 
 .pokemon {
@@ -639,6 +624,43 @@ body .pokemon-container {
 	z-index: 50;
 	filter: drop-shadow(0px 0px 4px #000);
 }
+
+
+
+
+
+
+
+
+
+@media screen {
+	body {
+		padding: 2px 2px;
+	}
+
+	.header, .header2 {
+		padding-top: 10px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	
+	.pokemon-container {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 0px;
+		padding-right: 0px;
+		
+		/*width: 100%;*/
+		/*height: 100%;*/
+	}
+}
+
+
+
+
+
+
+
 
 
 

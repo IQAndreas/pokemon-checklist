@@ -1,2000 +1,2000 @@
-|ID||POKEMON|CP|LVL|STATE|SHINY|LUCKY|%|ATK|DEF|STA|MOVE1|MOVE2|MOVE3|LEGENDARY|MYTHIC|PURIFIED|COSTUME|BABY
-1|LAPRAS|427|Lapras|1,847|25|||LUCKY|87%|13|12|14|Frost Breath|Blizzard|-|||||
-2|GYARADOS|423|Gyarados|3,162|37|||LUCKY|91%|14|13|14|Waterfall|Outrage|Hydro Pump|||||
-3|ONIX|322|Onix|117|4|||LUCKY|||||Rock Throw|Iron Head|-|||||
-4|BELLOSSOM|536|Bellossom|1,491|23|||LUCKY|||||Razor Leaf|Leaf Blade|-|||||
-5|DRAGONITE|484|Dragonite|3,262|31|||LUCKY|||||Dragon Tail|Dragon Claw|-|||||
-6|GOLEM_ALOLA|270|Alolan Golem|2,700|35|||LUCKY|||||Rock Throw|Rock Blast|Wild Charge|||||
-7|SLAKING|771|Slaking|4,220|38||SHINY|LUCKY|||||Yawn|Body Slam|Play Rough|||||
-8|NIDOQUEEN|110|Nidoqueen|2,201|33|||LUCKY|||||Bite|Stone Edge|-|||||
-9|SLOWPOKE|276|Slowpoke|373|11|||LUCKY|||||||-|||||
-10|ALAKAZAM|229|Alakazam|1,463|17|||LUCKY|||||Confusion|Shadow Ball|-|||||
-11|POLIWHIRL|213|Poliwhirl|560|14|||LUCKY|||||||-|||||
-12|INFERNAPE|957|Infernape|1,585|21|||LUCKY|||||||-|||||
-13|GENGAR|321|Gengar|1,041|13|||LUCKY|||||Sucker Punch|Focus Blast|-|||||
-14|ELECTABUZZ|406|Electabuzz|825|12|||LUCKY|||||||-|||||
-15|DRAGONAIR|480|Dragonair|388|8|||LUCKY|||||||-|||||
-16|AGGRON|794|Aggron|2,693|34|||LUCKY|||||Smack Down|Stone Edge|-|||||
-17|MEDICHAM|796|Medicham|839|21|||LUCKY|87%|14|12|13|Psycho Cut|Psychic|-|||||
-18|URSARING|625|Ursaring|1,462|17|||LUCKY|93%|15|15|12|Shadow Claw|Close Combat|-|||||
-19|UMBREON|569|Umbreon|1,950|36|||LUCKY|98%|15|15|14|Snarl|Foul Play|-|||||
-20|NIDORINA|106|Nidorina|373|10|||LUCKY|||||||-|||||
-20|PRIMEAPE|200|Primeape|1,124|17|TRASH||LUCKY|||||||-|||||
-21|ESPEON|568|Espeon|2,813|33|||LUCKY|||||Zen Headbutt|Psychic|-|||||
-22|SCEPTILE|701|Sceptile|1,488|19|||LUCKY|96%|15|15|13|Bullet Seed|Frenzy Plant|Leaf Blade|||||
-23|GOLEM_ALOLA|270|Alolan Golem|2,678|35|||LUCKY|||||Volt Switch|Wild Charge|-|||||
-24|PUPITAR|688|Pupitar|749|15|||LUCKY|||||||-|||||
-25|OMASTAR|444|Omastar|1,494|19|||LUCKY|||||Water Gun|Ancient Power|-|||||
-26|HAUNTER|320|Haunter|437|8|||LUCKY|||||Shadow Claw|Shadow Ball|-|||||
-26|ELECTABUZZ|406|Electabuzz|170|3|TRASH||LUCKY|||||||-|||||
-26|NIDORAN_FEMALE|102|Nidoran♀|11|1|TRASH||LUCKY|||||||-|||||
-26|KOFFING|371|Koffing|16|1|TRASH||LUCKY|||||||-|||||
-27|GLACEON|1102|Glaceon|1,718|19|||LUCKY|||||Frost Breath|Ice Beam|-|||||
-28|PUPITAR|688|Pupitar|1,186|24|EVOLVE||LUCKY|||||||-|||||
-29|FEAROW|74|Fearow|667|12|||LUCKY|||||Steel Wing|Twister|-|||||
-30|GROVYLE|700|Grovyle|1,068|23|||LUCKY|||||||-|||||
-30|GULPIN|804|Gulpin|115|5|TRASH||LUCKY|||||||-|||||
-31|LOMBRE|735|Lombre|434|13|||LUCKY|||||||-|||||
-32|GASTRODON_EAST_SEA|1002|Gastrodon (East Sea)|813|12|||LUCKY|||||||-|||||
-32|BULBASAUR|3|Bulbasaur|15|1|TRASH||LUCKY|||||||-|||||
-33|CRAWDAUNT|851|Crawdaunt|772|11|||LUCKY|||||||-|||||
-34|SWALOT|805|Swalot|1,478|27|||LUCKY|||||Rock Smash|Sludge Bomb|-|||||
-35|GRANBULL|606|Granbull|1,868|26|||LUCKY|||||Charm|Crunch|-|||||
-36|FERALIGATR|502|Feraligatr|2,493|32|||LUCKY|||||Waterfall|Hydro Cannon|Crunch|||||
-36|MUDKIP|705|Mudkip|49|2|TRASH||LUCKY|||||||-|||||
-37|SWAMPERT|713|Swampert|2,655|34|||LUCKY|||||Water Gun|Hydro Cannon|Muddy Water|||||
-38|WEEPINBELL|249|Weepinbell|888|20|||LUCKY|||||||-|||||
-39|DODUO|297|Doduo|264|8|||LUCKY|||||||-|||||
-40|MARSHTOMP|709|Marshtomp|935|19|||LUCKY|||||||-|||||
-40|RATICATE|68|Raticate|772|16|TRASH||LUCKY|||||||-|||||
-41|SHARPEDO|810|Sharpedo|159|3|||LUCKY|||||||-|||||
-42|OMASTAR|444|Omastar|1,949|25|||LUCKY|||||Mud Shot|Ancient Power|-|||||
-43|WHISCASH|849|Whiscash|1,485|25|||LUCKY|||||Mud Shot|Mud Bomb|-|||||
-43|CASTFORM_SUNNY|864|Castform (Sunny)|500|11|TRASH||LUCKY|||||||-|||||
-44|DRAPION|1062|Drapion|2,076|31|||LUCKY|||||||-|||||
-45|MEOWTH|180|Meowth|420|20|||LUCKY|||||||-|||||
-45|WEEDLE|48|Weedle|19|2|TRASH||LUCKY|||||||-|||||
-46|SCEPTILE|701|Sceptile|2,402|32|||LUCKY|||||Bullet Seed|Dragon Claw|-|||||
-46|MAKUHITA|778|Makuhita|204|9|TRASH||LUCKY|||||||-|||||
-46|TURTWIG|937|Turtwig|259|8|TRASH||LUCKY|||||||-|||||
-47|JOLTEON|434|Jolteon|1,467|18|||LUCKY|||||Thunder Shock|Thunderbolt|-|||||
-48|RALTS_FEMALE|1477|Ralts♀|321|22|||LUCKY|||||||-|||||
-49|WORMADAM_FEMALE_PLANT|1496|Wormadam♀ (Plant)|1,040|21|||LUCKY|||||Bug Bite|Psybeam|-|||||
-49|RATTATA_ALOLA|64|Alolan Rattata|244|12|TRASH||LUCKY|||||||-|||||
-49|RATTATA|63|Rattata|264|13|TRASH||LUCKY|||||||-|||||
-50|PELIPPER|752|Pelipper|650|11|||LUCKY|||||||-|||||
-51|EEVEE|432|Eevee|267|9|||LUCKY|||||||-|||||
-51|DROWZEE|326|Drowzee|77|3|TRASH||LUCKY|||||||-|||||
-52|NINETALES|133|Ninetales|1,535|24|||LUCKY|||||Fire Spin|Overheat|-|||||
-53|KAKUNA|52|Kakuna|144|12|||LUCKY|||||||-|||||
-54|POLITOED_PURIFIED|545|Politoed (Purified)|1,788|26|||LUCKY|||||Bubble|Surf|-|||||
-55|POLIWHIRL|213|Poliwhirl|873|22|||LUCKY|||||||-|||||
-56|GARDEVOIR_FEMALE|1481|Gardevoir♀|2,722|33|||LUCKY|||||Charm|Dazzling Gleam|-|||||
-57|EMPOLEON|963|Empoleon|2,596|34|||LUCKY|||||Waterfall|Blizzard|-|||||
-58|GOLBAT|144|Golbat|941|17|||LUCKY|||||||-|||||
-59|WAILMER|814|Wailmer|890|22|||LUCKY|||||||-|||||
-60|ARBOK|79|Arbok|804|15|||LUCKY|||||Dragon Tail|Sludge Wave|-|||||
-60|POLIWAG|209|Poliwag|229|10|TRASH||LUCKY|||||||-|||||
-60|WEEDLE|48|Weedle|84|7|TRASH||LUCKY|||||||-|||||
-60|GLIGAR|597|Gligar|357|7|TRASH||LUCKY|||||||-|||||
-61|LEAFEON|1101|Leafeon|2,531|31|||LUCKY|||||Razor Leaf|Last Resort|-|||||
-61|DROWZEE|326|Drowzee|231|8|TRASH||LUCKY|||||||-|||||
-62|PARASECT|161|Parasect|1,308|25|||LUCKY|||||Fury Cutter|X-Scissor|-|||||
-62|CHINCHOU|515|Chinchou|177|6|TRASH||LUCKY|||||||-|||||
-62|SENTRET|503|Sentret|184|11|TRASH||LUCKY|||||||-|||||
-63|FURRET|504|Furret|1,195|24|||LUCKY|||||||-|||||
-64|MEGANIUM|496|Meganium|1,496|22|||LUCKY|||||Razor Leaf|Petal Blizzard|Solar Beam|||||
-64|SEEL|299|Seel|128|5|TRASH||LUCKY|||||||-|||||
-64|RALTS_FEMALE|1477|Ralts♀|23|2|TRASH||LUCKY|||||||-|||||
-64|ZIGZAGOON|719|Zigzagoon|51|4|TRASH||LUCKY|||||||-|||||
-64|RALTS_MALE|1478|Ralts♂|163|11|TRASH||LUCKY|||||||-|||||
-65|RALTS_MALE|1478|Ralts♂|227|15|||LUCKY|||||||-|||||
-65|EEVEE|432|Eevee|45|2|TRASH||LUCKY|||||||-|||||
-66|TAUROS|418|Tauros|2,496|38|||LUCKY|||||Zen Headbutt|Earthquake|-|||||
-67|KIRLIA_FEMALE|1479|Kirlia♀|327|12|||LUCKY|||||||-|||||
-68|ALTARIA|843|Altaria|1,671|30|||LUCKY|||||Dragon Breath|Dragon Pulse|Sky Attack|||||
-69|MILOTIC|859|Milotic|41|1|||LUCKY|||||Dragon Tail|Blizzard|-|||||
-69|GRIMER|301|Grimer|19|1|TRASH||LUCKY|||||||-|||||
-69|SUNKERN|563|Sunkern|62|6|TRASH||LUCKY|||||||-|||||
-69|TURTWIG|937|Turtwig|16|1|TRASH||LUCKY|||||||-|||||
-70|TORTERRA|945|Torterra|2,659|35|||LUCKY|||||Razor Leaf|Solar Beam|-|||||
-71|SHIFTRY|745|Shiftry|1,478|22|||LUCKY|||||Bullet Seed|Foul Play|-|||||
-71|LILLIPUP|1177|Lillipup|253|10|TRASH||LUCKY|||||||-|||||
-72|RALTS_FEMALE|1477|Ralts♀|236|16|||LUCKY|||||||-|||||
-72|SNIVY|1166|Snivy|60|3|TRASH||LUCKY|||||||-|||||
-73|RALTS_FEMALE|1477|Ralts♀|361|25|||LUCKY|||||||-|||||
-74|VILEPLUME|156|Vileplume|1,495|21|||LUCKY|||||Razor Leaf|Solar Beam|-|||||
-75|MAGIKARP|419|Magikarp|152|21|||LUCKY|||||||-|||||
-75|CHIKORITA|494|Chikorita|262|10|TRASH||LUCKY|||||||-|||||
-76|WEEZING|375|Weezing|1,375|21|||LUCKY|||||Tackle|Thunderbolt|-|||||
-77|GOLEM|269|Golem|1,654|20|||LUCKY|||||||-|||||
-78|TEDDIURSA|621|Teddiursa|691|19|||LUCKY|||||||-|||||
-79|NIDORINA|106|Nidorina|759|21|||LUCKY|||||||-|||||
-80|JIGGLYPUFF|138|Jigglypuff|334|17|||LUCKY|||||||-|||||
-80|MAKUHITA|778|Makuhita|181|8|TRASH||LUCKY|||||||-|||||
-80|ODDISH|148|Oddish|236|7|TRASH||LUCKY|||||||-|||||
-81|STARAPTOR|966|Staraptor|1,220|15|||LUCKY|||||Quick Attack|Close Combat|-|||||
-82|RHYPERIOR|1086|Rhyperior|3,440|36|||LUCKY|||||Mud-Slap|Earthquake|-|||||
-83|GALLADE_MALE|1503|Gallade♂|2,777|34|||LUCKY|||||Confusion|Psychic|-|||||
-83|DROWZEE|326|Drowzee|135|5|TRASH||LUCKY|||||||-|||||
-83|EKANS|75|Ekans|204|8|TRASH||LUCKY|||||||-|||||
-84|IVYSAUR|8|Ivysaur|709|15|||LUCKY|||||||-|||||
-85|STEELIX|601|Steelix|1,706|25|||LUCKY|||||Thunder Fang|Heavy Slam|-|||||
-85|MANKEY|199|Mankey|121|4|TRASH||LUCKY|||||||-|||||
-86|SNOVER|1069|Snover|396|12|||LUCKY|||||||-|||||
-87|LUDICOLO|736|Ludicolo|1,708|26|||LUCKY|||||Bubble|Solar Beam|-|||||
-87|PONYTA|274|Ponyta|375|8|TRASH||LUCKY|||||||-|||||
-88|ROSERADE|975|Roserade|1,995|24|||LUCKY|||||||-|||||
-88|CYNDAQUIL|497|Cyndaquil|128|5|TRASH||LUCKY|||||||-|||||
-89|GENGAR|321|Gengar|1,491|18|||LUCKY|||||Shadow Claw|Focus Blast|-|||||
-90|SNEASEL|617|Sneasel|747|13|||LUCKY|||||||-|||||
-91|EEVEE|432|Eevee|452|15|||LUCKY|||||||-|||||
-92|ZUBAT|140|Zubat|276|15|||LUCKY|||||||-|||||
-92|MACHOP|233|Machop|93|3|TRASH||LUCKY|||||||-|||||
-92|EXEGGCUTE|344|Exeggcute|84|3|TRASH||LUCKY|||||||-|||||
-92|DUSKULL|874|Duskull|50|3|TRASH||LUCKY|||||||-|||||
-93|VENUSAUR|12|Venusaur|2,315|31|||LUCKY|||||Razor Leaf|Sludge Bomb|Solar Beam|||||
-94|VICTREEBEL|253|Victreebel|1,488|22|||LUCKY|||||Acid|Sludge Bomb|-|||||
-95|VICTREEBEL|253|Victreebel|1,469|21|||LUCKY|||||Razor Leaf|Leaf Tornado|-|||||
-96|ARMALDO|857|Armaldo|2,141|27|||LUCKY|||||Struggle Bug|Cross Poison|-|||||
-97|BLAZIKEN|704|Blaziken|2,496|33|||LUCKY|||||Counter|Focus Blast|-|||||
-98|BANETTE|870|Banette|1,500|23|||LUCKY|||||Hex|Shadow Ball|-|||||
-98|LEDYBA|507|Ledyba|10|1|TRASH||LUCKY|||||||-|||||
-98|SWINUB|631|Swinub|10|1|TRASH||LUCKY|||||||-|||||
-98|TURTWIG|937|Turtwig|16|1|TRASH||LUCKY|||||||-|||||
-99|BULBASAUR|3|Bulbasaur|569|18|||LUCKY|||||||-|||||
-100|GLOOM|152|Gloom|515|11|||LUCKY|||||||-|||||
-101|MONFERNO|953|Monferno|783|18|||LUCKY|||||||-|||||
-101|LILLIPUP|1177|Lillipup|40|2|TRASH||LUCKY|||||||-|||||
-102|HERDIER|1178|Herdier|670|15|||LUCKY|||||||-|||||
-102|MAGNEMITE|284|Magnemite|98|3|TRASH||LUCKY|||||||-|||||
-102|MAGNEMITE|284|Magnemite|99|3|TRASH||LUCKY|||||||-|||||
-102|PATRAT|1175|Patrat|148|7|TRASH||LUCKY|||||||-|||||
-102|TURTWIG|937|Turtwig|157|5|TRASH||LUCKY|||||||-|||||
-103|SUNFLORA|564|Sunflora|1,036|17|||LUCKY|||||||-|||||
-103|SPOINK|819|Spoink|97|3|TRASH||LUCKY|||||||-|||||
-103|MISDREAVUS|578|Misdreavus|256|5|TRASH||LUCKY|||||||-|||||
-104|DUSKNOIR_PURIFIED|1119|Dusknoir (Purified)|2,134|34|||LUCKY|93%|15|13|14|Hex|Return|-|||||
-105|URSARING|625|Ursaring|1,653|20|||LUCKY|89%|13|12|15|Metal Claw|Hyper Beam|-|||||
-106|BLAZIKEN|704|Blaziken|1,776|22|||LUCKY|96%|13|15|15|Fire Spin|Blast Burn|Overheat|||||
-107|TENTACOOL|257|Tentacool|524|18|||LUCKY|||||||-|||||
-107|RHYHORN|380|Rhyhorn|226|5|TRASH||LUCKY|||||||-|||||
-108|GIRAFARIG|587|Girafarig|629|11|||LUCKY|||||||-|||||
-109|TENTACRUEL|258|Tentacruel|1,634|24|||LUCKY|||||Poison Jab|Hydro Pump|-|||||
-109|RHYHORN|380|Rhyhorn|264|6|TRASH||LUCKY|||||||-|||||
-110|GEODUDE_ALOLA|260|Alolan Geodude|247|7|||LUCKY|||||||-|||||
-110|HOPPIP|547|Hoppip|77|5|TRASH||LUCKY|||||||-|||||
-111|MAGNETON|288|Magneton|1,061|15|||LUCKY|||||||-|||||
-111|TENTACOOL|257|Tentacool|257|9|TRASH||LUCKY|||||||-|||||
-112|POLITOED_PURIFIED|545|Politoed (Purified)|1,784|26|||LUCKY|100%|15|15|15|Bubble|Return|-|||||
-112|BELDUM|911|Beldum|42|2|TRASH||LUCKY|||||||-|||||
-113|NIDORAN_FEMALE|102|Nidoran♀|367|16|||LUCKY|||||||-|||||
-113|EXEGGCUTE|344|Exeggcute|154|5|TRASH||LUCKY|||||||-|||||
-114|VAPOREON|433|Vaporeon|1,757|20|||LUCKY|||||Water Gun|Aqua Tail|-|||||
-115|FLAREON|435|Flareon|1,705|20|||LUCKY|||||Ember|Fire Blast|-|||||
-116|EEVEE|432|Eevee|359|12|||LUCKY|||||||-|||||
-117|SCIZOR|608|Scizor|1,264|15|||LUCKY|||||Fury Cutter|Night Slash|-|||||
-117|POLIWAG|209|Poliwag|271|12|TRASH||LUCKY|||||||-|||||
-118|MASQUERAIN|766|Masquerain|827|13|||LUCKY|||||||-|||||
-119|NIDOQUEEN|110|Nidoqueen|1,609|23|||LUCKY|||||Bite|Sludge Wave|-|||||
-120|GROTLE|941|Grotle|417|8|||LUCKY|||||||-|||||
-121|SLOWBRO|280|Slowbro|1,492|21|||LUCKY|||||Confusion|Psychic|-|||||
-122|SLOWKING|574|Slowking|1,934|27|||LUCKY|||||Water Gun|Fire Blast|-|||||
-123|GLIGAR|597|Gligar|1,484|28|||LUCKY|||||Fury Cutter|Sand Tomb|-|||||
-124|WORMADAM_FEMALE_SANDY|1497|Wormadam♀ (Sandy)|724|14|||LUCKY|||||Bug Bite|Bug Buzz|-|||||
-125|EEVEE|432|Eevee|272|9|||LUCKY|||||||-|||||
-126|NIDORAN_MALE|114|Nidoran♂|307|13|||LUCKY|||||||-|||||
-127|MAGMORTAR|1095|Magmortar|2,458|28|||LUCKY|||||Fire Spin|Fire Blast|-|||||
-128|FROSLASS_FEMALE|1504|Froslass♀|1,661|29|||LUCKY|||||Powder Snow|Shadow Ball|-|||||
-129|MAGNEZONE_PURIFIED|1083|Magnezone (Purified)|2,498|28|||LUCKY|||||Spark|Return|-|||||
-129|GOLEM|269|Golem|478|6|TRASH||LUCKY|||||||-|||||
-130|RHYDON|384|Rhydon|613|7|||LUCKY|||||||-|||||
-131|RATICATE_PURIFIED|71|Raticate (Purified)|1,223|25|||LUCKY|||||Bite|Return|-|||||
-132|WEAVILE|1077|Weavile|2,490|29|||LUCKY|100%|15|15|15|Feint Attack|Foul Play|-|||||
-133|MANECTRIC|798|Manectric|1,488|22|||LUCKY|||||Charge Beam|Wild Charge|-|||||
-134|GASTLY|319|Gastly|411|12|||LUCKY|||||Astonish|Sludge Bomb|-|||||
-135|NOCTOWL|506|Noctowl|1,245|22|||LUCKY|||||Extrasensory|Psychic|-|||||
-135|KOFFING|371|Koffing|378|11|TRASH||LUCKY|||||||-|||||
-136|AGGRON|794|Aggron|1,693|20|||LUCKY|||||Iron Tail|Thunder|-|||||
-137|MEDICHAM|796|Medicham|798|20|||LUCKY|||||Counter|Power-Up Punch|-|||||
-137|MURKROW|570|Murkrow|21|1|TRASH||LUCKY|||||||-|||||
-138|ALAKAZAM|229|Alakazam|1,475|17|||LUCKY|||||Counter|Future Sight|-|||||
-139|AIPOM|559|Aipom|528|14|||LUCKY|||||||-|||||
-140|PLUSLE|799|Plusle|549|11|||LUCKY|||||||-|||||
-141|MACHAMP|241|Machamp|936|11|||LUCKY|||||||-|||||
-142|MR_MIME|400|Mr. Mime|1,555|25|||LUCKY|||||Zen Headbutt|Psychic|-|||||
-143|CHERRIM_OVERCAST|996|Cherrim (Overcast)|1,487|26|||LUCKY|||||Razor Leaf|Solar Beam|-|||||
-144|MR_MIME|400|Mr. Mime|1,738|28|||LUCKY|||||Zen Headbutt|Psychic|-|||||
-145|GLALIE_MALE|1486|Glalie♂|1,648|28|||LUCKY|||||Ice Shard|Avalanche|-|||||
-146|FLAREON|435|Flareon|1,493|17|||LUCKY|||||Ember|Flamethrower|-|||||
-147|SNORUNT_MALE|1484|Snorunt♂|167|7|||LUCKY|||||||-|||||
-148|PINSIR|414|Pinsir|2,499|30|||LUCKY|||||Rock Smash|Superpower|-|||||
-149|MAMOSWINE|1107|Mamoswine|2,468|26|||LUCKY|84%|13|12|13|Mud-Slap|Bulldoze|-|||||
-150|AGGRON|794|Aggron|2,699|34|||LUCKY|||||Iron Tail|Heavy Slam|-|||||
-150|PIDOVE|1190|Pidove|88|4|TRASH||LUCKY|||||||-|||||
-151|JYNX|405|Jynx|794|11|||LUCKY|||||Frost Breath|Psyshock|-|||||
-151|PATRAT|1175|Patrat|389|18|TRASH||LUCKY|||||||-|||||
-151|SLAKOTH|769|Slakoth|42|2|TRASH||LUCKY|||||||-|||||
-151|MINUN|800|Minun|572|12|TRASH||LUCKY|||||||-|||||
-152|BUNEARY|1010|Buneary|455|13|||LUCKY|||||||-|||||
-152|YANMA|565|Yanma|234|6|TRASH||LUCKY|||||||-|||||
-153|YANMEGA|1100|Yanmega|1,321|16|||LUCKY|||||Wing Attack|Ancient Power|-|||||
-154|BEARTIC|1307|Beartic|2,472|29|||LUCKY|||||Powder Snow|Ice Punch|-|||||
-155|RAICHU_WINTER_HAT|1534|Raichu (Winter Hat)|1,476|24|||LUCKY|||||Thunder Shock|Skull Bash|-||||WINTER_HAT|
-156|MOLTRES_PURIFIED|474|Moltres (Purified)|3,267|37|||LUCKY|89%|13|13|14|Fire Spin|Return|Fire Blast|LEGENDARY||||
-157|ROSERADE|975|Roserade|2,483|30|||LUCKY|93%|15|14|13|Poison Jab|Dazzling Gleam|-|||||
-158|RAICHU_PARTY_HAT_PURPLE|1515|Raichu (Purple Party Hat)|1,475|24|||LUCKY|||||Volt Switch|Wild Charge|-||||PARTY_HAT_PURPLE|
-159|SALAMENCE|907|Salamence|2,496|23|||LUCKY|93%|15|12|15|Dragon Tail|Draco Meteor|-|||||
-160|HYPNO|330|Hypno|1,338|23|||LUCKY|||||Zen Headbutt|Focus Blast|-|||||
-161|BONSLY|1033|Bonsly|730|20|||LUCKY|||||Counter|Rock Slide|-|||||BABY
-162|CLOYSTER|315|Cloyster|2,018|28|||LUCKY|||||Frost Breath|Aurora Beam|-|||||
-163|HONCHKROW|1016|Honchkrow|2,016|26|||LUCKY|||||Peck|Dark Pulse|-|||||
-164|XATU|523|Xatu|1,471|24|||LUCKY|||||Feint Attack|Ominous Wind|-|||||
-165|ABOMASNOW|1073|Abomasnow|1,520|23|||LUCKY|||||Razor Leaf|Energy Ball|-|||||
-166|VENOMOTH|166|Venomoth|1,003|17|||LUCKY|||||Infestation|Psychic|-|||||
-167|DELIBIRD|636|Delibird|481|16|||LUCKY|||||Present|Icy Wind|-|||||
-168|MISMAGIUS|1012|Mismagius|1,844|25|||LUCKY|||||Hex|Shadow Ball|-|||||
-169|EMPOLEON|963|Empoleon|2,474|31|||LUCKY|||||Waterfall|Hydro Cannon|Hydro Pump|||||
-170|WALREIN|893|Walrein|1,714|22|||LUCKY|||||Frost Breath|Blizzard|-|||||
-171|EMPOLEON|963|Empoleon|2,480|31|||LUCKY|||||Waterfall|Hydro Cannon|Hydro Pump|||||
-172|VILEPLUME|156|Vileplume|1,485|20|||LUCKY|||||Acid|Sludge Bomb|-|||||
-173|BEEDRILL|56|Beedrill|1,556|31|||LUCKY|||||Poison Jab|X-Scissor|-|||||
-174|EXPLOUD|777|Exploud|1,722|26|||LUCKY|||||Bite|Crunch|-|||||
-174|SPINARAK|509|Spinarak|108|5|TRASH||LUCKY|||||||-|||||
-175|DIGLETT_ALOLA|171|Alolan Diglett|280|15|||LUCKY|||||||-|||||
-176|PIDGEOT|62|Pidgeot|1,074|18|||LUCKY|||||Steel Wing|Aerial Ace|-|||||
-177|POLIWRATH_PURIFIED|219|Poliwrath (Purified)|1,823|25|||LUCKY|||||Rock Smash|Return|-|||||
-178|KRICKETUNE|970|Kricketune|1,405|31|||LUCKY|87%|12|15|12|Fury Cutter|Bug Buzz|-|||||
-178|CASTFORM_SUNNY|864|Castform (Sunny)|725|16|TRASH||LUCKY|||||||-|||||
-179|WATCHOG|1176|Watchog|1,257|25|||LUCKY|||||Low Kick|Crunch|-|||||
-180|SHIFTRY|745|Shiftry|2,039|33|||LUCKY|||||Snarl|Foul Play|-|||||
-181|PIKACHU_PARTY_HAT_PURPLE|1514|Pikachu (Purple Party Hat)|425|16|||LUCKY|||||||-||||PARTY_HAT_PURPLE|
-182|PIKACHU_WINTER_HAT|1533|Pikachu (Winter Hat)|382|15|||LUCKY|||||||-||||WINTER_HAT|
-183|SEISMITOAD|1208|Seismitoad|1,781|25|||LUCKY|82%|12|12|13|Bubble|Earth Power|-|||||
-184|STARLY|964|Starly|336|17|||LUCKY|||||||-|||||
-185|PRIMEAPE|200|Primeape|1,949|31|||LUCKY|||||||-|||||
-186|PROBOPASS|1116|Probopass|1,526|26|||LUCKY|||||Spark|Thunderbolt|-|||||
-187|CUBONE|353|Cubone|405|14|||LUCKY|||||||-|||||
-188|PROBOPASS|1116|Probopass|1,225|21|||LUCKY|||||Rock Throw|Rock Slide|-|||||
-189|ELECTRODE|343|Electrode|1,316|22|||LUCKY|||||Spark|Discharge|-|||||
-190|CHARIZARD|26|Charizard|2,414|30|||LUCKY|82%|12|13|12|Fire Spin|Overheat|Dragon Claw|||||
-191|GARDEVOIR_FEMALE|1481|Gardevoir♀|2,820|35|||LUCKY|87%|13|14|12|Confusion|Psychic|-|||||
-192|HEATRAN|1134|Heatran|3,203|31|||LUCKY|96%|15|15|13|Fire Spin|Iron Head|-|LEGENDARY||||
-193|TERRAKION|1336|Terrakion|3,140|30|||LUCKY|84%|14|12|12|Smack Down|Rock Slide|-|LEGENDARY||||
-194|BEEDRILL|56|Beedrill|884|17|||LUCKY|||||Infestation|Fell Stinger|-|||||
-195|ARCANINE|205|Arcanine|2,230|26|||LUCKY|||||Fire Fang|Fire Blast|-|||||
-196|GASTRODON_EAST_SEA|1002|Gastrodon (East Sea)|1,904|29|||LUCKY|||||Hidden Power (Flying)|Water Pulse|-|||||
-197|EXCADRILL|1201|Excadrill|2,278|25|||LUCKY|||||Metal Claw|Iron Head|-|||||
-198|MAGCARGO|630|Magcargo|1,451|31|||LUCKY|||||Rock Throw|Heat Wave|-|||||
-199|SMEARGLE|664|Smeargle|264|23|||LUCKY|||||Quick Attack|Dig|-|||||
-200|AMOONGUSS|1280|Amoonguss|1,686|28|||LUCKY|||||Feint Attack|Grass Knot|-|||||
-201|MAGMORTAR|1095|Magmortar|1,833|21|||LUCKY|||||Karate Chop|Brick Break|-|||||
-202|STEELIX|601|Steelix|2,016|30|||LUCKY|||||Iron Tail|Heavy Slam|-|||||
-203|SWELLOW|750|Swellow|1,552|29|||LUCKY|||||Wing Attack|Brave Bird|-|||||
-204|ODDISH|148|Oddish|524|15|||LUCKY|||||||-|||||
-205|SANDSLASH|97|Sandslash|2,131|34|||LUCKY|||||Mud Shot|Earthquake|-|||||
-206|XATU|523|Xatu|1,357|22|||LUCKY|||||Air Slash|Aerial Ace|-|||||
-207|MAGIKARP|419|Magikarp|177|25|||LUCKY|||||||-|||||
-208|SILCOON|730|Silcoon|309|20|||LUCKY|93%|14|14|14|||-|||||
-209|MUK|306|Muk|1,860|24|||LUCKY|||||Infestation|Thunder Punch|-|||||
-210|FLOATZEL|993|Floatzel|1,482|21|||LUCKY|||||Waterfall|Hydro Pump|-|||||
-211|CASTFORM_RAINY|862|Castform (Rainy)|1,045|23|||LUCKY|||||Tackle|Hydro Pump|-|||||
-212|BRONZONG|1032|Bronzong|1,472|23|||LUCKY|||||Confusion|Psyshock|-|||||
-213|SHELMET|1309|Shelmet|109|5|||LUCKY|||||||-|||||
-214|SABLEYE|784|Sableye|702|17|||LUCKY|||||||-|||||
-215|HERDIER|1178|Herdier|669|15|||LUCKY|||||||-|||||
-216|MINUN|800|Minun|1,232|26|||LUCKY|||||Spark|Discharge|-|||||
-217|LUVDISC|898|Luvdisc|513|22|||LUCKY|||||Splash|Aqua Jet|-|||||
-218|DRIFBLIM|1009|Drifblim|1,539|23|||LUCKY|||||Hex|Ominous Wind|-|||||
-219|RHYPERIOR|1086|Rhyperior|2,261|21|||LUCKY|||||Mud-Slap|Earthquake|-|||||
-220|GROUDON|929|Groudon|2,498|21|||LUCKY|89%|14|12|14|Mud Shot|Earthquake|-|LEGENDARY||||
-221|FLYGON|830|Flygon|1,584|21|||LUCKY|||||Dragon Tail|Stone Edge|-|||||
-222|CONKELDURR|1205|Conkeldurr|2,488|26|||LUCKY|||||Counter|Dynamic Punch|-|||||
-223|RHYPERIOR|1086|Rhyperior|3,149|30|||LUCKY|||||Mud-Slap|Surf|-|||||
-224|LICKILICKY|1085|Lickilicky|1,468|21|||LUCKY|93%|15|12|15|Lick|Shadow Ball|-|||||
-225|SAMUROTT|1174|Samurott|1,695|21|||LUCKY|84%|12|13|13|Waterfall|Hydro Pump|-|||||
-226|EMBOAR|1171|Emboar|2,734|36|||LUCKY|89%|15|13|12|Low Kick|Focus Blast|-|||||
-227|HITMONLEE|362|Hitmonlee|1,492|20|||LUCKY|91%|15|12|14|Low Kick|Low Sweep|-|||||
-228|PSYDUCK|191|Psyduck|333|11|||LUCKY|||||||-|||||
-229|CINCCINO|1254|Cinccino|1,251|20|||LUCKY|||||Pound|Aqua Tail|-|||||
-230|VOLTORB|342|Voltorb|311|11|||LUCKY|||||||-|||||
-231|SKORUPI|1061|Skorupi|448|16|||LUCKY|||||||-|||||
-232|CHANDELURE|1302|Chandelure|2,772|31|||LUCKY|||||Hex|Shadow Ball|-|||||
-233|SWELLOW|750|Swellow|1,476|27|||LUCKY|||||Wing Attack|Brave Bird|-|||||
-234|RIOLU|1051|Riolu|550|20|||LUCKY|89%|13|12|15|||-|||||BABY
-234|DIGLETT|170|Diglett|185|10|TRASH||LUCKY|||||||-|||||
-235|GOLDUCK|195|Golduck|1,494|22|||LUCKY|||||Confusion|Ice Beam|-|||||
-236|AMPHAROS|532|Ampharos|1,989|25|||LUCKY|||||Volt Switch|Focus Blast|-|||||
-237|CROBAT_PURIFIED|513|Crobat (Purified)|1,858|25|||LUCKY|||||Air Slash|Return|Air Cutter|||||
-238|SERPERIOR|1168|Serperior|1,488|23|||LUCKY|98%|14|15|15|Vine Whip|Leaf Tornado|-|||||
-239|BUNEARY_FLOWER_CROWN|1575|Buneary (Flower Crown)|17|1|||LUCKY|||||||-||||FLOWER_CROWN|
-239|VOLBEAT|801|Volbeat|443|9|TRASH||LUCKY|||||||-|||||
-240|ILLUMISE|802|Illumise|1,083|22|||LUCKY|||||Struggle Bug|Dazzling Gleam|-|||||
-241|ZANGOOSE|844|Zangoose|1,476|22|||LUCKY|||||Fury Cutter|Close Combat|-|||||
-242|ALAKAZAM|229|Alakazam|2,458|28||SHINY|LUCKY|||||Counter|Focus Blast|-|||||
-243|DITTO|431|Ditto|400|17|||LUCKY|||||Transform|Struggle|-|||||
-244|GALVANTULA|1289|Galvantula|1,707|27|||LUCKY|||||Fury Cutter|Cross Poison|-|||||
-245|CRAWDAUNT|851|Crawdaunt|1,477|21|||LUCKY|||||Snarl|Crabhammer|-|||||
-246|FEEBAS|858|Feebas|164|23|||LUCKY|98%|15|15|14|||-|||||
-247|HORSEA|394|Horsea|615|21|||LUCKY|||||||-|||||
-248|EEVEE|432|Eevee|631|21|||LUCKY|||||||-|||||
-249|NIDOKING|122|Nidoking|2,212|32|||LUCKY|||||Iron Tail|Earth Power|-|||||
-250|PIKACHU_CHARIZARD_CAP|1601|Pikachu (Charizard Cap)|13|1|||LUCKY|||||Quick Attack|Discharge|-||||CHARIZARD_CAP|
-251|BUTTERFREE|47|Butterfree|1,482|29|||LUCKY|||||Confusion|Psychic|-|||||
-252|EXEGGUTOR_PURIFIED|351|Exeggutor (Purified)|2,491|29|||LUCKY|||||Bullet Seed|Return|-|||||
-253|EEVEE|432|Eevee|893|31|||LUCKY|||||||-|||||
-254|PIKACHU_UMBREON_CAP|1602|Pikachu (Umbreon Cap)|502|19|||LUCKY|||||Quick Attack|Discharge|-||||UMBREON_CAP|
-255|TYPHLOSION|499|Typhlosion|1,861|23|||LUCKY|||||Ember|Solar Beam|-|||||
-256|KADABRA|225|Kadabra|1,500|26|||LUCKY|||||Psycho Cut|Psybeam|-|||||
-257|SKARMORY|641|Skarmory|952|16|||LUCKY|||||Steel Wing|Sky Attack|-|||||
-258|DUNSPARCE|596|Dunsparce|1,429|31|||LUCKY|||||Astonish|Drill Run|-|||||
-259|BARBOACH|848|Barboach|521|23|||LUCKY|||||||-|||||
-260|PIKACHU_RAYQUAZA_CAP|1603|Pikachu (Rayquaza Cap)|234|9|||LUCKY|||||Quick Attack|Discharge|-||||RAYQUAZA_CAP|
-261|SANDSLASH_PURIFIED|100|Sandslash (Purified)|1,674|25|||LUCKY|||||Metal Claw|Return|-|||||
-262|SHIFTRY|745|Shiftry|1,964|30|||LUCKY|91%|12|14|15|Bullet Seed|Leaf Tornado|-|||||
-263|ELECTIVIRE|1091|Electivire|2,717|33|||LUCKY|84%|14|12|12|Thunder Shock|Thunder|-|||||
-264|SNORLAX|460|Snorlax|2,348|26|||LUCKY|||||Zen Headbutt|Earthquake|-|||||
-265|CASTFORM_NORMAL|861|Castform (Normal)|1,224|27|||LUCKY|||||Tackle|Weather Ball (Normal)|-|||||
-266|MIGHTYENA|718|Mightyena|1,065|20|||LUCKY|||||Bite|Play Rough|-|||||
-267|UNOWN_A|1427|Unown A|710|21|||LUCKY|||||Hidden Power (Flying)|Struggle|-|||||
-268|PURUGLY|1021|Purugly|1,707|33|||LUCKY|||||Shadow Claw|Aerial Ace|-|||||
-269|PIKACHU_LUCARIO_CAP|1604|Pikachu (Lucario Cap)|677|26|||LUCKY|||||Thunder Shock|Discharge|-||||LUCARIO_CAP|
-270|TOXICROAK|1064|Toxicroak|1,811|26|||LUCKY|||||Counter|Dynamic Punch|-|||||
-271|SHUCKLE|612|Shuckle|265|25|||LUCKY|93%|13|14|15|Rock Throw|Stone Edge|-|||||
-272|CRUSTLE|1239|Crustle|1,265|17|||LUCKY|||||Smack Down|Rock Slide|-|||||
-273|INFERNAPE|957|Infernape|2,252|30|||LUCKY|87%|12|14|13|Rock Smash|Close Combat|-|||||
-274|GOTHORITA|1256|Gothorita|681|15|||LUCKY|||||||-|||||
-275|HIPPOWDON|1057|Hippowdon|1,731|20|||LUCKY|||||Fire Fang|Stone Edge|-|||||
-276|KABUTOPS|452|Kabutops|1,531|20|||LUCKY|||||Waterfall|Water Pulse|-|||||
-277|BURMY_MALE_TRASH|1490|Burmy♂ (Trash)|20|2|||LUCKY|||||||-|||||
-278|FARFETCHD_GALARIAN|293|Galarian Farfetch'd|23|1|||LUCKY|||||||-|||||
-279|SAWK|1210|Sawk|1,499|19|||LUCKY|||||Low Kick|Low Sweep|-|||||
-280|BLISSEY|671|Blissey|1,781|23|||LUCKY|89%|13|15|12|Pound|Hyper Beam|-|||||
-281|WORMADAM_FEMALE_TRASH|1498|Wormadam♀ (Trash)|933|21|||LUCKY|||||Bug Bite|Iron Head|-|||||
-282|HUNTAIL|895|Huntail|985|15|||LUCKY|||||Bite|Aqua Tail|-|||||
-283|ABSOL|884|Absol|1,064|15|||LUCKY|||||Psycho Cut|Thunder|-|||||
-284|VESPIQUEN_FEMALE|1502|Vespiquen♀|1,488|26|||LUCKY|||||Air Slash|X-Scissor|-|||||
-285|CLAYDOL|853|Claydol|1,478|27|||LUCKY|||||Confusion|Earthquake|-|||||
-286|DUOSION|1259|Duosion|973|17|||LUCKY|96%|15|14|14|||-|||||
-287|GOLETT|1319|Golett|620|19|||LUCKY|||||||-|||||
-288|LIEPARD|1181|Liepard|1,304|25|||LUCKY|||||Charm|Play Rough|-|||||
-289|MOTHIM_MALE|1499|Mothim♂|1,063|21|||LUCKY|||||Bug Bite|Psybeam|-|||||
-290|BEEDRILL|56|Beedrill|1,495|29|||LUCKY|||||Infestation|Drill Run|Fell Stinger|||||
-291|COMBEE_MALE|1501|Combee♂|337|25|||LUCKY|||||Bug Bite|Bug Buzz|-|||||
-292|VOLBEAT|801|Volbeat|1,489|31|||LUCKY|||||Tackle|Bug Buzz|-|||||
-293|KLANG|1293|Klang|1,049|20|||LUCKY|96%|15|13|15|||-|||||
-294|CLEFABLE|127|Clefable|1,473|21|||LUCKY|89%|14|12|14|Zen Headbutt|Psychic|-|||||
-295|TOGEKISS|1099|Togekiss|2,500|26|||LUCKY|||||Charm|Dazzling Gleam|-|||||
-296|TROPIUS|882|Tropius|1,101|20|||LUCKY|||||Air Slash|Aerial Ace|-|||||
-297|CASTFORM_SUNNY|864|Castform (Sunny)|1,492|36|||LUCKY|100%|15|15|15|Ember|Weather Ball (Fire)|-|||||
-298|KRICKETOT|969|Kricketot|238|22|||LUCKY|||||||-|||||
-299|NINJASK|773|Ninjask|1,365|25|||LUCKY|||||Fury Cutter|Bug Buzz|-|||||
-300|HARIYAMA|779|Hariyama|2,491|33|||LUCKY|||||Bullet Punch|Heavy Slam|-|||||
-301|PIKACHU_PARTY_HAT_RED|1567|Pikachu (Red Party Hat)|443|17|||LUCKY|||||Quick Attack|Thunderbolt|-||||PARTY_HAT_RED|
-302|KARRABLAST|1277|Karrablast|228|7|||LUCKY|||||||-|||||
-303|PIKACHU_COSTUME_2020|85|Flying Pikachu|720|28|||LUCKY|||||Thunder Shock|Fly|Discharge||||COSTUME_2020|
-304|SENTRET|503|Sentret|193|11|||LUCKY|||||||-|||||
-305|CHARMANDER_PARTY_HAT_RED|1565|Charmander (Red Party Hat)|500|18|||LUCKY|||||Scratch|Flame Charge|-||||PARTY_HAT_RED|
-306|LUNATONE|846|Lunatone|1,475|22|||LUCKY|||||Confusion|Psychic|-|||||
-307|LUNATONE|846|Lunatone|1,468|22|||LUCKY|||||Rock Throw|Rock Slide|-|||||
-308|PIKACHU_FLOWER_HAT|1572|Pikachu (Flower Hat)|341|13|||LUCKY|||||Quick Attack|Wild Charge|-||||FLOWER_HAT|
-309|SCOLIPEDE|1216|Scolipede|2,099|31|||LUCKY|||||Poison Jab|Sludge Bomb|-|||||
-310|MISDREAVUS_PURIFIED|580|Misdreavus (Purified)|1,361|25|||LUCKY|||||Hex|Return|-|||||
-311|DUGTRIO|175|Dugtrio|1,232|28|||LUCKY|||||Mud-Slap|Earthquake|-|||||
-312|DELCATTY|783|Delcatty|1,274|32|||LUCKY|||||Feint Attack|Wild Charge|-|||||
-313|MASQUERAIN|766|Masquerain|2,059|35|||LUCKY|||||Infestation|Bubble Beam|-|||||
-314|ESCAVALIER|1278|Escavalier|1,469|18|||LUCKY|||||Counter|Aerial Ace|-|||||
-315|PETILIL|1219|Petilil|165|6|||LUCKY|||||||-|||||
-316|PIKACHU_SUMMER_HAT|1526|Pikachu (Summer Hat)|420|16|||LUCKY|||||Thunder Shock|Thunderbolt|-||||SUMMER_HAT|
-317|CLEFABLE|127|Clefable|2,056|30|||LUCKY|||||Charm|Moonblast|-|||||
-318|GENGAR|321|Gengar|2,459|31|||LUCKY|||||Shadow Claw|Shadow Punch|-|||||
-319|GENGAR|321|Gengar|1,492|18|||LUCKY|||||Hex|Shadow Punch|-|||||
-320|LIEPARD|1181|Liepard|1,343|26|||LUCKY|||||Snarl|Dark Pulse|-|||||
-321|GENGAR|321|Gengar|1,496|18|||LUCKY|||||Shadow Claw|Shadow Ball|-|||||
-322|GENGAR|321|Gengar|2,445|31|||LUCKY|||||Hex|Focus Blast|-|||||
-323|CLAMPERL|894|Clamperl|92|3|||LUCKY|||||||-|||||
-324|FORRETRESS|592|Forretress|1,258|19|||LUCKY|||||Struggle Bug|Mirror Shot|-|||||
-325|TANGROWTH|1090|Tangrowth|2,487|29|||LUCKY|||||Vine Whip|Power Whip|-|||||
-326|KINGLER|338|Kingler|2,000|25|||LUCKY|||||Bubble|Crabhammer|-|||||
-327|UNOWN_G|1433|Unown G|620|19|||LUCKY|||||Hidden Power (Psychic)|Struggle|-|||||
-328|UNOWN_O|1441|Unown O|850|26|||LUCKY|||||Hidden Power (Ice)|Struggle|-|||||
-329|RAYQUAZA|930|Rayquaza|3,264|31|||LUCKY|||||Air Slash|Aerial Ace|-|LEGENDARY||||
-330|HEATMOR|1328|Heatmor|2,003|30|||LUCKY|||||Fire Spin|Flamethrower|-|||||
-331|VILEPLUME|156|Vileplume|2,165|31|||LUCKY|89%|15|13|12|Razor Leaf|Petal Blizzard|-|||||
-332|STARYU|398|Staryu|327|10|||LUCKY|||||||-|||||
-333|ESCAVALIER|1278|Escavalier|2,443|30|||LUCKY|||||Bug Bite|Megahorn|-|||||
-334|FLAREON|435|Flareon|1,499|17|||LUCKY|||||Ember|Flamethrower|-|||||
-335|SEVIPER|845|Seviper|152|3|||LUCKY|||||Poison Jab|Poison Fang|-|||||
-336|LINOONE|724|Linoone|1,420|32|||LUCKY|||||Shadow Claw|Thunder|-|||||
-337|EXEGGUTOR_ALOLA|349|Alolan Exeggutor|2,467|29|||LUCKY|||||Bullet Seed|Solar Beam|-|||||
-338|KINGDRA|653|Kingdra|2,057|28|||LUCKY|||||Dragon Breath|Outrage|-|||||
-339|LEDIAN|508|Ledian|710|19|||LUCKY|||||Struggle Bug|Aerial Ace|-|||||
-340|ROGGENROLA|1195|Roggenrola|475|14|||LUCKY|||||||-|||||
-341|SOLROCK|847|Solrock|2,045|33|||LUCKY|||||Rock Throw|Psychic|-|||||
-342|QUAGSIRE|567|Quagsire|1,473|26|||LUCKY|||||Water Gun|Earthquake|-|||||
-343|SKARMORY|641|Skarmory|593|10|||LUCKY|||||Air Slash|Brave Bird|-|||||
-344|HITMONCHAN|366|Hitmonchan|1,472|22|||LUCKY|||||Bullet Punch|Ice Punch|-|||||
-345|CHARIZARD|26|Charizard|2,495|32|||LUCKY|||||Dragon Breath|Dragon Claw|-|||||
-346|SKUNTANK_PURIFIED|1029|Skuntank (Purified)|1,657|25|||LUCKY|||||Poison Jab|Return|-|||||
-347|GOLEM_ALOLA|270|Alolan Golem|2,496|30|||LUCKY|||||Rock Throw|Stone Edge|-|||||
-348|CLEFABLE|127|Clefable|1,473|21|||LUCKY|||||Charm|Moonblast|-|||||
-349|DONPHAN|655|Donphan|1,706|20|||LUCKY|||||Counter|Play Rough|-|||||
-350|SCRAGGY|1240|Scraggy|574|15|||LUCKY|87%|14|12|13|Rock Smash|Brick Break|-|||||
-351|CHARIZARD_COPY_2019|27|Clone Charizard|2,025|25|||LUCKY|87%|13|12|14|Fire Spin|Blast Burn|-||||COPY_2019|
-352|ZAPDOS|468|Zapdos|2,474|25|||LUCKY|87%|12|15|12|Thunder Shock|Thunder|-|LEGENDARY||||
-353|SHEDINJA|774|Shedinja|153|15|||LUCKY|84%|13|12|13|Bug Bite|Aerial Ace|-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
-353||||||||LUCKY|||||||-|||||
+|ID||POKEMON|CP|LVL|STATE|SHINY|LUCKY|%|ATK|DEF|STA|MOVE1|MOVE2|MOVE3|MEGA_EVOLVED|COSTUME|LEGENDARY|MYTHICAL|PURIFIED|BABY
+1|LAPRAS|132|Lapras|1,847|25|||LUCKY|87%|13|12|14|Frost Breath|Blizzard|-|-|||||
+2|GYARADOS|131|Gyarados|3,162|37|||LUCKY|91%|14|13|14|Waterfall|Outrage|Hydro Pump|-|||||
+3|ONIX|96|Onix|117|4|||LUCKY|||||Rock Throw|Iron Head|-|-|||||
+4|BELLOSSOM|184|Bellossom|1,491|23|||LUCKY|||||Razor Leaf|Leaf Blade|-|-|||||
+5|DRAGONITE|150|Dragonite|3,262|31|||LUCKY|||||Dragon Tail|Dragon Claw|-|-|||||
+6|GOLEM_ALOLA|747|Alolan Golem|2,700|35|||LUCKY|||||Rock Throw|Rock Blast|Wild Charge|-|||||
+7|SLAKING|291|Slaking|4,220|38||SHINY|LUCKY|||||Yawn|Body Slam|Play Rough|-|||||
+8|NIDOQUEEN|32|Nidoqueen|2,201|33|||LUCKY|||||Bite|Stone Edge|-|-|||||
+9|SLOWPOKE|80|Slowpoke|373|11|||LUCKY|||||||-|-|||||
+10|ALAKAZAM|66|Alakazam|1,463|17|||LUCKY|||||Confusion|Shadow Ball|-|-|||||
+11|POLIWHIRL|62|Poliwhirl|560|14|||LUCKY|||||||-|-|||||
+12|INFERNAPE|402|Infernape|1,585|21|||LUCKY|||||||-|-|||||
+13|GENGAR|95|Gengar|1,041|13|||LUCKY|||||Sucker Punch|Focus Blast|-|-|||||
+14|ELECTABUZZ|126|Electabuzz|825|12|||LUCKY|||||||-|-|||||
+15|DRAGONAIR|149|Dragonair|388|8|||LUCKY|||||||-|-|||||
+16|AGGRON|308|Aggron|2,693|34|||LUCKY|||||Smack Down|Stone Edge|-|-|||||
+17|MEDICHAM|310|Medicham|839|21|||LUCKY|87%|14|12|13|Psycho Cut|Psychic|-|-|||||
+18|URSARING|219|Ursaring|1,462|17|||LUCKY|93%|15|15|12|Shadow Claw|Close Combat|-|-|||||
+19|UMBREON|199|Umbreon|1,950|36|||LUCKY|98%|15|15|14|Snarl|Foul Play|-|-|||||
+20|NIDORINA|31|Nidorina|373|10|||LUCKY|||||||-|-|||||
+20|PRIMEAPE|58|Primeape|1,124|17|TRASH||LUCKY|||||||-|-|||||
+21|ESPEON|198|Espeon|2,813|33|||LUCKY|||||Zen Headbutt|Psychic|-|-|||||
+22|SCEPTILE|256|Sceptile|1,488|19|||LUCKY|96%|15|15|13|Bullet Seed|Frenzy Plant|Leaf Blade|-|||||
+23|GOLEM_ALOLA|747|Alolan Golem|2,678|35|||LUCKY|||||Volt Switch|Wild Charge|-|-|||||
+24|PUPITAR|249|Pupitar|749|15|||LUCKY|||||||-|-|||||
+25|OMASTAR|140|Omastar|1,494|19|||LUCKY|||||Water Gun|Ancient Power|-|-|||||
+26|HAUNTER|94|Haunter|437|8|||LUCKY|||||Shadow Claw|Shadow Ball|-|-|||||
+26|ELECTABUZZ|126|Electabuzz|170|3|TRASH||LUCKY|||||||-|-|||||
+26|NIDORAN_FEMALE|30|Nidoran♀|11|1|TRASH||LUCKY|||||||-|-|||||
+26|KOFFING|110|Koffing|16|1|TRASH||LUCKY|||||||-|-|||||
+27|GLACEON|493|Glaceon|1,718|19|||LUCKY|||||Frost Breath|Ice Beam|-|-|||||
+28|PUPITAR|249|Pupitar|1,186|24|EVOLVE||LUCKY|||||||-|-|||||
+29|FEAROW|23|Fearow|667|12|||LUCKY|||||Steel Wing|Twister|-|-|||||
+30|GROVYLE|255|Grovyle|1,068|23|||LUCKY|||||||-|-|||||
+30|GULPIN|318|Gulpin|115|5|TRASH||LUCKY|||||||-|-|||||
+31|LOMBRE|273|Lombre|434|13|||LUCKY|||||||-|-|||||
+32|GASTRODON_EAST_SEA|444|Gastrodon (East Sea)|813|12|||LUCKY|||||||-|-|||||
+32|BULBASAUR|2|Bulbasaur|15|1|TRASH||LUCKY|||||||-|-|||||
+33|CRAWDAUNT|344|Crawdaunt|772|11|||LUCKY|||||||-|-|||||
+34|SWALOT|319|Swalot|1,478|27|||LUCKY|||||Rock Smash|Sludge Bomb|-|-|||||
+35|GRANBULL|212|Granbull|1,868|26|||LUCKY|||||Charm|Crunch|-|-|||||
+36|FERALIGATR|162|Feraligatr|2,493|32|||LUCKY|||||Waterfall|Hydro Cannon|Crunch|-|||||
+36|MUDKIP|260|Mudkip|49|2|TRASH||LUCKY|||||||-|-|||||
+37|SWAMPERT|262|Swampert|2,655|34|||LUCKY|||||Water Gun|Hydro Cannon|Muddy Water|-|||||
+38|WEEPINBELL|71|Weepinbell|888|20|||LUCKY|||||||-|-|||||
+39|DODUO|85|Doduo|264|8|||LUCKY|||||||-|-|||||
+40|MARSHTOMP|261|Marshtomp|935|19|||LUCKY|||||||-|-|||||
+40|RATICATE|21|Raticate|772|16|TRASH||LUCKY|||||||-|-|||||
+41|SHARPEDO|321|Sharpedo|159|3|||LUCKY|||||||-|-|||||
+42|OMASTAR|140|Omastar|1,949|25|||LUCKY|||||Mud Shot|Ancient Power|-|-|||||
+43|WHISCASH|342|Whiscash|1,485|25|||LUCKY|||||Mud Shot|Mud Bomb|-|-|||||
+43|CASTFORM_SUNNY|357|Castform (Sunny)|500|11|TRASH||LUCKY|||||||-|-|||||
+44|DRAPION|474|Drapion|2,076|31|||LUCKY|||||||-|-|||||
+45|MEOWTH|53|Meowth|420|20|||LUCKY|||||||-|-|||||
+45|WEEDLE|14|Weedle|19|2|TRASH||LUCKY|||||||-|-|||||
+46|SCEPTILE|256|Sceptile|2,402|32|||LUCKY|||||Bullet Seed|Dragon Claw|-|-|||||
+46|MAKUHITA|298|Makuhita|204|9|TRASH||LUCKY|||||||-|-|||||
+46|TURTWIG|397|Turtwig|259|8|TRASH||LUCKY|||||||-|-|||||
+47|JOLTEON|136|Jolteon|1,467|18|||LUCKY|||||Thunder Shock|Thunderbolt|-|-|||||
+48|RALTS_FEMALE|942|Ralts♀|321|22|||LUCKY|||||||-|-|||||
+49|WORMADAM_FEMALE_PLANT|961|Wormadam♀ (Plant)|1,040|21|||LUCKY|||||Bug Bite|Psybeam|-|-|||||
+49|RATTATA_ALOLA|734|Alolan Rattata|244|12|TRASH||LUCKY|||||||-|-|||||
+49|RATTATA|20|Rattata|264|13|TRASH||LUCKY|||||||-|-|||||
+50|PELIPPER|281|Pelipper|650|11|||LUCKY|||||||-|-|||||
+51|EEVEE|134|Eevee|267|9|||LUCKY|||||||-|-|||||
+51|DROWZEE|97|Drowzee|77|3|TRASH||LUCKY|||||||-|-|||||
+52|NINETALES|39|Ninetales|1,535|24|||LUCKY|||||Fire Spin|Overheat|-|-|||||
+53|KAKUNA|15|Kakuna|144|12|||LUCKY|||||||-|-|||||
+54|POLITOED_PURIFIED|1666|Politoed (Purified)|1,788|26|||LUCKY|||||Bubble|Surf|-|-||||PURIFIED|
+55|POLIWHIRL|62|Poliwhirl|873|22|||LUCKY|||||||-|-|||||
+56|GARDEVOIR_FEMALE|946|Gardevoir♀|2,722|33|||LUCKY|||||Charm|Dazzling Gleam|-|-|||||
+57|EMPOLEON|405|Empoleon|2,596|34|||LUCKY|||||Waterfall|Blizzard|-|-|||||
+58|GOLBAT|43|Golbat|941|17|||LUCKY|||||||-|-|||||
+59|WAILMER|322|Wailmer|890|22|||LUCKY|||||||-|-|||||
+60|ARBOK|25|Arbok|804|15|||LUCKY|||||Dragon Tail|Sludge Wave|-|-|||||
+60|POLIWAG|61|Poliwag|229|10|TRASH||LUCKY|||||||-|-|||||
+60|WEEDLE|14|Weedle|84|7|TRASH||LUCKY|||||||-|-|||||
+60|GLIGAR|209|Gligar|357|7|TRASH||LUCKY|||||||-|-|||||
+61|LEAFEON|492|Leafeon|2,531|31|||LUCKY|||||Razor Leaf|Last Resort|-|-|||||
+61|DROWZEE|97|Drowzee|231|8|TRASH||LUCKY|||||||-|-|||||
+62|PARASECT|48|Parasect|1,308|25|||LUCKY|||||Fury Cutter|X-Scissor|-|-|||||
+62|CHINCHOU|172|Chinchou|177|6|TRASH||LUCKY|||||||-|-|||||
+62|SENTRET|163|Sentret|184|11|TRASH||LUCKY|||||||-|-|||||
+63|FURRET|164|Furret|1,195|24|||LUCKY|||||||-|-|||||
+64|MEGANIUM|156|Meganium|1,496|22|||LUCKY|||||Razor Leaf|Petal Blizzard|Solar Beam|-|||||
+64|SEEL|87|Seel|128|5|TRASH||LUCKY|||||||-|-|||||
+64|RALTS_FEMALE|942|Ralts♀|23|2|TRASH||LUCKY|||||||-|-|||||
+64|ZIGZAGOON|265|Zigzagoon|51|4|TRASH||LUCKY|||||||-|-|||||
+64|RALTS_MALE|943|Ralts♂|163|11|TRASH||LUCKY|||||||-|-|||||
+65|RALTS_MALE|943|Ralts♂|227|15|||LUCKY|||||||-|-|||||
+65|EEVEE|134|Eevee|45|2|TRASH||LUCKY|||||||-|-|||||
+66|TAUROS|129|Tauros|2,496|38|||LUCKY|||||Zen Headbutt|Earthquake|-|-|||||
+67|KIRLIA_FEMALE|944|Kirlia♀|327|12|||LUCKY|||||||-|-|||||
+68|ALTARIA|336|Altaria|1,671|30|||LUCKY|||||Dragon Breath|Dragon Pulse|Sky Attack|-|||||
+69|MILOTIC|352|Milotic|41|1|||LUCKY|||||Dragon Tail|Blizzard|-|-|||||
+69|GRIMER|89|Grimer|19|1|TRASH||LUCKY|||||||-|-|||||
+69|SUNKERN|193|Sunkern|62|6|TRASH||LUCKY|||||||-|-|||||
+69|TURTWIG|397|Turtwig|16|1|TRASH||LUCKY|||||||-|-|||||
+70|TORTERRA|399|Torterra|2,659|35|||LUCKY|||||Razor Leaf|Solar Beam|-|-|||||
+71|SHIFTRY|277|Shiftry|1,478|22|||LUCKY|||||Bullet Seed|Foul Play|-|-|||||
+71|LILLIPUP|556|Lillipup|253|10|TRASH||LUCKY|||||||-|-|||||
+72|RALTS_FEMALE|942|Ralts♀|236|16|||LUCKY|||||||-|-|||||
+72|SNIVY|545|Snivy|60|3|TRASH||LUCKY|||||||-|-|||||
+73|RALTS_FEMALE|942|Ralts♀|361|25|||LUCKY|||||||-|-|||||
+74|VILEPLUME|46|Vileplume|1,495|21|||LUCKY|||||Razor Leaf|Solar Beam|-|-|||||
+74|MAGIKARP|130|Magikarp|152|21|TRASH||LUCKY|||||||-|-|||||
+74|CHIKORITA|154|Chikorita|262|10|TRASH||LUCKY|||||||-|-|||||
+75|WEEZING|111|Weezing|1,375|21|||LUCKY|||||Tackle|Thunderbolt|-|-|||||
+76|GOLEM|77|Golem|1,654|20|||LUCKY|||||||-|-|||||
+77|TEDDIURSA|218|Teddiursa|691|19|||LUCKY|||||||-|-|||||
+78|NIDORINA|31|Nidorina|759|21|||LUCKY|||||||-|-|||||
+79|JIGGLYPUFF|40|Jigglypuff|334|17|||LUCKY|||||||-|-|||||
+79|MAKUHITA|298|Makuhita|181|8|TRASH||LUCKY|||||||-|-|||||
+79|ODDISH|44|Oddish|236|7|TRASH||LUCKY|||||||-|-|||||
+80|STARAPTOR|408|Staraptor|1,220|15|||LUCKY|||||Quick Attack|Close Combat|-|-|||||
+81|RHYPERIOR|486|Rhyperior|3,440|36|||LUCKY|||||Mud-Slap|Earthquake|-|-|||||
+82|GALLADE_MALE|968|Gallade♂|2,777|34|||LUCKY|||||Confusion|Psychic|-|-|||||
+82|DROWZEE|97|Drowzee|135|5|TRASH||LUCKY|||||||-|-|||||
+82|EKANS|24|Ekans|204|8|TRASH||LUCKY|||||||-|-|||||
+83|IVYSAUR|3|Ivysaur|709|15|||LUCKY|||||||-|-|||||
+84|STEELIX|210|Steelix|1,706|25|||LUCKY|||||Thunder Fang|Heavy Slam|-|-|||||
+84|MANKEY|57|Mankey|121|4|TRASH||LUCKY|||||||-|-|||||
+85|SNOVER|481|Snover|396|12|||LUCKY|||||||-|-|||||
+86|LUDICOLO|274|Ludicolo|1,708|26|||LUCKY|||||Bubble|Solar Beam|-|-|||||
+86|PONYTA|78|Ponyta|375|8|TRASH||LUCKY|||||||-|-|||||
+87|ROSERADE|417|Roserade|1,995|24|||LUCKY|||||||-|-|||||
+87|CYNDAQUIL|157|Cyndaquil|128|5|TRASH||LUCKY|||||||-|-|||||
+88|GENGAR|95|Gengar|1,491|18|||LUCKY|||||Shadow Claw|Focus Blast|-|-|||||
+89|SNEASEL|217|Sneasel|747|13|||LUCKY|||||||-|-|||||
+90|EEVEE|134|Eevee|452|15|||LUCKY|||||||-|-|||||
+91|ZUBAT|42|Zubat|276|15|||LUCKY|||||||-|-|||||
+91|MACHOP|67|Machop|93|3|TRASH||LUCKY|||||||-|-|||||
+91|EXEGGCUTE|103|Exeggcute|84|3|TRASH||LUCKY|||||||-|-|||||
+91|DUSKULL|361|Duskull|50|3|TRASH||LUCKY|||||||-|-|||||
+92|VENUSAUR|4|Venusaur|2,315|31|||LUCKY|||||Razor Leaf|Sludge Bomb|Solar Beam|-|||||
+93|VICTREEBEL|72|Victreebel|1,488|22|||LUCKY|||||Acid|Sludge Bomb|-|-|||||
+94|VICTREEBEL|72|Victreebel|1,469|21|||LUCKY|||||Razor Leaf|Leaf Tornado|-|-|||||
+95|ARMALDO|350|Armaldo|2,141|27|||LUCKY|||||Struggle Bug|Cross Poison|-|-|||||
+96|BLAZIKEN|259|Blaziken|2,496|33|||LUCKY|||||Counter|Focus Blast|-|-|||||
+97|BANETTE|360|Banette|1,500|23|||LUCKY|||||Hex|Shadow Ball|-|-|||||
+97|LEDYBA|167|Ledyba|10|1|TRASH||LUCKY|||||||-|-|||||
+97|SWINUB|222|Swinub|10|1|TRASH||LUCKY|||||||-|-|||||
+97|TURTWIG|397|Turtwig|16|1|TRASH||LUCKY|||||||-|-|||||
+98|BULBASAUR|2|Bulbasaur|569|18|||LUCKY|||||||-|-|||||
+99|GLOOM|45|Gloom|515|11|||LUCKY|||||||-|-|||||
+100|MONFERNO|401|Monferno|783|18|||LUCKY|||||||-|-|||||
+100|LILLIPUP|556|Lillipup|40|2|TRASH||LUCKY|||||||-|-|||||
+101|HERDIER|557|Herdier|670|15|||LUCKY|||||||-|-|||||
+101|MAGNEMITE|82|Magnemite|98|3|TRASH||LUCKY|||||||-|-|||||
+101|MAGNEMITE|82|Magnemite|99|3|TRASH||LUCKY|||||||-|-|||||
+101|PATRAT|554|Patrat|148|7|TRASH||LUCKY|||||||-|-|||||
+101|TURTWIG|397|Turtwig|157|5|TRASH||LUCKY|||||||-|-|||||
+102|SUNFLORA|194|Sunflora|1,036|17|||LUCKY|||||||-|-|||||
+102|SPOINK|327|Spoink|97|3|TRASH||LUCKY|||||||-|-|||||
+102|MISDREAVUS|202|Misdreavus|256|5|TRASH||LUCKY|||||||-|-|||||
+103|DUSKNOIR_PURIFIED|2539|Dusknoir (Purified)|2,134|34|||LUCKY|93%|15|13|14|Hex|Return|-|-||||PURIFIED|
+104|URSARING|219|Ursaring|1,653|20|||LUCKY|89%|13|12|15|Metal Claw|Hyper Beam|-|-|||||
+105|BLAZIKEN|259|Blaziken|1,776|22|||LUCKY|96%|13|15|15|Fire Spin|Blast Burn|Overheat|-|||||
+106|TENTACOOL|73|Tentacool|524|18|||LUCKY|||||||-|-|||||
+106|RHYHORN|112|Rhyhorn|226|5|TRASH||LUCKY|||||||-|-|||||
+107|GIRAFARIG|205|Girafarig|629|11|||LUCKY|||||||-|-|||||
+108|TENTACRUEL|74|Tentacruel|1,634|24|||LUCKY|||||Poison Jab|Hydro Pump|-|-|||||
+108|RHYHORN|112|Rhyhorn|264|6|TRASH||LUCKY|||||||-|-|||||
+109|GEODUDE_ALOLA|745|Alolan Geodude|247|7|||LUCKY|||||||-|-|||||
+109|HOPPIP|189|Hoppip|77|5|TRASH||LUCKY|||||||-|-|||||
+110|MAGNETON|83|Magneton|1,061|15|||LUCKY|||||||-|-|||||
+110|TENTACOOL|73|Tentacool|257|9|TRASH||LUCKY|||||||-|-|||||
+111|POLITOED_PURIFIED|1666|Politoed (Purified)|1,784|26|||LUCKY|100%|15|15|15|Bubble|Return|-|-||||PURIFIED|
+111|BELDUM|380|Beldum|42|2|TRASH||LUCKY|||||||-|-|||||
+112|NIDORAN_FEMALE|30|Nidoran♀|367|16|||LUCKY|||||||-|-|||||
+112|EXEGGCUTE|103|Exeggcute|154|5|TRASH||LUCKY|||||||-|-|||||
+113|VAPOREON|135|Vaporeon|1,757|20|||LUCKY|||||Water Gun|Aqua Tail|-|-|||||
+114|FLAREON|137|Flareon|1,705|20|||LUCKY|||||Ember|Fire Blast|-|-|||||
+115|EEVEE|134|Eevee|359|12|||LUCKY|||||||-|-|||||
+116|SCIZOR|214|Scizor|1,264|15|||LUCKY|||||Fury Cutter|Night Slash|-|-|||||
+116|POLIWAG|61|Poliwag|271|12|TRASH||LUCKY|||||||-|-|||||
+117|MASQUERAIN|286|Masquerain|827|13|||LUCKY|||||||-|-|||||
+118|NIDOQUEEN|32|Nidoqueen|1,609|23|||LUCKY|||||Bite|Sludge Wave|-|-|||||
+119|GROTLE|398|Grotle|417|8|||LUCKY|||||||-|-|||||
+120|SLOWBRO|81|Slowbro|1,492|21|||LUCKY|||||Confusion|Psychic|-|-|||||
+121|SLOWKING|201|Slowking|1,934|27|||LUCKY|||||Water Gun|Fire Blast|-|-|||||
+122|GLIGAR|209|Gligar|1,484|28|||LUCKY|||||Fury Cutter|Sand Tomb|-|-|||||
+123|WORMADAM_FEMALE_SANDY|962|Wormadam♀ (Sandy)|724|14|||LUCKY|||||Bug Bite|Bug Buzz|-|-|||||
+124|EEVEE|134|Eevee|272|9|||LUCKY|||||||-|-|||||
+125|NIDORAN_MALE|33|Nidoran♂|307|13|||LUCKY|||||||-|-|||||
+126|MAGMORTAR|489|Magmortar|2,458|28|||LUCKY|||||Fire Spin|Fire Blast|-|-|||||
+127|FROSLASS_FEMALE|969|Froslass♀|1,661|29|||LUCKY|||||Powder Snow|Shadow Ball|-|-|||||
+128|MAGNEZONE_PURIFIED|2494|Magnezone (Purified)|2,498|28|||LUCKY|||||Spark|Return|-|-||||PURIFIED|
+128|GOLEM|77|Golem|478|6|TRASH||LUCKY|||||||-|-|||||
+129|RHYDON|113|Rhydon|613|7|||LUCKY|||||||-|-|||||
+130|RATICATE_PURIFIED|1165|Raticate (Purified)|1,223|25|||LUCKY|||||Bite|Return|-|-||||PURIFIED|
+131|WEAVILE|483|Weavile|2,490|29|||LUCKY|100%|15|15|15|Feint Attack|Foul Play|-|-|||||
+132|MANECTRIC|312|Manectric|1,488|22|||LUCKY|||||Charge Beam|Wild Charge|-|-|||||
+133|GASTLY|93|Gastly|411|12|||LUCKY|||||Astonish|Sludge Bomb|-|-|||||
+134|NOCTOWL|166|Noctowl|1,245|22|||LUCKY|||||Extrasensory|Psychic|-|-|||||
+134|KOFFING|110|Koffing|378|11|TRASH||LUCKY|||||||-|-|||||
+135|AGGRON|308|Aggron|1,693|20|||LUCKY|||||Iron Tail|Thunder|-|-|||||
+136|MEDICHAM|310|Medicham|798|20|||LUCKY|||||Counter|Power-Up Punch|-|-|||||
+136|MURKROW|200|Murkrow|21|1|TRASH||LUCKY|||||||-|-|||||
+137|ALAKAZAM|66|Alakazam|1,475|17|||LUCKY|||||Counter|Future Sight|-|-|||||
+138|AIPOM|192|Aipom|528|14|||LUCKY|||||||-|-|||||
+139|PLUSLE|313|Plusle|549|11|||LUCKY|||||||-|-|||||
+140|MACHAMP|69|Machamp|936|11|||LUCKY|||||||-|-|||||
+141|MR_MIME|123|Mr. Mime|1,555|25|||LUCKY|||||Zen Headbutt|Psychic|-|-|||||
+142|CHERRIM_OVERCAST|438|Cherrim (Overcast)|1,487|26|||LUCKY|||||Razor Leaf|Solar Beam|-|-|||||
+143|MR_MIME|123|Mr. Mime|1,738|28|||LUCKY|||||Zen Headbutt|Psychic|-|-|||||
+144|GLALIE_MALE|951|Glalie♂|1,648|28|||LUCKY|||||Ice Shard|Avalanche|-|-|||||
+145|FLAREON|137|Flareon|1,493|17|||LUCKY|||||Ember|Flamethrower|-|-|||||
+146|SNORUNT_MALE|949|Snorunt♂|167|7|||LUCKY|||||||-|-|||||
+147|PINSIR|128|Pinsir|2,499|30|||LUCKY|||||Rock Smash|Superpower|-|-|||||
+148|MAMOSWINE|495|Mamoswine|2,468|26|||LUCKY|84%|13|12|13|Mud-Slap|Bulldoze|-|-|||||
+149|AGGRON|308|Aggron|2,699|34|||LUCKY|||||Iron Tail|Heavy Slam|-|-|||||
+149|PIDOVE|569|Pidove|88|4|TRASH||LUCKY|||||||-|-|||||
+150|JYNX|125|Jynx|794|11|||LUCKY|||||Frost Breath|Psyshock|-|-|||||
+150|PATRAT|554|Patrat|389|18|TRASH||LUCKY|||||||-|-|||||
+150|SLAKOTH|289|Slakoth|42|2|TRASH||LUCKY|||||||-|-|||||
+150|MINUN|314|Minun|572|12|TRASH||LUCKY|||||||-|-|||||
+151|BUNEARY|449|Buneary|455|13|||LUCKY|||||||-|-|||||
+151|YANMA|195|Yanma|234|6|TRASH||LUCKY|||||||-|-|||||
+152|YANMEGA|491|Yanmega|1,321|16|||LUCKY|||||Wing Attack|Ancient Power|-|-|||||
+153|BEARTIC|680|Beartic|2,472|29|||LUCKY|||||Powder Snow|Ice Punch|-|-|||||
+154|RAICHU_WINTER_HAT|812|Raichu (Winter Hat)|1,476|24|||LUCKY|||||Thunder Shock|Skull Bash|-|-|WINTER_HAT||||
+155|MOLTRES_PURIFIED|1543|Moltres (Purified)|3,267|37|||LUCKY|89%|13|13|14|Fire Spin|Return|Fire Blast|-||LEGENDARY||PURIFIED|
+156|ROSERADE|417|Roserade|2,483|30|||LUCKY|93%|15|14|13|Poison Jab|Dazzling Gleam|-|-|||||
+157|RAICHU_PARTY_HAT_PURPLE|798|Raichu (Purple Party Hat)|1,475|24|||LUCKY|||||Volt Switch|Wild Charge|-|-|PARTY_HAT_PURPLE||||
+158|SALAMENCE|379|Salamence|2,496|23|||LUCKY|93%|15|12|15|Dragon Tail|Draco Meteor|-|-|||||
+159|HYPNO|98|Hypno|1,338|23|||LUCKY|||||Zen Headbutt|Focus Blast|-|-|||||
+160|BONSLY|460|Bonsly|730|20|||LUCKY|||||Counter|Rock Slide|-|-|||||BABY
+161|CLOYSTER|92|Cloyster|2,018|28|||LUCKY|||||Frost Breath|Aurora Beam|-|-|||||
+162|HONCHKROW|452|Honchkrow|2,016|26|||LUCKY|||||Peck|Dark Pulse|-|-|||||
+163|XATU|180|Xatu|1,471|24|||LUCKY|||||Feint Attack|Ominous Wind|-|-|||||
+164|ABOMASNOW|482|Abomasnow|1,520|23|||LUCKY|||||Razor Leaf|Energy Ball|-|-|||||
+165|VENOMOTH|50|Venomoth|1,003|17|||LUCKY|||||Infestation|Psychic|-|-|||||
+166|DELIBIRD|227|Delibird|481|16|||LUCKY|||||Present|Icy Wind|-|-|||||
+167|MISMAGIUS|451|Mismagius|1,844|25|||LUCKY|||||Hex|Shadow Ball|-|-|||||
+168|EMPOLEON|405|Empoleon|2,474|31|||LUCKY|||||Waterfall|Hydro Cannon|Hydro Pump|-|||||
+169|WALREIN|371|Walrein|1,714|22|||LUCKY|||||Frost Breath|Blizzard|-|-|||||
+170|EMPOLEON|405|Empoleon|2,480|31|||LUCKY|||||Waterfall|Hydro Cannon|Hydro Pump|-|||||
+171|VILEPLUME|46|Vileplume|1,485|20|||LUCKY|||||Acid|Sludge Bomb|-|-|||||
+172|BEEDRILL|16|Beedrill|1,556|31|||LUCKY|||||Poison Jab|X-Scissor|-|-|||||
+173|EXPLOUD|297|Exploud|1,722|26|||LUCKY|||||Bite|Crunch|-|-|||||
+173|SPINARAK|169|Spinarak|108|5|TRASH||LUCKY|||||||-|-|||||
+174|DIGLETT_ALOLA|741|Alolan Diglett|280|15|||LUCKY|||||||-|-|||||
+175|PIDGEOT|19|Pidgeot|1,074|18|||LUCKY|||||Steel Wing|Aerial Ace|-|-|||||
+176|POLIWRATH_PURIFIED|1291|Poliwrath (Purified)|1,823|25|||LUCKY|||||Rock Smash|Return|-|-||||PURIFIED|
+177|KRICKETUNE|412|Kricketune|1,405|31|||LUCKY|87%|12|15|12|Fury Cutter|Bug Buzz|-|-|||||
+177|CASTFORM_SUNNY|357|Castform (Sunny)|725|16|TRASH||LUCKY|||||||-|-|||||
+178|WATCHOG|555|Watchog|1,257|25|||LUCKY|||||Low Kick|Crunch|-|-|||||
+179|SHIFTRY|277|Shiftry|2,039|33|||LUCKY|||||Snarl|Foul Play|-|-|||||
+180|PIKACHU_PARTY_HAT_PURPLE|797|Pikachu (Purple Party Hat)|425|16|||LUCKY|||||||-|-|PARTY_HAT_PURPLE||||
+181|PIKACHU_WINTER_HAT|811|Pikachu (Winter Hat)|382|15|||LUCKY|||||||-|-|WINTER_HAT||||
+182|SEISMITOAD|587|Seismitoad|1,781|25|||LUCKY|82%|12|12|13|Bubble|Earth Power|-|-|||||
+183|STARLY|406|Starly|336|17|||LUCKY|||||||-|-|||||
+184|PRIMEAPE|58|Primeape|1,949|31|||LUCKY|||||||-|-|||||
+185|PROBOPASS|498|Probopass|1,526|26|||LUCKY|||||Spark|Thunderbolt|-|-|||||
+186|CUBONE|105|Cubone|405|14|||LUCKY|||||||-|-|||||
+187|PROBOPASS|498|Probopass|1,225|21|||LUCKY|||||Rock Throw|Rock Slide|-|-|||||
+188|ELECTRODE|102|Electrode|1,316|22|||LUCKY|||||Spark|Discharge|-|-|||||
+189|CHARIZARD|7|Charizard|2,414|30|||LUCKY|82%|12|13|12|Fire Spin|Overheat|Dragon Claw|-|||||
+190|GARDEVOIR_FEMALE|946|Gardevoir♀|2,820|35|||LUCKY|87%|13|14|12|Confusion|Psychic|-|-|||||
+191|HEATRAN|513|Heatran|3,203|31|||LUCKY|96%|15|15|13|Fire Spin|Iron Head|-|-||LEGENDARY|||
+192|TERRAKION|705|Terrakion|3,140|30|||LUCKY|84%|14|12|12|Smack Down|Rock Slide|-|-||LEGENDARY|||
+193|BEEDRILL|16|Beedrill|884|17|||LUCKY|||||Infestation|Fell Stinger|-|-|||||
+194|ARCANINE|60|Arcanine|2,230|26|||LUCKY|||||Fire Fang|Fire Blast|-|-|||||
+195|GASTRODON_EAST_SEA|444|Gastrodon (East Sea)|1,904|29|||LUCKY|||||Hidden Power (Flying)|Water Pulse|-|-|||||
+196|EXCADRILL|580|Excadrill|2,278|25|||LUCKY|||||Metal Claw|Iron Head|-|-|||||
+197|MAGCARGO|221|Magcargo|1,451|31|||LUCKY|||||Rock Throw|Heat Wave|-|-|||||
+198|SMEARGLE|237|Smeargle|264|23|||LUCKY|||||Quick Attack|Dig|-|-|||||
+199|AMOONGUSS|653|Amoonguss|1,686|28|||LUCKY|||||Feint Attack|Grass Knot|-|-|||||
+200|MAGMORTAR|489|Magmortar|1,833|21|||LUCKY|||||Karate Chop|Brick Break|-|-|||||
+201|STEELIX|210|Steelix|2,016|30|||LUCKY|||||Iron Tail|Heavy Slam|-|-|||||
+202|SWELLOW|279|Swellow|1,552|29|||LUCKY|||||Wing Attack|Brave Bird|-|-|||||
+203|ODDISH|44|Oddish|524|15|||LUCKY|||||||-|-|||||
+204|SANDSLASH|29|Sandslash|2,131|34|||LUCKY|||||Mud Shot|Earthquake|-|-|||||
+205|XATU|180|Xatu|1,357|22|||LUCKY|||||Air Slash|Aerial Ace|-|-|||||
+206|MAGIKARP|130|Magikarp|177|25|||LUCKY|||||||-|-|||||
+207|SILCOON|268|Silcoon|309|20|||LUCKY|93%|14|14|14|||-|-|||||
+208|MUK|90|Muk|1,860|24|||LUCKY|||||Infestation|Thunder Punch|-|-|||||
+209|FLOATZEL|435|Floatzel|1,482|21|||LUCKY|||||Waterfall|Hydro Pump|-|-|||||
+210|CASTFORM_RAINY|355|Castform (Rainy)|1,045|23|||LUCKY|||||Tackle|Hydro Pump|-|-|||||
+211|BRONZONG|459|Bronzong|1,472|23|||LUCKY|||||Confusion|Psyshock|-|-|||||
+212|SHELMET|682|Shelmet|109|5|||LUCKY|||||||-|-|||||
+213|SABLEYE|304|Sableye|702|17|||LUCKY|||||||-|-|||||
+214|HERDIER|557|Herdier|669|15|||LUCKY|||||||-|-|||||
+215|MINUN|314|Minun|1,232|26|||LUCKY|||||Spark|Discharge|-|-|||||
+216|LUVDISC|376|Luvdisc|513|22|||LUCKY|||||Splash|Aqua Jet|-|-|||||
+217|DRIFBLIM|448|Drifblim|1,539|23|||LUCKY|||||Hex|Ominous Wind|-|-|||||
+218|RHYPERIOR|486|Rhyperior|2,261|21|||LUCKY|||||Mud-Slap|Earthquake|-|-|||||
+219|GROUDON|389|Groudon|2,498|21|||LUCKY|89%|14|12|14|Mud Shot|Earthquake|-|-||LEGENDARY|||
+220|FLYGON|332|Flygon|1,584|21|||LUCKY|||||Dragon Tail|Stone Edge|-|-|||||
+221|CONKELDURR|584|Conkeldurr|2,488|26|||LUCKY|||||Counter|Dynamic Punch|-|-|||||
+222|RHYPERIOR|486|Rhyperior|3,149|30|||LUCKY|||||Mud-Slap|Surf|-|-|||||
+223|LICKILICKY|485|Lickilicky|1,468|21|||LUCKY|93%|15|12|15|Lick|Shadow Ball|-|-|||||
+224|SAMUROTT|553|Samurott|1,695|21|||LUCKY|84%|12|13|13|Waterfall|Hydro Pump|-|-|||||
+225|EMBOAR|550|Emboar|2,734|36|||LUCKY|89%|15|13|12|Low Kick|Focus Blast|-|-|||||
+226|HITMONLEE|107|Hitmonlee|1,492|20|||LUCKY|91%|15|12|14|Low Kick|Low Sweep|-|-|||||
+227|PSYDUCK|55|Psyduck|333|11|||LUCKY|||||||-|-|||||
+228|CINCCINO|627|Cinccino|1,251|20|||LUCKY|||||Pound|Aqua Tail|-|-|||||
+229|VOLTORB|101|Voltorb|311|11|||LUCKY|||||||-|-|||||
+230|SKORUPI|473|Skorupi|448|16|||LUCKY|||||||-|-|||||
+231|CHANDELURE|675|Chandelure|2,772|31|||LUCKY|||||Hex|Shadow Ball|-|-|||||
+232|SWELLOW|279|Swellow|1,476|27|||LUCKY|||||Wing Attack|Brave Bird|-|-|||||
+233|RIOLU|469|Riolu|550|20|||LUCKY|89%|13|12|15|||-|-|||||BABY
+233|DIGLETT|51|Diglett|185|10|TRASH||LUCKY|||||||-|-|||||
+234|GOLDUCK|56|Golduck|1,494|22|||LUCKY|||||Confusion|Ice Beam|-|-|||||
+235|AMPHAROS|183|Ampharos|1,989|25|||LUCKY|||||Volt Switch|Focus Blast|-|-|||||
+236|CROBAT_PURIFIED|1615|Crobat (Purified)|1,858|25|||LUCKY|||||Air Slash|Return|Air Cutter|-||||PURIFIED|
+237|SERPERIOR|547|Serperior|1,488|23|||LUCKY|98%|14|15|15|Vine Whip|Leaf Tornado|-|-|||||
+238|BUNEARY_FLOWER_CROWN|845|Buneary (Flower Crown)|17|1|||LUCKY|||||||-|-|FLOWER_CROWN||||
+238|VOLBEAT|315|Volbeat|443|9|TRASH||LUCKY|||||||-|-|||||
+239|ILLUMISE|316|Illumise|1,083|22|||LUCKY|||||Struggle Bug|Dazzling Gleam|-|-|||||
+240|ZANGOOSE|337|Zangoose|1,476|22|||LUCKY|||||Fury Cutter|Close Combat|-|-|||||
+241|ALAKAZAM|66|Alakazam|2,458|28||SHINY|LUCKY|||||Counter|Focus Blast|-|-|||||
+242|DITTO|133|Ditto|400|17|||LUCKY|||||Transform|Struggle|-|-|||||
+243|GALVANTULA|662|Galvantula|1,707|27|||LUCKY|||||Fury Cutter|Cross Poison|-|-|||||
+244|CRAWDAUNT|344|Crawdaunt|1,477|21|||LUCKY|||||Snarl|Crabhammer|-|-|||||
+245|FEEBAS|351|Feebas|164|23|||LUCKY|98%|15|15|14|||-|-|||||
+246|HORSEA|117|Horsea|615|21|||LUCKY|||||||-|-|||||
+247|EEVEE|134|Eevee|631|21|||LUCKY|||||||-|-|||||
+248|NIDOKING|35|Nidoking|2,212|32|||LUCKY|||||Iron Tail|Earth Power|-|-|||||
+249|PIKACHU_CHARIZARD_CAP|859|Pikachu (Charizard Cap)|13|1|||LUCKY|||||Quick Attack|Discharge|-|-|CHARIZARD_CAP||||
+250|BUTTERFREE|13|Butterfree|1,482|29|||LUCKY|||||Confusion|Psychic|-|-|||||
+251|EXEGGUTOR_PURIFIED|1414|Exeggutor (Purified)|2,491|29|||LUCKY|||||Bullet Seed|Return|-|-||||PURIFIED|
+252|EEVEE|134|Eevee|893|31|||LUCKY|||||||-|-|||||
+253|PIKACHU_UMBREON_CAP|860|Pikachu (Umbreon Cap)|502|19|||LUCKY|||||Quick Attack|Discharge|-|-|UMBREON_CAP||||
+254|TYPHLOSION|159|Typhlosion|1,861|23|||LUCKY|||||Ember|Solar Beam|-|-|||||
+255|KADABRA|65|Kadabra|1,500|26|||LUCKY|||||Psycho Cut|Psybeam|-|-|||||
+256|SKARMORY|229|Skarmory|952|16|||LUCKY|||||Steel Wing|Sky Attack|-|-|||||
+257|DUNSPARCE|208|Dunsparce|1,429|31|||LUCKY|||||Astonish|Drill Run|-|-|||||
+258|BARBOACH|341|Barboach|521|23|||LUCKY|||||||-|-|||||
+259|PIKACHU_RAYQUAZA_CAP|861|Pikachu (Rayquaza Cap)|234|9|||LUCKY|||||Quick Attack|Discharge|-|-|RAYQUAZA_CAP||||
+260|SANDSLASH_PURIFIED|1189|Sandslash (Purified)|1,674|25|||LUCKY|||||Metal Claw|Return|-|-||||PURIFIED|
+261|SHIFTRY|277|Shiftry|1,964|30|||LUCKY|91%|12|14|15|Bullet Seed|Leaf Tornado|-|-|||||
+262|ELECTIVIRE|488|Electivire|2,717|33|||LUCKY|84%|14|12|12|Thunder Shock|Thunder|-|-|||||
+263|SNORLAX|144|Snorlax|2,348|26|||LUCKY|||||Zen Headbutt|Earthquake|-|-|||||
+264|CASTFORM_NORMAL|354|Castform (Normal)|1,224|27|||LUCKY|||||Tackle|Weather Ball (Normal)|-|-|||||
+265|MIGHTYENA|264|Mightyena|1,065|20|||LUCKY|||||Bite|Play Rough|-|-|||||
+266|UNOWN_A|893|Unown A|710|21|||LUCKY|||||Hidden Power (Flying)|Struggle|-|-|||||
+267|PURUGLY|454|Purugly|1,707|33|||LUCKY|||||Shadow Claw|Aerial Ace|-|-|||||
+268|PIKACHU_LUCARIO_CAP|862|Pikachu (Lucario Cap)|677|26|||LUCKY|||||Thunder Shock|Discharge|-|-|LUCARIO_CAP||||
+269|TOXICROAK|476|Toxicroak|1,811|26|||LUCKY|||||Counter|Dynamic Punch|-|-|||||
+270|SHUCKLE|215|Shuckle|265|25|||LUCKY|93%|13|14|15|Rock Throw|Stone Edge|-|-|||||
+271|CRUSTLE|612|Crustle|1,265|17|||LUCKY|||||Smack Down|Rock Slide|-|-|||||
+272|INFERNAPE|402|Infernape|2,252|30|||LUCKY|87%|12|14|13|Rock Smash|Close Combat|-|-|||||
+273|GOTHORITA|629|Gothorita|681|15|||LUCKY|||||||-|-|||||
+274|HIPPOWDON|472|Hippowdon|1,731|20|||LUCKY|||||Fire Fang|Stone Edge|-|-|||||
+275|KABUTOPS|142|Kabutops|1,531|20|||LUCKY|||||Waterfall|Water Pulse|-|-|||||
+276|BURMY_MALE_TRASH|959|Burmy♂ (Trash)|20|2|||LUCKY|||||||-|-|||||
+277|FARFETCHD_GALARIAN|757|Galarian Farfetch'd|23|1|||LUCKY|||||||-|-|||||
+278|SAWK|589|Sawk|1,499|19|||LUCKY|||||Low Kick|Low Sweep|-|-|||||
+279|BLISSEY|244|Blissey|1,781|23|||LUCKY|89%|13|15|12|Pound|Hyper Beam|-|-|||||
+280|WORMADAM_FEMALE_TRASH|963|Wormadam♀ (Trash)|933|21|||LUCKY|||||Bug Bite|Iron Head|-|-|||||
+281|HUNTAIL|373|Huntail|985|15|||LUCKY|||||Bite|Aqua Tail|-|-|||||
+282|ABSOL|365|Absol|1,064|15|||LUCKY|||||Psycho Cut|Thunder|-|-|||||
+283|VESPIQUEN_FEMALE|967|Vespiquen♀|1,488|26|||LUCKY|||||Air Slash|X-Scissor|-|-|||||
+284|CLAYDOL|346|Claydol|1,478|27|||LUCKY|||||Confusion|Earthquake|-|-|||||
+285|DUOSION|632|Duosion|973|17|||LUCKY|96%|15|14|14|||-|-|||||
+286|GOLETT|688|Golett|620|19|||LUCKY|||||||-|-|||||
+287|LIEPARD|560|Liepard|1,304|25|||LUCKY|||||Charm|Play Rough|-|-|||||
+288|MOTHIM_MALE|964|Mothim♂|1,063|21|||LUCKY|||||Bug Bite|Psybeam|-|-|||||
+289|BEEDRILL|16|Beedrill|1,495|29|||LUCKY|||||Infestation|Drill Run|Fell Stinger|-|||||
+290|COMBEE_MALE|966|Combee♂|337|25|||LUCKY|||||Bug Bite|Bug Buzz|-|-|||||
+291|VOLBEAT|315|Volbeat|1,489|31|||LUCKY|||||Tackle|Bug Buzz|-|-|||||
+292|KLANG|666|Klang|1,049|20|||LUCKY|96%|15|13|15|||-|-|||||
+293|CLEFABLE|37|Clefable|1,473|21|||LUCKY|89%|14|12|14|Zen Headbutt|Psychic|-|-|||||
+294|TOGEKISS|490|Togekiss|2,500|26|||LUCKY|||||Charm|Dazzling Gleam|-|-|||||
+295|TROPIUS|363|Tropius|1,101|20|||LUCKY|||||Air Slash|Aerial Ace|-|-|||||
+296|CASTFORM_SUNNY|357|Castform (Sunny)|1,492|36|||LUCKY|100%|15|15|15|Ember|Weather Ball (Fire)|-|-|||||
+297|KRICKETOT|411|Kricketot|238|22|||LUCKY|||||||-|-|||||
+298|NINJASK|293|Ninjask|1,365|25|||LUCKY|||||Fury Cutter|Bug Buzz|-|-|||||
+299|HARIYAMA|299|Hariyama|2,491|33|||LUCKY|||||Bullet Punch|Heavy Slam|-|-|||||
+300|PIKACHU_PARTY_HAT_RED|838|Pikachu (Red Party Hat)|443|17|||LUCKY|||||Quick Attack|Thunderbolt|-|-|PARTY_HAT_RED||||
+301|KARRABLAST|650|Karrablast|228|7|||LUCKY|||||||-|-|||||
+302|PIKACHU_COSTUME_2020|886|Flying Pikachu|720|28|||LUCKY|||||Thunder Shock|Fly|Discharge|-|COSTUME_2020||||
+303|SENTRET|163|Sentret|193|11|||LUCKY|||||||-|-|||||
+304|CHARMANDER_PARTY_HAT_RED|836|Charmander (Red Party Hat)|500|18|||LUCKY|||||Scratch|Flame Charge|-|-|PARTY_HAT_RED||||
+305|LUNATONE|339|Lunatone|1,475|22|||LUCKY|||||Confusion|Psychic|-|-|||||
+306|LUNATONE|339|Lunatone|1,468|22|||LUCKY|||||Rock Throw|Rock Slide|-|-|||||
+307|PIKACHU_FLOWER_HAT|842|Pikachu (Flower Hat)|341|13|||LUCKY|||||Quick Attack|Wild Charge|-|-|FLOWER_HAT||||
+308|SCOLIPEDE|595|Scolipede|2,099|31|||LUCKY|||||Poison Jab|Sludge Bomb|-|-|||||
+309|MISDREAVUS_PURIFIED|1708|Misdreavus (Purified)|1,361|25|||LUCKY|||||Hex|Return|-|-||||PURIFIED|
+310|DUGTRIO|52|Dugtrio|1,232|28|||LUCKY|||||Mud-Slap|Earthquake|-|-|||||
+311|DELCATTY|303|Delcatty|1,274|32|||LUCKY|||||Feint Attack|Wild Charge|-|-|||||
+312|MASQUERAIN|286|Masquerain|2,059|35|||LUCKY|||||Infestation|Bubble Beam|-|-|||||
+313|ESCAVALIER|651|Escavalier|1,469|18|||LUCKY|||||Counter|Aerial Ace|-|-|||||
+314|PETILIL|598|Petilil|165|6|||LUCKY|||||||-|-|||||
+315|PIKACHU_SUMMER_HAT|806|Pikachu (Summer Hat)|420|16|||LUCKY|||||Thunder Shock|Thunderbolt|-|-|SUMMER_HAT||||
+316|CLEFABLE|37|Clefable|2,056|30|||LUCKY|||||Charm|Moonblast|-|-|||||
+317|GENGAR|95|Gengar|2,459|31|||LUCKY|||||Shadow Claw|Shadow Punch|-|-|||||
+318|GENGAR|95|Gengar|1,492|18|||LUCKY|||||Hex|Shadow Punch|-|-|||||
+319|LIEPARD|560|Liepard|1,343|26|||LUCKY|||||Snarl|Dark Pulse|-|-|||||
+320|GENGAR|95|Gengar|1,496|18|||LUCKY|||||Shadow Claw|Shadow Ball|-|-|||||
+321|GENGAR|95|Gengar|2,445|31|||LUCKY|||||Hex|Focus Blast|-|-|||||
+322|CLAMPERL|372|Clamperl|92|3|||LUCKY|||||||-|-|||||
+323|FORRETRESS|207|Forretress|1,258|19|||LUCKY|||||Struggle Bug|Mirror Shot|-|-|||||
+324|TANGROWTH|487|Tangrowth|2,487|29|||LUCKY|||||Vine Whip|Power Whip|-|-|||||
+325|KINGLER|100|Kingler|2,000|25|||LUCKY|||||Bubble|Crabhammer|-|-|||||
+326|UNOWN_G|899|Unown G|620|19|||LUCKY|||||Hidden Power (Psychic)|Struggle|-|-|||||
+327|UNOWN_O|907|Unown O|850|26|||LUCKY|||||Hidden Power (Ice)|Struggle|-|-|||||
+328|RAYQUAZA|390|Rayquaza|3,264|31|||LUCKY|||||Air Slash|Aerial Ace|-|-||LEGENDARY|||
+329|HEATMOR|697|Heatmor|2,003|30|||LUCKY|||||Fire Spin|Flamethrower|-|-|||||
+330|VILEPLUME|46|Vileplume|2,165|31|||LUCKY|89%|15|13|12|Razor Leaf|Petal Blizzard|-|-|||||
+331|STARYU|121|Staryu|327|10|||LUCKY|||||||-|-|||||
+332|ESCAVALIER|651|Escavalier|2,443|30|||LUCKY|||||Bug Bite|Megahorn|-|-|||||
+333|FLAREON|137|Flareon|1,499|17|||LUCKY|||||Ember|Flamethrower|-|-|||||
+334|SEVIPER|338|Seviper|152|3|||LUCKY|||||Poison Jab|Poison Fang|-|-|||||
+335|LINOONE|266|Linoone|1,420|32|||LUCKY|||||Shadow Claw|Thunder|-|-|||||
+336|EXEGGUTOR_ALOLA|750|Alolan Exeggutor|2,467|29|||LUCKY|||||Bullet Seed|Solar Beam|-|-|||||
+337|KINGDRA|232|Kingdra|2,057|28|||LUCKY|||||Dragon Breath|Outrage|-|-|||||
+338|LEDIAN|168|Ledian|710|19|||LUCKY|||||Struggle Bug|Aerial Ace|-|-|||||
+339|ROGGENROLA|574|Roggenrola|475|14|||LUCKY|||||||-|-|||||
+340|SOLROCK|340|Solrock|2,045|33|||LUCKY|||||Rock Throw|Psychic|-|-|||||
+341|QUAGSIRE|197|Quagsire|1,473|26|||LUCKY|||||Water Gun|Earthquake|-|-|||||
+341|SKARMORY|229|Skarmory|593|10|TRASH||LUCKY|||||Air Slash|Brave Bird|-|-|||||
+342|HITMONCHAN|108|Hitmonchan|1,472|22|||LUCKY|||||Bullet Punch|Ice Punch|-|-|||||
+343|CHARIZARD|7|Charizard|2,495|32|||LUCKY|||||Dragon Breath|Dragon Claw|-|-|||||
+344|SKUNTANK_PURIFIED|2413|Skuntank (Purified)|1,657|25|||LUCKY|||||Poison Jab|Return|-|-||||PURIFIED|
+345|GOLEM_ALOLA|747|Alolan Golem|2,496|30|||LUCKY|||||Rock Throw|Stone Edge|-|-|||||
+346|CLEFABLE|37|Clefable|1,473|21|||LUCKY|||||Charm|Moonblast|-|-|||||
+347|DONPHAN|234|Donphan|1,706|20|||LUCKY|||||Counter|Play Rough|-|-|||||
+348|SCRAGGY|613|Scraggy|574|15|||LUCKY|87%|14|12|13|Rock Smash|Brick Break|-|-|||||
+349|CHARIZARD_COPY_2019|876|Clone Charizard|2,025|25|||LUCKY|87%|13|12|14|Fire Spin|Blast Burn|-|-|COPY_2019||||
+350|ZAPDOS|146|Zapdos|2,474|25|||LUCKY|87%|12|15|12|Thunder Shock|Thunder|-|-||LEGENDARY|||
+351|SHEDINJA|294|Shedinja|153|15|||LUCKY|84%|13|12|13|Bug Bite|Aerial Ace|-|-|||||
+352|RAMPARDOS|419|Rampardos|2,294|25|||LUCKY|82%|12|12|13|Smack Down|Rock Slide|-|-|||||
+353|PORYGON_Z|496|Porygon-Z|2,809|31|||LUCKY|89%|15|13|12|Lock-On|Hyper Beam|-|-|||||
+354|SIRFETCHD|769|Sirfetch’d|1,840|22|||LUCKY|87%|12|13|14|Fury Cutter|Brave Bird|-|-|||||
+355|HOUNDOOM|231|Houndoom|1,858|25||SHINY|LUCKY|91%|14|14|13|Fire Fang|Foul Play|-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||
+355|||||||||||||||-|-|||||

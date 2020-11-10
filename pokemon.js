@@ -363,7 +363,7 @@ class Pokemon {
 	
 	static searchByID(POKEMON_ID) {
 		
-		var template = PokemonStats.getAll().find( p => p.POGO_ID_FULL == POKEMON_ID );
+		var template = PokemonStats.getAll().find( p => p.ID_FULL == POKEMON_ID );
 		if (!template) {
 			console.log("Could not find pokemon with ID:", POKEMON_ID);
 			return null;
@@ -463,7 +463,7 @@ class Pokemon {
 		}
 		
 		if (!checkProperty(require, 'ID',      this, 'ID'))   return false;
-		//if (!checkProperty(require, 'FORM',    this, 'POGO_FORM')) return false;
+		//if (!checkProperty(require, 'FORM',    this, 'FORM')) return false;
 		if (!checkProperty(require, 'COSTUME', this, 'costume'))   return false;
 			
 			
@@ -678,14 +678,14 @@ class PokemonStats extends Pokemon {
 				return true;
 			}
 			
-			if (!checkProperty(require, 'ID',      p, 'POGO_ID'))   return false;
-			if (!checkProperty(require, 'FORM',    p, 'POGO_FORM')) return false;
+			if (!checkProperty(require, 'ID',      p, 'ID'))   return false;
+			if (!checkProperty(require, 'FORM',    p, 'FORM')) return false;
 			if (!checkProperty(require, 'COSTUME', p, 'COSTUME'))   return false;
 			
 			
-			if (require.hasOwnProperty('ID_FULL') && (p.POGO_ID_FULL != require.ID_FULL)) return false;
-			//if (require.hasOwnProperty('ID')      && (p.POGO_ID      != require.ID))      return false;
-			//if (require.hasOwnProperty('FORM')    && (p.POGO_FORM    != require.FORM))    return false;
+			if (require.hasOwnProperty('ID_FULL') && (p.ID_FULL != require.ID_FULL)) return false;
+			//if (require.hasOwnProperty('ID')      && (p.ID      != require.ID))      return false;
+			//if (require.hasOwnProperty('FORM')    && (p.FORM    != require.FORM))    return false;
 			if (require.hasOwnProperty('FORM_ID') && (p.POGO_FORM_ID != require.FORM_ID)) return false;
 			
 			if (require.hasOwnProperty('pokedexID')) {
@@ -702,9 +702,9 @@ class PokemonStats extends Pokemon {
 				console.log("[Pokemon:searchByMatch()]", "Search by 'generation' not implemented. Please use 'generationID' instead.");
 			}
 			
-			if (require.hasOwnProperty('family')  && (p.FAMILY       != require.family))  return false;
-			if (require.hasOwnProperty('gender')  && (p.POGO_GENDER  != require.gender))  return false;
-			if (require.hasOwnProperty('rarity')  && (p.RARITY       != require.rarity))  return false;
+			if (require.hasOwnProperty('family')  && (p.FAMILY  != require.family))  return false;
+			if (require.hasOwnProperty('gender')  && (p.GENDER  != require.gender))  return false;
+			if (require.hasOwnProperty('rarity')  && (p.RARITY  != require.rarity))  return false;
 			
 			if (require.hasOwnProperty('legendary')  && (p.LEGENDARY != require.legendary))  return false;
 			if (require.hasOwnProperty('mythical')   && (p.MYTHICAL  != require.mythical))   return false;
@@ -738,10 +738,10 @@ class PokemonStats extends Pokemon {
 		this.template = template;
 	}
 	
-	get ID_FULL() 	{ return this.template.POGO_ID_FULL; }
-	get ID()		{ return this.template.POGO_ID; }
-	get FORM()		{ return this.template.POGO_FORM; }
-	get GENDER()	{ return this.template.POGO_GENDER; }
+	get ID_FULL() 	{ return this.template.ID_FULL; }
+	get ID()		{ return this.template.ID; }
+	get FORM()		{ return this.template.FORM; }
+	get GENDER()	{ return this.template.GENDER; }
 	get FORM_ID()	{ return this.template.POGO_FORM_ID; }
 	
 	get pokedexID() { return parseInt(this.template.POKEDEX_ID, 10); }

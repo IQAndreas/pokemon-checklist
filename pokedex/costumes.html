@@ -21,83 +21,6 @@
 	<script type="text/javascript" src="../pokedex.js"> </script>
 
 	<script>
-	
-
-function defaultMap(pokemonMatch) {
-	var pokemon = Pokemon.querySelector( pokemonMatch );
-	if (!pokemon) {
-		console.log("Could not find pokemon with that matches:", pokemonMatch);
-		return;
-	}
-	return pokemon;
-}
-
-function makeFullPokedex(pokedex, filter, map) {
-	
-	if (map == null) {
-		map = defaultMap;
-	}
-	
-	var header = null;
-	filter.forEach( pokemonMatch => {
-		
-		if ( pokemonMatch["TYPE"] == 'HEADER' ) {
-			if (header) pokedex.addEmpties();
-			header = pokemonMatch;
-			pokedex.addHeader(header["ID"], header["TEXT"], header["IMG1"], header["IMG2"]);
-			return;
-		}
-		
-		var pokemon = map(pokemonMatch);
-		//console.log(pokemon);
-		if (!pokemon) return;
-		
-		// Smells like an array
-		if (Array.isArray(pokemon)) {
-			var family = pokedex.addFamily();
-			pokemon.forEach( p => {
-				pokedex.addPokemon(p,family);
-			});
-			return;
-		}
-		
-		pokedex.addPokemon(pokemon);
-		
-	});
-	
-	if (header) pokedex.addEmpties();
-	
-}
-
-function listBabies(container) {
-	
-	var pokedex = new Pokedex(container);
-	
-	var pokemon_all = pokemonFilter.all.map( p => {
-		return Pokemon.auto2( p );
-	});
-	
-	var currentGen = null;
-	pokemon_all.forEach( pokemonMatch => {
-		
-		//console.log(pokemonID);
-		var pokemon = Pokemon.querySelector( pokemonMatch );
-		if (!pokemon) {
-			console.log("Could not find pokemon with that matches:", pokemonMatch);
-			return;
-		}
-		
-		if (!pokemon.baby) return;
-		
-		pokedex.addPokemon( pokemon );
-		
-	});
-	
-	if (currentGen) {
-		pokedex.addEmpties();
-	}
-	
-}	
 
 this.onload = function() {
 
@@ -106,11 +29,8 @@ this.onload = function() {
 	var filter = pokemonFilter.costumes;
 	makeFullPokedex(pokedex, filter);
 	
-	return;
-	
 }
-		
-		
+
 	</script>
 
 </head>
