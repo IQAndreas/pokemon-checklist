@@ -2,7 +2,7 @@ var pokemonFilter = {};
 
 pokemonFilter.all = [
 	/* KANTO */
-	{"TYPE":"HEADER","ID":"kanto","TEXT":"Kanto (Gen #1)","IMG1":"kanto","IMG2":"kanto"},
+	{"pokedexID":1000, "TYPE":"HEADER","ID":"kanto","TEXT":"Kanto (Gen #1)","IMG1":"kanto","IMG2":"kanto"},
 	{"ID":"BULBASAUR"},
 	{"ID":"IVYSAUR"},
 	{"ID":"VENUSAUR","FORM":""},
@@ -157,7 +157,7 @@ pokemonFilter.all = [
 	{"ID":"MEW"},
 
 	/* JOHTO */
-	{"TYPE":"HEADER","ID":"johto","TEXT":"Johto (Gen #2)","IMG1":"johto","IMG2":"johto"},	
+	{"pokedexID":2000, "TYPE":"HEADER","ID":"johto","TEXT":"Johto (Gen #2)","IMG1":"johto","IMG2":"johto"},	
 	{"ID":"CHIKORITA"},
 	{"ID":"BAYLEEF"},
 	{"ID":"MEGANIUM"},
@@ -260,7 +260,7 @@ pokemonFilter.all = [
 	{"ID":"CELEBI"},
 
 	/* HOENN */
-	{"TYPE":"HEADER","ID":"hoenn","TEXT":"Hoenn (Gen #3)","IMG1":"hoenn","IMG2":"hoenn"},
+	{"pokedexID":3000, "TYPE":"HEADER","ID":"hoenn","TEXT":"Hoenn (Gen #3)","IMG1":"hoenn","IMG2":"hoenn"},
 	{"ID":"TREECKO"},
 	{"ID":"GROVYLE"},
 	{"ID":"SCEPTILE"},
@@ -404,7 +404,7 @@ pokemonFilter.all = [
 	{"ID":"DEOXYS","FORM":"SPEED"},
 
 	/* SINNOH */
-	{"TYPE":"HEADER","ID":"sinnoh","TEXT":"Sinnoh (Gen #4)","IMG1":"sinnoh","IMG2":"sinnoh"},
+	{"pokedexID":4000, "TYPE":"HEADER","ID":"sinnoh","TEXT":"Sinnoh (Gen #4)","IMG1":"sinnoh","IMG2":"sinnoh"},
 	{"ID":"TURTWIG"},
 	{"ID":"GROTLE"},
 	{"ID":"TORTERRA"},
@@ -528,7 +528,7 @@ pokemonFilter.all = [
 	{"ID":"ARCEUS"},
 	
 	/* UNOVA */
-	{"TYPE":"HEADER","ID":"unova","TEXT":"Unova (Gen #5)","IMG1":"unova","IMG2":"unova"},
+	{"pokedexID":5000, "TYPE":"HEADER","ID":"unova","TEXT":"Unova (Gen #5)","IMG1":"unova","IMG2":"unova"},
 	{"ID":"VICTINI"},
 	{"ID":"SNIVY"},
 	{"ID":"SERVINE"},
@@ -704,11 +704,11 @@ pokemonFilter.all = [
 	{"ID":"GENESECT"},
 	
 	/* KALOS */
-	/*{"TYPE":"HEADER","ID":"kalos","TEXT":"Kalos (Gen #6)","IMG1":"kalos","IMG2":"kalos"},*/
+	/*{"pokedexID":6000, "TYPE":"HEADER","ID":"kalos","TEXT":"Kalos (Gen #6)","IMG1":"kalos","IMG2":"kalos"},*/
 	/* (empty) */
 	
 	/* ALOLA */
-	{"TYPE":"HEADER","ID":"alola","TEXT":"Alola (Gen #7)","IMG1":"alola","IMG2":"alola"},
+	{"pokedexID":7000, "TYPE":"HEADER","ID":"alola","TEXT":"Alola (Gen #7)","IMG1":"alola","IMG2":"alola"},
 	{"ID":"RATTATA","REGION":"ALOLA"},
 	{"ID":"RATICATE","REGION":"ALOLA"},
 	{"ID":"RAICHU","REGION":"ALOLA"},
@@ -729,7 +729,7 @@ pokemonFilter.all = [
 	{"ID":"MAROWAK","REGION":"ALOLA"},
 
 	/* GALAR */
-	{"TYPE":"HEADER","ID":"galar","TEXT":"Galar (Gen #8)","IMG1":"galar","IMG2":"galar"},
+	{"pokedexID":8000, "TYPE":"HEADER","ID":"galar","TEXT":"Galar (Gen #8)","IMG1":"galar","IMG2":"galar"},
 	{"ID":"MEOWTH","REGION":"GALAR"},
 	{"ID":"PONYTA","REGION":"GALAR"},
 	{"ID":"RAPIDASH","REGION":"GALAR"},
@@ -749,7 +749,7 @@ pokemonFilter.all = [
 	{"ID":"RUNERIGUS"},
 
 	/* UNKNOWN */
-	{"TYPE":"HEADER","ID":"galar","TEXT":"Unknown Region","IMG1":"galar","IMG2":"galar"},
+	{"pokedexID":10000, "TYPE":"HEADER","ID":"galar","TEXT":"Unknown Region","IMG1":"galar","IMG2":"galar"},
 	{"ID":"MELTAN"},
 	{"ID":"MELMETAL"},
 
@@ -1063,10 +1063,10 @@ pokemonFilter.family = [
 	{"family":"FAMILY_DARKRAI"},
 	{"family":"FAMILY_SHAYMIN","FORM":"LAND"},
 	{"family":"FAMILY_SHAYMIN","FORM":"SKY"},
+	{"family":"FAMILY_ARCEUS"},
 	
 	/* UNOVA */
 	{"TYPE":"HEADER","ID":"unova","TEXT":"Unova (Gen #5)","IMG1":"unova","IMG2":"unova"},
-	{"family":"FAMILY_ARCEUS"},
 	{"family":"FAMILY_VICTINI"},
 	{"family":"FAMILY_SNIVY"},
 	{"family":"FAMILY_TEPIG"},
