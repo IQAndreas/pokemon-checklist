@@ -233,7 +233,8 @@ body .pokemon-container {
 	/*filter: drop-shadow(0px 0px 5px #FFF);*/
 }
 
-.unreleased {
+.unreleased,
+.disabled {
 	border-color: #333333;
 	filter: brightness(50%);
 }
@@ -344,32 +345,117 @@ body .pokemon-container {
 	filter: drop-shadow(7px 5px 3px rgba(0, 0, 0, 0.5));
 }
 
-.mystery .pokemon-image, .unreleased .pokemon-image {
+.mystery .pokemon-image,
+.unreleased .pokemon-image,
+.disabled .pokemon-image {
 	/*filter: brightness(0%);*/
 	filter: brightness(0%) drop-shadow(0px 0px 3px rgba(157, 193, 183, 0.5));
 }
 
-.pokemon.mystery .pokemon-image, .unreleased .pokemon-image		{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(157, 193, 183, 1.00)); }
-.bug.mystery .pokemon-image, .unreleased .pokemon-image			{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(168, 184, 32, 1.00)); }
-.dark.mystery .pokemon-image, .unreleased .pokemon-image		{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(112, 88, 72, 1.00)); }
-.dragon.mystery .pokemon-image, .unreleased .pokemon-image		{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(112, 56, 248, 1.00)); }
-.electric.mystery .pokemon-image, .unreleased .pokemon-image	{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(248, 208, 48, 1.00)); }
-.fairy.mystery .pokemon-image, .unreleased .pokemon-image		{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(238, 153, 172, 1.00)); }
-.fighting.mystery .pokemon-image, .unreleased .pokemon-image	{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(192, 48, 40, 1.00)); }
-.fire.mystery .pokemon-image, .unreleased .pokemon-image		{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(240, 128, 48, 1.00)); }
-.flying.mystery .pokemon-image, .unreleased .pokemon-image		{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(168, 144, 240, 1.00)); }
-.ghost.mystery .pokemon-image, .unreleased .pokemon-image		{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(112, 88, 152, 1.00)); }
-.grass.mystery .pokemon-image, .unreleased .pokemon-image		{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(120, 200, 80, 1.00)); }
-.ground.mystery .pokemon-image, .unreleased .pokemon-image		{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(224, 192, 104, 1.00)); }
-.ice.mystery .pokemon-image, .unreleased .pokemon-image			{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(152, 216, 216, 1.00)); }
-.normal.mystery .pokemon-image, .unreleased .pokemon-image		{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(168, 168, 120, 1.00)); }
-.poison.mystery .pokemon-image, .unreleased .pokemon-image		{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(160, 64, 160, 1.00)); }
-.psychic.mystery .pokemon-image, .unreleased .pokemon-image		{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(248, 88, 136, 1.00)); }
-.rock.mystery .pokemon-image, .unreleased .pokemon-image		{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(184, 160, 56, 1.00)); }
-.steel.mystery .pokemon-image, .unreleased .pokemon-image		{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(184, 184, 208, 1.00)); }
-.water.mystery .pokemon-image, .unreleased .pokemon-image		{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(104, 144, 240, 1.00)); }
-.pokemon-purified.mystery .pokemon-image, .unreleased .pokemon-image	{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(255, 255, 255, 1.00)); }
-.pokemon-shadow.mystery .pokemon-image, .unreleased .pokemon-image 		{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(255, 255, 255, 1.00)); }
+.pokemon.mystery .pokemon-image,
+.pokemon.unreleased .pokemon-image,
+.pokemon.disabled .pokemon-image,
+	{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(157, 193, 183, 1.00)); }
+	
+.bug.mystery .pokemon-image,
+.bug.unreleased .pokemon-image,
+.bug.disabled .pokemon-image,
+	{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(168, 184, 32, 1.00)); }
+	
+.dark.mystery .pokemon-image,
+.dark.unreleased .pokemon-image,
+.dark.disabled .pokemon-image,
+	{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(112, 88, 72, 1.00)); }
+	
+.dragon.mystery .pokemon-image,
+.dragon.unreleased .pokemon-image,
+.dragon.disabled .pokemon-image,
+	{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(112, 56, 248, 1.00)); }
+	
+.electric.mystery .pokemon-image,
+.electric.unreleased .pokemon-image,
+.electric.disabled .pokemon-image,
+	{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(248, 208, 48, 1.00)); }
+	
+.fairy.mystery .pokemon-image,
+.fairy.unreleased .pokemon-image,
+.fairy.disabled .pokemon-image,
+	{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(238, 153, 172, 1.00)); }
+	
+.fighting.mystery .pokemon-image,
+.fighting.unreleased .pokemon-image,
+.fighting.disabled .pokemon-image,
+	{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(192, 48, 40, 1.00)); }
+	
+.fire.mystery .pokemon-image,
+.fire.unreleased .pokemon-image,
+.fire.disabled .pokemon-image,
+	{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(240, 128, 48, 1.00)); }
+	
+.flying.mystery .pokemon-image,
+.flying.unreleased .pokemon-image,
+.flying.disabled .pokemon-image,
+	{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(168, 144, 240, 1.00)); }
+	
+.ghost.mystery .pokemon-image,
+.ghost.unreleased .pokemon-image,
+.ghost.disabled .pokemon-image,
+	{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(112, 88, 152, 1.00)); }
+	
+.grass.mystery .pokemon-image,
+.grass.unreleased .pokemon-image,
+.grass.disabled .pokemon-image,
+	{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(120, 200, 80, 1.00)); }
+	
+.ground.mystery .pokemon-image,
+.ground.unreleased .pokemon-image,
+.ground.disabled .pokemon-image,
+	{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(224, 192, 104, 1.00)); }
+	
+.ice.mystery .pokemon-image,
+.ice.unreleased .pokemon-image,
+.ice.disabled .pokemon-image,
+	{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(152, 216, 216, 1.00)); }
+		
+.normal.mystery .pokemon-image,
+.normal.unreleased .pokemon-image,
+.normal.disabled .pokemon-image,
+	{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(168, 168, 120, 1.00)); }
+		
+.poison.mystery .pokemon-image,
+.poison.unreleased .pokemon-image,
+.poison.disabled .pokemon-image,
+	{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(160, 64, 160, 1.00)); }
+		
+.psychic.mystery .pokemon-image,
+.psychic.unreleased .pokemon-image,
+.psychic.disabled .pokemon-image,
+	{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(248, 88, 136, 1.00)); }
+		
+.rock.mystery .pokemon-image,
+.rock.unreleased .pokemon-image,
+.rock.disabled .pokemon-image,
+	{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(184, 160, 56, 1.00)); }
+		
+.steel.mystery .pokemon-image,
+.steel.unreleased .pokemon-image,
+.steel.disabled .pokemon-image,
+	{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(184, 184, 208, 1.00)); }
+		
+.water.mystery .pokemon-image,
+.water.unreleased .pokemon-image,
+.water.disabled .pokemon-image,
+	{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(104, 144, 240, 1.00)); }
+		
+.pokemon-purified.mystery .pokemon-image,
+.pokemon-purified.unreleased .pokemon-image,
+.pokemon-purified.disabled .pokemon-image,
+	{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(255, 255, 255, 1.00)); }
+	
+.pokemon-shadow.mystery .pokemon-image,
+.pokemon-shadow.unreleased .pokemon-image,
+.pokemon-shadow.disabled .pokemon-image,
+ 	{ filter: brightness(0%) drop-shadow(0px 0px 5px rgba(255, 255, 255, 1.00)); }
 
 .league {
 	position: absolute;
@@ -457,6 +543,18 @@ body .pokemon-container {
 	/*text-shadow: 1px 1px 2px #BBB;*/
 	-webkit-text-stroke: 1px #000;
 	-webkit-text-fill-color: #FFF;
+}
+.lvl.max, .cp.max {
+	color: #FF0;
+	/*text-shadow: 1px 1px 2px #BBB;*/
+	-webkit-text-stroke: 1px #000;
+	-webkit-text-fill-color: #FF0;
+}
+.max .lvl-value, .max .cp-value {
+	color: #FF0;
+	/*text-shadow: 1px 1px 2px #BBB;*/
+	-webkit-text-stroke: 1px #000;
+	-webkit-text-fill-color: #FF0;
 }
 
 .overlay {

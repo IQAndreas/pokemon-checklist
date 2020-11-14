@@ -4,9 +4,6 @@
 <head>
 	
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<!-- meta name="viewport" content="width=device-width, initial-scale=1" -->
-	<meta name="viewport" content="width=750, initial-scale=1">
-	
 	<title>Pokedex - IQAndreas (Lucky)</title>
 	
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
@@ -17,8 +14,8 @@
 	
 	
 	<script type="text/javascript" src="../data/pokemonstats.js"> </script>
-	<script type="text/javascript" src="../data/pokemonlist.js"> </script>
 	<script type="text/javascript" src="../data/moves.js"> </script>
+	<script type="text/javascript" src="../data/pokemonlist.js"> </script>
 	
 	<script type="text/javascript" src="data/all.js"> </script>
 	<script type="text/javascript" src="data/lucky.js"> </script>
@@ -31,10 +28,33 @@
 	<script>
 
 
-
 this.onload = function() {
 
 	var container = document.querySelector('.pokemon-container.auto');
+	
+	var pokemon_all_family = [];
+	/*all_family.forEach( p => {
+	
+		pokemon_all_family
+	
+	
+		return Pokemon.auto2( p );
+	});*/
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	return;
+	
+	
 	
 	var pokemon_all = all.map( p => {
 		return Pokemon.auto2( p );
@@ -56,15 +76,14 @@ this.onload = function() {
 	const tall = true;
 	if (tall) {
 		container.className += " tall";
-		pokedex.displayLVL = true;
-		pokedex.displayCP = 'hover-show';
+		pokedex.displayCP = true;
+		pokedex.displayLVL = 'hover-show';
 	} else {
-		pokedex.displayCP = 'hover-show';
-		pokedex.displayLVL = 'hover-hide';
+		pokedex.displayCP = 'hover-hide';
+		pokedex.displayLVL = 'hover-show';
 	}
 	
-	
-	function findBestPokemonSingle(pokemonMatch) {
+	makeFullPokedex(pokedex, pokemonFilter.family, pokemonMatch => {
 	
 		var pokemon = null;
 		//var allLucky = pokemon_lucky.filter( p => p.costume == "" && p.matches( pokemonMatch ) );
@@ -73,20 +92,15 @@ this.onload = function() {
 		var allLucky = pokemon_lucky.filter( p => p.matches( pokemonMatch ) );
 		var bestLucky = pokemon_lucky.find( p => p.matches( pokemonMatch ) );
 		var bestPokemon = pokemon_all.find( p => p.matches( pokemonMatch ) );
-		var defaultPokemon = defaultMap(pokemonMatch);
 		
-		// Display only first result
-		//if (allLucky.length > 1) {
-		//	return allLucky;
-		//}
+		if (allLucky.length > 1) {
+			return allLucky;
+		}
 		
 		if (bestLucky) {
 			pokemon = bestLucky;
 		} else if (bestPokemon) {
 			pokemon = bestPokemon;
-		} else if (defaultPokemon) {
-			pokemon = defaultPokemon;
-			pokemon.mystery = true;
 		} else {
 			console.log("Cannot find", pokemonMatch);
 			return null;
@@ -98,11 +112,7 @@ this.onload = function() {
 		
 		return pokemon;
 	
-	}
-	
-	makeFullPokedex(pokedex, pokemonFilter.family, findBestPokemonSingle);
-	makeFullPokedex(pokedex, pokemonFilter.baby, findBestPokemonSingle);
-	makeFullPokedex(pokedex, pokemonFilter.costumes, findBestPokemonSingle);
+	});
 	
 	return;
 	

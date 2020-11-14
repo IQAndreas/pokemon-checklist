@@ -263,7 +263,7 @@ Generation.UNOVA =   new Generation(5, "Unova",  'unova');
 Generation.KALOS =   new Generation(6, "Kalos",  'kalos');
 Generation.ALOLA =   new Generation(7, "Alola",  'alola');
 Generation.GALAR =   new Generation(8, "Galar",  'galar');
-Generation.UNKNOWN = new Generation(undefined, "Unknown Generation", 'unknown');
+Generation.UNKNOWN = new Generation(10, "Unknown Generation", 'unknown');
 
 
 
@@ -462,11 +462,12 @@ class Pokemon {
 			return true;
 		}
 		
-		if (!checkProperty(require, 'ID',      this, 'ID'))   return false;
-		//if (!checkProperty(require, 'FORM',    this, 'FORM')) return false;
-		if (!checkProperty(require, 'COSTUME', this, 'costume'))   return false;
+		if (!checkProperty(require, 'ID',      this, 'ID'))       return false;
+		//if (!checkProperty(require, 'FORM',    this, 'FORM'))   return false;
+		if (!checkProperty(require, 'COSTUME', this, 'costume'))  return false;
+		if (!checkProperty(require, 'REGION', this, 'REGION'))    return false;
 			
-			
+		
 		if (require.hasOwnProperty('ID_FULL') && (this.ID_FULL != require.ID_FULL)) return false;
 		//if (require.hasOwnProperty('ID')      && (this.ID      != require.ID))      return false;
 		//if (require.hasOwnProperty('FORM')    && (this.FORM    != require.FORM))    return false;
@@ -504,32 +505,42 @@ class Pokemon {
 	}
 	
 	set cp(value) { this._cp = value; }
-	get cp() { 
-		if (this._cp !== undefined) {
-			return this._cp;
+	get cp() {
+		if (this._cp !== undefined) return this._cp;
+		if (this.lvl === undefined) return undefined; 
+		return this.getLvlCp( this.lvl );
+	}
+	
+	get cpMax() {
+		return this.getLvlCp( this.lvlMax );
+	}
+	
+	getLvlCp( lvl ) {
+		
+		if (lvl === undefined) {
+			return undefined;
 		}
 		
 		if (this.atk === undefined || this.def === undefined || this.sta === undefined) {
 			return undefined;
 		}
 		
-		if (this.lvl === undefined) {
-			return undefined;
-		}
+		var atk = this.atk + (this.atkIV !== undefined ? this.atkIV : 15);
+		var def = this.def + (this.defIV !== undefined ? this.defIV : 15);
+		var sta = this.sta + (this.staIV !== undefined ? this.staIV : 15);
 		
-		var atk = this.atk + (this.atkIV !== undefined ? this.atkIV : '15');
-		var def = this.def + (this.defIV !== undefined ? this.defIV : '15');
-		var sta = this.sta + (this.staIV !== undefined ? this.staIV : '15');
+		var cpm = CPM.data.find( c => c.lvl == lvl );
+		var cpScalar = cpm.cpm;
 		
-		// TODO
-		return undefined;
-		
+		// =MAX(FLOOR(($C8+$C$1)*SQRT($D8+$C$2)*SQRT($E8+$C$3)*POWER(G$7,2)/10),10)
+		return Math.max(Math.floor( (atk) * Math.sqrt(def) * Math.sqrt(sta) * Math.pow(cpScalar,2) / 10 ),10);
 	}
-	
 
 	
 	//get lvl() { }
-	
+	get lvlMax() {
+		return 40;
+	}
 	
 	
 	get moves() {
@@ -680,7 +691,9 @@ class PokemonStats extends Pokemon {
 			
 			if (!checkProperty(require, 'ID',      p, 'ID'))   return false;
 			if (!checkProperty(require, 'FORM',    p, 'FORM')) return false;
-			if (!checkProperty(require, 'COSTUME', p, 'COSTUME'))   return false;
+			if (!checkProperty(require, 'COSTUME', p, 'COSTUME'))  return false;
+			if (!checkProperty(require, 'REGION',  p, 'REGION'))   return false;
+			if (!checkProperty(require, 'GENDER',  p, 'GENDER'))   return false;
 			
 			
 			if (require.hasOwnProperty('ID_FULL') && (p.ID_FULL != require.ID_FULL)) return false;
@@ -742,9 +755,14 @@ class PokemonStats extends Pokemon {
 	get ID()		{ return this.template.ID; }
 	get FORM()		{ return this.template.FORM; }
 	get GENDER()	{ return this.template.GENDER; }
+	get REGION()	{ return this.template.REGION; }
 	get FORM_ID()	{ return this.template.POGO_FORM_ID; }
 	
 	get pokedexID() { return parseInt(this.template.POKEDEX_ID, 10); }
+	get pokedexID2() {
+		return (this.generationID * 1000) + (this.pokedexID);
+	}
+	
 	get name() 	{ return this.template.DISPLAY; }
 	get type1() { return this.template.TYPE1; }
 	get type2() { return this.template.TYPE2; }
@@ -756,7 +774,7 @@ class PokemonStats extends Pokemon {
 	get family() { return this.template.FAMILY; }
 	get parent() { return this.template.PARENT; }
 	get generation()   { return this.template.GEN == '-' ? Generation.UNKNOWN : Generation.fromID( this.generationID ); }
-	get generationID() { return this.template.GEN == '-' ? Generation.UNKNOWN.id : parseInt(this.template.GEN, 10); }
+	get generationID() { return this.template.GEN == '-' ? Generation.UNKNOWN.value : parseInt(this.template.GEN, 10); }
 	
 	get legendary() { return this.template.LEGENDARY == 'LEGENDARY'; }
 	get mythical() 	{ return this.template.MYTHICAL == 'MYTHICAL'; }
@@ -778,10 +796,22 @@ class PokemonStats extends Pokemon {
 	set purified(value) { this._purified = value; }
 	get purified()      { return (this._purified !== undefined) ? this._purified : (this.template.PURIFIED == 'PURIFIED'); }
 	
-	get shinyReleased() { return this.template.SHINY == 'SHINY'; }
+	get unreleased() 	{ return !this.releasedPokemon; }
+	
+	//get releasedPokemon() { return this.template.RELEASED_POKEMON == 'RELEASED_POKEMON'; }
+	//get releasedShiny()   { return this.template.RELEASED_SHINY   == 'RELEASED_SHINY'; }
+	get releasedPokemon() {
+		if (this.template.RELEASED_POKEMON == '') return false;
+		if (this.template.RELEASED_POKEMON == 'UNRELEASED') return false;
+		if (this.template.RELEASED_POKEMON == 'RELEASED_POKEMON') return true;
+	}
+	get releasedShiny() {
+		if (this.template.RELEASED_SHINY == '') return false;
+		if (this.template.RELEASED_SHINY == 'UNRELEASED') return false;
+		if (this.template.RELEASED_SHINY == 'RELEASED_SHINY') return true;
+	}
 	get regional() 		{ return this.template.REGIONAL != ''; }
 	get regions() 		{ return this.template.REGIONAL ? this.template.REGIONAL.split(',') : []; }
-	get unreleased() 	{ return this.template.UNRELEASED == 'UNRELEASED'; }
 	get rarity() 		{ return this.template.RARITY; }
 	
 	get image() {

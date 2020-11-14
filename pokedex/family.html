@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>Pokedex</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../index.css" />
+	<style type="text/css">
+		
+	</style>
+	
+	
+	<script type="text/javascript" src="../data/pokemonstats.js"> </script>
+	<script type="text/javascript" src="../data/pokemonlist.js"> </script>
+	<script type="text/javascript" src="../data/moves.js"> </script>
+	
+	<script type="text/javascript" src="../pokemon.js"> </script>
+	<script type="text/javascript" src="../pokedex.js"> </script>
+
+	<script>
+	
+	
+this.onload = function() {
+
+	var container = document.querySelector('.pokemon-container.auto');
+	var pokedex = new Pokedex(container);
+	var filter = pokemonFilter.family;
+	
+	makeFullPokedex(pokedex, filter);
+	
+	return;
+	
+}
+		
+		
+	</script>
+
+</head>
+<body>
+	
+	<div class='pokemon-container auto'></div>
+
+</body>
+
+</html>

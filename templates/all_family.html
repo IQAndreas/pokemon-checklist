@@ -1,0 +1,203 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>Pokedex - IQAndreas (Lucky)</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../index.css" />
+	<style type="text/css">
+		
+	</style>
+	
+	
+	<script type="text/javascript" src="../data/pokemonstats.js"> </script>
+	<script type="text/javascript" src="../data/moves.js"> </script>
+	<script type="text/javascript" src="../data/pokemonlist.js"> </script>
+	
+	<script type="text/javascript" src="data/all.js"> </script>
+	<script type="text/javascript" src="data/all_family.js"> </script>
+	<script type="text/javascript" src="data/lucky.js"> </script>
+	<script type="text/javascript" src="data/purified.js"> </script>
+	<script type="text/javascript" src="data/shiny.js"> </script>
+	
+	<script type="text/javascript" src="../pokemon.js"> </script>
+	<script type="text/javascript" src="../pokedex.js"> </script>
+
+	<script>
+
+function parseIntString(value) {
+	// Remove thousands separators
+	// https://stackoverflow.com/questions/11665884/how-can-i-parse-a-string-with-a-comma-thousand-separator-to-a-number/43448891#comment15461327_11665915
+	// This regex is so smooth and clever... I love it.
+	value = value.replace(/(\d+),(?=\d{3}(\D|$))/g, "$1");
+	return parseInt(value, 10);
+}
+
+var POKEDEX;
+
+this.onload = function() {
+
+	var ignore = [
+		"ID_FULL",
+		"DARMANITAN_ZEN",
+		"KYUREM_BLACK",
+		"GENESECT_BURN",
+		"GENESECT_CHILL",
+		"GENESECT_DOUSE",
+		"GENESECT_NORMAL",
+		"GENESECT_SHOCK",
+		"SAWSBUCK",
+
+	];
+
+	var container = document.querySelector('.pokemon-container.auto');
+	var pokedex = new Pokedex(container);
+	POKEDEX = pokedex; //TEMP
+	const tall = true;
+	if (tall) {
+		container.className += " tall";
+		pokedex.displayCP = true;
+		pokedex.displayMaxCP = true;
+		pokedex.displayLVL = 'hover-show';
+		pokedex.displayLeague = false;
+	} else {
+		pokedex.displayCP = 'hover-hide';
+		pokedex.displayLVL = 'hover-show';
+		pokedex.displayLeague = false;
+	}
+	
+	var pokemon_all_family = [];
+	all_family.forEach( data => {
+	
+		var ID_FULL = data['ID_FULL'];
+		var MAX_LVL = (data['MAX_LVL'] == "") ? 0 : parseIntString(data['MAX_LVL']);
+		var CAN_EVOLVE = (data['CAN_EVOLVE'] == "") ? 0 : parseIntString(data['CAN_EVOLVE']);
+
+		if (ignore.indexOf(ID_FULL) !== -1) {
+			return;
+		}
+
+		// Check for duplicates
+		var existingMatch = pokemon_all_family.find( p => p.ID_FULL == ID_FULL );
+		if (existingMatch) {
+			console.log("Skipping duplicate Pokemon:", ID_FULL);
+			return;
+		}
+		
+		var pokemon = Pokemon.searchByID(ID_FULL);
+		if (!pokemon) {
+			return;
+		}
+		
+		if (MAX_LVL) {
+			pokemon.lvl = MAX_LVL;
+			pokemon.atkIV = 15;
+			pokemon.defIV = 15;
+			pokemon.staIV = 15;
+		} else if (pokemon.unreleased) {
+			return;
+		} else {
+			pokemon.disabled = true;
+		}
+		
+		if (data["EVO_CANDY"] != "" && CAN_EVOLVE == 0) {
+			pokemon.mystery = true;
+		}
+		
+		
+		pokemon_all_family.push(pokemon);
+		pokedex.addPokemon(pokemon);
+		//return Pokemon.auto2( p );
+	});
+	
+	/*pokemon_all_family.forEach( p => {
+		pokedex.addPokemon(p);
+	});*/
+	
+	
+	pokedex.sortBy('pokedexID2', SORT_ASC);
+	
+	
+	
+	return;
+	
+	
+	
+	var pokemon_all = all.map( p => {
+		return Pokemon.auto2( p );
+	});
+	pokemon_all = pokemon_all.filter( p => (p != null) );
+	pokemon_all = pokemon_all.sort(sortByCP);
+	
+	var pokemon_lucky = lucky.map( p => {
+		return Pokemon.auto2( p );
+	});
+	pokemon_lucky = pokemon_lucky.filter( p => (p != null) && (!p.trash) );
+	pokemon_lucky = pokemon_lucky.sort(sortByCP);
+	
+	/*var pokedex = new Pokedex(container);
+	pokedex.displayCP = true;
+	pokedex.displayLVL = false;*/
+	
+	var pokedex = new Pokedex(container);
+	//const tall = true;
+	if (tall) {
+		container.className += " tall";
+		pokedex.displayCP = true;
+		pokedex.displayLVL = 'hover-show';
+	} else {
+		pokedex.displayCP = 'hover-hide';
+		pokedex.displayLVL = 'hover-show';
+	}
+	
+	makeFullPokedex(pokedex, pokemonFilter.family, pokemonMatch => {
+	
+		var pokemon = null;
+		//var allLucky = pokemon_lucky.filter( p => p.costume == "" && p.matches( pokemonMatch ) );
+		//var bestLucky = pokemon_lucky.find( p => p.costume == "" && p.matches( pokemonMatch ) );
+		//var bestPokemon = pokemon_all.find( p => p.costume == "" && p.matches( pokemonMatch ) );
+		var allLucky = pokemon_lucky.filter( p => p.matches( pokemonMatch ) );
+		var bestLucky = pokemon_lucky.find( p => p.matches( pokemonMatch ) );
+		var bestPokemon = pokemon_all.find( p => p.matches( pokemonMatch ) );
+		
+		if (allLucky.length > 1) {
+			return allLucky;
+		}
+		
+		if (bestLucky) {
+			pokemon = bestLucky;
+		} else if (bestPokemon) {
+			pokemon = bestPokemon;
+		} else {
+			console.log("Cannot find", pokemonMatch);
+			return null;
+		}
+		
+		if (pokemon.missing) {
+			pokemon.mystery = true;
+		}
+		
+		return pokemon;
+	
+	});
+	
+	return;
+	
+	
+	
+}
+		
+		
+	</script>
+
+</head>
+<body>
+	
+	<div class='pokemon-container auto'></div>
+
+</body>
+
+</html>

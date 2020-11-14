@@ -7,12 +7,19 @@ function sortByCP(a, b) {
 }	
 	
 function defaultMap(pokemonMatch) {
-	var pokemon = Pokemon.querySelector( pokemonMatch );
-	if (!pokemon) {
+	var pokemonArray = Pokemon.querySelectorAll( pokemonMatch );
+	if (!pokemonArray || pokemonArray.length == 0) {
 		console.log("Could not find pokemon with that matches:", pokemonMatch);
 		return;
 	}
-	return pokemon;
+	
+	// TODO: SORT
+	pokemonArray.sort( (a,b) => {
+		return (a.generationID - b.generationID) || (a.pokedexID - b.pokedexID) || (b.cp - a.cp);
+	});
+	
+	// Only return one result
+	return pokemonArray[0];
 }
 
 function makeFullPokedex(pokedex, filter, map) {
@@ -75,6 +82,35 @@ function makeFullPokedex(pokedex, filter, map) {
 
 // ------------------------------------------------------------
 
+const SORT_ASC = +1;
+const SORT_DESC = -1;
+//function sortBy(...args) {
+function sortBy(sortValues) {
+
+	if (typeof sortValues === 'string') {
+		var str = sortValues;
+		sortValues = {};
+		sortValues[str] = 'asc';
+	}
+	
+	var keys = Object.keys(sortValues);
+
+	return function(a,b) {
+		for (var i = 0; i < keys.length; i++) {
+			//console.log(c, typeof a[c], a[c], b[c], ((a[c] > b[c]) ? +1 : -1));
+			var property = keys[i];
+			var options = sortValues[property];
+			if (a[property] != b[property]) {
+				return ((a[property] > b[property]) ? +1 : -1) * (options == 'asc' ? SORT_ASC : SORT_DESC);
+			}
+		};
+		
+		return 0;
+	}
+}
+
+// ------------------------------------------------------------
+
 class Pokedex {
 
 	constructor(container, style) {
@@ -83,7 +119,9 @@ class Pokedex {
 		this.style = style || '';
 		
 		this.displayCP = 'hover-hide';
+		this.displayMaxCP = false;
 		this.displayLVL = 'hover-show';
+		this.displayMaxLVL = false;
 		this.displayPurified = true;
 		this.displayShiny = true;
 		
@@ -94,6 +132,18 @@ class Pokedex {
 		this.displayMoveIcons = 'hover-hide';
 		this.displayMoveList = 'hover-show';
 		this.displayMoveListSpecial = 'hover-hide';
+		
+		this._pokemon = [];
+		this._families = [];
+		this._headers = [];
+		//this._empties = [];
+	}
+	
+	sortBy( property, sortOrder ) {
+		if (!sortOrder) sortOrder = SORT_ASC;
+		this._pokemon.forEach( element => {
+			element.style.order = sortOrder * element.data[property];
+		});
 	}
 	
 	makeSpan(container, textContent, className, hoverOptions) {
@@ -198,6 +248,7 @@ class Pokedex {
 		pokemon.purified && classes.push('pokemon-purified');
 		pokemon.shadow && classes.push('pokemon-shadow');
 		pokemon.shiny && classes.push('pokemon-shiny');
+		pokemon.disabled && classes.push('disabled');
 		pokemon.unreleased && classes.push('unreleased');
 		pokemon.mystery && classes.push('mystery');
 		pokemon.lucky && classes.push('lucky');
@@ -268,9 +319,21 @@ class Pokedex {
 			var cpValue = this.makeSpan(cpSpan, pokemon.cp, 'cp-value');
 		}
 		
+		//console.log(pokemon, this.displayMaxCP, pokemon.cp);
+		if (this.displayMaxCP && pokemon.cpMax) {
+			var cpSpan = this.makeSpan(overlayTop, "MAX", 'cp max', this.displayMaxCP);
+			var cpValue = this.makeSpan(cpSpan, pokemon.cpMax, 'cp-value');
+		}
+		
 		//console.log(pokemon, this.displayLVL, pokemon.lvl);
 		if (this.displayLVL && pokemon.lvl) {
 			var cpSpan = this.makeSpan(overlayTop, "LVL", 'lvl', this.displayLVL);
+			var cpValue = this.makeSpan(cpSpan, pokemon.lvl, 'lvl-value');
+		}
+		
+		//console.log(pokemon, this.displayMaxLVL, pokemon.lvl);
+		if (this.displayMaxLVL && pokemon.lvl) {
+			var cpSpan = this.makeSpan(overlayTop, "MAX", 'lvl max', this.displayMaxLVL);
 			var cpValue = this.makeSpan(cpSpan, pokemon.lvl, 'lvl-value');
 		}
 		
@@ -394,14 +457,15 @@ class Pokedex {
 	addHeader( id, text, imageLeft, imageRight ) {
 		var headerElement = this.makeHeader( id, text, imageLeft, imageRight );
 		this.container.appendChild( headerElement );
+		this._headers.push(headerElement); //TEMP
 		return headerElement;
-		
 	}
 	
 	addFamily ( ) {
 		var familyElement = document.createElement('div');
 		familyElement.className = 'family';
 		this.container.appendChild( familyElement );
+		this._families.push(familyElement); //TEMP
 		return familyElement;
 	}
 	
@@ -412,6 +476,7 @@ class Pokedex {
 		} else {
 			this.container.appendChild( pokemonElement );
 		}
+		this._pokemon.push(pokemonElement); //TEMP
 		return pokemonElement;
 	}
 	
