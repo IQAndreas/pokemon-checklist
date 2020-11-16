@@ -87,6 +87,8 @@ body .pokemon-container {
 	
 	border: 8px solid #9DC1B7;
 	border-radius: 20px;
+	
+	user-select: none;
 }
 
 .bug {

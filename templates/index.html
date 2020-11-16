@@ -41,6 +41,88 @@ this.onload = function() {
 	
 	var pokedex = new Pokedex(container);
 	
+	pokedex.displayMaxCP = 'hover-show'
+	pokedex.displayCP = 'hover-hide';
+	
+	pokedex.addHeader('need', "Need High LVL", 'pokedex', 'pokedex');
+	[
+		"MACHOP",
+		"HITMONTOP",
+		"CHANSEY",
+		"GOLDEEN",
+		"STARYU",
+		"BELDUM",
+		"GIBLE",
+		"ROGGENROLA",
+		//"HIPPOPOTAS",
+		"NUMEL",
+		"CASTFORM_SNOWY",
+		"CRYOGONAL",
+		"PANSEAR",
+		"DARUMAKA",
+		"YAMASK",
+		"TRUBBISH",
+		"AUDINO",
+		"ALOMOMOLA",
+		"MILTANK",
+		
+	].forEach( id => {
+		var pokemon = Pokemon.querySelector({ID_FULL:id});
+		pokemon.lvl = 30;
+		pokedex.addPokemon( pokemon );
+	});
+	pokedex.addEmpties();
+	
+	pokedex.displayMaxCP = undefined;
+	pokedex.displayCP = undefined;
+	
+	pokedex.addHeader('need-lucky', "Need Lucky (Special Trade)", 'pokedex', 'pokedex');
+	[
+		"ARTICUNO",
+		"MEWTWO_A",
+		"HO_OH",
+		"KYOGRE",
+		"DIALGA",
+		"PALKIA",
+		"GIRATINA_ORIGIN",
+		"THUNDURUS_INCARNATE",
+	].forEach( id => {
+		var pokemon = Pokemon.querySelector({ID_FULL:id});
+		pokedex.addPokemon( pokemon );
+	});
+	pokedex.addEmpties();
+	
+	
+	pokedex.addHeader('need-costumes', "Need Lucky (Costumes)", 'pokedex', 'pokedex');
+	[
+			
+		{"ID":"SQUIRTLE","COSTUME":"FALL_2019"},
+	
+		//{"ID":"RATICATE","COSTUME":"PARTY_HAT"},
+		//{"ID":"WOBBUFFET","COSTUME":"PARTY_HAT"},
+		//{"ID":"WURMPLE","COSTUME":"PARTY_HAT"},
+	
+		{"ID":"TOGEPI","COSTUME":"FLOWER_CROWN"},
+		
+		{"ID":"SMOOCHUM","COSTUME":"FASHION_WEEK_2020"},
+		{"ID":"KIRLIA","COSTUME":"FASHION_WEEK_2020"},
+		{"ID":"SHINX","COSTUME":"FASHION_WEEK_2020"},
+		//{"ID":"CROAGUNK","COSTUME":"FASHION_WEEK_2020"},
+		
+		{"ID":"VENUSAUR","COSTUME":"COPY_2019"},
+		{"ID":"CHARIZARD","COSTUME":"COPY_2019"},
+		{"ID":"BLASTOISE","COSTUME":"COPY_2019"},
+		
+	].forEach( p => {
+		var pokemon = Pokemon.querySelector(p);
+		pokedex.addPokemon( pokemon );
+	});
+	pokedex.addEmpties();
+	
+	
+	
+	
+	
 	pokedex.addHeader('missing', "Missing from Pokedex", 'pokedex', 'pokedex');
 	var arr = all.filter( p => p.STATE == 'MISSING' );
 	arr.forEach( p => {

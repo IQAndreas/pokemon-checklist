@@ -228,11 +228,12 @@ SACRED_SWORD|Sacred Sword|CHARGED|FIGHTING|Cobalion|Cobalion Special Move||V0330
 FLYING_PRESS|Flying Press|CHARGED|FIGHTING|*|NOT_USED||V0331_MOVE_FLYING_PRESS|move_name_0331|
 AURA_SPHERE|Aura Sphere|CHARGED|FIGHTING|Lucario|Lucario exclusive move||V0332_MOVE_AURA_SPHERE|move_name_0332|
 ROCK_WRECKER|Rock Wrecker|CHARGED|ROCK|Rhyperior|Rhyhorn Community Day February 22, 2020||V0334_MOVE_ROCK_WRECKER|move_name_0334|
+AEROBLAST|Aeroblast|CHARGED|FLYING||||||
 FLY|Fly|CHARGED|FLYING|Pikachu (Flying)|Pikachu – Costume 2020 exclusive move||V0341_MOVE_FLY|move_name_0341|
 V_CREATE|V-create|CHARGED|FIRE|Victini|Victini exclusive move||V0342_MOVE_V_CREATE|move_name_0342|
 TRI_ATTACK|Tri Attack|CHARGED|NORMAL|Porygon-Z|Porygon Community Day September 20, 2020||V0344_MOVE_TRI_ATTACK|move_name_0344|
-GUST_FAST|Gust|CHARGED|FLYING|*|NOT_USED||V0345_MOVE_GUST_FAST|move_name_0345|
-|||||||||
+GUST_FAST|Gust|FAST|FLYING|Pidgeot|Pidgeot exclusive move; elite move||V0345_MOVE_GUST_FAST|move_name_0345|
+INCINERATE_FAST|Incinerate|FAST|FIRE|*|||||
 |||||||||
 |||||||||
 |||||||||
@@ -254,47 +255,3 @@ HIDDEN_POWER_FAST_PSYCHIC|Hidden Power (Psychic)|FAST|PSYCHIC|*|||V0281_MOVE_HID
 HIDDEN_POWER_FAST_ROCK|Hidden Power (Rock)|FAST|ROCK|*|||V0281_MOVE_HIDDEN_POWER_FAST||
 HIDDEN_POWER_FAST_STEEL|Hidden Power (Steel)|FAST|STEEL|*|||V0281_MOVE_HIDDEN_POWER_FAST||
 HIDDEN_POWER_FAST_WATER|Hidden Power (Water)|FAST|WATER|*|||V0281_MOVE_HIDDEN_POWER_FAST||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||

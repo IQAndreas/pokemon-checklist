@@ -1,1 +1,535 @@
-../templates/index.html
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=750, initial-scale=1">
+	<title>Pokedex</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../index.css" />
+	<style type="text/css">
+		
+	</style>
+	
+	
+	<script type="text/javascript" src="../data/pokemonstats.js"> </script>
+	<script type="text/javascript" src="../data/moves.js"> </script>
+	<script type="text/javascript" src="../data/pokemonlist.js"> </script>
+	
+	<script type="text/javascript" src="data/all.js"> </script>
+	<script type="text/javascript" src="data/lucky.js"> </script>
+	<script type="text/javascript" src="data/purified.js"> </script>
+	<script type="text/javascript" src="data/shiny.js"> </script>
+	
+	<script type="text/javascript" src="../pokemon.js"> </script>
+	<script type="text/javascript" src="../pokedex.js"> </script>
+
+	<script>
+		
+
+this.onload = function() {
+
+	var container = document.querySelector('.pokemon-container.auto');
+	
+	/*lucky.forEach( p => {
+		if (p.PURIFIED == 'PURIFIED') {
+			console.log(p.ID);
+		}
+	});*/
+	
+	var pokedex = new Pokedex(container);
+	
+	pokedex.displayMaxCP = 'hover-show'
+	pokedex.displayCP = 'hover-hide';
+	
+	pokedex.addHeader('need', "Need High LVL", 'pokedex', 'pokedex');
+	[
+		//"MACHOP",
+		"HITMONTOP",
+		"CHANSEY",
+		"GOLDEEN",
+		"STARYU",
+		"BELDUM",
+		"GIBLE",
+		"ROGGENROLA",
+		//"HIPPOPOTAS",
+		"NUMEL",
+		"CASTFORM_SNOWY",
+		"CRYOGONAL",
+		"PANSEAR",
+		"DARUMAKA",
+		"YAMASK",
+		"TRUBBISH",
+		"AUDINO",
+		"ALOMOMOLA",
+		"MILTANK",
+		
+	].forEach( id => {
+		var pokemon = Pokemon.querySelector({ID_FULL:id});
+		pokemon.lvl = 30;
+		pokedex.addPokemon( pokemon );
+	});
+	pokedex.addEmpties();
+	
+	pokedex.displayMaxCP = undefined;
+	pokedex.displayCP = undefined;
+	
+	pokedex.addHeader('need-lucky', "Need Lucky (Special Trade)", 'pokedex', 'pokedex');
+	[
+		"ARTICUNO",
+		"MEWTWO_A",
+		"HO_OH",
+		"KYOGRE",
+		"DIALGA",
+		"PALKIA",
+		"GIRATINA_ORIGIN",
+		"THUNDURUS_INCARNATE",
+	].forEach( id => {
+		var pokemon = Pokemon.querySelector({ID_FULL:id});
+		pokedex.addPokemon( pokemon );
+	});
+	pokedex.addEmpties();
+	
+	
+	pokedex.addHeader('need-costumes', "Need Lucky (Costumes)", 'pokedex', 'pokedex');
+	[
+			
+		{"ID":"SQUIRTLE","COSTUME":"FALL_2019"},
+	
+		//{"ID":"RATICATE","COSTUME":"PARTY_HAT"},
+		//{"ID":"WOBBUFFET","COSTUME":"PARTY_HAT"},
+		//{"ID":"WURMPLE","COSTUME":"PARTY_HAT"},
+	
+		{"ID":"TOGEPI","COSTUME":"FLOWER_CROWN"},
+		
+		{"ID":"SMOOCHUM","COSTUME":"FASHION_WEEK_2020"},
+		{"ID":"KIRLIA","COSTUME":"FASHION_WEEK_2020"},
+		{"ID":"SHINX","COSTUME":"FASHION_WEEK_2020"},
+		//{"ID":"CROAGUNK","COSTUME":"FASHION_WEEK_2020"},
+		
+		{"ID":"VENUSAUR","COSTUME":"COPY_2019"},
+		{"ID":"CHARIZARD","COSTUME":"COPY_2019"},
+		{"ID":"BLASTOISE","COSTUME":"COPY_2019"},
+		
+	].forEach( p => {
+		var pokemon = Pokemon.querySelector(p);
+		pokedex.addPokemon( pokemon );
+	});
+	pokedex.addEmpties();
+	
+	
+	
+	
+	
+	pokedex.addHeader('missing', "Missing from Pokedex", 'pokedex', 'pokedex');
+	var arr = all.filter( p => p.STATE == 'MISSING' );
+	arr.forEach( p => {
+		//console.log(p.ID);
+		var pokemon = Pokemon.auto2(p);
+		//console.log(p.ID, pokemon);
+		
+		if (pokemon.regional) {
+			console.log(pokemon.ID, pokemon.regions);
+			if ( !pokemon.regions.includes('EUROPE') && !pokemon.regions.includes('EAST') && !pokemon.regions.includes('NORTH') ) {
+				return;
+			}
+		}
+		
+		switch (pokemon.ID) {
+			case 'KLINKLANG': return;
+		}
+		
+		//if (pokemon.unreleased) return;
+		
+		pokedex.addPokemon( pokemon );
+	});
+	pokedex.addEmpties();
+	
+	pokedex.addHeader('missing', "Missing from Pokedex (Regional)", 'regional', 'regional');
+	var arr = all.filter( p => p.STATE == 'MISSING' );
+	arr.forEach( p => {
+		//console.log(p.ID);
+		var pokemon = Pokemon.auto2(p);
+		//console.log(p.ID, pokemon);
+		
+		/*if (pokemon.regional) {
+			if ( !pokemon.regions.includes('EUROPE') && !pokemon.regions.includes('EAST') && !pokemon.regions.includes('NORTH') ) {
+				return;
+			}
+		}*/
+		if (!pokemon.regional) return;
+		//if (pokemon.unreleased) return;
+		
+		pokedex.addPokemon( pokemon );
+	});
+	pokedex.addEmpties();
+	
+	
+	
+	
+	
+	
+	
+	pokedex.addHeader('regional', "Regional Pokemon For Trade", 'regional', 'trade');
+	//var arr = all.filter( p => p.STATE == 'MISSING' );
+	all.forEach( p => {
+		if (p.ID == "") return;
+		var pokemon = Pokemon.auto2(p);
+		console.log(p.ID, p.STATE, pokemon);
+		
+		if (pokemon.unreleased) return;
+		if (!pokemon.regional) return;
+		
+		if (pokemon.regional) {
+			console.log(pokemon.ID, pokemon.regions);
+			if ( !pokemon.regions.includes('EUROPE') && !pokemon.regions.includes('EAST') && !pokemon.regions.includes('NORTH') ) {
+				// keep
+			} else {
+				return;
+			}
+		}
+		
+		if (p && p.STATE == 'MISSING') {
+			//console.log("MISSING:", pokemonID);
+			//pokemon.mystery = true;
+			return;
+		}
+		
+		// TRADED
+		if (pokemon.ID == 'KANGASKHAN') {
+			return;
+		}
+		
+		pokemon.lvl = "";
+		
+		//if (pokemon.unreleased) return;
+		
+		pokedex.addPokemon( pokemon );
+	});
+	pokedex.addEmpties();
+	
+	
+	pokedex.addHeader('regional', "Regional Pokemon For Trade (Sweden)", 'regional', 'trade');
+	//var arr = all.filter( p => p.STATE == 'MISSING' );
+	all.forEach( p => {
+		if (p.ID == "") return;
+		var pokemon = Pokemon.auto2(p);
+		console.log(p.ID, p.STATE, pokemon);
+		
+		if (pokemon.unreleased) return;
+		if (!pokemon.regional) return;
+		
+		if (pokemon.regional) {
+			console.log(pokemon.ID, pokemon.regions);
+			if ( !pokemon.regions.includes('EUROPE') && !pokemon.regions.includes('EAST') && !pokemon.regions.includes('NORTH') ) {
+				return;
+			} else {
+				// keep
+			}
+		}
+		
+		if (p && p.STATE == 'MISSING') {
+			//console.log("MISSING:", pokemonID);
+			pokemon.mystery = true;
+			//return;
+		}
+		
+		pokemon.lvl = "";
+		
+		//if (pokemon.unreleased) return;
+		
+		pokedex.addPokemon( pokemon );
+	});
+	pokedex.addEmpties();
+	
+	//return;
+	
+	
+	
+	
+	
+	
+	
+	
+	var arr = shiny.map( p => Pokemon.auto2(p) );
+	arr = arr.sort( (a,b) => {
+		if (a.pokedexID == b.pokedexID) {
+			return (b.cp - a.cp);
+		} else {
+			return -1 * (b.pokedexID - a.pokedexID);
+		}
+	});
+	
+	pokedex.addHeader('shiny', "Shiny Pokemon");
+	arr.forEach( pokemon => {
+		if (pokemon.lucky) return;
+		if (pokemon.valuable) return;
+		pokemon.lvl = "";
+		pokedex.addPokemon( pokemon );
+	});
+	pokedex.addEmpties();
+	
+	pokedex.addHeader('shiny', "Valuable Shiny Pokemon");
+	arr.forEach( pokemon => {
+		if (pokemon.lucky) return;
+		if (!pokemon.valuable) return;
+		pokemon.lvl = "";
+		pokedex.addPokemon( pokemon );
+	});
+	pokedex.addEmpties();
+	
+	
+	
+	var arr = lucky.map( p => Pokemon.auto2(p) );
+	arr = arr.filter( p => p && p.ID != "" );
+	arr = arr.sort( (a,b) => {
+		return (a.generationID - b.generationID) || (a.pokedexID - b.pokedexID) || (b.cp - a.cp);
+	});
+	/*arr = arr.sort( (a,b) => {
+		if (a.pokedexID == b.pokedexID) {
+			return (b.cp - a.cp);
+		} else {
+			return -1 * (b.pokedexID - a.pokedexID);
+		}
+	});*/
+	var currentGen = null;
+	arr.forEach( pokemon => {
+	
+		if (pokemon.trash) return;
+	
+		if (pokemon.generationID !== currentGen) {
+		
+			if (currentGen) {
+				pokedex.addEmpties(16);
+			}
+			
+			switch (pokemon.generationID) {
+				case 1: pokedex.addHeader('kanto', "Kanto (Gen #1)", 'kanto', 'kanto'); break;
+				case 2: pokedex.addHeader('johto', "Johto (Gen #2)", 'johto', 'johto'); break;
+				case 3: pokedex.addHeader('hoenn', "Hoenn (Gen #3)", 'hoenn', 'hoenn'); break;
+				case 4: pokedex.addHeader('sinnoh', "Sinnoh (Gen #4)", 'sinnoh', 'sinnoh'); break;
+				case 5: pokedex.addHeader('unova', "Unova (Gen #5)", 'unova', 'unova'); break;
+				case 6: pokedex.addHeader('kalos', "Kalos (Gen #6)", 'kalos', 'kalos'); break;
+				case 7: pokedex.addHeader('alola', "Alola (Gen #7)", 'alola', 'alola'); break;
+				case 8: pokedex.addHeader('galar', "Galar (Gen #8)", 'galar', 'galar'); break;
+				default:  pokedex.addHeader('unknown', "Unknown Generation"); console.log(pokemon.generationID); break;
+			}
+			currentGen = pokemon.generationID;
+		}
+	
+	
+		pokemon.lvl = "";
+	
+		
+		pokedex.addPokemon( pokemon );
+		
+	});
+	
+	if (currentGen) {
+		pokedex.addEmpties(16);
+	}
+	
+	
+	
+	return;
+	
+	var currentGen = null;
+	arr.forEach( pokemonID => {
+		
+		//console.log(pokemonID);
+		var pokemon = Pokemon.auto( pokemonID );
+		if (!pokemon) {
+			console.log("Could not find pokemon with ID:", pokemonID);
+			return;
+		}
+		
+		//if (!pokemon.isType(Type.NORMAL)) {
+		/*if (!pokemon.isType(Type.FLYING)) {
+			return;
+		}*/
+		
+		//console.log(pokemon);
+		
+		if (pokemon.generationID !== currentGen) {
+		
+			if (currentGen) {
+				pokedex.addEmpties(16);
+			}
+			
+			switch (pokemon.generationID) {
+				case 1: pokedex.addHeader('kanto', "Kanto (Gen #1)", 'kanto', 'kanto'); break;
+				case 2: pokedex.addHeader('johto', "Johto (Gen #2)", 'johto', 'johto'); break;
+				case 3: pokedex.addHeader('hoenn', "Hoenn (Gen #3)", 'hoenn', 'hoenn'); break;
+				case 4: pokedex.addHeader('sinnoh', "Sinnoh (Gen #4)", 'sinnoh', 'sinnoh'); break;
+				case 5: pokedex.addHeader('unova', "Unova (Gen #5)", 'unova', 'unova'); break;
+				case 6: pokedex.addHeader('kalos', "Kalos (Gen #6)", 'kalos', 'kalos'); break;
+				case 7: pokedex.addHeader('alola', "Alola (Gen #7)", 'alola', 'alola'); break;
+				case 8: pokedex.addHeader('galar', "Galar (Gen #8)", 'galar', 'galar'); break;
+				default:  pokedex.addHeader('unknown', "Unknown Generation"); console.log(pokemon.generationID); break;
+			}
+			currentGen = pokemon.generationID;
+		}
+		
+		/*pokemon.lucky = Math.random() > 0.90;
+		pokemon.shiny = Math.random() > 0.95;
+		pokemon.purified = Math.random() > 0.95;
+		
+		pokemon.lvl = Math.floor(Math.random() * 40);
+		pokemon.cp = Math.floor(Math.random() * 4000);
+		*/
+		
+		var a = all.find( p => p.ID == pokemonID );
+		
+		// Small hack
+		//var luckyAll = lucky.filter( p => (p.ID == pokemonID) || (p.ID == pokemonID + "_PURIFIED") || (p.ID == pokemonID + "_MALE") || (p.ID == pokemonID + "_FEMALE") );
+		var luckyAll = lucky.filter( p => (p.ID == pokemonID) || (p.ID.startsWith(pokemonID + "_")));
+		var l = null;
+		if (luckyAll.length > 0) {
+			luckyAll.forEach( p => {
+				//console.log(pokemonID, parseInt(p.CP, 10), p);
+				if (l == null || parseInt(p.CP, 10) > parseInt(l.CP, 10)) {
+					l = p;
+				}
+			});
+		}
+		
+		//console.log(pokemonID, a, l);
+		
+		if (l) {
+			//console.log("LUCKY", pokemonID);
+			pokemon.lucky = true;
+			pokemon.lvl = (l.trash ? "" : l.LVL);
+			//pokemon.purified = (l.PURIFIED == 'PURIFIED');
+		} else if (a && a.STATE == 'MISSING') {
+			//console.log("MISSING:", pokemonID);
+			pokemon.mystery = true;
+		} else if (a) {
+			//console.log("HAVE:", pokemonID);
+			pokemon.lvl = a.LVL;
+			pokemon.purified = a.ID.endsWith('_PURIFIED');
+		}
+		
+		// DEBUGGING
+		//pokemon.lucky = true;
+		//pokemon.purified = true;
+		//pokemon.shadow = true;
+		//pokemon.shiny = true;
+		
+		pokedex.addPokemon( pokemon );
+		
+	});
+	
+	if (currentGen) {
+		pokedex.addEmpties(16);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	return;
+	
+	var pokedexRegional = new Pokedex(container);
+	
+	function listPokemon(list, pokedex) {
+		list.forEach( pokemonID => {
+			var p = Pokemon.auto( pokemonID );
+			pokedex.addPokemon( p );
+		});
+		
+		pokedex.addEmpties();
+		
+	}
+	
+	pokedexRegional.addHeader( 'reginals-sweden', "Regionals (Sweden) for Trade", 'regional', 'trade' );
+	listPokemon(regional.sweden, pokedexRegional);
+	
+	pokedexRegional.addHeader( 'reginals-usa', "Regionals (USA) for Trade", 'regional', 'trade' );
+	listPokemon(regional.usa, pokedexRegional);
+	
+	pokedexRegional.addHeader( 'reginals-sweden', "Regionals (Other) for Trade", 'regional', 'trade' );
+	listPokemon(regional.other, pokedexRegional);
+	
+	//pokedexRegional.addHeader( 'reginals-sweden', "Regionals (Other) for Trade", 'regional', 'trade' );
+	//pokedexRegional.addPokemon( Pokemon.auto('ELGYEM') );
+	//pokedexRegional.addPokemon( Pokemon.auto('BULBASAUR_FALL_2019') );
+	//pokedexRegional.addPokemon( Pokemon.auto('BULBASAUR_PURIFIED') );
+	//pokedexRegional.addPokemon( Pokemon.auto('PIKACHU') );
+	
+	/*
+	//container.appendChild( makeHeader('kanto', "Kanto (Gen #1)", 'kanto', 'kanto') );
+	var currentGen = null;
+	
+	pokemonList.forEach( pokemonID => {
+	
+		//console.log(pokemonID);
+		
+		var pokemon = pokemonstats.find( p => p.POGO_ID_FULL == pokemonID );
+		if (!pokemon) {
+			console.log("Could not find pokemon with ID:", pokemonID);
+			return;
+		}
+		
+		console.log(pokemon);
+		
+		if (pokemon.GEN != currentGen) {
+		
+			if (currentGen) {
+				makeEmpties(container, 16);
+			}
+		
+			switch (pokemon.GEN) {
+				case "1": container.appendChild(makeHeader('kanto', "Kanto (Gen #1)", 'kanto', 'kanto')); break;
+				case "2": container.appendChild(makeHeader('johto', "Johto (Gen #2)", 'johto', 'johto')); break;
+				case "3": container.appendChild(makeHeader('hoenn', "Hoenn (Gen #3)", 'hoenn', 'hoenn')); break;
+				case "4": container.appendChild(makeHeader('sinnoh', "Sinnoh (Gen #4)", 'sinnoh', 'sinnoh')); break;
+				case "5": container.appendChild(makeHeader('unova', "Unova (Gen #5)", 'unova', 'unova')); break;
+				case "6": container.appendChild(makeHeader('kalos', "Kalos (Gen #6)", 'kalos', 'kalos')); break;
+				case "7": container.appendChild(makeHeader('alola', "Alola (Gen #7)", 'alola', 'alola')); break;
+				case "8": container.appendChild(makeHeader('galar', "Galar (Gen #8)", 'galar', 'galar')); break;
+				default:  container.appendChild(makeHeader('unknown', "Unknown Generation")); break;
+			}
+			currentGen = pokemon.GEN;
+		}
+		
+		// <div class='pokemon ghost electric'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_479_11.png' /><span class='name'>Rotom<br/>(Normal)</span></div>
+		
+		var p = new Pokemon();
+		p.name = pokemon.DISPLAY;
+		p.type1 = pokemon.TYPE1;
+		p.type2 = pokemon.TYPE2;
+		//p.lucky = true;
+		p.image = 'pokemon_icons/' + pokemon.pokemon_image;
+		
+		if (pokemon.UNRELEASED == 'UNRELEASED') {
+			p.unreleased = true;
+		}	
+		
+		container.appendChild( makePokemon(p) );
+		
+	} );
+	*/
+	
+}
+		
+		
+	</script>
+
+</head>
+<body>
+	
+	<div class='pokemon-container auto'></div>
+
+</body>
+
+</html>

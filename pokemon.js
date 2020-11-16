@@ -463,7 +463,7 @@ class Pokemon {
 		}
 		
 		if (!checkProperty(require, 'ID',      this, 'ID'))       return false;
-		//if (!checkProperty(require, 'FORM',    this, 'FORM'))   return false;
+		if (!checkProperty(require, 'FORM',    this, 'FORM'))   return false;
 		if (!checkProperty(require, 'COSTUME', this, 'costume'))  return false;
 		if (!checkProperty(require, 'REGION', this, 'REGION'))    return false;
 			
@@ -474,6 +474,7 @@ class Pokemon {
 		if (require.hasOwnProperty('FORM_ID') && (this.FORM_ID != require.FORM_ID)) return false;
 		if (require.hasOwnProperty('GENDER')  && (this.GENDER  != require.GENDER))  return false;
 		
+		/*
 		// Special case where we allow "form names" like PURIFIED to be considered "normal"
 		if (require.hasOwnProperty('FORM') && (this.FORM != require.FORM)) {
 			// This if statement is going to confuse me in three weeks
@@ -485,6 +486,7 @@ class Pokemon {
 				return false;
 			}
 		}
+		*/
 		
 		
 		if (require.hasOwnProperty('family')  && (this.family  != require.family))  return false;
@@ -682,7 +684,6 @@ class PokemonStats extends Pokemon {
 					requireArray.forEach( value => {
 						if (target[targetID] == value) anyMatch = true;
 					} );
-					
 					return anyMatch;
 				}
 				
@@ -694,7 +695,6 @@ class PokemonStats extends Pokemon {
 			if (!checkProperty(require, 'COSTUME', p, 'COSTUME'))  return false;
 			if (!checkProperty(require, 'REGION',  p, 'REGION'))   return false;
 			if (!checkProperty(require, 'GENDER',  p, 'GENDER'))   return false;
-			
 			
 			if (require.hasOwnProperty('ID_FULL') && (p.ID_FULL != require.ID_FULL)) return false;
 			//if (require.hasOwnProperty('ID')      && (p.ID      != require.ID))      return false;
