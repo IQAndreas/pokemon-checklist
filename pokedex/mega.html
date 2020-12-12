@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>Pokedex</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../index.css" />
+	<style type="text/css">
+		
+	</style>
+	
+	
+	<script type="text/javascript" src="../data/pokemonstats.js"> </script>
+	<script type="text/javascript" src="../data/pokemonlist.js"> </script>
+	<script type="text/javascript" src="../data/moves.js"> </script>
+	
+	<script type="text/javascript" src="../pokemon.js"> </script>
+	<script type="text/javascript" src="../pokedex.js"> </script>
+
+	<script>
+	
+	
+this.onload = function() {
+
+	var container = document.querySelector('.pokemon-container.auto');
+	var pokedex = new Pokedex(container);
+	var filter = [
+		{ ID_FULL:"VENUSAUR_TEMP_EVOLUTION_MEGA" },
+		{ ID_FULL:"CHARIZARD_TEMP_EVOLUTION_MEGA_X" },
+		{ ID_FULL:"CHARIZARD_TEMP_EVOLUTION_MEGA_Y" },
+		{ ID_FULL:"BLASTOISE_TEMP_EVOLUTION_MEGA" },
+		{ ID_FULL:"BEEDRILL_TEMP_EVOLUTION_MEGA" },
+		{ ID_FULL:"PIDGEOT_TEMP_EVOLUTION_MEGA" },
+		{ ID_FULL:"HOUNDOOM_TEMP_EVOLUTION_MEGA" },
+		{ ID_FULL:"GENGAR_TEMP_EVOLUTION_MEGA" },
+
+	]
+	
+	pokedex.displayMaxCP = true;
+	
+	makeFullPokedex(pokedex, filter, pokemonMatch => {
+		
+		var pokemon = Pokemon.querySelector(pokemonMatch);
+		
+		var pokemonShiny = Pokemon.querySelector(pokemonMatch);
+		pokemonShiny.shiny = true;
+		
+		return [ pokemon, pokemonShiny ];
+	});
+	
+	return;
+	
+}
+		
+		
+	</script>
+
+</head>
+<body>
+	
+	<div class='pokemon-container auto'></div>
+
+</body>
+
+</html>

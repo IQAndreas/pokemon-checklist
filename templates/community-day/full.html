@@ -1,0 +1,390 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=750, initial-scale=1">
+	<title>Pokedex - Lucky</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../../index.css" />
+	<style type="text/css">
+		
+	</style>
+	
+	
+	<script type="text/javascript" src="../../data/pokemonstats.js"> </script>
+	<script type="text/javascript" src="../../data/moves.js"> </script>
+	<script type="text/javascript" src="../../data/pokemonlist.js"> </script>
+	
+	<script type="text/javascript" src="../data/all.js"> </script>
+	<script type="text/javascript" src="../data/lucky.js"> </script>
+	<script type="text/javascript" src="../data/purified.js"> </script>
+	<script type="text/javascript" src="../data/shiny.js"> </script>
+	
+	<script type="text/javascript" src="../../pokemon.js"> </script>
+	<script type="text/javascript" src="../../pokedex.js"> </script>
+	
+	<script>
+
+
+setRoot('../../');
+
+this.onload = function() {
+
+	var container = document.querySelector('.pokemon-container.auto');
+	
+	/*var pokemon_all = all.map( p => {
+		return Pokemon.auto2( p );
+	});
+	pokemon_all = pokemon_all.filter( p => (p != null) );
+	pokemon_all = pokemon_all.sort(sortByCP);
+	*/
+	var pokemon_all = [];
+	
+	var pokemon_lucky = lucky.map( p => {
+		return Pokemon.auto2( p );
+	});
+	pokemon_lucky = pokemon_lucky.filter( p => (p != null) && (!p.trash) );
+	pokemon_lucky = pokemon_lucky.sort(sortByCP);
+	
+	var pokemon_shiny = shiny.map( p => {
+		return Pokemon.auto2( p );
+	});
+	pokemon_shiny = pokemon_shiny.filter( p => (p != null) && (!p.trash) );
+	pokemon_shiny = pokemon_shiny.sort(sortByCP);
+	
+	/*var pokedex = new Pokedex(container);
+	pokedex.display.cp = true;
+	pokedex.display.lvl = false;*/
+	
+	var pokedex = new Pokedex(container);
+	const tall = true;
+	if (tall) {
+		container.className += " tall";
+		pokedex.display.lvl = true;
+		pokedex.display.cp = 'hover-show';
+	} else {
+		pokedex.display.cp = 'hover-show';
+		pokedex.display.lvl = 'hover-hide';
+	}
+	
+	
+	/*
+	
+	// TODO: Dynamic
+	var COMMUNITY_DAY = [
+		
+		{"TYPE":"HEADER","ID":"community-day-2018","TEXT":"Community Day 2018","IMG1":"pikachu","IMG2":"pikachu"},
+		{family:"FAMILY_PIKACHU", COSTUME:false, SHINY:true},
+		{family:"FAMILY_DRATINI", COSTUME:false, SHINY:true},
+		{family:"FAMILY_BULBASAUR", COSTUME:false, SHINY:true},
+		{family:"FAMILY_MAREEP", COSTUME:false, SHINY:true},
+		{family:"FAMILY_CHARMANDER", COSTUME:false, SHINY:true},
+		{family:"FAMILY_LARVITAR", COSTUME:false, SHINY:true},
+		{family:"FAMILY_SQUIRTLE", COSTUME:false, SHINY:true},
+		{family:"FAMILY_EEVEE", COSTUME:false, SHINY:true},
+		{family:"FAMILY_CHIKORITA", COSTUME:false, SHINY:true},
+		{family:"FAMILY_BELDUM", COSTUME:false, SHINY:true},
+		{family:"FAMILY_CYNDAQUIL", COSTUME:false, SHINY:true},
+
+		
+		{"TYPE":"HEADER","ID":"community-day-2019","TEXT":"Community Day 2019","IMG1":"pikachu","IMG2":"pikachu"},
+		{family:"FAMILY_TOTODILE", COSTUME:false, SHINY:true},
+		{family:"FAMILY_SWINUB", COSTUME:false, SHINY:true},
+		{family:"FAMILY_TREECKO", COSTUME:false, SHINY:true},
+		{family:"FAMILY_BAGON", COSTUME:false, SHINY:true},
+		{family:"FAMILY_TORCHIC", COSTUME:false, SHINY:true},
+		{family:"FAMILY_SLAKOTH", COSTUME:false, SHINY:true},
+		{family:"FAMILY_MUDKIP", COSTUME:false, SHINY:true},
+		{family:"FAMILY_RALTS", GENDER:'MALE', COSTUME:false, SHINY:true},
+		{family:"FAMILY_RALTS", GENDER:'FEMALE', COSTUME:false, SHINY:true},
+		{family:"FAMILY_TURTWIG", COSTUME:false, SHINY:true},
+		{family:"FAMILY_TRAPINCH", COSTUME:false, SHINY:true},
+		{family:"FAMILY_CHIMCHAR", COSTUME:false, SHINY:true},
+
+		
+		{"TYPE":"HEADER","ID":"community-day-2020","TEXT":"Community Day 2020","IMG1":"pikachu","IMG2":"pikachu"},
+		{family:"FAMILY_PIPLUP", COSTUME:false, SHINY:true},
+		{family:"FAMILY_RHYHORN", COSTUME:false, SHINY:true},
+		{family:"FAMILY_ABRA", COSTUME:false, SHINY:true},
+		{family:"FAMILY_SEEDOT", COSTUME:false, SHINY:true},
+		{family:"FAMILY_WEEDLE", COSTUME:false, SHINY:true},
+		{family:"FAMILY_GASTLY", COSTUME:false, SHINY:true},
+		{family:"FAMILY_MAGIKARP", COSTUME:false, SHINY:true},
+		{family:"FAMILY_PORYGON", COSTUME:false, SHINY:true},
+		{family:"FAMILY_CHARMANDER", COSTUME:false, SHINY:true},
+		{family:"FAMILY_ELECTABUZZ", COSTUME:false, SHINY:true},
+		{family:"FAMILY_MAGMAR", COSTUME:false, SHINY:true},
+		
+	]*/
+	
+	
+	// TODO: Dynamic
+	/*var COMMUNITY_DAY = [
+		
+		{"TYPE":"HEADER","ID":"community-day-2018","TEXT":"Community Day 2018","IMG1":"pikachu","IMG2":"pikachu"},
+		{ID:"PIKACHU", COSTUME:false, SHINY:true},
+		{ID:"DRATINI", COSTUME:false, SHINY:true},
+		{ID:"BULBASAUR", COSTUME:false, SHINY:true},
+		{ID:"MAREEP", COSTUME:false, SHINY:true},
+		{ID:"CHARMANDER", COSTUME:false, SHINY:true},
+		{ID:"LARVITAR", COSTUME:false, SHINY:true},
+		{ID:"SQUIRTLE", COSTUME:false, SHINY:true},
+		{ID:"EEVEE", COSTUME:false, SHINY:true},
+		{ID:"CHIKORITA", COSTUME:false, SHINY:true},
+		{ID:"BELDUM", COSTUME:false, SHINY:true},
+		{ID:"CYNDAQUIL", COSTUME:false, SHINY:true},
+
+		{"TYPE":"HEADER","ID":"community-day-2019","TEXT":"Community Day 2019","IMG1":"pikachu","IMG2":"pikachu"},
+		{ID:"TOTODILE", COSTUME:false, SHINY:true},
+		{ID:"SWINUB", COSTUME:false, SHINY:true},
+		{ID:"TREECKO", COSTUME:false, SHINY:true},
+		{ID:"BAGON", COSTUME:false, SHINY:true},
+		{ID:"TORCHIC", COSTUME:false, SHINY:true},
+		{ID:"SLAKOTH", COSTUME:false, SHINY:true},
+		{ID:"MUDKIP", COSTUME:false, SHINY:true},
+		{ID:"RALTS", GENDER:'MALE', COSTUME:false, SHINY:true},
+		{ID:"RALTS", GENDER:'FEMALE', COSTUME:false, SHINY:true},
+		{ID:"TURTWIG", COSTUME:false, SHINY:true},
+		{ID:"TRAPINCH", COSTUME:false, SHINY:true},
+		{ID:"CHIMCHAR", COSTUME:false, SHINY:true},
+
+		{"TYPE":"HEADER","ID":"community-day-2020","TEXT":"Community Day 2020","IMG1":"pikachu","IMG2":"pikachu"},
+		{ID:"PIPLUP", COSTUME:false, SHINY:true},
+		{ID:"RHYHORN", COSTUME:false, SHINY:true},
+		{ID:"ABRA", COSTUME:false, SHINY:true},
+		{ID:"SEEDOT", COSTUME:false, SHINY:true},
+		{ID:"WEEDLE", COSTUME:false, SHINY:true},
+		{ID:"GASTLY", COSTUME:false, SHINY:true},
+		{ID:"MAGIKARP", COSTUME:false, SHINY:true},
+		{ID:"PORYGON", COSTUME:false, SHINY:true},
+		{ID:"CHARMANDER", COSTUME:false, SHINY:true},
+		{ID:"ELECTABUZZ", COSTUME:false, SHINY:true},
+		{ID:"MAGMAR", COSTUME:false, SHINY:true},
+	
+	]*/
+	
+	// TODO: Dynamic
+	var COMMUNITY_DAY = [
+	
+	
+		// COMMUNITY DAY 2019
+		
+		{"TYPE":"HEADER","ID":"community-day-2019","TEXT":"Totodile (Community Day 2019)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"FERALIGATR", move:"Hydro Cannon"},
+			{ID:["TOTODILE","CROCANAW"], COSTUME:false, LUCKY:true},
+			{ID:["TOTODILE","CROCANAW"], COSTUME:false, LUCKY:false, SHINY:true},
+		
+		{"TYPE":"HEADER","ID":"community-day-2019","TEXT":"Swinub (Community Day 2019)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"MAMOSWINE", move:"Ancient Power"},
+			{ID:["SWINUB","PILOSWINE"], COSTUME:false, LUCKY:true},
+			{ID:["SWINUB","PILOSWINE"], COSTUME:false, LUCKY:false, SHINY:true},
+		
+		{"TYPE":"HEADER","ID":"community-day-2019","TEXT":"Treecko (Community Day 2019)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"SCEPTILE", move:"Frenzy Plant"},
+			{ID:["TREECKO","GROVYLE"], COSTUME:false, LUCKY:true},
+			{ID:["TREECKO","GROVYLE"], COSTUME:false, LUCKY:false, SHINY:true},
+		
+		{"TYPE":"HEADER","ID":"community-day-2019","TEXT":"Bagon (Community Day 2019)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"SALAMENCE", move:"Outrage"},
+			{ID:["BAGON","SHELGON"], COSTUME:false, LUCKY:true},
+			{ID:["BAGON","SHELGON"], COSTUME:false, LUCKY:false, SHINY:true},
+		
+		{"TYPE":"HEADER","ID":"community-day-2019","TEXT":"Torchic (Community Day 2019)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"BLAZIKEN", move:"Blast Burn"},
+			{ID:["TORCHIC","COMBUSKEN"], COSTUME:false, LUCKY:true},
+			{ID:["TORCHIC","COMBUSKEN"], COSTUME:false, LUCKY:false, SHINY:true},
+		
+		{"TYPE":"HEADER","ID":"community-day-2019","TEXT":"Slakoth (Community Day 2019)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"SLAKING", move:"Body Slam"},
+			{ID:["SLAKOTH","VIGOROTH"], COSTUME:false, LUCKY:true},
+			{ID:["SLAKOTH","VIGOROTH"], COSTUME:false, LUCKY:false, SHINY:true},
+		
+		{"TYPE":"HEADER","ID":"community-day-2019","TEXT":"Mudkip (Community Day 2019)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"SWAMPERT", move:"Hydro Cannon"},
+			{ID:["MUDKIP","MARSHTOMP"], COSTUME:false, LUCKY:true},
+			{ID:["MUDKIP","MARSHTOMP"], COSTUME:false, LUCKY:false, SHINY:true},
+		
+		{"TYPE":"HEADER","ID":"community-day-2019","TEXT":"Ralts (Community Day 2019)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"GARDEVOIR", GENDER:["FEMALE",""], move:"Synchronoise"},
+			{ID:["RALTS","KIRLIA"], GENDER:"FEMALE", COSTUME:false, LUCKY:true},
+			{ID:["RALTS","KIRLIA"], GENDER:"FEMALE", COSTUME:false, LUCKY:false, SHINY:true},
+		
+		{"TYPE":"HEADER","ID":"community-day-2019","TEXT":"Ralts (Community Day 2019)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"GALLADE", GENDER:["MALE",""], move:"Synchronoise"},
+			{ID:["RALTS","KIRLIA"], GENDER:"MALE", COSTUME:false, LUCKY:true},
+			{ID:["RALTS","KIRLIA"], GENDER:"MALE", COSTUME:false, LUCKY:false, SHINY:true},
+		
+		{"TYPE":"HEADER","ID":"community-day-2019","TEXT":"Turtwig (Community Day 2019)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"TORTERRA", move:"Frenzy Plant"},
+			{ID:["TURTWIG","GROTLE"], COSTUME:false, LUCKY:true},
+			{ID:["TURTWIG","GROTLE"], COSTUME:false, LUCKY:false, SHINY:true},
+		
+		{"TYPE":"HEADER","ID":"community-day-2019","TEXT":"Trapinch (Community Day 2019)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"FLYGON", move:"Earth Power"},
+			{ID:["TRAPINCH","VIBRAVA"], COSTUME:false, LUCKY:true},
+			{ID:["TRAPINCH","VIBRAVA"], COSTUME:false, LUCKY:false, SHINY:true},
+		
+		{"TYPE":"HEADER","ID":"community-day-2019","TEXT":"Chimchar (Community Day 2019)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"INFERNAPE", move:"Blast Burn"},
+			{ID:["CHIMCHAR","MONFERNO"], COSTUME:false, LUCKY:true},
+			{ID:["CHIMCHAR","MONFERNO"], COSTUME:false, LUCKY:false, SHINY:true},
+	
+	
+	
+		// COMMUNITY DAY 2020
+	
+		{"TYPE":"HEADER","ID":"community-day-2020","TEXT":"Piplup (Community Day 2020)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"EMPOLEON", move:"Hydro Cannon"},
+			{ID:["PIPLUP","PRINPLUP"], COSTUME:false, LUCKY:true},
+			{ID:["PIPLUP","PRINPLUP"], COSTUME:false, LUCKY:false, SHINY:true},
+		
+		{"TYPE":"HEADER","ID":"community-day-2020","TEXT":"Rhyhorn (Community Day 2020)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"RHYPERIOR", move:"Rock Wrecker"},
+			{ID:["RHYHORN","RHYDON"], COSTUME:false, LUCKY:true},
+			{ID:["RHYHORN","RHYDON"], COSTUME:false, LUCKY:false, SHINY:true},
+		
+		{"TYPE":"HEADER","ID":"community-day-2020","TEXT":"Abra (Community Day 2020)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"ALAKAZAM", move:"Counter"},
+			{ID:["ABRA","KADABRA"], COSTUME:false, LUCKY:true},
+			{ID:["ABRA","KADABRA"], COSTUME:false, LUCKY:false, SHINY:true},
+		
+		{"TYPE":"HEADER","ID":"community-day-2020","TEXT":"Seedot (Community Day 2020)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"SHIFTRY", move:"Bullet Seed"},
+			{ID:["SEEDOT","NUZLEAF"], COSTUME:false, LUCKY:true},
+			{ID:["SEEDOT","NUZLEAF"], COSTUME:false, LUCKY:false, SHINY:true},
+		
+		{"TYPE":"HEADER","ID":"community-day-2020","TEXT":"Weedle (Community Day 2020)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"BEEDRILL", move:"Drill Run"},
+			{ID:["WEEDLE","KAKUNA"], COSTUME:false, LUCKY:true},
+			{ID:["WEEDLE","KAKUNA"], COSTUME:false, LUCKY:false, SHINY:true},
+		
+		{"TYPE":"HEADER","ID":"community-day-2020","TEXT":"Gastly (Community Day 2020)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"GENGAR", move:"Shadow Punch"},
+			{ID:["GASTLY","HAUNTER"], COSTUME:false, LUCKY:true},
+			{ID:["GASTLY","HAUNTER"], COSTUME:false, LUCKY:false, SHINY:true},
+		
+		{"TYPE":"HEADER","ID":"community-day-2020","TEXT":"Magikarp (Community Day 2020)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"GYARADOS", move:"Aqua Tail"},
+			{ID:["MAGIKARP"], COSTUME:false, LUCKY:true},
+			{ID:["MAGIKARP"], COSTUME:false, LUCKY:false, SHINY:true},
+		
+		{"TYPE":"HEADER","ID":"community-day-2020","TEXT":"Porygon (Community Day 2020)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"PORYGON_Z", move:"Tri Attack"},
+			{ID:["PORYGON","PORYGON2"], COSTUME:false, LUCKY:true},
+			{ID:["PORYGON","PORYGON2"], COSTUME:false, LUCKY:false, SHINY:true},
+		
+		{"TYPE":"HEADER","ID":"community-day-2020","TEXT":"Charmander (Community Day 2020)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"CHARIZARD", move:"Dragon Breath"},
+			{ID:["CHARMANDER","CHARMELEON"], COSTUME:false, LUCKY:true},
+			{ID:["CHARMANDER","CHARMELEON"], COSTUME:false, LUCKY:false, SHINY:true},
+		
+		{"TYPE":"HEADER","ID":"community-day-2020","TEXT":"Electabuzz (Community Day 2020)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"ELECTIVIRE", move:"Flamethrower"},
+			{ID:["ELEKID","ELECTABUZZ"], COSTUME:false, LUCKY:true},
+			{ID:["ELEKID","ELECTABUZZ"], COSTUME:false, LUCKY:false, SHINY:true},
+		
+		{"TYPE":"HEADER","ID":"community-day-2020","TEXT":"Magmar (Community Day 2020)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"MAGMORTAR", move:"Thunderbolt"},
+			{ID:["MAGBY","MAGMAR"], COSTUME:false, LUCKY:true},
+			{ID:["MAGBY","MAGMAR"], COSTUME:false, LUCKY:false, SHINY:true},
+		
+	]
+	
+	
+	makeFullPokedex(pokedex, COMMUNITY_DAY, pokemonMatch => {
+	
+		var pokemon = null;
+		//var allLucky = pokemon_lucky.filter( p => p.costume == "" && p.matches( pokemonMatch ) );
+		//var bestLucky = pokemon_lucky.find( p => p.costume == "" && p.matches( pokemonMatch ) );
+		//var bestPokemon = pokemon_all.find( p => p.costume == "" && p.matches( pokemonMatch ) );
+		var allLucky = pokemon_lucky.filter( p => p.matches( pokemonMatch ) );
+		//var bestLucky = pokemon_lucky.find( p => p.matches( pokemonMatch ) );
+		//var bestPokemon = pokemon_all.find( p => p.matches( pokemonMatch ) );
+		
+		//var allShiny = pokemon_shiny.filter( p => p.matches( pokemonMatch ) );
+		var allShiny = pokemon_shiny.filter( p => (p.matches( pokemonMatch ) && !p.lucky) );
+		
+		//var allPokemon = pokemon_all.filter( p => p.matches( pokemonMatch ) );
+		allPokemon = [];
+		
+		/*
+		var all_todo = [].concat(allLucky, allShiny, allPokemon);
+		var all = [];
+		all_todo.forEach( p_new => {
+		
+			console.log(p_new.ID_FULL, p_new.cp);
+			
+			if (all.find( p => { (p.ID_FULL == p_new.ID_FULL) && (p.cp == p_new.cp) } )) {
+				all.push( p_new );
+			}		
+		});
+		*/
+		
+		var all = [].concat(allLucky, allShiny, allPokemon);
+		if (all.length == 0) {
+			var query = {ID:pokemonMatch.ID};
+			var pokemon = Pokemon.querySelector(query);
+			
+			if (!pokemon) {
+				console.log("UNKNOWN:", pokemonMatch.ID);
+				return null;
+			}
+			
+			pokemon.move1 = pokemonMatch.move;
+			pokemon.mystery = true;
+			
+			if (pokemonMatch.LUCKY) {
+				pokemon.lucky = true;
+			}
+			if (pokemonMatch.SHINY) {
+				pokemon.shiny = true;
+			}
+			
+			return pokemon;
+		}
+		
+		return all;
+		
+		
+		
+		if (allLucky.length > 1) {
+			return allLucky;
+		}
+		
+		if (bestLucky) {
+			pokemon = bestLucky;
+		} else if (bestPokemon) {
+			pokemon = bestPokemon;
+		} else {
+			console.log("Cannot find", pokemonMatch);
+			return null;
+		}
+		
+		if (pokemon.missing) {
+			pokemon.mystery = true;
+		}
+		
+		return pokemon;
+	
+	});
+	
+	return;
+	
+	
+	
+}
+		
+		
+	</script>
+
+</head>
+<body>
+	
+	<div class='pokemon-container auto'></div>
+
+</body>
+
+</html>

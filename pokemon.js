@@ -1,15 +1,23 @@
 
-const ROOT = '../';
+const DEFAULT_ROOT = '../';
 
-const POKEMON_IMAGE_DIR = ROOT + 'pokemon_icons/';
-const HEADERS = ROOT + 'headers/';
-const ASSETS = ROOT + 'assets/';
-const GENDERS = ROOT + 'assets/gender/';
-const TYPES = ROOT + 'assets/type/';
-const LEAGUES = ROOT + 'assets/league/';
-const REGIONS = ROOT + 'assets/regions/';
+var POKEMON_IMAGE_DIR = DEFAULT_ROOT + 'pokemon_icons/';
+var HEADERS = DEFAULT_ROOT + 'headers/';
+var ASSETS = DEFAULT_ROOT + 'assets/';
+var GENDERS = DEFAULT_ROOT + 'assets/gender/';
+var TYPES = DEFAULT_ROOT + 'assets/type/';
+var LEAGUES = DEFAULT_ROOT + 'assets/league/';
+var REGIONS = DEFAULT_ROOT + 'assets/regions/';
 
-
+function setRoot( root ) {
+	POKEMON_IMAGE_DIR = root + 'pokemon_icons/';
+	HEADERS = root + 'headers/';
+	ASSETS = root + 'assets/';
+	GENDERS = root + 'assets/gender/';
+	TYPES = root + 'assets/type/';
+	LEAGUES = root + 'assets/league/';
+	REGIONS = root + 'assets/regions/';
+}
 
 class CPM {
 	byLevel( lvl ) {
@@ -163,33 +171,42 @@ Gender.GENDERLESS = "GENDERLESS";
 
 class League {
 
+	static fromID(value) {
+		switch (value.toLowerCase()) {
+			case 'great':  return League.GREAT;
+			case 'master': return League.MASTER;
+			case 'ultra':  return League.ULTRA;
+			default: return null;
+		}
+	}
+
 	constructor( arg1, arg2 ) {
 		const MIN = 0;
 		const MAX = 9999;
 		
 		// new League()
 		if (arg1 === undefined && arg2 === undefined) {
-			this.minCP = MIN;
-			this.maxCP = MAX;
+			this.cpMin = MIN;
+			this.cpMax = MAX;
 		}
 		
 		// new League(1500)
 		else if (arg2 === undefined) {
-			this.minCP = MIN;
-			this.maxCP = arg1;
+			this.cpMin = MIN;
+			this.cpMax = arg1;
 		}
 		
 		// But whyyyyyyyyyyy
 		// new League(undefined, 1500)
 		else if (arg1 === undefined) {
-			this.minCP = MIN;
-			this.maxCP = arg2;
+			this.cpMin = MIN;
+			this.cpMax = arg2;
 		}
 		
 		// new League(1300, 1500)
 		else {
-			this.minCP = arg1;
-			this.maxCP = arg2;
+			this.cpMin = arg1;
+			this.cpMax = arg2;
 		}
 		
 	}
@@ -199,7 +216,7 @@ class League {
 			return false;
 		}
 		
-		return (pokemon.cp >= this.minCP && pokemon.cp <= this.maxCP);
+		return (pokemon.cp >= this.cpMin && pokemon.cp <= this.cpMax);
 	}
 	
 	getHeaderImageURL() {
@@ -453,7 +470,10 @@ class Pokemon {
 				var requireArray = Array.isArray(require[requireID]) ? require[requireID] : [require[requireID]];
 				var anyMatch = false;
 				requireArray.forEach( value => {
-					if (target[targetID] == value) anyMatch = true;
+					// Allows empty strings and "" to evaluate as false
+					if      (value === false && !target[targetID]) anyMatch = true;
+					else if (value === true && target[targetID]) anyMatch = true;
+					else if (target[targetID] == value) anyMatch = true;
 				} );
 				
 				return anyMatch;
@@ -466,6 +486,10 @@ class Pokemon {
 		if (!checkProperty(require, 'FORM',    this, 'FORM'))   return false;
 		if (!checkProperty(require, 'COSTUME', this, 'costume'))  return false;
 		if (!checkProperty(require, 'REGION', this, 'REGION'))    return false;
+		
+		//if (!checkProperty(require, 'COSTUME', this, 'costume'))  return false;
+		if (!checkProperty(require, 'SHINY', this, 'shiny'))  return false;
+		if (!checkProperty(require, 'LUCKY', this, 'lucky'))  return false;
 			
 		
 		if (require.hasOwnProperty('ID_FULL') && (this.ID_FULL != require.ID_FULL)) return false;
@@ -607,8 +631,8 @@ class Pokemon {
 			{ID:"GYARADOS", move:"Aqua Tail"},
 			{ID:"PORYGON_Z", move:"Tri Attack"},
 			{ID:"CHARIZARD", move:"Dragon Breath"},
-			{ID:"ELEKTRIKE", move:"Flamethrower"},
-			{ID:"MAGMAR", move:"Thunderbolt"},
+			{ID:"ELECTIVIRE", move:"Flamethrower"},
+			{ID:"MAGMORTAR", move:"Thunderbolt"},
 		]
 		COMMUNITY_DAY.forEach( m => {
 			if (this.matches(m)) {

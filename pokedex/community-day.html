@@ -1,0 +1,286 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=750, initial-scale=1">
+	<title>Pokedex - Community Day</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../index.css" />
+	<style type="text/css">
+		
+	</style>
+	
+	
+	<script type="text/javascript" src="../data/pokemonstats.js"> </script>
+	<script type="text/javascript" src="../data/moves.js"> </script>
+	<script type="text/javascript" src="../data/pokemonlist.js"> </script>
+	
+	<script type="text/javascript" src="../pokemon.js"> </script>
+	<script type="text/javascript" src="../pokedex.js"> </script>
+	
+	<script>
+
+this.onload = function() {
+
+	var container = document.querySelector('.pokemon-container.auto');
+	
+	var pokedex = new Pokedex(container);
+	const tall = true;
+	if (tall) {
+		container.className += " tall";
+		pokedex.display.lvl = true;
+		pokedex.display.cp = true;
+		pokedex.display.moveIcons = false;
+	} else {
+		pokedex.display.cp = 'hover-show';
+		pokedex.display.lvl = 'hover-hide';
+		pokedex.display.moveIcons = false;
+	}
+	
+	
+	/*
+	
+	// TODO: Dynamic
+	var COMMUNITY_DAY = [
+		
+		{TYPE:"HEADER","ID":"community-day-2018","TEXT":"Community Day 2018","IMG1":"pikachu","IMG2":"pikachu"},
+		{family:"FAMILY_PIKACHU", COSTUME:false, SHINY:true},
+		{family:"FAMILY_DRATINI", COSTUME:false, SHINY:true},
+		{family:"FAMILY_BULBASAUR", COSTUME:false, SHINY:true},
+		{family:"FAMILY_MAREEP", COSTUME:false, SHINY:true},
+		{family:"FAMILY_CHARMANDER", COSTUME:false, SHINY:true},
+		{family:"FAMILY_LARVITAR", COSTUME:false, SHINY:true},
+		{family:"FAMILY_SQUIRTLE", COSTUME:false, SHINY:true},
+		{family:"FAMILY_EEVEE", COSTUME:false, SHINY:true},
+		{family:"FAMILY_CHIKORITA", COSTUME:false, SHINY:true},
+		{family:"FAMILY_BELDUM", COSTUME:false, SHINY:true},
+		{family:"FAMILY_CYNDAQUIL", COSTUME:false, SHINY:true},
+
+		
+		{TYPE:"HEADER","ID":"community-day-2019","TEXT":"Community Day 2019","IMG1":"pikachu","IMG2":"pikachu"},
+		{family:"FAMILY_TOTODILE", COSTUME:false, SHINY:true},
+		{family:"FAMILY_SWINUB", COSTUME:false, SHINY:true},
+		{family:"FAMILY_TREECKO", COSTUME:false, SHINY:true},
+		{family:"FAMILY_BAGON", COSTUME:false, SHINY:true},
+		{family:"FAMILY_TORCHIC", COSTUME:false, SHINY:true},
+		{family:"FAMILY_SLAKOTH", COSTUME:false, SHINY:true},
+		{family:"FAMILY_MUDKIP", COSTUME:false, SHINY:true},
+		{family:"FAMILY_RALTS", GENDER:'MALE', COSTUME:false, SHINY:true},
+		{family:"FAMILY_RALTS", GENDER:'FEMALE', COSTUME:false, SHINY:true},
+		{family:"FAMILY_TURTWIG", COSTUME:false, SHINY:true},
+		{family:"FAMILY_TRAPINCH", COSTUME:false, SHINY:true},
+		{family:"FAMILY_CHIMCHAR", COSTUME:false, SHINY:true},
+
+		
+		{TYPE:"HEADER","ID":"community-day-2020","TEXT":"Community Day 2020","IMG1":"pikachu","IMG2":"pikachu"},
+		{family:"FAMILY_PIPLUP", COSTUME:false, SHINY:true},
+		{family:"FAMILY_RHYHORN", COSTUME:false, SHINY:true},
+		{family:"FAMILY_ABRA", COSTUME:false, SHINY:true},
+		{family:"FAMILY_SEEDOT", COSTUME:false, SHINY:true},
+		{family:"FAMILY_WEEDLE", COSTUME:false, SHINY:true},
+		{family:"FAMILY_GASTLY", COSTUME:false, SHINY:true},
+		{family:"FAMILY_MAGIKARP", COSTUME:false, SHINY:true},
+		{family:"FAMILY_PORYGON", COSTUME:false, SHINY:true},
+		{family:"FAMILY_CHARMANDER", COSTUME:false, SHINY:true},
+		{family:"FAMILY_ELECTABUZZ", COSTUME:false, SHINY:true},
+		{family:"FAMILY_MAGMAR", COSTUME:false, SHINY:true},
+		
+	]*/
+	
+	
+	// TODO: Dynamic
+	/*var COMMUNITY_DAY = [
+		
+		{TYPE:"HEADER","ID":"community-day-2018","TEXT":"Community Day 2018","IMG1":"pikachu","IMG2":"pikachu"},
+		{ID:"PIKACHU", COSTUME:false, SHINY:true},
+		{ID:"DRATINI", COSTUME:false, SHINY:true},
+		{ID:"BULBASAUR", COSTUME:false, SHINY:true},
+		{ID:"MAREEP", COSTUME:false, SHINY:true},
+		{ID:"CHARMANDER", COSTUME:false, SHINY:true},
+		{ID:"LARVITAR", COSTUME:false, SHINY:true},
+		{ID:"SQUIRTLE", COSTUME:false, SHINY:true},
+		{ID:"EEVEE", COSTUME:false, SHINY:true},
+		{ID:"CHIKORITA", COSTUME:false, SHINY:true},
+		{ID:"BELDUM", COSTUME:false, SHINY:true},
+		{ID:"CYNDAQUIL", COSTUME:false, SHINY:true},
+
+		{TYPE:"HEADER","ID":"community-day-2019","TEXT":"Community Day 2019","IMG1":"pikachu","IMG2":"pikachu"},
+		{ID:"TOTODILE", COSTUME:false, SHINY:true},
+		{ID:"SWINUB", COSTUME:false, SHINY:true},
+		{ID:"TREECKO", COSTUME:false, SHINY:true},
+		{ID:"BAGON", COSTUME:false, SHINY:true},
+		{ID:"TORCHIC", COSTUME:false, SHINY:true},
+		{ID:"SLAKOTH", COSTUME:false, SHINY:true},
+		{ID:"MUDKIP", COSTUME:false, SHINY:true},
+		{ID:"RALTS", GENDER:'MALE', COSTUME:false, SHINY:true},
+		{ID:"RALTS", GENDER:'FEMALE', COSTUME:false, SHINY:true},
+		{ID:"TURTWIG", COSTUME:false, SHINY:true},
+		{ID:"TRAPINCH", COSTUME:false, SHINY:true},
+		{ID:"CHIMCHAR", COSTUME:false, SHINY:true},
+
+		{TYPE:"HEADER","ID":"community-day-2020","TEXT":"Community Day 2020","IMG1":"pikachu","IMG2":"pikachu"},
+		{ID:"PIPLUP", COSTUME:false, SHINY:true},
+		{ID:"RHYHORN", COSTUME:false, SHINY:true},
+		{ID:"ABRA", COSTUME:false, SHINY:true},
+		{ID:"SEEDOT", COSTUME:false, SHINY:true},
+		{ID:"WEEDLE", COSTUME:false, SHINY:true},
+		{ID:"GASTLY", COSTUME:false, SHINY:true},
+		{ID:"MAGIKARP", COSTUME:false, SHINY:true},
+		{ID:"PORYGON", COSTUME:false, SHINY:true},
+		{ID:"CHARMANDER", COSTUME:false, SHINY:true},
+		{ID:"ELECTABUZZ", COSTUME:false, SHINY:true},
+		{ID:"MAGMAR", COSTUME:false, SHINY:true},
+	
+	]*/
+	
+	// TODO: Dynamic
+	var COMMUNITY_DAY = [
+	
+	
+		// COMMUNITY DAY 2019
+		
+		{TYPE:"HEADER","ID":"community-day-2019","TEXT":"Totodile (Community Day 2019)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"FERALIGATR", move:"Hydro Cannon", TYPE:"VIRTUAL", league:"great"},
+			{ID:"FERALIGATR", move:"Hydro Cannon", TYPE:"VIRTUAL", league:"master"},
+			{ID:"FERALIGATR", move:"Hydro Cannon", TYPE:"VIRTUAL", league:"ultra"},
+		
+		{TYPE:"HEADER","ID":"community-day-2019","TEXT":"Swinub (Community Day 2019)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"MAMOSWINE", move:"Ancient Power", TYPE:"VIRTUAL", league:"great"},
+			{ID:"MAMOSWINE", move:"Ancient Power", TYPE:"VIRTUAL", league:"master"},
+			{ID:"MAMOSWINE", move:"Ancient Power", TYPE:"VIRTUAL", league:"ultra"},
+		
+		{TYPE:"HEADER","ID":"community-day-2019","TEXT":"Treecko (Community Day 2019)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"SCEPTILE", move:"Frenzy Plant", TYPE:"VIRTUAL", league:"great"},
+			{ID:"SCEPTILE", move:"Frenzy Plant", TYPE:"VIRTUAL", league:"master"},
+			{ID:"SCEPTILE", move:"Frenzy Plant", TYPE:"VIRTUAL", league:"ultra"},
+		
+		{TYPE:"HEADER","ID":"community-day-2019","TEXT":"Bagon (Community Day 2019)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"SALAMENCE", move:"Outrage", TYPE:"VIRTUAL", league:"great"},
+			{ID:"SALAMENCE", move:"Outrage", TYPE:"VIRTUAL", league:"master"},
+			{ID:"SALAMENCE", move:"Outrage", TYPE:"VIRTUAL", league:"ultra"},
+		
+		{TYPE:"HEADER","ID":"community-day-2019","TEXT":"Torchic (Community Day 2019)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"BLAZIKEN", move:"Blast Burn", TYPE:"VIRTUAL", league:"great"},
+			{ID:"BLAZIKEN", move:"Blast Burn", TYPE:"VIRTUAL", league:"master"},
+			{ID:"BLAZIKEN", move:"Blast Burn", TYPE:"VIRTUAL", league:"ultra"},
+		
+		{TYPE:"HEADER","ID":"community-day-2019","TEXT":"Slakoth (Community Day 2019)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"SLAKING", move:"Body Slam", TYPE:"VIRTUAL", league:"great"},
+			{ID:"SLAKING", move:"Body Slam", TYPE:"VIRTUAL", league:"master"},
+			{ID:"SLAKING", move:"Body Slam", TYPE:"VIRTUAL", league:"ultra"},
+		
+		{TYPE:"HEADER","ID":"community-day-2019","TEXT":"Mudkip (Community Day 2019)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"SWAMPERT", move:"Hydro Cannon", TYPE:"VIRTUAL", league:"great"},
+			{ID:"SWAMPERT", move:"Hydro Cannon", TYPE:"VIRTUAL", league:"master"},
+			{ID:"SWAMPERT", move:"Hydro Cannon", TYPE:"VIRTUAL", league:"ultra"},
+		
+		{TYPE:"HEADER","ID":"community-day-2019","TEXT":"Ralts (Community Day 2019)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"GARDEVOIR", GENDER:["FEMALE",""], move:"Synchronoise", TYPE:"VIRTUAL", league:"great"},
+			{ID:"GARDEVOIR", GENDER:["FEMALE",""], move:"Synchronoise", TYPE:"VIRTUAL", league:"master"},
+			{ID:"GARDEVOIR", GENDER:["FEMALE",""], move:"Synchronoise", TYPE:"VIRTUAL", league:"ultra"},
+		
+		{TYPE:"HEADER","ID":"community-day-2019","TEXT":"Ralts (Community Day 2019)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"GALLADE", GENDER:["MALE",""], move:"Synchronoise", TYPE:"VIRTUAL", league:"great"},
+			{ID:"GALLADE", GENDER:["MALE",""], move:"Synchronoise", TYPE:"VIRTUAL", league:"master"},
+			{ID:"GALLADE", GENDER:["MALE",""], move:"Synchronoise", TYPE:"VIRTUAL", league:"ultra"},
+		
+		{TYPE:"HEADER","ID":"community-day-2019","TEXT":"Turtwig (Community Day 2019)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"TORTERRA", move:"Frenzy Plant", TYPE:"VIRTUAL", league:"great"},
+			{ID:"TORTERRA", move:"Frenzy Plant", TYPE:"VIRTUAL", league:"master"},
+			{ID:"TORTERRA", move:"Frenzy Plant", TYPE:"VIRTUAL", league:"ultra"},
+		
+		{TYPE:"HEADER","ID":"community-day-2019","TEXT":"Trapinch (Community Day 2019)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"FLYGON", move:"Earth Power", TYPE:"VIRTUAL", league:"great"},
+			{ID:"FLYGON", move:"Earth Power", TYPE:"VIRTUAL", league:"master"},
+			{ID:"FLYGON", move:"Earth Power", TYPE:"VIRTUAL", league:"ultra"},
+		
+		{TYPE:"HEADER","ID":"community-day-2019","TEXT":"Chimchar (Community Day 2019)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"INFERNAPE", move:"Blast Burn", TYPE:"VIRTUAL", league:"great"},
+			{ID:"INFERNAPE", move:"Blast Burn", TYPE:"VIRTUAL", league:"master"},
+			{ID:"INFERNAPE", move:"Blast Burn", TYPE:"VIRTUAL", league:"ultra"},
+	
+	
+		// COMMUNITY DAY 2020
+	
+		{TYPE:"HEADER","ID":"community-day-2020","TEXT":"Piplup (Community Day 2020)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"EMPOLEON", move:"Hydro Cannon", TYPE:"VIRTUAL", league:"great"},
+			{ID:"EMPOLEON", move:"Hydro Cannon", TYPE:"VIRTUAL", league:"master"},
+			{ID:"EMPOLEON", move:"Hydro Cannon", TYPE:"VIRTUAL", league:"ultra"},
+		
+		{TYPE:"HEADER","ID":"community-day-2020","TEXT":"Rhyhorn (Community Day 2020)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"RHYPERIOR", move:"Rock Wrecker", TYPE:"VIRTUAL", league:"great"},
+			{ID:"RHYPERIOR", move:"Rock Wrecker", TYPE:"VIRTUAL", league:"master"},
+			{ID:"RHYPERIOR", move:"Rock Wrecker", TYPE:"VIRTUAL", league:"ultra"},
+		
+		{TYPE:"HEADER","ID":"community-day-2020","TEXT":"Abra (Community Day 2020)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"ALAKAZAM", move:"Counter", TYPE:"VIRTUAL", league:"great"},
+			{ID:"ALAKAZAM", move:"Counter", TYPE:"VIRTUAL", league:"master"},
+			{ID:"ALAKAZAM", move:"Counter", TYPE:"VIRTUAL", league:"ultra"},
+		
+		{TYPE:"HEADER","ID":"community-day-2020","TEXT":"Seedot (Community Day 2020)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"SHIFTRY", move:"Bullet Seed", TYPE:"VIRTUAL", league:"great"},
+			{ID:"SHIFTRY", move:"Bullet Seed", TYPE:"VIRTUAL", league:"master"},
+			{ID:"SHIFTRY", move:"Bullet Seed", TYPE:"VIRTUAL", league:"ultra"},
+			//{ID:"SHIFTRY", move:"Bullet Seed", TYPE:"VIRTUAL", lvl:"max"},
+		
+		{TYPE:"HEADER","ID":"community-day-2020","TEXT":"Weedle (Community Day 2020)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"BEEDRILL", move:"Drill Run", TYPE:"VIRTUAL", league:"great"},
+			{ID:"BEEDRILL", move:"Drill Run", TYPE:"VIRTUAL", league:"master"},
+			{ID:"BEEDRILL", move:"Drill Run", TYPE:"VIRTUAL", league:"ultra"},
+			{ID:"BEEDRILL", move:"Drill Run", TYPE:"VIRTUAL", lvl:"max"},
+		
+		{TYPE:"HEADER","ID":"community-day-2020","TEXT":"Gastly (Community Day 2020)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"GENGAR", move:"Shadow Punch", TYPE:"VIRTUAL", league:"great"},
+			{ID:"GENGAR", move:"Shadow Punch", TYPE:"VIRTUAL", league:"master"},
+			{ID:"GENGAR", move:"Shadow Punch", TYPE:"VIRTUAL", league:"ultra"},
+		
+		{TYPE:"HEADER","ID":"community-day-2020","TEXT":"Magikarp (Community Day 2020)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"GYARADOS", move:"Aqua Tail", TYPE:"VIRTUAL", league:"great"},
+			{ID:"GYARADOS", move:"Aqua Tail", TYPE:"VIRTUAL", league:"master"},
+			{ID:"GYARADOS", move:"Aqua Tail", TYPE:"VIRTUAL", league:"ultra"},
+		
+		{TYPE:"HEADER","ID":"community-day-2020","TEXT":"Porygon (Community Day 2020)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"PORYGON_Z", move:"Tri Attack", TYPE:"VIRTUAL", league:"great"},
+			{ID:"PORYGON_Z", move:"Tri Attack", TYPE:"VIRTUAL", league:"master"},
+			{ID:"PORYGON_Z", move:"Tri Attack", TYPE:"VIRTUAL", league:"ultra"},
+		
+		{TYPE:"HEADER","ID":"community-day-2020","TEXT":"Charmander (Community Day 2020)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"CHARIZARD", move:"Dragon Breath", TYPE:"VIRTUAL", league:"great"},
+			{ID:"CHARIZARD", move:"Dragon Breath", TYPE:"VIRTUAL", league:"master"},
+			{ID:"CHARIZARD", move:"Dragon Breath", TYPE:"VIRTUAL", league:"ultra"},
+		
+		{TYPE:"HEADER","ID":"community-day-2020","TEXT":"Electabuzz (Community Day 2020)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"ELECTIVIRE", move:"Flamethrower", TYPE:"VIRTUAL", league:"great"},
+			{ID:"ELECTIVIRE", move:"Flamethrower", TYPE:"VIRTUAL", league:"master"},
+			{ID:"ELECTIVIRE", move:"Flamethrower", TYPE:"VIRTUAL", league:"ultra"},
+		
+		{TYPE:"HEADER","ID":"community-day-2020","TEXT":"Magmar (Community Day 2020)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"MAGMORTAR", move:"Thunderbolt", TYPE:"VIRTUAL", league:"great"},
+			{ID:"MAGMORTAR", move:"Thunderbolt", TYPE:"VIRTUAL", league:"master"},
+			{ID:"MAGMORTAR", move:"Thunderbolt", TYPE:"VIRTUAL", league:"ultra"},
+		
+	]
+	
+	
+	makeFullPokedex(pokedex, COMMUNITY_DAY);
+	
+	return;
+	
+	
+	
+}
+		
+		
+	</script>
+
+</head>
+<body>
+	
+	<div class='pokemon-container auto'></div>
+
+</body>
+
+</html>

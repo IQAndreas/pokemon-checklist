@@ -37,6 +37,68 @@ function makeFullPokedex(pokedex, filter, map) {
 			pokedex.addHeader(header["ID"], header["TEXT"], header["IMG1"], header["IMG2"]);
 			return;
 			
+		} if ( pokemonMatch["TYPE"] == 'VIRTUAL' ) {
+			
+			//var pokemonID = pokemonMatch.ID;
+			var pokemon = Pokemon.querySelector( pokemonMatch );
+			//var pokemon = new PokemonStats( pokemonMatch );
+			var template = pokemonMatch;
+			
+			if (template.move) pokemon.move1 = template.move;
+			if (template.move1) pokemon.move1 = template.move1;
+			if (template.move2) pokemon.move1 = template.move1;
+			if (template.move3) pokemon.move1 = template.move1;
+			
+			if (template.lucky) pokemon.lucky = template.lucky;
+			if (template.shiny) pokemon.shiny = template.shiny;
+			
+			if (template.cp) pokemon.cp = template.cp;
+			if (template.lvl) pokemon.lvl = template.lvl;
+			if (template.lvl == 'max') pokemon.lvl = pokemon.lvlMax;
+			
+			if (template.cpMax || template.league) {
+				
+				if (template.lvl) {
+					console.log("WARNING:", "Trying to set the pokemon's lvl and cpMax at the same time will replace the set lvl");
+				}
+				
+				var league = (template.league) ? League.fromID(template.league) : null;
+				var cpMax = (league) ? league.cpMax : template.cpMax;
+				
+				//if (!league && !cpMax) {
+				if (!cpMax) {
+					console.log("ERROR:", "No matching league or cpMax found");
+				} else {
+				
+					var lvlBest = undefined;
+				
+					// Automatic LVL
+					for (var lvl = 1; lvl <= pokemon.lvlMax; lvl++) {
+						
+						pokemon.lvl = lvl;
+						if (league.qualifies(pokemon)) {
+							lvlBest = lvl;
+						}
+						
+						/*if (pokemon.getLvlCp(lvl) <= cpMax) {
+							lvlBest = lvl;
+						}*/
+					}
+					
+					if (lvlBest === undefined) {
+						console.log("Could not find the best lvl for Pokemon", pokemon);
+						return;
+					} else {
+						pokemon.lvl = lvlBest;
+					}
+					
+				}
+			}
+			
+			pokedex.addPokemon(pokemon);
+			
+			return;
+			
 		} else if (Array.isArray(pokemonMatch)) {
 			
 			var pokemonArray = [];
@@ -118,20 +180,21 @@ class Pokedex {
 		
 		this.style = style || '';
 		
-		this.displayCP = 'hover-hide';
-		this.displayMaxCP = false;
-		this.displayLVL = 'hover-show';
-		this.displayMaxLVL = false;
-		this.displayPurified = true;
-		this.displayShiny = true;
+		this.display = {};
+		this.display.cp = 'hover-hide';
+		this.display.cpMax = false;
+		this.display.lvl = 'hover-show';
+		this.display.lvlMax = false;
+		this.display.purified = true;
+		this.display.shiny = true;
 		
-		this.displayLeague = true;
+		this.display.league = true;
 		
-		this.displayName = true;
-		//this.displayMoves = true;
-		this.displayMoveIcons = 'hover-hide';
-		this.displayMoveList = 'hover-show';
-		this.displayMoveListSpecial = 'hover-hide';
+		this.display.name = true;
+		//this.display.moves = true;
+		this.display.moveIcons = 'hover-hide';
+		this.display.moveList = 'hover-show';
+		this.display.moveListSpecial = 'hover-hide';
 		
 		this._pokemon = [];
 		this._families = [];
@@ -257,7 +320,7 @@ class Pokedex {
 		
 		
 		
-		if (this.displayLeague) {
+		if (this.display.league) {
 		
 			// Calculate great/ultra/master league
 			var league = null;
@@ -299,41 +362,41 @@ class Pokedex {
 		
 		
 		// <div class='pokemon flying fire pokemon-purified'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_146_00.png' /><span class='cp'>CP<span class='cp-value'>2,412</span></span><span class='purified'><img src='assets/purified.png'><span>PURIFIED</span><img src='assets/purified.png'></span><span class='name'>Moltres</span></div>
-		if (this.displayPurified && pokemon.purified) {
+		if (this.display.purified && pokemon.purified) {
 			var purified = this.makeOverlay(overlayTop, "Purified", 'purified-overlay', 'purified', 'purified')
 		}
 		
-		if (this.displayPurified && pokemon.shadow) {
+		if (this.display.purified && pokemon.shadow) {
 			var shadow = this.makeOverlay(overlayTop, "Shadow", 'shadow-overlay', 'shadow', 'shadow')
 		}
 		
 		
 		// <div class='pokemon dragon ghost'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_487_11_shiny.png' /><span class='cp'>CP<span class='cp-value'>1,881</span></span><span class='shiny'><img src='assets/shiny.png'><span>SHINY</span><img src='assets/shiny.png'></span><span class='name'>Giratina (Altered)</span></div>
-		if (this.displayShiny && pokemon.shiny) {
+		if (this.display.shiny && pokemon.shiny) {
 			var shiny = this.makeOverlay(overlayTop, "Shiny", 'shiny-overlay', 'shiny', 'shiny')
 		}
 		
-		//console.log(pokemon, this.displayCP, pokemon.cp);
-		if (this.displayCP && pokemon.cp) {
-			var cpSpan = this.makeSpan(overlayTop, "CP", 'cp', this.displayCP);
+		//console.log(pokemon, this.display.cp, pokemon.cp);
+		if (this.display.cp && pokemon.cp) {
+			var cpSpan = this.makeSpan(overlayTop, "CP", 'cp', this.display.cp);
 			var cpValue = this.makeSpan(cpSpan, pokemon.cp, 'cp-value');
 		}
 		
-		//console.log(pokemon, this.displayMaxCP, pokemon.cp);
-		if (this.displayMaxCP && pokemon.cpMax) {
-			var cpSpan = this.makeSpan(overlayTop, "MAX", 'cp max', this.displayMaxCP);
+		//console.log(pokemon, this.display.cpMax, pokemon.cpMax);
+		if (this.display.cpMax && pokemon.cpMax) {
+			var cpSpan = this.makeSpan(overlayTop, "MAX", 'cp max', this.display.cpMax);
 			var cpValue = this.makeSpan(cpSpan, pokemon.cpMax, 'cp-value');
 		}
 		
-		//console.log(pokemon, this.displayLVL, pokemon.lvl);
-		if (this.displayLVL && pokemon.lvl) {
-			var cpSpan = this.makeSpan(overlayTop, "LVL", 'lvl', this.displayLVL);
+		//console.log(pokemon, this.display.lvl, pokemon.lvl);
+		if (this.display.lvl && pokemon.lvl) {
+			var cpSpan = this.makeSpan(overlayTop, "LVL", 'lvl', this.display.lvl);
 			var cpValue = this.makeSpan(cpSpan, pokemon.lvl, 'lvl-value');
 		}
 		
-		//console.log(pokemon, this.displayMaxLVL, pokemon.lvl);
-		if (this.displayMaxLVL && pokemon.lvl) {
-			var cpSpan = this.makeSpan(overlayTop, "MAX", 'lvl max', this.displayMaxLVL);
+		//console.log(pokemon, this.display.lvlMax, pokemon.lvlMax);
+		if (this.display.lvlMax && pokemon.lvlMax) {
+			var cpSpan = this.makeSpan(overlayTop, "MAX", 'lvl max', this.display.lvlMax);
 			var cpValue = this.makeSpan(cpSpan, pokemon.lvl, 'lvl-value');
 		}
 		
@@ -342,7 +405,7 @@ class Pokedex {
 		overlayBottom.className = 'overlay-bottom';
 		element.appendChild(overlayBottom);
 		
-		if (this.displayName && pokemon.name) {
+		if (this.display.name && pokemon.name) {
 			
 			var nameValue = pokemon.name;
 			var nameSub = "";
@@ -354,18 +417,18 @@ class Pokedex {
 				//console.log(nameValue, nameSub);
 			}
 			
-			var name = this.makeSpan(overlayBottom, nameValue, 'name', this.displayName)
+			var name = this.makeSpan(overlayBottom, nameValue, 'name', this.display.name)
 			// We're already displaying Purified/Shadow status. No need to do it again.
 			if (nameSub && nameSub != "Purified" && nameSub != "Shadow") {
 				var subTitle = this.makeSpan(name, `(${nameSub})`, 'subtitle');
 			}
 		}
 		
-		//if (this.displayMoveIcons || this.displayMoveList || this.displayMoveListSpecial) {
+		//if (this.display.moveIcons || this.display.moveList || this.display.moveListSpecial) {
 		if (pokemon.move1 || pokemon.move2 || pokemon.move3) {
 				
-			if (this.displayMoveList) {
-				var moveList = this.makeSpan(overlayBottom, '', 'move-list', this.displayMoveList);
+			if (this.display.moveList) {
+				var moveList = this.makeSpan(overlayBottom, '', 'move-list', this.display.moveList);
 				pokemon.moves.forEach( moveName => {
 					
 					var move = Move.fromName( moveName );
@@ -393,9 +456,9 @@ class Pokedex {
 			}	
 				
 			var specialMoves = pokemon.getSpecialMoves();
-			if (this.displayMoveListSpecial && (specialMoves.length > 0)) {
+			if (this.display.moveListSpecial && (specialMoves.length > 0)) {
 				
-				var moveList = this.makeSpan(overlayBottom, '', 'move-list', this.displayMoveListSpecial);
+				var moveList = this.makeSpan(overlayBottom, '', 'move-list', this.display.moveListSpecial);
 				specialMoves.forEach( moveName => {
 					
 					var move = Move.fromName( moveName );
@@ -423,7 +486,7 @@ class Pokedex {
 					
 			}
 					
-			if (this.displayMoveIcons) {
+			if (this.display.moveIcons) {
 			
 				function makeMoveIcon(element, move) {
 					var img = document.createElement('img');
@@ -435,7 +498,7 @@ class Pokedex {
 				}
 				
 				// Make little icons of every move
-				var moves = this.makeSpan(overlayBottom, '', 'move-icons', this.displayMoveIcons);
+				var moves = this.makeSpan(overlayBottom, '', 'move-icons', this.display.moveIcons);
 				pokemon.moves.forEach( moveName => {
 					var move = Move.fromName( moveName );
 					//if (!move) return;

@@ -1,0 +1,210 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=750, initial-scale=1">
+	<title>Pokedex - Lucky</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../../index.css" />
+	<style type="text/css">
+		
+	</style>
+	
+	
+	<script type="text/javascript" src="../../data/pokemonstats.js"> </script>
+	<script type="text/javascript" src="../../data/moves.js"> </script>
+	<script type="text/javascript" src="../../data/pokemonlist.js"> </script>
+	
+	<script type="text/javascript" src="../data/all.js"> </script>
+	<script type="text/javascript" src="../data/lucky.js"> </script>
+	<script type="text/javascript" src="../data/purified.js"> </script>
+	<script type="text/javascript" src="../data/shiny.js"> </script>
+	
+	<script type="text/javascript" src="../../pokemon.js"> </script>
+	<script type="text/javascript" src="../../pokedex.js"> </script>
+
+	<script>
+
+
+
+setRoot('../../');
+
+this.onload = function() {
+
+	var container = document.querySelector('.pokemon-container.auto');
+	
+	/*var pokemon_all = all.map( p => {
+		return Pokemon.auto2( p );
+	});
+	pokemon_all = pokemon_all.filter( p => (p != null) );
+	pokemon_all = pokemon_all.sort(sortByCP);
+	*/
+	var pokemon_all = [];
+	
+	var pokemon_lucky = lucky.map( p => {
+		return Pokemon.auto2( p );
+	});
+	pokemon_lucky = pokemon_lucky.filter( p => (p != null) && (!p.trash) );
+	pokemon_lucky = pokemon_lucky.sort(sortByCP);
+	
+	var pokemon_shiny = shiny.map( p => {
+		return Pokemon.auto2( p );
+	});
+	pokemon_shiny = pokemon_shiny.filter( p => (p != null) && (!p.trash) );
+	pokemon_shiny = pokemon_shiny.sort(sortByCP);
+	
+	/*var pokedex = new Pokedex(container);
+	pokedex.display.cp = true;
+	pokedex.display.lvl = false;*/
+	
+	var pokedex = new Pokedex(container);
+	const tall = true;
+	if (tall) {
+		container.className += " tall";
+		pokedex.display.lvl = true;
+		pokedex.display.cp = 'hover-show';
+	} else {
+		pokedex.display.cp = 'hover-show';
+		pokedex.display.lvl = 'hover-hide';
+	}
+	
+	// TODO: Dynamic
+		var COMMUNITY_DAY = [
+		
+		{"TYPE":"HEADER","ID":"community-day-2018","TEXT":"Community Day 2018","IMG1":"pikachu","IMG2":"pikachu"},
+		{ID:"PIKACHU", move:"Surf"},
+		{ID:"DRAGONITE", move:"Draco Meteor"},
+		{ID:"VENUSAUR", move:"Frenzy Plant"},
+		{ID:"AMPHAROS", move:"Dragon Pulse"},
+		{ID:"CHARIZARD", move:"Blast Burn"},
+		{ID:"TYRANITAR", move:"Smack Down"},
+		{ID:"BLASTOISE", move:"Hydro Cannon"},
+		{ID:"EEVEE", move:"Last Resort"},
+		{ID:"VAPOREON", move:"Last Resort"},
+		{ID:"JOLTEON", move:"Last Resort"},
+		{ID:"FLAREON", move:"Last Resort"},
+		{ID:"ESPEON", move:"Last Resort"},
+		{ID:"UMBREON", move:"Last Resort"},
+		{ID:"LEAFEON", move:"Last Resort"},
+		{ID:"GLACEON", move:"Last Resort"},
+		{ID:"MEGANIUM", move:"Frenzy Plant"},
+		{ID:"METAGROSS", move:"Meteor Mash"},
+		{ID:"TYPHLOSION", move:"Blast Burn"},
+		
+		{"TYPE":"HEADER","ID":"community-day-2019","TEXT":"Community Day 2019","IMG1":"pikachu","IMG2":"pikachu"},
+		{ID:"FERALIGATR", move:"Hydro Cannon"},
+		{ID:"MAMOSWINE", move:"Ancient Power"},
+		{ID:"SCEPTILE", move:"Frenzy Plant"},
+		{ID:"SALAMENCE", move:"Outrage"},
+		{ID:"BLAZIKEN", move:"Blast Burn"},
+		{ID:"SLAKING", move:"Body Slam"},
+		{ID:"SWAMPERT", move:"Hydro Cannon"},
+		{ID:"GARDEVOIR", move:"Synchronoise"},
+		{ID:"GALLADE", move:"Synchronoise"},
+		{ID:"TORTERRA", move:"Frenzy Plant"},
+		{ID:"FLYGON", move:"Earth Power"},
+		{ID:"INFERNAPE", move:"Blast Burn"},
+		
+		{"TYPE":"HEADER","ID":"community-day-2020","TEXT":"Community Day 2020","IMG1":"pikachu","IMG2":"pikachu"},
+		{ID:"EMPOLEON", move:"Hydro Cannon"},
+		{ID:"RHYPERIOR", move:"Rock Wrecker"},
+		{ID:"ALAKAZAM", move:"Counter"},
+		{ID:"SHIFTRY", move:"Bullet Seed"},
+		{ID:"BEEDRILL", move:"Drill Run"},
+		{ID:"GENGAR", move:"Shadow Punch"},
+		{ID:"GYARADOS", move:"Aqua Tail"},
+		{ID:"PORYGON_Z", move:"Tri Attack"},
+		{ID:"CHARIZARD", move:"Dragon Breath"},
+		{ID:"ELECTIVIRE", move:"Flamethrower"},
+		{ID:"MAGMORTAR", move:"Thunderbolt"},
+	]
+	
+	makeFullPokedex(pokedex, COMMUNITY_DAY, pokemonMatch => {
+	
+		var pokemon = null;
+		//var allLucky = pokemon_lucky.filter( p => p.costume == "" && p.matches( pokemonMatch ) );
+		//var bestLucky = pokemon_lucky.find( p => p.costume == "" && p.matches( pokemonMatch ) );
+		//var bestPokemon = pokemon_all.find( p => p.costume == "" && p.matches( pokemonMatch ) );
+		var allLucky = pokemon_lucky.filter( p => p.matches( pokemonMatch ) );
+		//var bestLucky = pokemon_lucky.find( p => p.matches( pokemonMatch ) );
+		//var bestPokemon = pokemon_all.find( p => p.matches( pokemonMatch ) );
+		
+		//var allShiny = pokemon_shiny.filter( p => p.matches( pokemonMatch ) );
+		var allShiny = pokemon_shiny.filter( p => (p.matches( pokemonMatch ) && !p.lucky) );
+		
+		//var allPokemon = pokemon_all.filter( p => p.matches( pokemonMatch ) );
+		allPokemon = [];
+		
+		/*
+		var all_todo = [].concat(allLucky, allShiny, allPokemon);
+		var all = [];
+		all_todo.forEach( p_new => {
+		
+			console.log(p_new.ID_FULL, p_new.cp);
+			
+			if (all.find( p => { (p.ID_FULL == p_new.ID_FULL) && (p.cp == p_new.cp) } )) {
+				all.push( p_new );
+			}		
+		});
+		*/
+		
+		var all = [].concat(allLucky, allShiny, allPokemon);
+		if (all.length == 0) {
+			var query = {ID:pokemonMatch.ID};
+			var pokemon = Pokemon.querySelector(query);
+			
+			if (!pokemon) {
+				console.log("UNKNOWN:", pokemonMatch.ID);
+				return null;
+			}
+			
+			pokemon.move1 = pokemonMatch.move;
+			pokemon.mystery = true;
+			return pokemon;
+		}
+		
+		return all;
+		
+		
+		
+		if (allLucky.length > 1) {
+			return allLucky;
+		}
+		
+		if (bestLucky) {
+			pokemon = bestLucky;
+		} else if (bestPokemon) {
+			pokemon = bestPokemon;
+		} else {
+			console.log("Cannot find", pokemonMatch);
+			return null;
+		}
+		
+		if (pokemon.missing) {
+			pokemon.mystery = true;
+		}
+		
+		return pokemon;
+	
+	});
+	
+	return;
+	
+	
+	
+}
+		
+		
+	</script>
+
+</head>
+<body>
+	
+	<div class='pokemon-container auto'></div>
+
+</body>
+
+</html>
