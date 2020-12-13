@@ -25,9 +25,8 @@
 	
 	<script type="text/javascript" src="../../pokemon.js"> </script>
 	<script type="text/javascript" src="../../pokedex.js"> </script>
-
+	
 	<script>
-
 
 
 setRoot('../../');
@@ -70,6 +69,7 @@ this.onload = function() {
 		pokedex.display.cp = 'hover-show';
 		pokedex.display.lvl = 'hover-hide';
 	}
+	
 	
 	// TODO: Dynamic
 	var COMMUNITY_DAY = [
@@ -126,33 +126,23 @@ this.onload = function() {
 	
 		var pokemon = null;
 		//var allLucky = pokemon_lucky.filter( p => p.costume == "" && p.matches( pokemonMatch ) );
-		//var bestLucky = pokemon_lucky.find( p => p.costume == "" && p.matches( pokemonMatch ) );
+		var bestLuckyShiny = pokemon_lucky.find( p => p.shiny && p.matches( pokemonMatch ) );
+		var bestLucky = pokemon_lucky.find( p => p.matches( pokemonMatch ) );
+		var bestShiny = pokemon_shiny.find( p => p.matches( pokemonMatch ) );
 		//var bestPokemon = pokemon_all.find( p => p.costume == "" && p.matches( pokemonMatch ) );
-		var allLucky = pokemon_lucky.filter( p => p.matches( pokemonMatch ) );
+		//var allLucky = pokemon_lucky.filter( p => p.matches( pokemonMatch ) );
 		//var bestLucky = pokemon_lucky.find( p => p.matches( pokemonMatch ) );
 		//var bestPokemon = pokemon_all.find( p => p.matches( pokemonMatch ) );
 		
-		//var allShiny = pokemon_shiny.filter( p => p.matches( pokemonMatch ) );
-		var allShiny = pokemon_shiny.filter( p => (p.matches( pokemonMatch ) && !p.lucky) );
-		
-		//var allPokemon = pokemon_all.filter( p => p.matches( pokemonMatch ) );
-		allPokemon = [];
-		
-		/*
-		var all_todo = [].concat(allLucky, allShiny, allPokemon);
-		var all = [];
-		all_todo.forEach( p_new => {
-		
-			console.log(p_new.ID_FULL, p_new.cp);
+		if (bestLuckyShiny) {
+			pokemon = bestLuckyShiny;
+		} else if (bestLucky) {
+			pokemon = bestLucky;
+		} else if (bestShiny) {
+			pokemon = bestShiny;
+		} else {
+			console.log("Cannot find", pokemonMatch);
 			
-			if (all.find( p => { (p.ID_FULL == p_new.ID_FULL) && (p.cp == p_new.cp) } )) {
-				all.push( p_new );
-			}		
-		});
-		*/
-		
-		var all = [].concat(allLucky, allShiny, allPokemon);
-		if (all.length == 0) {
 			var query = {ID:pokemonMatch.ID};
 			var pokemon = Pokemon.querySelector(query);
 			
@@ -164,27 +154,6 @@ this.onload = function() {
 			pokemon.move1 = pokemonMatch.move;
 			pokemon.mystery = true;
 			return pokemon;
-		}
-		
-		return all;
-		
-		
-		
-		if (allLucky.length > 1) {
-			return allLucky;
-		}
-		
-		if (bestLucky) {
-			pokemon = bestLucky;
-		} else if (bestPokemon) {
-			pokemon = bestPokemon;
-		} else {
-			console.log("Cannot find", pokemonMatch);
-			return null;
-		}
-		
-		if (pokemon.missing) {
-			pokemon.mystery = true;
 		}
 		
 		return pokemon;

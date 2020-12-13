@@ -802,6 +802,7 @@ class PokemonStats extends Pokemon {
 	
 	get legendary() { return this.template.LEGENDARY == 'LEGENDARY'; }
 	get mythical() 	{ return this.template.MYTHICAL == 'MYTHICAL'; }
+	get mythic() 	{ return this.mythical; } // ALIAS
 	//get purified() 	{ return this.template.PURIFIED == 'PURIFIED'; }
 	//get costume() 	{ return this.template.COSTUME == 'COSTUME'; }
 	get baby() 		{ return this.template.BABY == 'BABY'; }
