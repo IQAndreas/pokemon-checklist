@@ -20,13 +20,14 @@ function setRoot( root ) {
 }
 
 class CPM {
-	byLevel( lvl ) {
-		// Could do a find(), but this returns non-exact values
-		var id = Math.floor(2 * lvl) - 2;
-		if (id < 0) id = 0;
-		if (id > CPM.data.length) id = CPM.data.length;
-		return CPM.data[id].cpm;
-	}
+	
+}
+CPM.byLevel = function( lvl ) {
+	// Could do a find(), but this returns non-exact values
+	var id = Math.floor(2 * lvl) - 2;
+	if (id < 0) id = 0;
+	if (id > CPM.data.length) id = CPM.data.length;
+	return CPM.data[id].cpm;
 }
 CPM.data = [
 	{ lvl:1,    cpm:0.0940000, exp_req:0, candy:1, stardust:200 },
@@ -112,6 +113,19 @@ CPM.data = [
 
 ]
 
+/*
+var RaidTierSettings = [
+    {"name": "1", "cpm": 0.6, "maxHP": 600, "timelimit": 180000},
+    {"name": "2", "cpm": 0.67, "maxHP": 1800, "timelimit": 180000},
+    {"name": "3", "cpm": 0.7300000190734863,
+        "maxHP": 3600, "timelimit": 180000},
+    {"name": "4", "cpm": 0.7900000214576721,
+        "maxHP": 9000, "timelimit": 180000},
+    {"name": "5", "cpm": 0.7900000214576721,
+        "maxHP": 15000, "timelimit": 300000},
+    {"name": "6", "cpm": 0.7900000214576721,
+        "maxHP": 18750, "timelimit": 3000000}
+]*/
 
 
 class Type {
@@ -537,6 +551,9 @@ class Pokemon {
 		return this.getLvlCp( this.lvl );
 	}
 	
+	get cpMin() {
+		return 10;
+	}
 	get cpMax() {
 		return this.getLvlCp( this.lvlMax );
 	}
@@ -556,10 +573,195 @@ class Pokemon {
 		var sta = this.sta + (this.staIV !== undefined ? this.staIV : 15);
 		
 		var cpm = CPM.data.find( c => c.lvl == lvl );
-		var cpScalar = cpm.cpm;
+		var scalar = cpm.cpm;
 		
 		// =MAX(FLOOR(($C8+$C$1)*SQRT($D8+$C$2)*SQRT($E8+$C$3)*POWER(G$7,2)/10),10)
-		return Math.max(Math.floor( (atk) * Math.sqrt(def) * Math.sqrt(sta) * Math.pow(cpScalar,2) / 10 ),10);
+		return Math.max(Math.floor( (atk) * Math.sqrt(def) * Math.sqrt(sta) * Math.pow(scalar,2) / 10 ),10);
+	}
+	
+	reverseCPM(cp) {
+		
+		var atk = this.atk + (this.atkIV !== undefined ? this.atkIV : 15);
+		var def = this.def + (this.defIV !== undefined ? this.defIV : 15);
+		var sta = this.sta + (this.staIV !== undefined ? this.staIV : 15);
+		return Math.sqrt(cp*10/((atk) * Math.sqrt(def) * Math.sqrt(sta)));
+	}
+	
+	getLvlCp( lvl ) {
+		
+		// FOR TESTING:
+		//return this.getRaidCp(lvl);
+		
+		if (lvl === undefined) {
+			return undefined;
+		}
+		
+		if (this.atk === undefined || this.def === undefined || this.sta === undefined) {
+			return undefined;
+		}
+		
+		var atk = this.atk + (this.atkIV !== undefined ? this.atkIV : 15);
+		var def = this.def + (this.defIV !== undefined ? this.defIV : 15);
+		var sta = this.sta + (this.staIV !== undefined ? this.staIV : 15);
+		
+		var cpm = CPM.data.find( c => c.lvl == lvl );
+		var scalar = cpm.cpm;
+		
+		// =MAX(FLOOR(($C8+$C$1)*SQRT($D8+$C$2)*SQRT($E8+$C$3)*POWER(G$7,2)/10),10)
+		return Math.max(Math.floor( (atk) * Math.sqrt(def) * Math.sqrt(sta) * Math.pow(scalar,2) / 10 ), this.cpMin);
+	}
+	
+	getRaidCp(tier) {
+		
+		if (tier === undefined) {
+			return undefined;
+		}
+		
+		if (this.atk === undefined || this.def === undefined || this.sta === undefined) {
+			return undefined;
+		}
+		
+		/* OLD STATS
+		function getSta(tier) {
+			switch(tier) {
+				case 1: return 600;
+				case 2: return 1800;
+				case 3: return 3000;
+				case 4: return 7500;
+				case 5: return 12500;
+				default: 
+					console.log("Unknown tier:", tier);
+					return undefined;
+			}
+		}*/
+		
+		function getSta(tier) {
+			switch(tier) {
+				case 1: return 600;  // LVL 20
+				case 2: return 1800; // LVL 25
+				case 3: return 3600; // LVL 30
+				case 4: return 9000; // LVL 40
+				case 5: return 15000;
+				case 'mega': return 15000;
+				//case 6: return 18750;
+				default: 
+					console.log("Unknown tier:", tier);
+					return undefined;
+			}
+		}
+		
+		var atk = this.atk + 15;
+		var def = this.def + 15;
+		//var sta = this.sta + 15;
+		var sta = getSta(tier);
+		
+		if (sta === undefined) {
+			return undefined;
+		}
+		
+		/*function getCPM(tier) {
+			switch(tier) {
+				case 1: return 0.6;  // LVL 20
+				case 2: return 0.67; // LVL 25
+				case 3: return 0.7300000190734863; // LVL 30
+				case 4: return 0.7900000214576721; // LVL 40
+				case 5: return 0.7900000214576721;
+				case 6: return 0.7900000214576721;
+				case "MAX": return 2.9246827825765656;
+				default: return 1;
+			}
+		}
+		var scalar = getCPM(tier);*/
+		
+		// Always 1 for raid bosses
+		var scalar = 1;
+		
+		//var cp = Math.max(Math.floor( (atk) * Math.sqrt(def) * Math.sqrt(sta) / 10 ), this.cpMin);
+		//console.log(this.ID_FULL, `((${this.atk} + 15) * sqrt(${this.def} + 15) * sqrt(${sta})) / 10 = ${cp} CP`)
+		
+		return Math.max(Math.floor( (atk) * Math.sqrt(def) * Math.sqrt(sta) * scalar / 10 ), this.cpMin);
+		
+	}
+	
+	
+	set hp(value) { this._hp = value; }
+	get hp() {
+		if (this._hp !== undefined) return this._hp;
+		if (this.lvl === undefined) return undefined; 
+		return this.getLvlHp( this.lvl );
+	}
+	
+	get hpMin() {
+		return 10;
+	}
+	get hpMax() {
+		return this.getLvlHp( this.lvlMax );
+	}
+	
+	getLvlHp( lvl ) {
+		
+		if (lvl === undefined) {
+			return undefined;
+		}
+		
+		//if (this.atk === undefined || this.def === undefined || this.sta === undefined) {
+		if (this.sta === undefined) {
+			return undefined;
+		}
+		
+		//var atk = this.atk + (this.atkIV !== undefined ? this.atkIV : 15);
+		//var def = this.def + (this.defIV !== undefined ? this.defIV : 15);
+		var sta = this.sta + (this.staIV !== undefined ? this.staIV : 15);
+		
+		var cpm = CPM.data.find( c => c.lvl == lvl );
+		if (cpm === undefined) {
+			return undefined;
+		}
+		var scalar = cpm.cpm;
+		
+		// =IF(ISBLANK(A2), "", MAX(FLOOR(($I2+$F2)*$J2), 10))
+		return Math.max(Math.floor( sta * scalar ), this.hpMin);
+	}
+	
+	getRaidHp( tier ) {
+		
+		if (tier === undefined) {
+			return undefined;
+		}
+		
+		if (this.sta === undefined) {
+			return undefined;
+		}
+		
+		function getSta(tier) {
+			switch(tier) {
+				case 1: return 600;  // LVL 20
+				case 2: return 1800; // LVL 25
+				case 3: return 3600; // LVL 30
+				case 4: return 9000; // LVL 40
+				case 5: return 15000;
+				case 'mega': return 15000;
+				//case 6: return 18750;
+				default: 
+					console.log("Unknown tier:", tier);
+					return undefined;
+			}
+		}
+		
+		//var atk = this.atk + 15;
+		//var def = this.def + 15;
+		//var sta = this.sta + 15;
+		var sta = getSta(tier);
+		
+		if (sta === undefined) {
+			return undefined;
+		}
+		
+		// Always 1 for raid bosses
+		var scalar = 1;
+		
+		return Math.max(Math.floor( sta * scalar ), this.hpMin);
+		
 	}
 
 	

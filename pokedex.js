@@ -37,12 +37,14 @@ function makeFullPokedex(pokedex, filter, map) {
 			pokedex.addHeader(header["ID"], header["TEXT"], header["IMG1"], header["IMG2"]);
 			return;
 			
-		} if ( pokemonMatch["TYPE"] == 'VIRTUAL' ) {
+		} if ( pokemonMatch.hasOwnProperty('virtual') || pokemonMatch["TYPE"] == 'VIRTUAL' ) {
 			
 			//var pokemonID = pokemonMatch.ID;
 			var pokemon = Pokemon.querySelector( pokemonMatch );
 			//var pokemon = new PokemonStats( pokemonMatch );
-			var template = pokemonMatch;
+			var template = pokemonMatch.hasOwnProperty('virtual') ? pokemonMatch.virtual : pokemonMatch;
+			
+			if (template.display) pokemon.display = template.display;
 			
 			if (template.move) pokemon.move1 = template.move;
 			if (template.move1) pokemon.move1 = template.move1;
@@ -53,8 +55,10 @@ function makeFullPokedex(pokedex, filter, map) {
 			if (template.shiny) pokemon.shiny = template.shiny;
 			
 			if (template.cp) pokemon.cp = template.cp;
+			if (template.hp) pokemon.hp = template.hp;
 			if (template.lvl) pokemon.lvl = template.lvl;
 			if (template.lvl == 'max') pokemon.lvl = pokemon.lvlMax;
+			if (template.raidTier) pokemon.raidTier = template.raidTier;
 			
 			if (template.cpMax || template.league) {
 				
@@ -183,8 +187,13 @@ class Pokedex {
 		this.display = {};
 		this.display.cp = 'hover-hide';
 		this.display.cpMax = false;
+		this.display.raidCp = 'hover-hide';
+		this.display.hp = false;
+		this.display.cpMax = false;
+		this.display.raidHp = false;
 		this.display.lvl = 'hover-show';
 		this.display.lvlMax = false;
+		this.display.raidTier = true;
 		this.display.purified = true;
 		this.display.shiny = true;
 		
@@ -361,6 +370,33 @@ class Pokedex {
 		element.appendChild(overlayTop);
 		
 		
+		if (this.display.raidTier && pokemon.raidTier) {
+						
+			var raidIconContainer = document.createElement('span');
+			raidIconContainer.className = 'overlay raid-tier';
+			
+			if (Number.isInteger(pokemon.raidTier)) {
+				var numIcons = Math.min(Math.max(1, pokemon.raidTier), 5);
+				for (var i = 0; i<numIcons; i++) {
+					var img = document.createElement('img');
+					img.className = 'raid-tier-icon';
+					img.src = ASSETS + 'raid.png';
+					raidIconContainer.appendChild(img);
+				}
+			} else if (pokemon.raidTier == 'mega') {
+				var img = document.createElement('img');
+				img.className = 'raid-tier-icon';
+				img.src = ASSETS + 'mega.png';
+				raidIconContainer.appendChild(img);
+			} else {
+				console.log("Unknown raid tier:", pokemon.raidTier);
+			}
+			
+			overlayTop.appendChild(raidIconContainer);
+			
+		}
+		
+		
 		// <div class='pokemon flying fire pokemon-purified'><img class='pokemon-image' src='pokemon_icons/pokemon_icon_146_00.png' /><span class='cp'>CP<span class='cp-value'>2,412</span></span><span class='purified'><img src='assets/purified.png'><span>PURIFIED</span><img src='assets/purified.png'></span><span class='name'>Moltres</span></div>
 		if (this.display.purified && pokemon.purified) {
 			var purified = this.makeOverlay(overlayTop, "Purified", 'purified-overlay', 'purified', 'purified')
@@ -378,26 +414,48 @@ class Pokedex {
 		
 		//console.log(pokemon, this.display.cp, pokemon.cp);
 		if (this.display.cp && pokemon.cp) {
-			var cpSpan = this.makeSpan(overlayTop, "CP", 'cp', this.display.cp);
-			var cpValue = this.makeSpan(cpSpan, pokemon.cp, 'cp-value');
+			var span = this.makeSpan(overlayTop, "CP", 'cp', this.display.cp);
+			var value = this.makeSpan(span, pokemon.cp, 'value');
 		}
 		
 		//console.log(pokemon, this.display.cpMax, pokemon.cpMax);
 		if (this.display.cpMax && pokemon.cpMax) {
-			var cpSpan = this.makeSpan(overlayTop, "MAX", 'cp max', this.display.cpMax);
-			var cpValue = this.makeSpan(cpSpan, pokemon.cpMax, 'cp-value');
+			var span = this.makeSpan(overlayTop, "MAX", 'cp max', this.display.cpMax);
+			var value = this.makeSpan(span, pokemon.cpMax, 'value');
+		}
+		
+		if (this.display.raidCp && pokemon.raidTier) {
+			var span = this.makeSpan(overlayTop, "CP", 'cp', this.display.raidCp);
+			var value = this.makeSpan(span, pokemon.getRaidCp(pokemon.raidTier), 'value');
+		}
+		
+		//console.log(pokemon, this.display.hp, pokemon.hp);
+		if (this.display.hp && pokemon.hp) {
+			var span = this.makeSpan(overlayTop, "HP", 'hp', this.display.hp);
+			var value = this.makeSpan(span, pokemon.hp, 'value');
+		}
+		
+		//console.log(pokemon, this.display.hpMax, pokemon.hpMax);
+		if (this.display.hpMax && pokemon.hpMax) {
+			var span = this.makeSpan(overlayTop, "HP MAX", 'hp max', this.display.hpMax);
+			var value = this.makeSpan(span, pokemon.hpMax, 'value');
+		}
+		
+		if (this.display.raidHp && pokemon.raidTier) {
+			var span = this.makeSpan(overlayTop, "HP", 'hp', this.display.raidHp);
+			var value = this.makeSpan(span, pokemon.getRaidHp(pokemon.raidTier), 'value');
 		}
 		
 		//console.log(pokemon, this.display.lvl, pokemon.lvl);
 		if (this.display.lvl && pokemon.lvl) {
-			var cpSpan = this.makeSpan(overlayTop, "LVL", 'lvl', this.display.lvl);
-			var cpValue = this.makeSpan(cpSpan, pokemon.lvl, 'lvl-value');
+			var span = this.makeSpan(overlayTop, "LVL", 'lvl', this.display.lvl);
+			var value = this.makeSpan(span, pokemon.lvl, 'value');
 		}
 		
 		//console.log(pokemon, this.display.lvlMax, pokemon.lvlMax);
 		if (this.display.lvlMax && pokemon.lvlMax) {
-			var cpSpan = this.makeSpan(overlayTop, "MAX", 'lvl max', this.display.lvlMax);
-			var cpValue = this.makeSpan(cpSpan, pokemon.lvl, 'lvl-value');
+			var span = this.makeSpan(overlayTop, "MAX", 'lvl max', this.display.lvlMax);
+			var value = this.makeSpan(span, pokemon.lvl, 'lvl-value');
 		}
 		
 		
