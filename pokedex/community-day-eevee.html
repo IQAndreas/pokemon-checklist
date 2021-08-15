@@ -1,0 +1,210 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=750, initial-scale=1">
+	<title>Pokedex - Community Day</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../index.css" />
+	<style type="text/css">
+		
+	</style>
+	
+	
+	<script type="text/javascript" src="../data/pokemonstats.js"> </script>
+	<script type="text/javascript" src="../data/moves.js"> </script>
+	<script type="text/javascript" src="../data/pokemonlist.js"> </script>
+	
+	<script type="text/javascript" src="../pokemon.js"> </script>
+	<script type="text/javascript" src="../pokedex.js"> </script>
+	
+	<script>
+
+this.onload = function() {
+
+	var container = document.querySelector('.pokemon-container.auto');
+	
+	var pokedex = new Pokedex(container);
+	const tall = true;
+	if (tall) {
+		container.className += " tall";
+		pokedex.display.lvl = true;
+		pokedex.display.cp = true;
+		pokedex.display.moveIcons = false;
+	} else {
+		pokedex.display.cp = 'hover-show';
+		pokedex.display.lvl = 'hover-hide';
+		pokedex.display.moveIcons = false;
+	}
+	
+	
+	/*
+	
+	// TODO: Dynamic
+	var COMMUNITY_DAY = [
+		
+		{TYPE:"HEADER","ID":"community-day-2018","TEXT":"Community Day 2018","IMG1":"pikachu","IMG2":"pikachu"},
+		{family:"FAMILY_PIKACHU", COSTUME:false, SHINY:true},
+		{family:"FAMILY_DRATINI", COSTUME:false, SHINY:true},
+		{family:"FAMILY_BULBASAUR", COSTUME:false, SHINY:true},
+		{family:"FAMILY_MAREEP", COSTUME:false, SHINY:true},
+		{family:"FAMILY_CHARMANDER", COSTUME:false, SHINY:true},
+		{family:"FAMILY_LARVITAR", COSTUME:false, SHINY:true},
+		{family:"FAMILY_SQUIRTLE", COSTUME:false, SHINY:true},
+		{family:"FAMILY_EEVEE", COSTUME:false, SHINY:true},
+		{family:"FAMILY_CHIKORITA", COSTUME:false, SHINY:true},
+		{family:"FAMILY_BELDUM", COSTUME:false, SHINY:true},
+		{family:"FAMILY_CYNDAQUIL", COSTUME:false, SHINY:true},
+
+		
+		{TYPE:"HEADER","ID":"community-day-2019","TEXT":"Community Day 2019","IMG1":"pikachu","IMG2":"pikachu"},
+		{family:"FAMILY_TOTODILE", COSTUME:false, SHINY:true},
+		{family:"FAMILY_SWINUB", COSTUME:false, SHINY:true},
+		{family:"FAMILY_TREECKO", COSTUME:false, SHINY:true},
+		{family:"FAMILY_BAGON", COSTUME:false, SHINY:true},
+		{family:"FAMILY_TORCHIC", COSTUME:false, SHINY:true},
+		{family:"FAMILY_SLAKOTH", COSTUME:false, SHINY:true},
+		{family:"FAMILY_MUDKIP", COSTUME:false, SHINY:true},
+		{family:"FAMILY_RALTS", GENDER:'MALE', COSTUME:false, SHINY:true},
+		{family:"FAMILY_RALTS", GENDER:'FEMALE', COSTUME:false, SHINY:true},
+		{family:"FAMILY_TURTWIG", COSTUME:false, SHINY:true},
+		{family:"FAMILY_TRAPINCH", COSTUME:false, SHINY:true},
+		{family:"FAMILY_CHIMCHAR", COSTUME:false, SHINY:true},
+
+		
+		{TYPE:"HEADER","ID":"community-day-2020","TEXT":"Community Day 2020","IMG1":"pikachu","IMG2":"pikachu"},
+		{family:"FAMILY_PIPLUP", COSTUME:false, SHINY:true},
+		{family:"FAMILY_RHYHORN", COSTUME:false, SHINY:true},
+		{family:"FAMILY_ABRA", COSTUME:false, SHINY:true},
+		{family:"FAMILY_SEEDOT", COSTUME:false, SHINY:true},
+		{family:"FAMILY_WEEDLE", COSTUME:false, SHINY:true},
+		{family:"FAMILY_GASTLY", COSTUME:false, SHINY:true},
+		{family:"FAMILY_MAGIKARP", COSTUME:false, SHINY:true},
+		{family:"FAMILY_PORYGON", COSTUME:false, SHINY:true},
+		{family:"FAMILY_CHARMANDER", COSTUME:false, SHINY:true},
+		{family:"FAMILY_ELECTABUZZ", COSTUME:false, SHINY:true},
+		{family:"FAMILY_MAGMAR", COSTUME:false, SHINY:true},
+		
+	]*/
+	
+	
+	// TODO: Dynamic
+	/*var COMMUNITY_DAY = [
+		
+		{TYPE:"HEADER","ID":"community-day-2018","TEXT":"Community Day 2018","IMG1":"pikachu","IMG2":"pikachu"},
+		{ID:"PIKACHU", COSTUME:false, SHINY:true},
+		{ID:"DRATINI", COSTUME:false, SHINY:true},
+		{ID:"BULBASAUR", COSTUME:false, SHINY:true},
+		{ID:"MAREEP", COSTUME:false, SHINY:true},
+		{ID:"CHARMANDER", COSTUME:false, SHINY:true},
+		{ID:"LARVITAR", COSTUME:false, SHINY:true},
+		{ID:"SQUIRTLE", COSTUME:false, SHINY:true},
+		{ID:"EEVEE", COSTUME:false, SHINY:true},
+		{ID:"CHIKORITA", COSTUME:false, SHINY:true},
+		{ID:"BELDUM", COSTUME:false, SHINY:true},
+		{ID:"CYNDAQUIL", COSTUME:false, SHINY:true},
+
+		{TYPE:"HEADER","ID":"community-day-2019","TEXT":"Community Day 2019","IMG1":"pikachu","IMG2":"pikachu"},
+		{ID:"TOTODILE", COSTUME:false, SHINY:true},
+		{ID:"SWINUB", COSTUME:false, SHINY:true},
+		{ID:"TREECKO", COSTUME:false, SHINY:true},
+		{ID:"BAGON", COSTUME:false, SHINY:true},
+		{ID:"TORCHIC", COSTUME:false, SHINY:true},
+		{ID:"SLAKOTH", COSTUME:false, SHINY:true},
+		{ID:"MUDKIP", COSTUME:false, SHINY:true},
+		{ID:"RALTS", GENDER:'MALE', COSTUME:false, SHINY:true},
+		{ID:"RALTS", GENDER:'FEMALE', COSTUME:false, SHINY:true},
+		{ID:"TURTWIG", COSTUME:false, SHINY:true},
+		{ID:"TRAPINCH", COSTUME:false, SHINY:true},
+		{ID:"CHIMCHAR", COSTUME:false, SHINY:true},
+
+		{TYPE:"HEADER","ID":"community-day-2020","TEXT":"Community Day 2020","IMG1":"pikachu","IMG2":"pikachu"},
+		{ID:"PIPLUP", COSTUME:false, SHINY:true},
+		{ID:"RHYHORN", COSTUME:false, SHINY:true},
+		{ID:"ABRA", COSTUME:false, SHINY:true},
+		{ID:"SEEDOT", COSTUME:false, SHINY:true},
+		{ID:"WEEDLE", COSTUME:false, SHINY:true},
+		{ID:"GASTLY", COSTUME:false, SHINY:true},
+		{ID:"MAGIKARP", COSTUME:false, SHINY:true},
+		{ID:"PORYGON", COSTUME:false, SHINY:true},
+		{ID:"CHARMANDER", COSTUME:false, SHINY:true},
+		{ID:"ELECTABUZZ", COSTUME:false, SHINY:true},
+		{ID:"MAGMAR", COSTUME:false, SHINY:true},
+	
+	]*/
+	
+	// TODO: Dynamic
+	var COMMUNITY_DAY = [
+	
+	
+		// COMMUNITY DAY 2021
+		
+		{TYPE:"HEADER","ID":"community-day-2021","TEXT":"Eevee (Community Day 2021)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"EEVEE", move:"", TYPE:"VIRTUAL", league:"great"},
+			{ID:"EEVEE", move:"", TYPE:"VIRTUAL", league:"master"},
+			{ID:"EEVEE", move:"", TYPE:"VIRTUAL", league:"ultra"},
+		
+		{TYPE:"HEADER","ID":"community-day-2021","TEXT":"Eevee (Community Day 2021)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"VAPOREON", move:"", TYPE:"VIRTUAL", league:"great"},
+			{ID:"VAPOREON", move:"", TYPE:"VIRTUAL", league:"master"},
+			{ID:"VAPOREON", move:"", TYPE:"VIRTUAL", league:"ultra"},
+		
+		{TYPE:"HEADER","ID":"community-day-2021","TEXT":"Eevee (Community Day 2021)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"JOLTEON", move:"", TYPE:"VIRTUAL", league:"great"},
+			{ID:"JOLTEON", move:"", TYPE:"VIRTUAL", league:"master"},
+			{ID:"JOLTEON", move:"", TYPE:"VIRTUAL", league:"ultra"},
+		
+		{TYPE:"HEADER","ID":"community-day-2021","TEXT":"Eevee (Community Day 2021)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"FLAREON", move:"", TYPE:"VIRTUAL", league:"great"},
+			{ID:"FLAREON", move:"", TYPE:"VIRTUAL", league:"master"},
+			{ID:"FLAREON", move:"", TYPE:"VIRTUAL", league:"ultra"},
+		
+		{TYPE:"HEADER","ID":"community-day-2021","TEXT":"Eevee (Community Day 2021)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"ESPEON", move:"", TYPE:"VIRTUAL", league:"great"},
+			{ID:"ESPEON", move:"", TYPE:"VIRTUAL", league:"master"},
+			{ID:"ESPEON", move:"", TYPE:"VIRTUAL", league:"ultra"},
+		
+		{TYPE:"HEADER","ID":"community-day-2021","TEXT":"Eevee (Community Day 2021)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"UMBREON", move:"", TYPE:"VIRTUAL", league:"great"},
+			{ID:"UMBREON", move:"", TYPE:"VIRTUAL", lvl:"max"},
+		
+		{TYPE:"HEADER","ID":"community-day-2021","TEXT":"Eevee (Community Day 2021)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"LEAFEON", move:"", TYPE:"VIRTUAL", league:"great"},
+			{ID:"LEAFEON", move:"", TYPE:"VIRTUAL", league:"master"},
+			{ID:"LEAFEON", move:"", TYPE:"VIRTUAL", league:"ultra"},
+		
+		{TYPE:"HEADER","ID":"community-day-2021","TEXT":"Eevee (Community Day 2021)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"GLACEON", move:"", TYPE:"VIRTUAL", league:"great"},
+			{ID:"GLACEON", move:"", TYPE:"VIRTUAL", league:"master"},
+			{ID:"GLACEON", move:"", TYPE:"VIRTUAL", league:"ultra"},
+		
+		{TYPE:"HEADER","ID":"community-day-2021","TEXT":"Eevee (Community Day 2021)","IMG1":"pikachu","IMG2":"pikachu"},
+			{ID:"SYLVEON", move:"", TYPE:"VIRTUAL", league:"great"},
+			{ID:"SYLVEON", move:"", TYPE:"VIRTUAL", league:"master"},
+			{ID:"SYLVEON", move:"", TYPE:"VIRTUAL", league:"ultra"},
+		
+	]
+	
+	
+	makeFullPokedex(pokedex, COMMUNITY_DAY);
+	
+	return;
+	
+	
+	
+}
+		
+		
+	</script>
+
+</head>
+<body>
+	
+	<div class='pokemon-container auto'></div>
+
+</body>
+
+</html>
